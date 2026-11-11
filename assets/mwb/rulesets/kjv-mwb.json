@@ -1,0 +1,600 @@
+{
+  "schema": 1,
+  "sourceVersionId": "KJV",
+  "targetVersionId": "KJV-MWB",
+  "rulesetVersion": 1,
+  "style": {
+    "allowedAddedWords": [
+      "O"
+    ],
+    "notes": "KJV-MWB keeps the KJV’s own vocabulary and archaic forms (thou, thee, thy, thine, shall). Name insertions add only the name and punctuation."
+  },
+  "theologicalSupervisor": {
+    "name": "Pastor Obi Ogbo",
+    "role": "Designated theological supervisor"
+  },
+  "rules": [
+    {
+      "id": "kjv-mwb.PRO.1.8.a",
+      "ruleVersion": 1,
+      "reference": "PRO 1:8",
+      "sourceText": "My son, hear the instruction of thy father, and forsake not the law of thy mother:",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "medium",
+      "riskReasons": [
+        "Names the reader’s own father and mother as the source of instruction."
+      ],
+      "reviewQuestion": "Verse 8 refers to the instruction of \"thy father\" and \"thy mother\". With the reader’s name added, it speaks of the reader’s own parents. Is personal address pastorally appropriate here, including for readers whose parents did not teach them in faith?",
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.1.10.a",
+      "ruleVersion": 1,
+      "reference": "PRO 1:10",
+      "sourceText": "My son, if sinners entice thee, consent thou not.",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "low",
+      "riskReasons": [
+        "Representative paternal address in wisdom instruction."
+      ],
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.1.15.a",
+      "ruleVersion": 1,
+      "reference": "PRO 1:15",
+      "sourceText": "My son, walk not thou in the way with them; refrain thy foot from their path:",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "low",
+      "riskReasons": [
+        "Representative paternal address in wisdom instruction."
+      ],
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.2.1.a",
+      "ruleVersion": 1,
+      "reference": "PRO 2:1",
+      "sourceText": "My son, if thou wilt receive my words, and hide my commandments with thee;",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "high",
+      "riskReasons": [
+        "Conditional promise: verses 1-4 set the conditions for the promise in verse 5."
+      ],
+      "reviewQuestion": "Verse 1 opens a conditional promise (\"if thou wilt receive my words...\", fulfilled in verse 5). Is the name appropriate in the condition itself, and should verse 1 only be shown personalised together with verses 2-5?",
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.3.1.a",
+      "ruleVersion": 1,
+      "reference": "PRO 3:1",
+      "sourceText": "My son, forget not my law; but let thine heart keep my commandments:",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "low",
+      "riskReasons": [
+        "Representative paternal address in wisdom instruction."
+      ],
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.3.11.a",
+      "ruleVersion": 1,
+      "reference": "PRO 3:11",
+      "sourceText": "My son, despise not the chastening of the LORD ; neither be weary of his correction:",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "low",
+      "riskReasons": [
+        "Representative paternal address in wisdom instruction."
+      ],
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.3.21.a",
+      "ruleVersion": 1,
+      "reference": "PRO 3:21",
+      "sourceText": "My son, let not them depart from thine eyes: keep sound wisdom and discretion:",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "low",
+      "riskReasons": [
+        "Representative paternal address in wisdom instruction."
+      ],
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.4.20.a",
+      "ruleVersion": 1,
+      "reference": "PRO 4:20",
+      "sourceText": "My son, attend to my words; incline thine ear unto my sayings.",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "low",
+      "riskReasons": [
+        "Representative paternal address in wisdom instruction."
+      ],
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.5.1.a",
+      "ruleVersion": 1,
+      "reference": "PRO 5:1",
+      "sourceText": "My son, attend unto my wisdom, and bow thine ear to my understanding:",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "low",
+      "riskReasons": [
+        "Representative paternal address in wisdom instruction."
+      ],
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.6.1.a",
+      "ruleVersion": 1,
+      "reference": "PRO 6:1",
+      "sourceText": "My son, if thou be surety for thy friend, if thou hast stricken thy hand with a stranger,",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "low",
+      "riskReasons": [
+        "Representative paternal address in wisdom instruction."
+      ],
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.6.20.a",
+      "ruleVersion": 1,
+      "reference": "PRO 6:20",
+      "sourceText": "My son, keep thy father’s commandment, and forsake not the law of thy mother:",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "medium",
+      "riskReasons": [
+        "Names the reader’s own father and mother as the source of instruction."
+      ],
+      "reviewQuestion": "Verse 20 refers to \"thy father’s commandment\" and \"the law of thy mother\". With the reader’s name added, it speaks of the reader’s own parents. Is personal address pastorally appropriate here?",
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.7.1.a",
+      "ruleVersion": 1,
+      "reference": "PRO 7:1",
+      "sourceText": "My son, keep my words, and lay up my commandments with thee.",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "low",
+      "riskReasons": [
+        "Representative paternal address in wisdom instruction."
+      ],
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.23.15.a",
+      "ruleVersion": 1,
+      "reference": "PRO 23:15",
+      "sourceText": "My son, if thine heart be wise, my heart shall rejoice, even mine.",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "low",
+      "riskReasons": [
+        "Representative paternal address in wisdom instruction."
+      ],
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.23.26.a",
+      "ruleVersion": 1,
+      "reference": "PRO 23:26",
+      "sourceText": "My son, give me thine heart, and let thine eyes observe my ways.",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "medium",
+      "riskReasons": [
+        "Some readers hear Wisdom or God as the speaker of \"give me thine heart\"."
+      ],
+      "reviewQuestion": "The speaker of \"give me thine heart\" is the teacher of the \"words of the wise\". Does adding the reader’s name risk it being read as direct divine speech?",
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.24.13.a",
+      "ruleVersion": 1,
+      "reference": "PRO 24:13",
+      "sourceText": "My son, eat thou honey, because it is good; and the honeycomb, which is sweet to thy taste:",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "low",
+      "riskReasons": [
+        "Representative paternal address in wisdom instruction."
+      ],
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.24.21.a",
+      "ruleVersion": 1,
+      "reference": "PRO 24:21",
+      "sourceText": "My son, fear thou the LORD and the king: and meddle not with them that are given to change:",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "low",
+      "riskReasons": [
+        "Representative paternal address in wisdom instruction."
+      ],
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.27.11.a",
+      "ruleVersion": 1,
+      "reference": "PRO 27:11",
+      "sourceText": "My son, be wise, and make my heart glad, that I may answer him that reproacheth me.",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "My son,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing vocative \"My son\" and is set off by commas.",
+        "\"My son\" is kept exactly as written; it is never changed for any reader."
+      ],
+      "risk": "low",
+      "riskReasons": [
+        "Representative paternal address in wisdom instruction."
+      ],
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.PRO.23.18.a",
+      "ruleVersion": 1,
+      "reference": "PRO 23:18",
+      "sourceText": "For surely there is an end; and thine expectation shall not be cut off.",
+      "edits": [
+        {
+          "operation": "approvedMinimalGrammaticalAdjustment",
+          "anchor": "there is an end; and thine expectation shall not be cut off",
+          "position": "replace",
+          "text": "there is a future for you, {name}, and your hope will not be cut off"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [],
+      "risk": "high",
+      "riskReasons": [
+        "Historical proposal that replaced KJV wording."
+      ],
+      "status": "rejected",
+      "rejectionReason": "Replaces KJV vocabulary (\"an end\", \"thine expectation\", \"shall\") with another translation’s wording (\"a future for you\", \"your hope\", \"will\"). Fails versional integrity for KJV-MWB.",
+      "notes": "Kept for the record so this wording is never silently reused. Superseded by kjv-mwb.PRO.23.18.b.",
+      "reviews": [
+        {
+          "action": "rejected",
+          "at": "2026-11-11T00:00:00.000",
+          "ruleVersion": 1,
+          "reviewer": "MWB product owner",
+          "reviewerRole": "Product decision on version integrity (not a theological approval)",
+          "rejectionReason": "Source wording mismatch with the KJV."
+        }
+      ]
+    },
+    {
+      "id": "kjv-mwb.PRO.23.18.b",
+      "ruleVersion": 1,
+      "reference": "PRO 23:18",
+      "sourceText": "For surely there is an end; and thine expectation shall not be cut off.",
+      "edits": [
+        {
+          "operation": "insertDirectAddress",
+          "anchor": "; and",
+          "position": "after",
+          "text": ", {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name is a vocative set off by commas between \"and\" and \"thine expectation\".",
+        "All KJV wording (\"For surely\", \"there is an end\", \"thine expectation\", \"shall not be cut off\") is kept."
+      ],
+      "risk": "high",
+      "riskReasons": [
+        "The assurance in verse 18 rests on the exhortation in verse 17."
+      ],
+      "reviewQuestion": "Verse 18’s assurance follows verse 17 (\"be thou in the fear of the LORD all the day long\"). Should the name appear in verse 18 when it is shown on its own (daily verse, share card), or only when verse 17 is shown with it?",
+      "status": "proposed",
+      "notes": "KJV-faithful candidate replacing the rejected kjv-mwb.PRO.23.18.a.",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.ISA.41.10.a",
+      "ruleVersion": 1,
+      "reference": "ISA 41:10",
+      "sourceText": "Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness.",
+      "edits": [
+        {
+          "operation": "insertDirectAddress",
+          "anchor": "Fear thou not",
+          "position": "after",
+          "text": ", {name}"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name is a vocative after \"Fear thou not\", before the existing semicolon."
+      ],
+      "risk": "critical",
+      "riskReasons": [
+        "Direct divine speech.",
+        "Addressed to Israel collectively as God’s servant."
+      ],
+      "reviewQuestion": "This is God’s direct speech to Israel as His servant (Isaiah 41:8–9). May a personal name be inserted into divine speech addressed to Israel, or should this verse stay unpersonalised in KJV-MWB?",
+      "status": "proposed",
+      "reviews": []
+    },
+    {
+      "id": "kjv-mwb.3JN.1.2.a",
+      "ruleVersion": 1,
+      "reference": "3JN 1:2",
+      "sourceText": "Beloved, I wish above all things that thou mayest prosper and be in health, even as thy soul prospereth.",
+      "edits": [
+        {
+          "operation": "insertNameAfterExistingAddress",
+          "anchor": "Beloved,",
+          "position": "after",
+          "text": " {name},"
+        }
+      ],
+      "requiredFields": [
+        "personalName"
+      ],
+      "grammaticalConditions": [
+        "The name follows the existing address \"Beloved,\" and is set off by commas."
+      ],
+      "risk": "high",
+      "riskReasons": [
+        "Letter addressed to a specific person, Gaius."
+      ],
+      "reviewQuestion": "John’s wish is addressed to Gaius (3 John 1:1). Is it appropriate to address a personal wish written to a specific person to the reader by name?",
+      "status": "proposed",
+      "reviews": []
+    }
+  ]
+}

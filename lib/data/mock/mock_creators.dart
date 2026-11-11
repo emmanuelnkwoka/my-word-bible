@@ -1,0 +1,77 @@
+import '../models/creator.dart';
+
+/// Fictional sample creators. They do not represent real people or ministries
+/// and are labelled as samples throughout the interface.
+const List<Creator> mockCreators = [
+  Creator(
+    id: 'grace-hall',
+    displayName: 'Grace Hall Teaching',
+    role: 'Bible teaching ministry',
+    bio:
+        'Verse-by-verse teaching that helps believers read Scripture with understanding and apply it to everyday life.',
+    topicIds: ['faith', 'wisdom', 'purpose', 'spiritual-growth', 'favour'],
+    location: 'Sample ministry',
+    followerCount: 18400,
+    contentCount: 6,
+  ),
+  Creator(
+    id: 'daniel-mensah',
+    displayName: 'Daniel Mensah',
+    role: 'Pastor and teacher',
+    bio: 'Pastoral messages on fear, forgiveness, money and the practice of Christian living.',
+    topicIds: ['fear', 'forgiveness', 'fasting', 'money', 'christian-living'],
+    location: 'Sample creator',
+    followerCount: 9200,
+    contentCount: 5,
+  ),
+  Creator(
+    id: 'ruth-adeyemi',
+    displayName: 'Ruth Adeyemi',
+    role: 'Prayer ministry',
+    bio: 'Practical guidance on prayer, fasting and building a family devotional life.',
+    topicIds: ['prayer', 'fasting', 'family'],
+    location: 'Sample creator',
+    followerCount: 12750,
+    contentCount: 5,
+  ),
+  Creator(
+    id: 'living-water',
+    displayName: 'Living Water Fellowship',
+    role: 'Local church',
+    bio: 'Short message excerpts from a community of believers focused on faith in everyday life.',
+    topicIds: ['faith', 'family', 'leadership', 'purpose', 'favour'],
+    location: 'Sample church',
+    followerCount: 7300,
+    contentCount: 6,
+  ),
+  Creator(
+    id: 'samuel-reed',
+    displayName: 'Samuel Reed',
+    role: 'Christian author',
+    bio: 'Reflections on knowing God, stewardship and leading with humility.',
+    topicIds: ['knowing-god', 'money', 'leadership', 'faith', 'fear'],
+    location: 'Sample creator',
+    followerCount: 15100,
+    contentCount: 6,
+  ),
+  Creator(
+    id: 'selah-studio',
+    displayName: 'Selah Studio',
+    role: 'Worship and reflection',
+    bio: 'Quiet, Scripture-centred reflections for stillness, love and forgiveness.',
+    topicIds: ['love', 'forgiveness', 'knowing-god'],
+    location: 'Sample studio',
+    followerCount: 21600,
+    contentCount: 4,
+  ),
+  Creator(
+    id: 'mwb-editorial',
+    displayName: 'MWB Editorial',
+    role: 'Curated by My Word Bible',
+    bio: 'Scripture collections and short articles prepared by the My Word Bible team.',
+    topicIds: ['fear', 'prayer', 'wealth', 'christian-living', 'wisdom'],
+    location: 'My Word Bible',
+    followerCount: 0,
+    contentCount: 6,
+  ),
+];

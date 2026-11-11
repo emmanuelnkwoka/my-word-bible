@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "note": "Human-authored passage context used for personalisation risk assessment. Version-independent (keyed by canonical references). Never generated automatically.",
+  "contexts": [
+    {
+      "reference": "PRO 1:8",
+      "through": "PRO 9:18",
+      "author": "Solomon (Proverbs 1:1)",
+      "speaker": "human",
+      "originalAudience": "A young learner addressed as \"my son\"; the instruction is offered to all who will receive wisdom (Proverbs 1:4-5).",
+      "addressee": "representative",
+      "literaryContext": "Wisdom instruction discourses (Proverbs 1-9).",
+      "relationships": [
+        { "term": "my son", "kind": "representative", "note": "Paternal address in wisdom instruction. It addresses any learner, not only a biological son." }
+      ]
+    },
+    {
+      "reference": "PRO 1:8-9",
+      "author": "Solomon (Proverbs 1:1)",
+      "speaker": "human",
+      "originalAudience": "A young learner addressed as \"my son\".",
+      "addressee": "representative",
+      "literaryContext": "Opening appeal of the wisdom instruction (Proverbs 1-9).",
+      "relationships": [
+        { "term": "my son", "kind": "representative", "note": "Paternal address in wisdom instruction." },
+        { "term": "thy father / thy mother", "kind": "representative", "note": "The learner's own parents. Wording is preserved as written." }
+      ]
+    },
+    {
+      "reference": "PRO 2:1-5",
+      "author": "Solomon (Proverbs 1:1)",
+      "speaker": "human",
+      "originalAudience": "A young learner addressed as \"my son\".",
+      "addressee": "representative",
+      "literaryContext": "Wisdom instruction (Proverbs 1-9).",
+      "isConditionalPromise": true,
+      "conditionNote": "Verses 1-4 set the conditions (\"if thou wilt receive my words...\"); verse 5 states the result (\"then shalt thou understand the fear of the LORD\").",
+      "relationships": [
+        { "term": "my son", "kind": "representative", "note": "Paternal address in wisdom instruction." }
+      ]
+    },
+    {
+      "reference": "PRO 6:20-23",
+      "author": "Solomon (Proverbs 1:1)",
+      "speaker": "human",
+      "originalAudience": "A young learner addressed as \"my son\".",
+      "addressee": "representative",
+      "literaryContext": "Wisdom instruction (Proverbs 1-9).",
+      "relationships": [
+        { "term": "my son", "kind": "representative", "note": "Paternal address in wisdom instruction." },
+        { "term": "thy father / thy mother", "kind": "representative", "note": "The learner's own parents. Wording is preserved as written." }
+      ]
+    },
+    {
+      "reference": "PRO 22:17",
+      "through": "PRO 24:22",
+      "author": "\"The words of the wise\" (Proverbs 22:17), a collection within Proverbs",
+      "speaker": "human",
+      "originalAudience": "A learner addressed as \"my son\".",
+      "addressee": "representative",
+      "literaryContext": "Sayings of the wise (Proverbs 22:17-24:22).",
+      "relationships": [
+        { "term": "my son", "kind": "representative", "note": "Paternal address in wisdom instruction." }
+      ]
+    },
+    {
+      "reference": "PRO 23:17-18",
+      "author": "\"The words of the wise\" (Proverbs 22:17)",
+      "speaker": "human",
+      "originalAudience": "A learner addressed as \"my son\" (Proverbs 23:15, 19).",
+      "addressee": "representative",
+      "literaryContext": "Exhortation (verse 17) followed by assurance (verse 18).",
+      "isConditionalPromise": true,
+      "conditionNote": "Verse 18's assurance follows the exhortation of verse 17: \"be thou in the fear of the LORD all the day long\".",
+      "relationships": [
+        { "term": "my son", "kind": "representative", "note": "Paternal address in wisdom instruction." }
+      ]
+    },
+    {
+      "reference": "PRO 25:1",
+      "through": "PRO 29:27",
+      "author": "Proverbs of Solomon copied out by the men of Hezekiah (Proverbs 25:1)",
+      "speaker": "human",
+      "originalAudience": "Readers of the collection; individual sayings may address \"my son\".",
+      "addressee": "representative",
+      "literaryContext": "Hezekiah's collection of Solomon's proverbs (Proverbs 25-29).",
+      "relationships": [
+        { "term": "my son", "kind": "representative", "note": "Paternal address in wisdom instruction." }
+      ]
+    },
+    {
+      "reference": "ISA 41:8-16",
+      "author": "Isaiah (Isaiah 1:1)",
+      "speaker": "divine",
+      "originalAudience": "Israel, addressed by God as \"my servant\", \"the seed of Abraham my friend\" (Isaiah 41:8).",
+      "addressee": "collective",
+      "literaryContext": "Oracle of comfort and assurance.",
+      "theologicalNotes": "God speaks in the first person (\"I am thy God\"). The addressee is Israel."
+    },
+    {
+      "reference": "3JN 1:1-4",
+      "author": "John, \"the elder\" (3 John 1:1)",
+      "speaker": "author",
+      "originalAudience": "Gaius, \"the wellbeloved\" (3 John 1:1).",
+      "addressee": "specificIndividual",
+      "literaryContext": "Personal letter greeting and wish."
+    }
+  ]
+}

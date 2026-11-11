@@ -1,0 +1,9 @@
+# Keep LF line endings (Dart formatter output; byte-exact generated docs such as docs/mwb/*.md).
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.ttf binary
+*.wav binary
+*.jar binary
+*.ico binary
