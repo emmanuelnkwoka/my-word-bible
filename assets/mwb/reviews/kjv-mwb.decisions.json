@@ -1,0 +1,5 @@
+{
+  "schema": 1,
+  "note": "Human review decisions imported with tool/import_review_decisions.js. Each record names its reviewer and date and applies to one proposal version. Empty until reviewers return decisions.",
+  "decisions": {}
+}

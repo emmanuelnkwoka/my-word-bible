@@ -8,7 +8,6 @@ import '../../../core/theme/mwb_tokens.dart';
 import '../../../core/utils/formatters.dart';
 import '../../../core/widgets/buttons.dart';
 import '../../../core/widgets/layout.dart';
-import '../../../core/widgets/notices.dart';
 import '../../../core/widgets/section_heading.dart';
 import '../../../core/widgets/selection.dart';
 import '../../../core/widgets/state_views.dart';
@@ -18,11 +17,14 @@ import '../../../data/models/library_items.dart';
 import '../../../data/models/scripture_reference.dart';
 import '../../../data/mock/mock_daily.dart';
 import '../../bible/application/bible_providers.dart';
-import '../../bible/widgets/scripture_card.dart';
 import '../../content/widgets/content_cards.dart';
+import '../../daily_word/application/daily_word_providers.dart';
+import '../../daily_word/presentation/daily_word_home_card.dart';
 import '../../discovery/application/content_providers.dart';
 import '../../library/application/library_controllers.dart';
+import '../../personalisation/presentation/presented_scripture.dart';
 import '../../profile/application/profile_controllers.dart';
+import '../../social/presentation/inbox_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -32,7 +34,7 @@ class HomeScreen extends ConsumerWidget {
     final profile = ref.watch(userProfileProvider);
     final daily = ref.watch(dailyExperienceProvider);
     final now = ref.watch(clockProvider)();
-    final name = profile?.firstName;
+    final name = (profile?.preferredName.trim().isNotEmpty ?? false) ? profile!.preferredName.trim() : profile?.firstName;
     final gutter = MwbLayout.pagePadding(context);
 
     return Scaffold(
@@ -42,6 +44,7 @@ class HomeScreen extends ConsumerWidget {
           onRefresh: () async {
             ref.invalidate(recommendedProvider);
             ref.invalidate(suggestedTopicsProvider);
+            ref.invalidate(todayKeyProvider);
           },
           child: CustomScrollView(
             slivers: [
@@ -51,25 +54,19 @@ class HomeScreen extends ConsumerWidget {
                   child: _Greeting(name: name, now: now),
                 ),
               ),
-              MwbSliverPadding(
-                top: MwbSpace.xl,
-                sliver: SliverToBoxAdapter(
-                  child: ScriptureCard(
-                    key: const Key('home.dailyScripture'),
-                    reference: dailyScriptureRefs[dayIndex(now, dailyScriptureRefs.length)],
-                    overline: 'Daily Scripture',
-                    personalLine: name == null || name.isEmpty ? 'For you today' : 'For you today, $name',
-                    large: true,
-                  ),
-                ),
+              // The Daily Word replaces Foundation V1's fixed 21-verse
+              // "Daily Scripture" rotation.
+              const MwbSliverPadding(
+                top: MwbSpace.lg,
+                sliver: SliverToBoxAdapter(child: DailyWordHomeCard()),
+              ),
+              const MwbSliverPadding(
+                top: MwbSpace.lg,
+                sliver: SliverToBoxAdapter(child: _ContinueReading()),
               ),
               const MwbSliverPadding(
                 top: MwbSpace.md,
                 sliver: SliverToBoxAdapter(child: _DailyPromiseCard()),
-              ),
-              const MwbSliverPadding(
-                top: MwbSpace.md,
-                sliver: SliverToBoxAdapter(child: _ContinueReading()),
               ),
               const MwbSliverPadding(
                 top: MwbSpace.xl,
@@ -138,40 +135,61 @@ class _Greeting extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final t = context.mwb.text;
+    final c = context.mwb.colors;
     final greeting = greetingFor(now);
     final hasName = name != null && name!.isNotEmpty;
-    return Row(
+    final style = t.display.copyWith(fontSize: 31, height: 1.15);
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(formatLongDate(now).toUpperCase(), style: t.overline),
-              const SizedBox(height: MwbSpace.xs),
-              Semantics(header: true, child: Text(hasName ? '$greeting,\n$name' : greeting, style: t.display)),
-            ],
-          ),
+        Row(
+          children: [
+            const MwbBrandMark(size: 28),
+            const SizedBox(width: 10),
+            Expanded(child: Text('My Word Bible', style: t.sectionHeading.copyWith(fontSize: 16.5))),
+            MwbIconButton(
+              icon: Icons.search_rounded,
+              tooltip: 'Search',
+              onPressed: () => context.push(AppRoutes.search()),
+            ),
+            const InboxBellButton(),
+            const SizedBox(width: 4),
+            Semantics(
+              button: true,
+              label: 'Profile',
+              child: InkWell(
+                customBorder: const CircleBorder(),
+                onTap: () => context.go(AppRoutes.profile),
+                child: Container(
+                  width: 44,
+                  height: 44,
+                  decoration: BoxDecoration(color: c.selected, shape: BoxShape.circle, border: Border.all(color: c.border)),
+                  alignment: Alignment.center,
+                  child: Text(
+                    hasName ? name!.substring(0, 1).toUpperCase() : 'M',
+                    style: t.cardTitle.copyWith(color: c.primaryStrong, fontSize: 17),
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
-        MwbIconButton(
-          icon: Icons.search_rounded,
-          tooltip: 'Search',
-          filled: true,
-          onPressed: () => context.push(AppRoutes.search()),
-        ),
-        const SizedBox(width: MwbSpace.xs),
+        const SizedBox(height: MwbSpace.lg),
         Semantics(
-          button: true,
-          label: 'Profile',
-          child: InkWell(
-            customBorder: const CircleBorder(),
-            onTap: () => context.go(AppRoutes.profile),
-            child: Padding(
-              padding: const EdgeInsets.all(2),
-              child: MwbAvatar(initials: hasName ? name!.substring(0, 1).toUpperCase() : 'M'),
+          header: true,
+          child: Text.rich(
+            key: const Key('home.greeting'),
+            TextSpan(
+              children: [
+                TextSpan(text: hasName ? '$greeting, ' : greeting, style: style),
+                if (hasName) TextSpan(text: name, style: style.copyWith(color: c.nameInk)),
+                TextSpan(text: '.', style: style),
+              ],
             ),
           ),
         ),
+        const SizedBox(height: 4),
+        Text(formatLongDate(now), style: t.supporting),
       ],
     );
   }
@@ -185,7 +203,7 @@ class _DailyPromiseCard extends ConsumerWidget {
     final t = context.mwb.text;
     final c = context.mwb.colors;
     final value = ref.watch(dailyPromiseProvider);
-    final version = ref.watch(activeVersionProvider);
+    final version = ref.watch(textVersionProvider);
     return MwbCard(
       color: c.surface,
       padding: const EdgeInsets.all(MwbSpace.lg),
@@ -206,9 +224,20 @@ class _DailyPromiseCard extends ConsumerWidget {
                 ],
               ),
               const SizedBox(height: MwbSpace.sm),
-              Text(passage.text, style: t.scripture.copyWith(fontSize: 17)),
-              const SizedBox(height: MwbSpace.xs),
-              Text('${passage.reference.label.toUpperCase()} · ${version.abbreviation}', style: t.scriptureReference),
+              EditorialLayersAround(
+                reference: passage.reference,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(passage.text, style: t.scripture.copyWith(fontSize: 17)),
+                    const SizedBox(height: MwbSpace.xs),
+                    Text(
+                      '${passage.reference.label.toUpperCase()} · ${version.abbreviation}',
+                      style: t.scriptureReference,
+                    ),
+                  ],
+                ),
+              ),
               Divider(height: MwbSpace.xl, color: c.divider),
               Text('YOUR DECLARATION', style: t.overline.copyWith(color: c.textSecondary)),
               const SizedBox(height: 6),

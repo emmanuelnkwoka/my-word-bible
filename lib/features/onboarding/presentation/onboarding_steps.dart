@@ -10,8 +10,14 @@ import '../../../core/widgets/segmented.dart';
 import '../../../core/widgets/selection.dart';
 import '../../../data/models/content.dart';
 import '../../../data/models/interest.dart';
+import '../../../data/models/mwb_presentation_layer.dart';
+import '../../../data/models/scripture_reference.dart';
 import '../../../data/models/user_profile.dart';
 import '../../bible/widgets/version_picker.dart';
+import '../../personalisation/application/personalisation_providers.dart';
+import '../../personalisation/domain/personal_name.dart';
+import '../../personalisation/domain/presentation_layer_resolver.dart';
+import '../../personalisation/presentation/presented_scripture.dart';
 import '../application/onboarding_controller.dart';
 
 class _StepHeader extends StatelessWidget {
@@ -129,7 +135,87 @@ class PersonalStep extends ConsumerWidget {
             ),
           ],
         ),
+        const SizedBox(height: MwbSpace.lg),
+        _PersonalPreview(name: draft.firstName),
       ],
+    );
+  }
+}
+
+/// The verse used to show what My Word Bible does: its approved personal
+/// title and reception, beside the unchanged KJV text, read from the
+/// approved presentation data (never written here).
+final _exampleProvider = FutureProvider<({String verse, MwbPresentationCatalogue layers})>((ref) async {
+  final layers = await ref.watch(mwbPresentationCatalogueProvider('KJV-MWB').future);
+  final passage = await ref.watch(bibleRepositoryProvider).passage('KJV', _exampleReference);
+  return (verse: passage.text, layers: layers);
+});
+
+const _exampleReference = ScriptureReference(bookId: 'ROM', chapter: 8, verseStart: 37);
+
+/// "This is what My Word Bible does": a real personal title and reception
+/// with the reader's name, around the unchanged verse.
+class _PersonalPreview extends ConsumerWidget {
+  const _PersonalPreview({required this.name});
+  final String name;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final t = context.mwb.text;
+    final c = context.mwb.colors;
+    final example = ref.watch(_exampleProvider).value;
+    if (example == null) return const SizedBox(key: Key('onboarding.preview'), height: 1);
+    final resolved = PersonalNameResolver.resolve(
+      UserProfile(firstName: name, gender: GenderPreference.preferNotToSay, namePreference: NamePreference.firstName),
+    );
+    final layers = PresentationLayerResolver.resolve(
+      example.layers,
+      mwbVerseKey(_exampleReference.bookId, _exampleReference.chapter, _exampleReference.verseStart!),
+      resolved,
+    );
+    return Container(
+      key: const Key('onboarding.preview'),
+      padding: const EdgeInsets.fromLTRB(20, 18, 20, 16),
+      decoration: BoxDecoration(
+        color: c.selected.withValues(alpha: 0.7),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: c.primary.withValues(alpha: 0.25)),
+      ),
+      child: Column(
+        children: [
+          Text('THIS IS WHAT MY WORD BIBLE DOES', style: t.overline.copyWith(fontSize: 10.5)),
+          const SizedBox(height: MwbSpace.sm),
+          if (layers.title case final title?) ...[
+            NamedTitle(
+              text: title.text,
+              name: title.name,
+              style: t.cardTitle.copyWith(fontFamily: t.display.fontFamily, fontSize: 19, color: c.primaryStrong),
+            ),
+            const SizedBox(height: 6),
+          ],
+          Text(
+            '“${example.verse}”',
+            style: t.scripture.copyWith(fontSize: 18, height: 1.55),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 4),
+          Text(
+            '— ${_exampleReference.label} · KJV',
+            style: t.scripture.copyWith(fontStyle: FontStyle.italic, fontSize: 14, color: c.primaryStrong),
+          ),
+          if (layers.reception case final reception?) ...[
+            const SizedBox(height: MwbSpace.sm),
+            EditorialReception(layer: reception, fontSize: 14),
+          ],
+          const SizedBox(height: MwbSpace.sm),
+          Text(
+            'The Scripture is never changed. Some verses carry a personal title or a short reception for you, '
+            'shown beside the verse. The original is always there.',
+            style: t.caption,
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
     );
   }
 }

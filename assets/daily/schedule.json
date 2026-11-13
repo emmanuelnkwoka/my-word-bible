@@ -1,0 +1,2203 @@
+{
+ "schemaVersion": 1,
+ "scheduleVersion": "2026.1",
+ "corpusVersion": "1.0.0",
+ "cycleLength": 113,
+ "note": "Passages recur every 113 days because the verified pool has 113 passages; \"occurrence\" records each recurrence within the year.",
+ "days": [
+  {
+   "day": 1,
+   "date": "01-01",
+   "candidateId": "dwc-EXO-3-14",
+   "occurrence": 1
+  },
+  {
+   "day": 2,
+   "date": "01-02",
+   "candidateId": "dwc-NUM-6-25",
+   "occurrence": 1
+  },
+  {
+   "day": 3,
+   "date": "01-03",
+   "candidateId": "dwc-GEN-28-15",
+   "occurrence": 1
+  },
+  {
+   "day": 4,
+   "date": "01-04",
+   "candidateId": "dwc-EXO-20-3",
+   "occurrence": 1
+  },
+  {
+   "day": 5,
+   "date": "01-05",
+   "candidateId": "dwc-NUM-6-26",
+   "occurrence": 1
+  },
+  {
+   "day": 6,
+   "date": "01-06",
+   "candidateId": "dwc-NUM-6-24",
+   "occurrence": 1
+  },
+  {
+   "day": 7,
+   "date": "01-07",
+   "candidateId": "dwc-MAT-3-17",
+   "occurrence": 1
+  },
+  {
+   "day": 8,
+   "date": "01-08",
+   "candidateId": "dwc-PSA-46-10",
+   "occurrence": 1
+  },
+  {
+   "day": 9,
+   "date": "01-09",
+   "candidateId": "dwc-PSA-34-7",
+   "occurrence": 1
+  },
+  {
+   "day": 10,
+   "date": "01-10",
+   "candidateId": "dwc-MAT-7-7",
+   "occurrence": 1
+  },
+  {
+   "day": 11,
+   "date": "01-11",
+   "candidateId": "dwc-PSA-23-6",
+   "occurrence": 1
+  },
+  {
+   "day": 12,
+   "date": "01-12",
+   "candidateId": "dwc-PSA-55-22",
+   "occurrence": 1
+  },
+  {
+   "day": 13,
+   "date": "01-13",
+   "candidateId": "dwc-PSA-23-4",
+   "occurrence": 1
+  },
+  {
+   "day": 14,
+   "date": "01-14",
+   "candidateId": "dwc-PSA-46-1",
+   "occurrence": 1
+  },
+  {
+   "day": 15,
+   "date": "01-15",
+   "candidateId": "dwc-MAT-19-26",
+   "occurrence": 1
+  },
+  {
+   "day": 16,
+   "date": "01-16",
+   "candidateId": "dwc-PRO-23-18",
+   "occurrence": 1
+  },
+  {
+   "day": 17,
+   "date": "01-17",
+   "candidateId": "dwc-ISA-26-3",
+   "occurrence": 1
+  },
+  {
+   "day": 18,
+   "date": "01-18",
+   "candidateId": "dwc-DEU-31-6",
+   "occurrence": 1
+  },
+  {
+   "day": 19,
+   "date": "01-19",
+   "candidateId": "dwc-PSA-30-5",
+   "occurrence": 1
+  },
+  {
+   "day": 20,
+   "date": "01-20",
+   "candidateId": "dwc-PSA-91-1",
+   "occurrence": 1
+  },
+  {
+   "day": 21,
+   "date": "01-21",
+   "candidateId": "dwc-GEN-1-3",
+   "occurrence": 1
+  },
+  {
+   "day": 22,
+   "date": "01-22",
+   "candidateId": "dwc-MRK-9-23",
+   "occurrence": 1
+  },
+  {
+   "day": 23,
+   "date": "01-23",
+   "candidateId": "dwc-JER-29-11",
+   "occurrence": 1
+  },
+  {
+   "day": 24,
+   "date": "01-24",
+   "candidateId": "dwc-JHN-14-1",
+   "occurrence": 1
+  },
+  {
+   "day": 25,
+   "date": "01-25",
+   "candidateId": "dwc-EXO-14-14",
+   "occurrence": 1
+  },
+  {
+   "day": 26,
+   "date": "01-26",
+   "candidateId": "dwc-JOS-1-9",
+   "occurrence": 1
+  },
+  {
+   "day": 27,
+   "date": "01-27",
+   "candidateId": "dwc-PSA-34-18",
+   "occurrence": 1
+  },
+  {
+   "day": 28,
+   "date": "01-28",
+   "candidateId": "dwc-PSA-16-11",
+   "occurrence": 1
+  },
+  {
+   "day": 29,
+   "date": "01-29",
+   "candidateId": "dwc-PSA-91-11",
+   "occurrence": 1
+  },
+  {
+   "day": 30,
+   "date": "01-30",
+   "candidateId": "dwc-MRK-16-15",
+   "occurrence": 1
+  },
+  {
+   "day": 31,
+   "date": "01-31",
+   "candidateId": "dwc-JHN-3-16",
+   "occurrence": 1
+  },
+  {
+   "day": 32,
+   "date": "02-01",
+   "candidateId": "dwc-LAM-3-22-23",
+   "occurrence": 1
+  },
+  {
+   "day": 33,
+   "date": "02-02",
+   "candidateId": "dwc-JHN-14-27",
+   "occurrence": 1
+  },
+  {
+   "day": 34,
+   "date": "02-03",
+   "candidateId": "dwc-ISA-40-31",
+   "occurrence": 1
+  },
+  {
+   "day": 35,
+   "date": "02-04",
+   "candidateId": "dwc-PSA-56-3",
+   "occurrence": 1
+  },
+  {
+   "day": 36,
+   "date": "02-05",
+   "candidateId": "dwc-PSA-42-11",
+   "occurrence": 1
+  },
+  {
+   "day": 37,
+   "date": "02-06",
+   "candidateId": "dwc-PSA-37-4",
+   "occurrence": 1
+  },
+  {
+   "day": 38,
+   "date": "02-07",
+   "candidateId": "dwc-PSA-121-7",
+   "occurrence": 1
+  },
+  {
+   "day": 39,
+   "date": "02-08",
+   "candidateId": "dwc-ACT-1-8",
+   "occurrence": 1
+  },
+  {
+   "day": 40,
+   "date": "02-09",
+   "candidateId": "dwc-JHN-14-6",
+   "occurrence": 1
+  },
+  {
+   "day": 41,
+   "date": "02-10",
+   "candidateId": "dwc-EZK-36-26",
+   "occurrence": 1
+  },
+  {
+   "day": 42,
+   "date": "02-11",
+   "candidateId": "dwc-ROM-5-1",
+   "occurrence": 1
+  },
+  {
+   "day": 43,
+   "date": "02-12",
+   "candidateId": "dwc-ISA-41-13",
+   "occurrence": 1
+  },
+  {
+   "day": 44,
+   "date": "02-13",
+   "candidateId": "dwc-ISA-41-10",
+   "occurrence": 1
+  },
+  {
+   "day": 45,
+   "date": "02-14",
+   "candidateId": "dwc-PSA-147-3",
+   "occurrence": 1
+  },
+  {
+   "day": 46,
+   "date": "02-15",
+   "candidateId": "dwc-LUK-6-38",
+   "occurrence": 1
+  },
+  {
+   "day": 47,
+   "date": "02-16",
+   "candidateId": "dwc-GEN-1-27",
+   "occurrence": 1
+  },
+  {
+   "day": 48,
+   "date": "02-17",
+   "candidateId": "dwc-PSA-121-8",
+   "occurrence": 1
+  },
+  {
+   "day": 49,
+   "date": "02-18",
+   "candidateId": "dwc-ROM-8-1",
+   "occurrence": 1
+  },
+  {
+   "day": 50,
+   "date": "02-19",
+   "candidateId": "dwc-ROM-6-23",
+   "occurrence": 1
+  },
+  {
+   "day": 51,
+   "date": "02-20",
+   "candidateId": "dwc-JOS-24-15",
+   "occurrence": 1
+  },
+  {
+   "day": 52,
+   "date": "02-21",
+   "candidateId": "dwc-JHN-10-10",
+   "occurrence": 1
+  },
+  {
+   "day": 53,
+   "date": "02-22",
+   "candidateId": "dwc-PHP-4-6",
+   "occurrence": 1
+  },
+  {
+   "day": 54,
+   "date": "02-23",
+   "candidateId": "dwc-ROM-8-37",
+   "occurrence": 1
+  },
+  {
+   "day": 55,
+   "date": "02-24",
+   "candidateId": "dwc-JHN-16-33",
+   "occurrence": 1
+  },
+  {
+   "day": 56,
+   "date": "02-25",
+   "candidateId": "dwc-PSA-23-1",
+   "occurrence": 1
+  },
+  {
+   "day": 57,
+   "date": "02-26",
+   "candidateId": "dwc-ISA-43-2",
+   "occurrence": 1
+  },
+  {
+   "day": 58,
+   "date": "02-27",
+   "candidateId": "dwc-EXO-15-26",
+   "occurrence": 1
+  },
+  {
+   "day": 59,
+   "date": "02-28",
+   "candidateId": "dwc-JHN-15-11",
+   "occurrence": 1
+  },
+  {
+   "day": 60,
+   "date": "03-01",
+   "candidateId": "dwc-PSA-139-14",
+   "occurrence": 1
+  },
+  {
+   "day": 61,
+   "date": "03-02",
+   "candidateId": "dwc-PRO-18-10",
+   "occurrence": 1
+  },
+  {
+   "day": 62,
+   "date": "03-03",
+   "candidateId": "dwc-PSA-32-8",
+   "occurrence": 1
+  },
+  {
+   "day": 63,
+   "date": "03-04",
+   "candidateId": "dwc-ROM-8-28",
+   "occurrence": 1
+  },
+  {
+   "day": 64,
+   "date": "03-05",
+   "candidateId": "dwc-ROM-10-9",
+   "occurrence": 1
+  },
+  {
+   "day": 65,
+   "date": "03-06",
+   "candidateId": "dwc-PSA-127-3",
+   "occurrence": 1
+  },
+  {
+   "day": 66,
+   "date": "03-07",
+   "candidateId": "dwc-JHN-11-25",
+   "occurrence": 1
+  },
+  {
+   "day": 67,
+   "date": "03-08",
+   "candidateId": "dwc-PHP-4-7",
+   "occurrence": 1
+  },
+  {
+   "day": 68,
+   "date": "03-09",
+   "candidateId": "dwc-1CO-10-13",
+   "occurrence": 1
+  },
+  {
+   "day": 69,
+   "date": "03-10",
+   "candidateId": "dwc-ROM-8-31",
+   "occurrence": 1
+  },
+  {
+   "day": 70,
+   "date": "03-11",
+   "candidateId": "dwc-MAT-6-33",
+   "occurrence": 1
+  },
+  {
+   "day": 71,
+   "date": "03-12",
+   "candidateId": "dwc-MAT-28-20",
+   "occurrence": 1
+  },
+  {
+   "day": 72,
+   "date": "03-13",
+   "candidateId": "dwc-PSA-119-105",
+   "occurrence": 1
+  },
+  {
+   "day": 73,
+   "date": "03-14",
+   "candidateId": "dwc-PSA-103-3",
+   "occurrence": 1
+  },
+  {
+   "day": 74,
+   "date": "03-15",
+   "candidateId": "dwc-EXO-33-14",
+   "occurrence": 1
+  },
+  {
+   "day": 75,
+   "date": "03-16",
+   "candidateId": "dwc-1CO-15-57",
+   "occurrence": 1
+  },
+  {
+   "day": 76,
+   "date": "03-17",
+   "candidateId": "dwc-ISA-43-1",
+   "occurrence": 1
+  },
+  {
+   "day": 77,
+   "date": "03-18",
+   "candidateId": "dwc-ISA-54-17",
+   "occurrence": 1
+  },
+  {
+   "day": 78,
+   "date": "03-19",
+   "candidateId": "dwc-PRO-16-3",
+   "occurrence": 1
+  },
+  {
+   "day": 79,
+   "date": "03-20",
+   "candidateId": "dwc-GAL-6-9",
+   "occurrence": 1
+  },
+  {
+   "day": 80,
+   "date": "03-21",
+   "candidateId": "dwc-EPH-2-8",
+   "occurrence": 1
+  },
+  {
+   "day": 81,
+   "date": "03-22",
+   "candidateId": "dwc-PRO-22-6",
+   "occurrence": 1
+  },
+  {
+   "day": 82,
+   "date": "03-23",
+   "candidateId": "dwc-ROM-15-13",
+   "occurrence": 1
+  },
+  {
+   "day": 83,
+   "date": "03-24",
+   "candidateId": "dwc-1PE-5-7",
+   "occurrence": 1
+  },
+  {
+   "day": 84,
+   "date": "03-25",
+   "candidateId": "dwc-2CO-12-9",
+   "occurrence": 1
+  },
+  {
+   "day": 85,
+   "date": "03-26",
+   "candidateId": "dwc-2TI-1-7",
+   "occurrence": 1
+  },
+  {
+   "day": 86,
+   "date": "03-27",
+   "candidateId": "dwc-2CO-9-8",
+   "occurrence": 1
+  },
+  {
+   "day": 87,
+   "date": "03-28",
+   "candidateId": "dwc-JHN-6-37",
+   "occurrence": 1
+  },
+  {
+   "day": 88,
+   "date": "03-29",
+   "candidateId": "dwc-PRO-3-5-6",
+   "occurrence": 1
+  },
+  {
+   "day": 89,
+   "date": "03-30",
+   "candidateId": "dwc-ISA-53-5",
+   "occurrence": 1
+  },
+  {
+   "day": 90,
+   "date": "03-31",
+   "candidateId": "dwc-MAT-6-34",
+   "occurrence": 1
+  },
+  {
+   "day": 91,
+   "date": "04-01",
+   "candidateId": "dwc-EPH-3-20",
+   "occurrence": 1
+  },
+  {
+   "day": 92,
+   "date": "04-02",
+   "candidateId": "dwc-MAT-5-14",
+   "occurrence": 1
+  },
+  {
+   "day": 93,
+   "date": "04-03",
+   "candidateId": "dwc-JHN-10-28",
+   "occurrence": 1
+  },
+  {
+   "day": 94,
+   "date": "04-04",
+   "candidateId": "dwc-ISA-30-21",
+   "occurrence": 1
+  },
+  {
+   "day": 95,
+   "date": "04-05",
+   "candidateId": "dwc-PHP-1-6",
+   "occurrence": 1
+  },
+  {
+   "day": 96,
+   "date": "04-06",
+   "candidateId": "dwc-HEB-4-16",
+   "occurrence": 1
+  },
+  {
+   "day": 97,
+   "date": "04-07",
+   "candidateId": "dwc-ISA-54-13",
+   "occurrence": 1
+  },
+  {
+   "day": 98,
+   "date": "04-08",
+   "candidateId": "dwc-REV-21-4",
+   "occurrence": 1
+  },
+  {
+   "day": 99,
+   "date": "04-09",
+   "candidateId": "dwc-1JN-1-9",
+   "occurrence": 1
+  },
+  {
+   "day": 100,
+   "date": "04-10",
+   "candidateId": "dwc-PHP-4-13",
+   "occurrence": 1
+  },
+  {
+   "day": 101,
+   "date": "04-11",
+   "candidateId": "dwc-1JN-4-18",
+   "occurrence": 1
+  },
+  {
+   "day": 102,
+   "date": "04-12",
+   "candidateId": "dwc-PHP-4-19",
+   "occurrence": 1
+  },
+  {
+   "day": 103,
+   "date": "04-13",
+   "candidateId": "dwc-HEB-13-5",
+   "occurrence": 1
+  },
+  {
+   "day": 104,
+   "date": "04-14",
+   "candidateId": "dwc-JAS-1-5",
+   "occurrence": 1
+  },
+  {
+   "day": 105,
+   "date": "04-15",
+   "candidateId": "dwc-JER-30-17",
+   "occurrence": 1
+  },
+  {
+   "day": 106,
+   "date": "04-16",
+   "candidateId": "dwc-MAT-11-28",
+   "occurrence": 1
+  },
+  {
+   "day": 107,
+   "date": "04-17",
+   "candidateId": "dwc-JAS-1-17",
+   "occurrence": 1
+  },
+  {
+   "day": 108,
+   "date": "04-18",
+   "candidateId": "dwc-EPH-2-10",
+   "occurrence": 1
+  },
+  {
+   "day": 109,
+   "date": "04-19",
+   "candidateId": "dwc-2TH-3-3",
+   "occurrence": 1
+  },
+  {
+   "day": 110,
+   "date": "04-20",
+   "candidateId": "dwc-JHN-8-12",
+   "occurrence": 1
+  },
+  {
+   "day": 111,
+   "date": "04-21",
+   "candidateId": "dwc-COL-3-23",
+   "occurrence": 1
+  },
+  {
+   "day": 112,
+   "date": "04-22",
+   "candidateId": "dwc-HEB-11-1",
+   "occurrence": 1
+  },
+  {
+   "day": 113,
+   "date": "04-23",
+   "candidateId": "dwc-ACT-16-31",
+   "occurrence": 1
+  },
+  {
+   "day": 114,
+   "date": "04-24",
+   "candidateId": "dwc-EXO-3-14",
+   "occurrence": 2
+  },
+  {
+   "day": 115,
+   "date": "04-25",
+   "candidateId": "dwc-NUM-6-25",
+   "occurrence": 2
+  },
+  {
+   "day": 116,
+   "date": "04-26",
+   "candidateId": "dwc-GEN-28-15",
+   "occurrence": 2
+  },
+  {
+   "day": 117,
+   "date": "04-27",
+   "candidateId": "dwc-EXO-20-3",
+   "occurrence": 2
+  },
+  {
+   "day": 118,
+   "date": "04-28",
+   "candidateId": "dwc-NUM-6-26",
+   "occurrence": 2
+  },
+  {
+   "day": 119,
+   "date": "04-29",
+   "candidateId": "dwc-NUM-6-24",
+   "occurrence": 2
+  },
+  {
+   "day": 120,
+   "date": "04-30",
+   "candidateId": "dwc-MAT-3-17",
+   "occurrence": 2
+  },
+  {
+   "day": 121,
+   "date": "05-01",
+   "candidateId": "dwc-PSA-46-10",
+   "occurrence": 2
+  },
+  {
+   "day": 122,
+   "date": "05-02",
+   "candidateId": "dwc-PSA-34-7",
+   "occurrence": 2
+  },
+  {
+   "day": 123,
+   "date": "05-03",
+   "candidateId": "dwc-MAT-7-7",
+   "occurrence": 2
+  },
+  {
+   "day": 124,
+   "date": "05-04",
+   "candidateId": "dwc-PSA-23-6",
+   "occurrence": 2
+  },
+  {
+   "day": 125,
+   "date": "05-05",
+   "candidateId": "dwc-PSA-55-22",
+   "occurrence": 2
+  },
+  {
+   "day": 126,
+   "date": "05-06",
+   "candidateId": "dwc-PSA-23-4",
+   "occurrence": 2
+  },
+  {
+   "day": 127,
+   "date": "05-07",
+   "candidateId": "dwc-PSA-46-1",
+   "occurrence": 2
+  },
+  {
+   "day": 128,
+   "date": "05-08",
+   "candidateId": "dwc-MAT-19-26",
+   "occurrence": 2
+  },
+  {
+   "day": 129,
+   "date": "05-09",
+   "candidateId": "dwc-PRO-23-18",
+   "occurrence": 2
+  },
+  {
+   "day": 130,
+   "date": "05-10",
+   "candidateId": "dwc-ISA-26-3",
+   "occurrence": 2
+  },
+  {
+   "day": 131,
+   "date": "05-11",
+   "candidateId": "dwc-DEU-31-6",
+   "occurrence": 2
+  },
+  {
+   "day": 132,
+   "date": "05-12",
+   "candidateId": "dwc-PSA-30-5",
+   "occurrence": 2
+  },
+  {
+   "day": 133,
+   "date": "05-13",
+   "candidateId": "dwc-PSA-91-1",
+   "occurrence": 2
+  },
+  {
+   "day": 134,
+   "date": "05-14",
+   "candidateId": "dwc-GEN-1-3",
+   "occurrence": 2
+  },
+  {
+   "day": 135,
+   "date": "05-15",
+   "candidateId": "dwc-MRK-9-23",
+   "occurrence": 2
+  },
+  {
+   "day": 136,
+   "date": "05-16",
+   "candidateId": "dwc-JER-29-11",
+   "occurrence": 2
+  },
+  {
+   "day": 137,
+   "date": "05-17",
+   "candidateId": "dwc-JHN-14-1",
+   "occurrence": 2
+  },
+  {
+   "day": 138,
+   "date": "05-18",
+   "candidateId": "dwc-EXO-14-14",
+   "occurrence": 2
+  },
+  {
+   "day": 139,
+   "date": "05-19",
+   "candidateId": "dwc-JOS-1-9",
+   "occurrence": 2
+  },
+  {
+   "day": 140,
+   "date": "05-20",
+   "candidateId": "dwc-PSA-34-18",
+   "occurrence": 2
+  },
+  {
+   "day": 141,
+   "date": "05-21",
+   "candidateId": "dwc-PSA-16-11",
+   "occurrence": 2
+  },
+  {
+   "day": 142,
+   "date": "05-22",
+   "candidateId": "dwc-PSA-91-11",
+   "occurrence": 2
+  },
+  {
+   "day": 143,
+   "date": "05-23",
+   "candidateId": "dwc-MRK-16-15",
+   "occurrence": 2
+  },
+  {
+   "day": 144,
+   "date": "05-24",
+   "candidateId": "dwc-JHN-3-16",
+   "occurrence": 2
+  },
+  {
+   "day": 145,
+   "date": "05-25",
+   "candidateId": "dwc-LAM-3-22-23",
+   "occurrence": 2
+  },
+  {
+   "day": 146,
+   "date": "05-26",
+   "candidateId": "dwc-JHN-14-27",
+   "occurrence": 2
+  },
+  {
+   "day": 147,
+   "date": "05-27",
+   "candidateId": "dwc-ISA-40-31",
+   "occurrence": 2
+  },
+  {
+   "day": 148,
+   "date": "05-28",
+   "candidateId": "dwc-PSA-56-3",
+   "occurrence": 2
+  },
+  {
+   "day": 149,
+   "date": "05-29",
+   "candidateId": "dwc-PSA-42-11",
+   "occurrence": 2
+  },
+  {
+   "day": 150,
+   "date": "05-30",
+   "candidateId": "dwc-PSA-37-4",
+   "occurrence": 2
+  },
+  {
+   "day": 151,
+   "date": "05-31",
+   "candidateId": "dwc-PSA-121-7",
+   "occurrence": 2
+  },
+  {
+   "day": 152,
+   "date": "06-01",
+   "candidateId": "dwc-ACT-1-8",
+   "occurrence": 2
+  },
+  {
+   "day": 153,
+   "date": "06-02",
+   "candidateId": "dwc-JHN-14-6",
+   "occurrence": 2
+  },
+  {
+   "day": 154,
+   "date": "06-03",
+   "candidateId": "dwc-EZK-36-26",
+   "occurrence": 2
+  },
+  {
+   "day": 155,
+   "date": "06-04",
+   "candidateId": "dwc-ROM-5-1",
+   "occurrence": 2
+  },
+  {
+   "day": 156,
+   "date": "06-05",
+   "candidateId": "dwc-ISA-41-13",
+   "occurrence": 2
+  },
+  {
+   "day": 157,
+   "date": "06-06",
+   "candidateId": "dwc-ISA-41-10",
+   "occurrence": 2
+  },
+  {
+   "day": 158,
+   "date": "06-07",
+   "candidateId": "dwc-PSA-147-3",
+   "occurrence": 2
+  },
+  {
+   "day": 159,
+   "date": "06-08",
+   "candidateId": "dwc-LUK-6-38",
+   "occurrence": 2
+  },
+  {
+   "day": 160,
+   "date": "06-09",
+   "candidateId": "dwc-GEN-1-27",
+   "occurrence": 2
+  },
+  {
+   "day": 161,
+   "date": "06-10",
+   "candidateId": "dwc-PSA-121-8",
+   "occurrence": 2
+  },
+  {
+   "day": 162,
+   "date": "06-11",
+   "candidateId": "dwc-ROM-8-1",
+   "occurrence": 2
+  },
+  {
+   "day": 163,
+   "date": "06-12",
+   "candidateId": "dwc-ROM-6-23",
+   "occurrence": 2
+  },
+  {
+   "day": 164,
+   "date": "06-13",
+   "candidateId": "dwc-JOS-24-15",
+   "occurrence": 2
+  },
+  {
+   "day": 165,
+   "date": "06-14",
+   "candidateId": "dwc-JHN-10-10",
+   "occurrence": 2
+  },
+  {
+   "day": 166,
+   "date": "06-15",
+   "candidateId": "dwc-PHP-4-6",
+   "occurrence": 2
+  },
+  {
+   "day": 167,
+   "date": "06-16",
+   "candidateId": "dwc-ROM-8-37",
+   "occurrence": 2
+  },
+  {
+   "day": 168,
+   "date": "06-17",
+   "candidateId": "dwc-JHN-16-33",
+   "occurrence": 2
+  },
+  {
+   "day": 169,
+   "date": "06-18",
+   "candidateId": "dwc-PSA-23-1",
+   "occurrence": 2
+  },
+  {
+   "day": 170,
+   "date": "06-19",
+   "candidateId": "dwc-ISA-43-2",
+   "occurrence": 2
+  },
+  {
+   "day": 171,
+   "date": "06-20",
+   "candidateId": "dwc-EXO-15-26",
+   "occurrence": 2
+  },
+  {
+   "day": 172,
+   "date": "06-21",
+   "candidateId": "dwc-JHN-15-11",
+   "occurrence": 2
+  },
+  {
+   "day": 173,
+   "date": "06-22",
+   "candidateId": "dwc-PSA-139-14",
+   "occurrence": 2
+  },
+  {
+   "day": 174,
+   "date": "06-23",
+   "candidateId": "dwc-PRO-18-10",
+   "occurrence": 2
+  },
+  {
+   "day": 175,
+   "date": "06-24",
+   "candidateId": "dwc-PSA-32-8",
+   "occurrence": 2
+  },
+  {
+   "day": 176,
+   "date": "06-25",
+   "candidateId": "dwc-ROM-8-28",
+   "occurrence": 2
+  },
+  {
+   "day": 177,
+   "date": "06-26",
+   "candidateId": "dwc-ROM-10-9",
+   "occurrence": 2
+  },
+  {
+   "day": 178,
+   "date": "06-27",
+   "candidateId": "dwc-PSA-127-3",
+   "occurrence": 2
+  },
+  {
+   "day": 179,
+   "date": "06-28",
+   "candidateId": "dwc-JHN-11-25",
+   "occurrence": 2
+  },
+  {
+   "day": 180,
+   "date": "06-29",
+   "candidateId": "dwc-PHP-4-7",
+   "occurrence": 2
+  },
+  {
+   "day": 181,
+   "date": "06-30",
+   "candidateId": "dwc-1CO-10-13",
+   "occurrence": 2
+  },
+  {
+   "day": 182,
+   "date": "07-01",
+   "candidateId": "dwc-ROM-8-31",
+   "occurrence": 2
+  },
+  {
+   "day": 183,
+   "date": "07-02",
+   "candidateId": "dwc-MAT-6-33",
+   "occurrence": 2
+  },
+  {
+   "day": 184,
+   "date": "07-03",
+   "candidateId": "dwc-MAT-28-20",
+   "occurrence": 2
+  },
+  {
+   "day": 185,
+   "date": "07-04",
+   "candidateId": "dwc-PSA-119-105",
+   "occurrence": 2
+  },
+  {
+   "day": 186,
+   "date": "07-05",
+   "candidateId": "dwc-PSA-103-3",
+   "occurrence": 2
+  },
+  {
+   "day": 187,
+   "date": "07-06",
+   "candidateId": "dwc-EXO-33-14",
+   "occurrence": 2
+  },
+  {
+   "day": 188,
+   "date": "07-07",
+   "candidateId": "dwc-1CO-15-57",
+   "occurrence": 2
+  },
+  {
+   "day": 189,
+   "date": "07-08",
+   "candidateId": "dwc-ISA-43-1",
+   "occurrence": 2
+  },
+  {
+   "day": 190,
+   "date": "07-09",
+   "candidateId": "dwc-ISA-54-17",
+   "occurrence": 2
+  },
+  {
+   "day": 191,
+   "date": "07-10",
+   "candidateId": "dwc-PRO-16-3",
+   "occurrence": 2
+  },
+  {
+   "day": 192,
+   "date": "07-11",
+   "candidateId": "dwc-GAL-6-9",
+   "occurrence": 2
+  },
+  {
+   "day": 193,
+   "date": "07-12",
+   "candidateId": "dwc-EPH-2-8",
+   "occurrence": 2
+  },
+  {
+   "day": 194,
+   "date": "07-13",
+   "candidateId": "dwc-PRO-22-6",
+   "occurrence": 2
+  },
+  {
+   "day": 195,
+   "date": "07-14",
+   "candidateId": "dwc-ROM-15-13",
+   "occurrence": 2
+  },
+  {
+   "day": 196,
+   "date": "07-15",
+   "candidateId": "dwc-1PE-5-7",
+   "occurrence": 2
+  },
+  {
+   "day": 197,
+   "date": "07-16",
+   "candidateId": "dwc-2CO-12-9",
+   "occurrence": 2
+  },
+  {
+   "day": 198,
+   "date": "07-17",
+   "candidateId": "dwc-2TI-1-7",
+   "occurrence": 2
+  },
+  {
+   "day": 199,
+   "date": "07-18",
+   "candidateId": "dwc-2CO-9-8",
+   "occurrence": 2
+  },
+  {
+   "day": 200,
+   "date": "07-19",
+   "candidateId": "dwc-JHN-6-37",
+   "occurrence": 2
+  },
+  {
+   "day": 201,
+   "date": "07-20",
+   "candidateId": "dwc-PRO-3-5-6",
+   "occurrence": 2
+  },
+  {
+   "day": 202,
+   "date": "07-21",
+   "candidateId": "dwc-ISA-53-5",
+   "occurrence": 2
+  },
+  {
+   "day": 203,
+   "date": "07-22",
+   "candidateId": "dwc-MAT-6-34",
+   "occurrence": 2
+  },
+  {
+   "day": 204,
+   "date": "07-23",
+   "candidateId": "dwc-EPH-3-20",
+   "occurrence": 2
+  },
+  {
+   "day": 205,
+   "date": "07-24",
+   "candidateId": "dwc-MAT-5-14",
+   "occurrence": 2
+  },
+  {
+   "day": 206,
+   "date": "07-25",
+   "candidateId": "dwc-JHN-10-28",
+   "occurrence": 2
+  },
+  {
+   "day": 207,
+   "date": "07-26",
+   "candidateId": "dwc-ISA-30-21",
+   "occurrence": 2
+  },
+  {
+   "day": 208,
+   "date": "07-27",
+   "candidateId": "dwc-PHP-1-6",
+   "occurrence": 2
+  },
+  {
+   "day": 209,
+   "date": "07-28",
+   "candidateId": "dwc-HEB-4-16",
+   "occurrence": 2
+  },
+  {
+   "day": 210,
+   "date": "07-29",
+   "candidateId": "dwc-ISA-54-13",
+   "occurrence": 2
+  },
+  {
+   "day": 211,
+   "date": "07-30",
+   "candidateId": "dwc-REV-21-4",
+   "occurrence": 2
+  },
+  {
+   "day": 212,
+   "date": "07-31",
+   "candidateId": "dwc-1JN-1-9",
+   "occurrence": 2
+  },
+  {
+   "day": 213,
+   "date": "08-01",
+   "candidateId": "dwc-PHP-4-13",
+   "occurrence": 2
+  },
+  {
+   "day": 214,
+   "date": "08-02",
+   "candidateId": "dwc-1JN-4-18",
+   "occurrence": 2
+  },
+  {
+   "day": 215,
+   "date": "08-03",
+   "candidateId": "dwc-PHP-4-19",
+   "occurrence": 2
+  },
+  {
+   "day": 216,
+   "date": "08-04",
+   "candidateId": "dwc-HEB-13-5",
+   "occurrence": 2
+  },
+  {
+   "day": 217,
+   "date": "08-05",
+   "candidateId": "dwc-JAS-1-5",
+   "occurrence": 2
+  },
+  {
+   "day": 218,
+   "date": "08-06",
+   "candidateId": "dwc-JER-30-17",
+   "occurrence": 2
+  },
+  {
+   "day": 219,
+   "date": "08-07",
+   "candidateId": "dwc-MAT-11-28",
+   "occurrence": 2
+  },
+  {
+   "day": 220,
+   "date": "08-08",
+   "candidateId": "dwc-JAS-1-17",
+   "occurrence": 2
+  },
+  {
+   "day": 221,
+   "date": "08-09",
+   "candidateId": "dwc-EPH-2-10",
+   "occurrence": 2
+  },
+  {
+   "day": 222,
+   "date": "08-10",
+   "candidateId": "dwc-2TH-3-3",
+   "occurrence": 2
+  },
+  {
+   "day": 223,
+   "date": "08-11",
+   "candidateId": "dwc-JHN-8-12",
+   "occurrence": 2
+  },
+  {
+   "day": 224,
+   "date": "08-12",
+   "candidateId": "dwc-COL-3-23",
+   "occurrence": 2
+  },
+  {
+   "day": 225,
+   "date": "08-13",
+   "candidateId": "dwc-HEB-11-1",
+   "occurrence": 2
+  },
+  {
+   "day": 226,
+   "date": "08-14",
+   "candidateId": "dwc-ACT-16-31",
+   "occurrence": 2
+  },
+  {
+   "day": 227,
+   "date": "08-15",
+   "candidateId": "dwc-EXO-3-14",
+   "occurrence": 3
+  },
+  {
+   "day": 228,
+   "date": "08-16",
+   "candidateId": "dwc-NUM-6-25",
+   "occurrence": 3
+  },
+  {
+   "day": 229,
+   "date": "08-17",
+   "candidateId": "dwc-GEN-28-15",
+   "occurrence": 3
+  },
+  {
+   "day": 230,
+   "date": "08-18",
+   "candidateId": "dwc-EXO-20-3",
+   "occurrence": 3
+  },
+  {
+   "day": 231,
+   "date": "08-19",
+   "candidateId": "dwc-NUM-6-26",
+   "occurrence": 3
+  },
+  {
+   "day": 232,
+   "date": "08-20",
+   "candidateId": "dwc-NUM-6-24",
+   "occurrence": 3
+  },
+  {
+   "day": 233,
+   "date": "08-21",
+   "candidateId": "dwc-MAT-3-17",
+   "occurrence": 3
+  },
+  {
+   "day": 234,
+   "date": "08-22",
+   "candidateId": "dwc-PSA-46-10",
+   "occurrence": 3
+  },
+  {
+   "day": 235,
+   "date": "08-23",
+   "candidateId": "dwc-PSA-34-7",
+   "occurrence": 3
+  },
+  {
+   "day": 236,
+   "date": "08-24",
+   "candidateId": "dwc-MAT-7-7",
+   "occurrence": 3
+  },
+  {
+   "day": 237,
+   "date": "08-25",
+   "candidateId": "dwc-PSA-23-6",
+   "occurrence": 3
+  },
+  {
+   "day": 238,
+   "date": "08-26",
+   "candidateId": "dwc-PSA-55-22",
+   "occurrence": 3
+  },
+  {
+   "day": 239,
+   "date": "08-27",
+   "candidateId": "dwc-PSA-23-4",
+   "occurrence": 3
+  },
+  {
+   "day": 240,
+   "date": "08-28",
+   "candidateId": "dwc-PSA-46-1",
+   "occurrence": 3
+  },
+  {
+   "day": 241,
+   "date": "08-29",
+   "candidateId": "dwc-MAT-19-26",
+   "occurrence": 3
+  },
+  {
+   "day": 242,
+   "date": "08-30",
+   "candidateId": "dwc-PRO-23-18",
+   "occurrence": 3
+  },
+  {
+   "day": 243,
+   "date": "08-31",
+   "candidateId": "dwc-ISA-26-3",
+   "occurrence": 3
+  },
+  {
+   "day": 244,
+   "date": "09-01",
+   "candidateId": "dwc-DEU-31-6",
+   "occurrence": 3
+  },
+  {
+   "day": 245,
+   "date": "09-02",
+   "candidateId": "dwc-PSA-30-5",
+   "occurrence": 3
+  },
+  {
+   "day": 246,
+   "date": "09-03",
+   "candidateId": "dwc-PSA-91-1",
+   "occurrence": 3
+  },
+  {
+   "day": 247,
+   "date": "09-04",
+   "candidateId": "dwc-GEN-1-3",
+   "occurrence": 3
+  },
+  {
+   "day": 248,
+   "date": "09-05",
+   "candidateId": "dwc-MRK-9-23",
+   "occurrence": 3
+  },
+  {
+   "day": 249,
+   "date": "09-06",
+   "candidateId": "dwc-JER-29-11",
+   "occurrence": 3
+  },
+  {
+   "day": 250,
+   "date": "09-07",
+   "candidateId": "dwc-JHN-14-1",
+   "occurrence": 3
+  },
+  {
+   "day": 251,
+   "date": "09-08",
+   "candidateId": "dwc-EXO-14-14",
+   "occurrence": 3
+  },
+  {
+   "day": 252,
+   "date": "09-09",
+   "candidateId": "dwc-JOS-1-9",
+   "occurrence": 3
+  },
+  {
+   "day": 253,
+   "date": "09-10",
+   "candidateId": "dwc-PSA-34-18",
+   "occurrence": 3
+  },
+  {
+   "day": 254,
+   "date": "09-11",
+   "candidateId": "dwc-PSA-16-11",
+   "occurrence": 3
+  },
+  {
+   "day": 255,
+   "date": "09-12",
+   "candidateId": "dwc-PSA-91-11",
+   "occurrence": 3
+  },
+  {
+   "day": 256,
+   "date": "09-13",
+   "candidateId": "dwc-MRK-16-15",
+   "occurrence": 3
+  },
+  {
+   "day": 257,
+   "date": "09-14",
+   "candidateId": "dwc-JHN-3-16",
+   "occurrence": 3
+  },
+  {
+   "day": 258,
+   "date": "09-15",
+   "candidateId": "dwc-LAM-3-22-23",
+   "occurrence": 3
+  },
+  {
+   "day": 259,
+   "date": "09-16",
+   "candidateId": "dwc-JHN-14-27",
+   "occurrence": 3
+  },
+  {
+   "day": 260,
+   "date": "09-17",
+   "candidateId": "dwc-ISA-40-31",
+   "occurrence": 3
+  },
+  {
+   "day": 261,
+   "date": "09-18",
+   "candidateId": "dwc-PSA-56-3",
+   "occurrence": 3
+  },
+  {
+   "day": 262,
+   "date": "09-19",
+   "candidateId": "dwc-PSA-42-11",
+   "occurrence": 3
+  },
+  {
+   "day": 263,
+   "date": "09-20",
+   "candidateId": "dwc-PSA-37-4",
+   "occurrence": 3
+  },
+  {
+   "day": 264,
+   "date": "09-21",
+   "candidateId": "dwc-PSA-121-7",
+   "occurrence": 3
+  },
+  {
+   "day": 265,
+   "date": "09-22",
+   "candidateId": "dwc-ACT-1-8",
+   "occurrence": 3
+  },
+  {
+   "day": 266,
+   "date": "09-23",
+   "candidateId": "dwc-JHN-14-6",
+   "occurrence": 3
+  },
+  {
+   "day": 267,
+   "date": "09-24",
+   "candidateId": "dwc-EZK-36-26",
+   "occurrence": 3
+  },
+  {
+   "day": 268,
+   "date": "09-25",
+   "candidateId": "dwc-ROM-5-1",
+   "occurrence": 3
+  },
+  {
+   "day": 269,
+   "date": "09-26",
+   "candidateId": "dwc-ISA-41-13",
+   "occurrence": 3
+  },
+  {
+   "day": 270,
+   "date": "09-27",
+   "candidateId": "dwc-ISA-41-10",
+   "occurrence": 3
+  },
+  {
+   "day": 271,
+   "date": "09-28",
+   "candidateId": "dwc-PSA-147-3",
+   "occurrence": 3
+  },
+  {
+   "day": 272,
+   "date": "09-29",
+   "candidateId": "dwc-LUK-6-38",
+   "occurrence": 3
+  },
+  {
+   "day": 273,
+   "date": "09-30",
+   "candidateId": "dwc-GEN-1-27",
+   "occurrence": 3
+  },
+  {
+   "day": 274,
+   "date": "10-01",
+   "candidateId": "dwc-PSA-121-8",
+   "occurrence": 3
+  },
+  {
+   "day": 275,
+   "date": "10-02",
+   "candidateId": "dwc-ROM-8-1",
+   "occurrence": 3
+  },
+  {
+   "day": 276,
+   "date": "10-03",
+   "candidateId": "dwc-ROM-6-23",
+   "occurrence": 3
+  },
+  {
+   "day": 277,
+   "date": "10-04",
+   "candidateId": "dwc-JOS-24-15",
+   "occurrence": 3
+  },
+  {
+   "day": 278,
+   "date": "10-05",
+   "candidateId": "dwc-JHN-10-10",
+   "occurrence": 3
+  },
+  {
+   "day": 279,
+   "date": "10-06",
+   "candidateId": "dwc-PHP-4-6",
+   "occurrence": 3
+  },
+  {
+   "day": 280,
+   "date": "10-07",
+   "candidateId": "dwc-ROM-8-37",
+   "occurrence": 3
+  },
+  {
+   "day": 281,
+   "date": "10-08",
+   "candidateId": "dwc-JHN-16-33",
+   "occurrence": 3
+  },
+  {
+   "day": 282,
+   "date": "10-09",
+   "candidateId": "dwc-PSA-23-1",
+   "occurrence": 3
+  },
+  {
+   "day": 283,
+   "date": "10-10",
+   "candidateId": "dwc-ISA-43-2",
+   "occurrence": 3
+  },
+  {
+   "day": 284,
+   "date": "10-11",
+   "candidateId": "dwc-EXO-15-26",
+   "occurrence": 3
+  },
+  {
+   "day": 285,
+   "date": "10-12",
+   "candidateId": "dwc-JHN-15-11",
+   "occurrence": 3
+  },
+  {
+   "day": 286,
+   "date": "10-13",
+   "candidateId": "dwc-PSA-139-14",
+   "occurrence": 3
+  },
+  {
+   "day": 287,
+   "date": "10-14",
+   "candidateId": "dwc-PRO-18-10",
+   "occurrence": 3
+  },
+  {
+   "day": 288,
+   "date": "10-15",
+   "candidateId": "dwc-PSA-32-8",
+   "occurrence": 3
+  },
+  {
+   "day": 289,
+   "date": "10-16",
+   "candidateId": "dwc-ROM-8-28",
+   "occurrence": 3
+  },
+  {
+   "day": 290,
+   "date": "10-17",
+   "candidateId": "dwc-ROM-10-9",
+   "occurrence": 3
+  },
+  {
+   "day": 291,
+   "date": "10-18",
+   "candidateId": "dwc-PSA-127-3",
+   "occurrence": 3
+  },
+  {
+   "day": 292,
+   "date": "10-19",
+   "candidateId": "dwc-JHN-11-25",
+   "occurrence": 3
+  },
+  {
+   "day": 293,
+   "date": "10-20",
+   "candidateId": "dwc-PHP-4-7",
+   "occurrence": 3
+  },
+  {
+   "day": 294,
+   "date": "10-21",
+   "candidateId": "dwc-1CO-10-13",
+   "occurrence": 3
+  },
+  {
+   "day": 295,
+   "date": "10-22",
+   "candidateId": "dwc-ROM-8-31",
+   "occurrence": 3
+  },
+  {
+   "day": 296,
+   "date": "10-23",
+   "candidateId": "dwc-MAT-6-33",
+   "occurrence": 3
+  },
+  {
+   "day": 297,
+   "date": "10-24",
+   "candidateId": "dwc-MAT-28-20",
+   "occurrence": 3
+  },
+  {
+   "day": 298,
+   "date": "10-25",
+   "candidateId": "dwc-PSA-119-105",
+   "occurrence": 3
+  },
+  {
+   "day": 299,
+   "date": "10-26",
+   "candidateId": "dwc-PSA-103-3",
+   "occurrence": 3
+  },
+  {
+   "day": 300,
+   "date": "10-27",
+   "candidateId": "dwc-EXO-33-14",
+   "occurrence": 3
+  },
+  {
+   "day": 301,
+   "date": "10-28",
+   "candidateId": "dwc-1CO-15-57",
+   "occurrence": 3
+  },
+  {
+   "day": 302,
+   "date": "10-29",
+   "candidateId": "dwc-ISA-43-1",
+   "occurrence": 3
+  },
+  {
+   "day": 303,
+   "date": "10-30",
+   "candidateId": "dwc-ISA-54-17",
+   "occurrence": 3
+  },
+  {
+   "day": 304,
+   "date": "10-31",
+   "candidateId": "dwc-PRO-16-3",
+   "occurrence": 3
+  },
+  {
+   "day": 305,
+   "date": "11-01",
+   "candidateId": "dwc-GAL-6-9",
+   "occurrence": 3
+  },
+  {
+   "day": 306,
+   "date": "11-02",
+   "candidateId": "dwc-EPH-2-8",
+   "occurrence": 3
+  },
+  {
+   "day": 307,
+   "date": "11-03",
+   "candidateId": "dwc-PRO-22-6",
+   "occurrence": 3
+  },
+  {
+   "day": 308,
+   "date": "11-04",
+   "candidateId": "dwc-ROM-15-13",
+   "occurrence": 3
+  },
+  {
+   "day": 309,
+   "date": "11-05",
+   "candidateId": "dwc-1PE-5-7",
+   "occurrence": 3
+  },
+  {
+   "day": 310,
+   "date": "11-06",
+   "candidateId": "dwc-2CO-12-9",
+   "occurrence": 3
+  },
+  {
+   "day": 311,
+   "date": "11-07",
+   "candidateId": "dwc-2TI-1-7",
+   "occurrence": 3
+  },
+  {
+   "day": 312,
+   "date": "11-08",
+   "candidateId": "dwc-2CO-9-8",
+   "occurrence": 3
+  },
+  {
+   "day": 313,
+   "date": "11-09",
+   "candidateId": "dwc-JHN-6-37",
+   "occurrence": 3
+  },
+  {
+   "day": 314,
+   "date": "11-10",
+   "candidateId": "dwc-PRO-3-5-6",
+   "occurrence": 3
+  },
+  {
+   "day": 315,
+   "date": "11-11",
+   "candidateId": "dwc-ISA-53-5",
+   "occurrence": 3
+  },
+  {
+   "day": 316,
+   "date": "11-12",
+   "candidateId": "dwc-MAT-6-34",
+   "occurrence": 3
+  },
+  {
+   "day": 317,
+   "date": "11-13",
+   "candidateId": "dwc-EPH-3-20",
+   "occurrence": 3
+  },
+  {
+   "day": 318,
+   "date": "11-14",
+   "candidateId": "dwc-MAT-5-14",
+   "occurrence": 3
+  },
+  {
+   "day": 319,
+   "date": "11-15",
+   "candidateId": "dwc-JHN-10-28",
+   "occurrence": 3
+  },
+  {
+   "day": 320,
+   "date": "11-16",
+   "candidateId": "dwc-ISA-30-21",
+   "occurrence": 3
+  },
+  {
+   "day": 321,
+   "date": "11-17",
+   "candidateId": "dwc-PHP-1-6",
+   "occurrence": 3
+  },
+  {
+   "day": 322,
+   "date": "11-18",
+   "candidateId": "dwc-HEB-4-16",
+   "occurrence": 3
+  },
+  {
+   "day": 323,
+   "date": "11-19",
+   "candidateId": "dwc-ISA-54-13",
+   "occurrence": 3
+  },
+  {
+   "day": 324,
+   "date": "11-20",
+   "candidateId": "dwc-REV-21-4",
+   "occurrence": 3
+  },
+  {
+   "day": 325,
+   "date": "11-21",
+   "candidateId": "dwc-1JN-1-9",
+   "occurrence": 3
+  },
+  {
+   "day": 326,
+   "date": "11-22",
+   "candidateId": "dwc-PHP-4-13",
+   "occurrence": 3
+  },
+  {
+   "day": 327,
+   "date": "11-23",
+   "candidateId": "dwc-1JN-4-18",
+   "occurrence": 3
+  },
+  {
+   "day": 328,
+   "date": "11-24",
+   "candidateId": "dwc-PHP-4-19",
+   "occurrence": 3
+  },
+  {
+   "day": 329,
+   "date": "11-25",
+   "candidateId": "dwc-HEB-13-5",
+   "occurrence": 3
+  },
+  {
+   "day": 330,
+   "date": "11-26",
+   "candidateId": "dwc-JAS-1-5",
+   "occurrence": 3
+  },
+  {
+   "day": 331,
+   "date": "11-27",
+   "candidateId": "dwc-JER-30-17",
+   "occurrence": 3
+  },
+  {
+   "day": 332,
+   "date": "11-28",
+   "candidateId": "dwc-MAT-11-28",
+   "occurrence": 3
+  },
+  {
+   "day": 333,
+   "date": "11-29",
+   "candidateId": "dwc-JAS-1-17",
+   "occurrence": 3
+  },
+  {
+   "day": 334,
+   "date": "11-30",
+   "candidateId": "dwc-EPH-2-10",
+   "occurrence": 3
+  },
+  {
+   "day": 335,
+   "date": "12-01",
+   "candidateId": "dwc-2TH-3-3",
+   "occurrence": 3
+  },
+  {
+   "day": 336,
+   "date": "12-02",
+   "candidateId": "dwc-JHN-8-12",
+   "occurrence": 3
+  },
+  {
+   "day": 337,
+   "date": "12-03",
+   "candidateId": "dwc-COL-3-23",
+   "occurrence": 3
+  },
+  {
+   "day": 338,
+   "date": "12-04",
+   "candidateId": "dwc-HEB-11-1",
+   "occurrence": 3
+  },
+  {
+   "day": 339,
+   "date": "12-05",
+   "candidateId": "dwc-ACT-16-31",
+   "occurrence": 3
+  },
+  {
+   "day": 340,
+   "date": "12-06",
+   "candidateId": "dwc-EXO-3-14",
+   "occurrence": 4
+  },
+  {
+   "day": 341,
+   "date": "12-07",
+   "candidateId": "dwc-NUM-6-25",
+   "occurrence": 4
+  },
+  {
+   "day": 342,
+   "date": "12-08",
+   "candidateId": "dwc-GEN-28-15",
+   "occurrence": 4
+  },
+  {
+   "day": 343,
+   "date": "12-09",
+   "candidateId": "dwc-EXO-20-3",
+   "occurrence": 4
+  },
+  {
+   "day": 344,
+   "date": "12-10",
+   "candidateId": "dwc-NUM-6-26",
+   "occurrence": 4
+  },
+  {
+   "day": 345,
+   "date": "12-11",
+   "candidateId": "dwc-NUM-6-24",
+   "occurrence": 4
+  },
+  {
+   "day": 346,
+   "date": "12-12",
+   "candidateId": "dwc-MAT-3-17",
+   "occurrence": 4
+  },
+  {
+   "day": 347,
+   "date": "12-13",
+   "candidateId": "dwc-PSA-46-10",
+   "occurrence": 4
+  },
+  {
+   "day": 348,
+   "date": "12-14",
+   "candidateId": "dwc-PSA-34-7",
+   "occurrence": 4
+  },
+  {
+   "day": 349,
+   "date": "12-15",
+   "candidateId": "dwc-MAT-7-7",
+   "occurrence": 4
+  },
+  {
+   "day": 350,
+   "date": "12-16",
+   "candidateId": "dwc-PSA-23-6",
+   "occurrence": 4
+  },
+  {
+   "day": 351,
+   "date": "12-17",
+   "candidateId": "dwc-PSA-55-22",
+   "occurrence": 4
+  },
+  {
+   "day": 352,
+   "date": "12-18",
+   "candidateId": "dwc-PSA-23-4",
+   "occurrence": 4
+  },
+  {
+   "day": 353,
+   "date": "12-19",
+   "candidateId": "dwc-PSA-46-1",
+   "occurrence": 4
+  },
+  {
+   "day": 354,
+   "date": "12-20",
+   "candidateId": "dwc-MAT-19-26",
+   "occurrence": 4
+  },
+  {
+   "day": 355,
+   "date": "12-21",
+   "candidateId": "dwc-PRO-23-18",
+   "occurrence": 4
+  },
+  {
+   "day": 356,
+   "date": "12-22",
+   "candidateId": "dwc-ISA-26-3",
+   "occurrence": 4
+  },
+  {
+   "day": 357,
+   "date": "12-23",
+   "candidateId": "dwc-DEU-31-6",
+   "occurrence": 4
+  },
+  {
+   "day": 358,
+   "date": "12-24",
+   "candidateId": "dwc-PSA-30-5",
+   "occurrence": 4
+  },
+  {
+   "day": 359,
+   "date": "12-25",
+   "candidateId": "dwc-PSA-91-1",
+   "occurrence": 4
+  },
+  {
+   "day": 360,
+   "date": "12-26",
+   "candidateId": "dwc-GEN-1-3",
+   "occurrence": 4
+  },
+  {
+   "day": 361,
+   "date": "12-27",
+   "candidateId": "dwc-MRK-9-23",
+   "occurrence": 4
+  },
+  {
+   "day": 362,
+   "date": "12-28",
+   "candidateId": "dwc-JER-29-11",
+   "occurrence": 4
+  },
+  {
+   "day": 363,
+   "date": "12-29",
+   "candidateId": "dwc-JHN-14-1",
+   "occurrence": 4
+  },
+  {
+   "day": 364,
+   "date": "12-30",
+   "candidateId": "dwc-EXO-14-14",
+   "occurrence": 4
+  },
+  {
+   "day": 365,
+   "date": "12-31",
+   "candidateId": "dwc-JOS-1-9",
+   "occurrence": 4
+  }
+ ],
+ "leapDay": {
+  "date": "02-29",
+  "candidateId": "dwc-REV-21-5"
+ }
+}

@@ -22,8 +22,12 @@ final contextRaw = File('assets/mwb/passage_context.json').readAsStringSync();
 
 MwbRuleset shippedRuleset() => parseMwbRuleset(rulesetRaw);
 
-AssetMwbRulesetRepository rulesetRepo([String? raw]) =>
-    AssetMwbRulesetRepository(loader: (_) async => raw ?? rulesetRaw);
+/// Rulesets read from disk by path. [raw] replaces the KJV-MWB ruleset only.
+AssetMwbRulesetRepository rulesetRepo([String? raw]) => AssetMwbRulesetRepository(
+  loader: (path) async => raw != null && path.endsWith('kjv-mwb.json') ? raw : File(path).readAsStringSync(),
+);
+final webRulesetRaw = File('assets/mwb/rulesets/web-mwb.json').readAsStringSync();
+MwbRuleset shippedWebRuleset() => parseMwbRuleset(webRulesetRaw);
 AssetPassageContextRepository contextRepo() => AssetPassageContextRepository(loader: (_) async => contextRaw);
 
 MwbRenderer renderer([PublicationPolicy policy = PublicationPolicy.approvedOnly]) =>

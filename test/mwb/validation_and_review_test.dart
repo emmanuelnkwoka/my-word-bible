@@ -32,7 +32,7 @@ void main() {
 
     test('all load, every source text is the exact canonical KJV verse', () {
       expect(shippedRuleset().loadIssues, isEmpty);
-      expect(queue, hasLength(21));
+      expect(queue, hasLength(24)); // 21 Stage B rules + 3 Romans 15:13 (two founder references, one compliant).
       for (final p in queue) {
         expect(p.canonicalText, p.rule.sourceText, reason: p.rule.id);
         expect(p.rule.sourceVersionId, 'KJV');
@@ -59,7 +59,7 @@ void main() {
     });
 
     test('the "My son" rules pass automated validation and keep "My son" unchanged', () {
-      final sons = queue.where((p) => p.rule.edits.single.anchor == 'My son,').toList();
+      final sons = queue.where((p) => p.rule.edits.length == 1 && p.rule.edits.single.anchor == 'My son,').toList();
       expect(sons, hasLength(17));
       for (final p in sons) {
         expect(p.report.passed, isTrue, reason: '${p.rule.id}: ${p.report.issues}');
@@ -345,20 +345,27 @@ void main() {
     });
   });
 
-  test('review queue document for the theological supervisor is up to date', () async {
-    final queue = await reviewService().queue('KJV-MWB');
-    final markdown = ReviewQueueExporter.toMarkdown(shippedRuleset(), queue);
-    final file = File('docs/mwb/kjv-mwb-review-queue.md');
-    if (Platform.environment['UPDATE_REVIEW_QUEUE'] == '1' || !file.existsSync()) {
-      file.parent.createSync(recursive: true);
-      file.writeAsStringSync(markdown);
-    }
-    expect(
-      file.readAsStringSync(),
-      markdown,
-      reason: 'Regenerate with: UPDATE_REVIEW_QUEUE=1 flutter test test/mwb/validation_and_review_test.dart',
-    );
-    expect(markdown, contains('Pastor Obi Ogbo'));
-    expect(markdown, contains('[Name]'));
-  });
+  for (final (edition, file, ruleset) in [
+    ('KJV-MWB', 'docs/mwb/kjv-mwb-review-queue.md', shippedRuleset),
+    ('WEB-MWB', 'docs/mwb/web-mwb-review-queue.md', shippedWebRuleset),
+  ]) {
+    test('$edition review queue document for the theological supervisor is up to date', () async {
+      final queue = await reviewService().queue(edition);
+      final markdown = ReviewQueueExporter.toMarkdown(ruleset(), queue);
+      final doc = File(file);
+      if (Platform.environment['UPDATE_REVIEW_QUEUE'] == '1' || !doc.existsSync()) {
+        doc.parent.createSync(recursive: true);
+        doc.writeAsStringSync(markdown);
+      }
+      expect(
+        doc.readAsStringSync(),
+        markdown,
+        reason: 'Regenerate with: UPDATE_REVIEW_QUEUE=1 flutter test test/mwb/validation_and_review_test.dart',
+      );
+      expect(markdown, contains('# $edition theological review queue'));
+      expect(markdown, contains('Pastor Obi Ogbo'));
+      expect(markdown, contains('[Name]'));
+      expect(markdown, isNot(contains('| Approved |')));
+    });
+  }
 }

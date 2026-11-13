@@ -1,0 +1,480 @@
+{
+ "schemaVersion": 1,
+ "corpusVersion": "1.0.0",
+ "commands": [
+  {
+   "id": "cmd-trust-the-lord",
+   "title": "Trust in the LORD with all your heart",
+   "references": [
+    "PRO 3:5-6"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "The wise father's son — the seeker of wisdom",
+   "themes": [
+    "theme-guidance",
+    "theme-wisdom"
+   ],
+   "relatedPromiseIds": [
+    "pr-guid-2"
+   ],
+   "contextNote": "",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of PRO 3:5-6 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-seek-first",
+   "title": "Seek first the kingdom of God",
+   "references": [
+    "MAT 6:33"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "The disciples and the crowd on the mount",
+   "themes": [
+    "theme-provision"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of MAT 6:33 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-be-careful-for-nothing",
+   "title": "Be careful for nothing; pray about everything",
+   "references": [
+    "PHP 4:6"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "The church at Philippi",
+   "themes": [
+    "theme-peace"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of PHP 4:6 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-cast-your-care",
+   "title": "Cast your care and burden on the Lord",
+   "references": [
+    "1PE 5:7",
+    "PSA 55:22"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "Exiles of the dispersion, under suffering / The assembly under burden",
+   "themes": [
+    "theme-peace",
+    "theme-comfort"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of 1PE 5:7, PSA 55:22 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-take-no-thought-for-tomorrow",
+   "title": "Take no thought for the morrow",
+   "references": [
+    "MAT 6:34"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "The disciples and the crowd on the mount",
+   "themes": [
+    "theme-peace"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of MAT 6:34 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-be-strong-and-courageous",
+   "title": "Be strong and of a good courage",
+   "references": [
+    "JOS 1:9",
+    "DEU 31:6"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "Joshua, taking leadership of Israel / Israel, as leadership passes to Joshua",
+   "themes": [
+    "theme-courage"
+   ],
+   "relatedPromiseIds": [
+    "pr-cour-1"
+   ],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of JOS 1:9, DEU 31:6 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-choose-whom-to-serve",
+   "title": "Choose whom you will serve",
+   "references": [
+    "JOS 24:15"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "The tribes of Israel at Shechem",
+   "themes": [
+    "theme-family"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of JOS 24:15 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-ask-seek-knock",
+   "title": "Ask, seek, knock",
+   "references": [
+    "MAT 7:7"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "The disciples and the crowd on the mount",
+   "themes": [
+    "theme-faith"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of MAT 7:7 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-ask-for-wisdom",
+   "title": "Ask God for wisdom",
+   "references": [
+    "JAS 1:5"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "The twelve tribes scattered abroad",
+   "themes": [
+    "theme-wisdom"
+   ],
+   "relatedPromiseIds": [
+    "pr-wis-1"
+   ],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of JAS 1:5 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-come-unto-me",
+   "title": "Come unto me",
+   "references": [
+    "MAT 11:28"
+   ],
+   "commandType": "invitation",
+   "addressedTo": "All who labour and are heavy laden",
+   "themes": [
+    "theme-rest"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of MAT 11:28 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-come-boldly",
+   "title": "Come boldly unto the throne of grace",
+   "references": [
+    "HEB 4:16"
+   ],
+   "commandType": "exhortation",
+   "addressedTo": "Weary Jewish believers",
+   "themes": [
+    "theme-faith"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of HEB 4:16 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-not-weary-in-well-doing",
+   "title": "Be not weary in well doing",
+   "references": [
+    "GAL 6:9"
+   ],
+   "commandType": "exhortation",
+   "addressedTo": "The Galatian churches, in their doing good",
+   "themes": [
+    "theme-strength"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of GAL 6:9 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-be-still",
+   "title": "Be still, and know that I am God",
+   "references": [
+    "PSA 46:10"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "The striving nations and the trembling soul",
+   "themes": [
+    "theme-peace"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of PSA 46:10 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-delight-in-the-lord",
+   "title": "Delight yourself in the LORD",
+   "references": [
+    "PSA 37:4"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "The congregation of the wise",
+   "themes": [
+    "theme-gratitude"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of PSA 37:4 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-commit-your-works",
+   "title": "Commit your works unto the LORD",
+   "references": [
+    "PRO 16:3"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "The young disciple of wisdom",
+   "themes": [
+    "theme-work"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of PRO 16:3 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-work-heartily",
+   "title": "Work heartily, as to the Lord",
+   "references": [
+    "COL 3:23"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "Bondservants — and all who work",
+   "themes": [
+    "theme-work"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of COL 3:23 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-go-preach",
+   "title": "Go into all the world and preach the gospel",
+   "references": [
+    "MRK 16:15"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "The eleven, after the resurrection",
+   "themes": [
+    "theme-purpose"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of MRK 16:15 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-no-other-gods",
+   "title": "Thou shalt have no other gods before me",
+   "references": [
+    "EXO 20:3"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "Israel gathered at Sinai",
+   "themes": [
+    "theme-faith"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of EXO 20:3 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-let-not-your-heart-be-troubled",
+   "title": "Let not your heart be troubled",
+   "references": [
+    "JHN 14:1"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "The eleven, in the upper room discourse",
+   "themes": [
+    "theme-peace"
+   ],
+   "relatedPromiseIds": [
+    "pr-peace-2"
+   ],
+   "contextNote": "First given to a particular audience; read it in that setting before applying it today.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of JHN 14:1 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "cmd-train-up-a-child",
+   "title": "Train up a child in the way he should go",
+   "references": [
+    "PRO 22:6"
+   ],
+   "commandType": "directImperative",
+   "addressedTo": "Parents and teachers of the young",
+   "themes": [
+    "theme-family"
+   ],
+   "relatedPromiseIds": [],
+   "contextNote": "",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Imperative wording of PRO 22:6 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": [
+     "A proverb states a general principle, not a guarantee about every child."
+    ]
+   }
+  }
+ ]
+}

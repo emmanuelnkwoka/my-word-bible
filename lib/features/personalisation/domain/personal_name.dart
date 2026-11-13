@@ -77,6 +77,32 @@ abstract final class PersonalNameResolver {
     }
     if (candidate == null) return const NameResolution(NameStatus.missing);
     if (candidate.length > maxLength || !_allowed.hasMatch(candidate)) return const NameResolution(NameStatus.invalid);
-    return NameResolution(status, candidate);
+    return NameResolution(status, properCase(candidate));
   }
+
+  /// The name used in a Mode B title: the preferred name when that is the
+  /// reader's choice, otherwise the first name. Off when insertion is off.
+  static NameResolution resolveTitle(UserProfile? profile) {
+    if (profile == null) return const NameResolution(NameStatus.missing);
+    if (profile.namePreference == NamePreference.none) return const NameResolution.off();
+    final first = _clean(profile.firstName);
+    final preferred = _clean(profile.preferredName);
+    final candidate = profile.namePreference == NamePreference.preferredName && preferred.isNotEmpty ? preferred : first;
+    if (candidate.isEmpty) return const NameResolution(NameStatus.missing);
+    if (candidate.length > maxLength || !_allowed.hasMatch(candidate)) return const NameResolution(NameStatus.invalid);
+    return NameResolution(NameStatus.resolved, properCase(candidate));
+  }
+
+  /// Capitalises a name part only when it was typed entirely in lower case
+  /// ("emmanuel" → "Emmanuel"). Anything the reader capitalised themselves
+  /// ("McDonald", "de la Cruz", "O’Brien") is kept exactly.
+  static String properCase(String name) => name.splitMapJoin(
+    RegExp(r"[\p{L}\p{M}]+", unicode: true),
+    onMatch: (m) {
+      final w = m.group(0)!;
+      if (name == name.toLowerCase() && w.isNotEmpty) return w[0].toUpperCase() + w.substring(1);
+      return w;
+    },
+    onNonMatch: (s) => s,
+  );
 }

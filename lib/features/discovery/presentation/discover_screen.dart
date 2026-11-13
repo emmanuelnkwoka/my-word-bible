@@ -16,6 +16,8 @@ import '../../../data/models/topic.dart';
 import '../../content/widgets/content_cards.dart';
 import '../../creator/widgets/creator_widgets.dart';
 import '../../profile/application/profile_controllers.dart';
+import '../../social/application/social_providers.dart';
+import '../../social/presentation/people_screens.dart';
 import '../application/content_providers.dart';
 import '../application/discover_filter.dart';
 
@@ -165,6 +167,11 @@ class DiscoverScreen extends ConsumerWidget {
                     child: Column(children: [for (final i in items) ContentListTile(item: i)]),
                   ),
                 ),
+              if (filter == ContentFilter.all || filter == ContentFilter.scripture)
+                MwbSliverPadding(
+                  top: MwbSpace.xl,
+                  sliver: SliverToBoxAdapter(child: Padding(padding: gutter, child: const _FellowshipSection())),
+                ),
               MwbSliverPadding(
                 top: MwbSpace.xl,
                 sliver: const SliverToBoxAdapter(
@@ -312,6 +319,35 @@ class _CreatorsRow extends ConsumerWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// Scripture shared publicly by people the user follows. Following is
+/// always the user's own choice.
+class _FellowshipSection extends ConsumerWidget {
+  const _FellowshipSection();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final t = context.mwb.text;
+    final activity = ref.watch(followingActivityProvider).value ?? const [];
+    return Column(
+      key: const Key('discover.fellowship'),
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        MwbSectionHeading(
+          overline: 'Fellowship',
+          title: 'From people you follow',
+          actionLabel: 'People',
+          onAction: () => context.push(AppRoutes.people),
+        ),
+        const SizedBox(height: MwbSpace.sm),
+        if (activity.isEmpty)
+          Text('Follow people to see the Scripture they share publicly.', style: t.supporting)
+        else
+          for (final (person, a) in activity.take(4)) PublicActivityTile(activity: a, person: person),
+      ],
     );
   }
 }

@@ -19,6 +19,8 @@ class ReviewDecision {
     this.reviewerRole,
     this.comments = '',
     this.rejectionReason,
+    this.correctedText,
+    this.correctedTitle,
   });
 
   final ReviewAction action;
@@ -29,6 +31,13 @@ class ReviewDecision {
   final String? reviewerRole;
   final String comments;
   final String? rejectionReason;
+
+  /// [ReviewAction.corrected]: the reviewer's wording for the verse, with
+  /// `{name}` where the name goes.
+  final String? correctedText;
+
+  /// [ReviewAction.corrected]: the reviewer's title (name-in-title only).
+  final String? correctedTitle;
 }
 
 /// Theological review workflow over the rulesets.
@@ -54,7 +63,8 @@ class ReviewQueueService {
   Future<MwbRuleset> effectiveRuleset(String targetVersionId) async {
     final base = await rulesets.ruleset(targetVersionId);
     final local = reviews.allDecisions();
-    if (local.isEmpty) return base;
+    final hasCorrections = base.rules.any((r) => r.latestCorrection != null);
+    if (local.isEmpty && !hasCorrections) return base;
     return MwbRuleset(
       sourceVersionId: base.sourceVersionId,
       targetVersionId: base.targetVersionId,
@@ -62,7 +72,7 @@ class ReviewQueueService {
       style: base.style,
       supervisor: base.supervisor,
       loadIssues: base.loadIssues,
-      rules: [for (final r in base.rules) r.withReviews(local[r.id] ?? const [])],
+      rules: [for (final r in base.rules) r.withReviews(local[r.id] ?? const []).effective],
     );
   }
 
@@ -85,7 +95,10 @@ class ReviewQueueService {
       contextFor: contexts.contextFor,
     );
     int rank(ProcessedRule p) => switch (p.status) {
-      RuleStatus.underReview || RuleStatus.automatedValidated || RuleStatus.proposed => 0,
+      RuleStatus.underReview ||
+      RuleStatus.automatedValidated ||
+      RuleStatus.proposed ||
+      RuleStatus.corrected => 0,
       RuleStatus.approved => 1,
       RuleStatus.rejected => 2,
       RuleStatus.retired => 3,
@@ -107,6 +120,7 @@ class ReviewQueueService {
     final processed = (await queue(targetVersionId)).where((p) => p.rule.id == ruleId).firstOrNull;
     if (processed == null) throw const NotFoundFailure('That personalisation rule does not exist.');
     final reviewer = d.reviewer?.trim() ?? '';
+    var version = processed.rule.ruleVersion;
     switch (d.action) {
       case ReviewAction.approved:
         if (reviewer.isEmpty) throw const ValidationFailure('An approval must name the human reviewer.');
@@ -115,6 +129,25 @@ class ReviewQueueService {
         }
       case ReviewAction.rejected:
         if ((d.rejectionReason ?? '').trim().isEmpty) throw const ValidationFailure('A rejection needs a reason.');
+      case ReviewAction.corrected:
+        if (reviewer.isEmpty) throw const ValidationFailure('A correction must name the human reviewer.');
+        final text = d.correctedText?.trim() ?? '';
+        final title = d.correctedTitle?.trim() ?? '';
+        if (text.isEmpty && title.isEmpty) throw const ValidationFailure('Enter the corrected wording.');
+        if (text.isNotEmpty && !text.contains(namePlaceholder) && processed.rule.presentationMode == PresentationMode.nameInText) {
+          throw const ValidationFailure('Write {name} where the reader’s name goes.');
+        }
+        // A correction is a new, versioned proposal. Nothing else changes.
+        version = processed.rule.ruleVersion + 1;
+      case ReviewAction.flagged:
+        if (d.comments.trim().isEmpty) throw const ValidationFailure('Say why this case is uncertain.');
+      case ReviewAction.reopened:
+        if (reviewer.isEmpty) throw const ValidationFailure('Reopening a decision must name the reviewer.');
+        if (d.comments.trim().isEmpty) throw const ValidationFailure('Give the reason for reopening.');
+        const reopenable = {RuleStatus.approved, RuleStatus.rejected, RuleStatus.retired, RuleStatus.corrected};
+        if (!reopenable.contains(processed.status)) {
+          throw const ValidationFailure('Only a decided proposal can be reopened.');
+        }
       case ReviewAction.submitted || ReviewAction.retired || ReviewAction.comment:
         break;
     }
@@ -123,11 +156,17 @@ class ReviewQueueService {
       ReviewRecord(
         action: d.action,
         at: d.at,
-        ruleVersion: processed.rule.ruleVersion,
+        ruleVersion: version,
         reviewer: reviewer.isEmpty ? null : reviewer,
         reviewerRole: d.reviewerRole,
         comments: d.comments,
         rejectionReason: d.rejectionReason,
+        correctedText: d.action == ReviewAction.corrected && (d.correctedText ?? '').trim().isNotEmpty
+            ? d.correctedText!.trim()
+            : null,
+        correctedTitle: d.action == ReviewAction.corrected && (d.correctedTitle ?? '').trim().isNotEmpty
+            ? d.correctedTitle!.trim()
+            : null,
       ),
     );
   }

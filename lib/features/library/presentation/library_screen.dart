@@ -12,6 +12,7 @@ import '../../../core/widgets/section_heading.dart';
 import '../../../core/widgets/sheets.dart';
 import '../../../core/widgets/state_views.dart';
 import '../../content/presentation/content_actions.dart';
+import '../../social/application/social_providers.dart';
 import '../application/library_controllers.dart';
 import 'library_sections.dart';
 
@@ -62,6 +63,7 @@ class LibraryScreen extends StatelessWidget {
                     _SectionsTab(
                       sections: [
                         LibrarySection.verses,
+                        LibrarySection.dailyWords,
                         LibrarySection.bookmarks,
                         LibrarySection.highlights,
                         LibrarySection.notes,
@@ -77,7 +79,9 @@ class LibraryScreen extends StatelessWidget {
                       showDownloads: true,
                     ),
                     _CollectionsTab(),
-                    _SectionsTab(sections: [LibrarySection.history, LibrarySection.viewed]),
+                    _SectionsTab(
+                      sections: [LibrarySection.dailyHistory, LibrarySection.history, LibrarySection.viewed],
+                    ),
                   ],
                 ),
               ),
@@ -102,6 +106,32 @@ class _SectionsTab extends ConsumerWidget {
       padding: MwbLayout.pagePadding(context, top: MwbSpace.lg, bottom: MwbSpace.xxxl),
       children: [
         for (final s in sections) ...[_SectionPreview(section: s), const SizedBox(height: MwbSpace.xl)],
+        if (sections.contains(LibrarySection.verses)) ...[
+          MwbCard(
+            key: const Key('library.shared'),
+            onTap: () => context.push(AppRoutes.shareHistory),
+            child: Row(
+              children: [
+                Icon(Icons.forward_to_inbox_rounded, color: context.mwb.colors.primary),
+                const SizedBox(width: MwbSpace.sm),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Shared Scriptures', style: context.mwb.text.cardTitle),
+                      Text(
+                        '${ref.watch(receivedSharesProvider).length} received · ${ref.watch(sentSharesProvider).length} sent',
+                        style: context.mwb.text.caption,
+                      ),
+                    ],
+                  ),
+                ),
+                const Icon(Icons.chevron_right_rounded),
+              ],
+            ),
+          ),
+          const SizedBox(height: MwbSpace.xl),
+        ],
         if (showDownloads)
           const MwbNotice(
             icon: Icons.download_for_offline_outlined,

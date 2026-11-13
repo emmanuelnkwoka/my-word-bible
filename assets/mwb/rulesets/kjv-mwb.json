@@ -595,6 +595,105 @@
       "reviewQuestion": "John’s wish is addressed to Gaius (3 John 1:1). Is it appropriate to address a personal wish written to a specific person to the reader by name?",
       "status": "proposed",
       "reviews": []
+    },
+    {
+      "ruleVersion": 1,
+      "reference": "ROM 15:13",
+      "sourceText": "Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.",
+      "requiredFields": [
+        "personalName"
+      ],
+      "status": "proposed",
+      "reviews": [],
+      "author": "Paul",
+      "speaker": "The apostle Paul",
+      "audience": "The believers in Rome, in benediction (collective)",
+      "literaryForm": "Letter",
+      "contextSource": "Curated Stage C context ctx-ROM-15-13",
+      "id": "kjv-mwb.ROM.15.13.founder-a",
+      "presentationMode": "nameInText",
+      "edits": [
+        {
+          "operation": "approvedMinimalGrammaticalAdjustment",
+          "anchor": "fill you with",
+          "position": "replace",
+          "text": "fill {name} with"
+        }
+      ],
+      "grammaticalConditions": [
+        "Founder reference wording from the Stage D.1 brief, recorded exactly so it can be reviewed."
+      ],
+      "risk": "high",
+      "riskReasons": [
+        "Collective benediction to the church in Rome.",
+        "Replaces the plural pronoun “you” with one person while “ye may abound” remains."
+      ],
+      "reviewQuestion": "Founder reference (Mode A): “Now the God of hope fill [Name] with all joy… that ye may abound in hope…”. The plural “you” becomes one person while “ye” remains, and a benediction to a church becomes an individual one. Should this verse be personalised in the text at all?",
+      "notes": "Expected to fail automated validation (pronounReplaced, residualPronoun). Kept so reviewers see the founder example and why it is held back."
+    },
+    {
+      "ruleVersion": 1,
+      "reference": "ROM 15:13",
+      "sourceText": "Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.",
+      "requiredFields": [
+        "personalName"
+      ],
+      "status": "proposed",
+      "reviews": [],
+      "author": "Paul",
+      "speaker": "The apostle Paul",
+      "audience": "The believers in Rome, in benediction (collective)",
+      "literaryForm": "Letter",
+      "contextSource": "Curated Stage C context ctx-ROM-15-13",
+      "id": "kjv-mwb.ROM.15.13.founder-b",
+      "presentationMode": "nameInTitle",
+      "title": "{name} Abound in hope",
+      "edits": [
+        {
+          "operation": "approvedMinimalGrammaticalAdjustment",
+          "anchor": "fill you with",
+          "position": "replace",
+          "text": "fill You with"
+        }
+      ],
+      "grammaticalConditions": [
+        "Founder reference wording from the Stage D.1 brief, recorded exactly so it can be reviewed."
+      ],
+      "risk": "high",
+      "riskReasons": [
+        "Capitalising “you” to “You” reads as a divine pronoun and changes the KJV text."
+      ],
+      "reviewQuestion": "Founder reference (Mode B): title “[Name] Abound in hope” with “fill You” in the text. A name-in-title proposal must leave Scripture unchanged; the compliant alternative is kjv-mwb.ROM.15.13.b.",
+      "notes": "Expected to fail automated validation (titleModeEditsScripture, capitalisationChanged)."
+    },
+    {
+      "ruleVersion": 1,
+      "reference": "ROM 15:13",
+      "sourceText": "Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.",
+      "requiredFields": [
+        "personalName"
+      ],
+      "status": "proposed",
+      "reviews": [],
+      "author": "Paul",
+      "speaker": "The apostle Paul",
+      "audience": "The believers in Rome, in benediction (collective)",
+      "literaryForm": "Letter",
+      "contextSource": "Curated Stage C context ctx-ROM-15-13",
+      "id": "kjv-mwb.ROM.15.13.b",
+      "presentationMode": "nameInTitle",
+      "title": "{name}, abound in hope",
+      "titleSource": "Daily Word candidate dwc-ROM-15-13 (title “Abound in hope”); comma added for direct address",
+      "edits": [],
+      "grammaticalConditions": [
+        "The KJV text is shown exactly as written. Only the editorial title carries the name."
+      ],
+      "risk": "high",
+      "riskReasons": [
+        "Collective benediction: the title frames it for the reader without changing the text."
+      ],
+      "reviewQuestion": "Compliant alternative to the founder references: the KJV text unchanged, title “[First name], abound in hope”. Is a personal title appropriate over a benediction first given to the church in Rome?",
+      "notes": "Recommended form for Romans 15:13 pending theological review."
     }
   ]
 }

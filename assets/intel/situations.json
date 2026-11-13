@@ -1,0 +1,998 @@
+{
+ "schemaVersion": 1,
+ "corpusVersion": "1.0.0",
+ "situations": [
+  {
+   "id": "sit-fear",
+   "name": "Fear",
+   "description": "When courage feels far away",
+   "references": [
+    "ISA 41:10",
+    "PSA 56:3",
+    "2TI 1:7"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "fear",
+    "seedLine": 1374,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [],
+   "prayerIds": [
+    "py-fear"
+   ],
+   "declarationIds": [
+    "dc-strength",
+    "dc-courage"
+   ],
+   "journeyIds": [
+    "dp-fear"
+   ]
+  },
+  {
+   "id": "sit-anxiety",
+   "name": "Anxiety",
+   "description": "When the mind will not rest",
+   "references": [
+    "PHP 4:6",
+    "1PE 5:7",
+    "MAT 6:34"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "anxiety",
+    "seedLine": 1375,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [],
+   "prayerIds": [
+    "py-anxiety"
+   ],
+   "declarationIds": [],
+   "journeyIds": [
+    "dp-anxiety"
+   ]
+  },
+  {
+   "id": "sit-loneliness",
+   "name": "Loneliness",
+   "description": "When you feel unseen",
+   "references": [
+    "MAT 28:20",
+    "EXO 33:14",
+    "PSA 23:4"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "loneliness",
+    "seedLine": 1376,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-pres-1",
+    "pr-pres-2"
+   ],
+   "prayerIds": [
+    "py-loneliness"
+   ],
+   "declarationIds": [],
+   "journeyIds": [
+    "dp-alone"
+   ]
+  },
+  {
+   "id": "sit-rejection",
+   "name": "Rejection",
+   "description": "When a door or a heart closes",
+   "references": [
+    "JHN 6:37",
+    "ISA 43:1",
+    "PSA 34:18"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "rejection",
+    "seedLine": 1377,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [],
+   "prayerIds": [
+    "py-rejection"
+   ],
+   "declarationIds": [
+    "dc-identity"
+   ],
+   "journeyIds": [
+    "dp-received"
+   ]
+  },
+  {
+   "id": "sit-grief",
+   "name": "Grief",
+   "description": "When loss is heavy",
+   "references": [
+    "PSA 30:5",
+    "PSA 147:3",
+    "REV 21:4",
+    "JHN 11:25"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "grief",
+    "seedLine": 1378,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-rest-2"
+   ],
+   "prayerIds": [
+    "py-grief"
+   ],
+   "declarationIds": [],
+   "journeyIds": [
+    "dp-grief"
+   ]
+  },
+  {
+   "id": "sit-marriage",
+   "name": "Marriage",
+   "description": "The covenant of two",
+   "references": [
+    "NUM 6:24",
+    "JOS 24:15",
+    "ACT 16:31",
+    "GEN 2:24",
+    "ECC 4:9-10",
+    "MRK 10:9",
+    "EPH 5:25"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "marriage",
+    "seedLine": 1379,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [],
+   "prayerIds": [],
+   "declarationIds": [
+    "dc-family"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-parenting",
+   "name": "Parenting",
+   "description": "Raising children in the way",
+   "references": [
+    "PRO 22:6",
+    "ISA 54:13",
+    "PSA 127:3"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "parenting",
+    "seedLine": 1380,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-fam-1"
+   ],
+   "prayerIds": [],
+   "declarationIds": [
+    "dc-family"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-children",
+   "name": "Children",
+   "description": "Heritage of the LORD",
+   "references": [
+    "PSA 127:3",
+    "ISA 54:13",
+    "JOS 24:15"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "children",
+    "seedLine": 1381,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-fam-1"
+   ],
+   "prayerIds": [],
+   "declarationIds": [
+    "dc-family"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-family",
+   "name": "Family",
+   "description": "Your whole household before God",
+   "references": [
+    "JOS 24:15",
+    "PSA 127:3",
+    "ISA 54:13"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "family",
+    "seedLine": 1382,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-fam-1"
+   ],
+   "prayerIds": [
+    "py-family"
+   ],
+   "declarationIds": [
+    "dc-family"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-friendship",
+   "name": "Friendship",
+   "description": "Companions for the road",
+   "references": [
+    "JHN 15:11",
+    "PRO 16:3",
+    "ECC 4:9-10",
+    "PRO 18:24",
+    "JHN 15:12-13"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "friendship",
+    "seedLine": 1383,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [],
+   "prayerIds": [],
+   "declarationIds": [],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-career",
+   "name": "Career",
+   "description": "Your work before the Lord",
+   "references": [
+    "COL 3:23",
+    "PRO 16:3",
+    "PHP 1:6"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "career",
+    "seedLine": 1384,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-fut-1"
+   ],
+   "prayerIds": [],
+   "declarationIds": [],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-business",
+   "name": "Business",
+   "description": "Enterprise under God",
+   "references": [
+    "DEU 8:18",
+    "PRO 10:22",
+    "2CO 9:8"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "business",
+    "seedLine": 1385,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": [
+     "Links Deuteronomy 8:18 (covenant context for Israel); check it is not read as a promise of wealth."
+    ]
+   },
+   "promiseIds": [
+    "pr-prov-2"
+   ],
+   "prayerIds": [],
+   "declarationIds": [],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-financial-pressure",
+   "name": "Financial pressure",
+   "description": "When needs press hard",
+   "references": [
+    "PHP 4:19",
+    "MAT 6:33"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "financial_pressure",
+    "seedLine": 1386,
+    "changes": [
+     "Removed MAL 3:10: Malachi 3:10 is a covenant charge to post-exilic Judah; the demo itself warns it is often misapplied as a prosperity transaction."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-prov-1"
+   ],
+   "prayerIds": [
+    "py-provision"
+   ],
+   "declarationIds": [],
+   "journeyIds": [
+    "dp-provision"
+   ]
+  },
+  {
+   "id": "sit-failure",
+   "name": "Failure",
+   "description": "After the fall",
+   "references": [
+    "LAM 3:22-23",
+    "ROM 8:28",
+    "PHP 1:6"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "failure",
+    "seedLine": 1387,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-fut-1"
+   ],
+   "prayerIds": [],
+   "declarationIds": [],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-success",
+   "name": "Success",
+   "description": "Keeping your soul in plenty",
+   "references": [
+    "DEU 8:18",
+    "JAS 1:17",
+    "COL 3:23"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "success",
+    "seedLine": 1388,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": [
+     "Links Deuteronomy 8:18 (covenant context for Israel); check it is not read as a promise of wealth."
+    ]
+   },
+   "promiseIds": [],
+   "prayerIds": [],
+   "declarationIds": [
+    "dc-gratitude"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-waiting",
+   "name": "Waiting",
+   "description": "The long middle",
+   "references": [
+    "ISA 40:31",
+    "GAL 6:9",
+    "LAM 3:22-23"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "waiting",
+    "seedLine": 1389,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [],
+   "prayerIds": [
+    "py-waiting"
+   ],
+   "declarationIds": [],
+   "journeyIds": [
+    "dp-waiting"
+   ]
+  },
+  {
+   "id": "sit-decisions",
+   "name": "Decision making",
+   "description": "At the fork in the road",
+   "references": [
+    "PRO 3:5-6",
+    "JAS 1:5",
+    "ISA 30:21"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "decisions",
+    "seedLine": 1390,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-wis-1",
+    "pr-guid-2"
+   ],
+   "prayerIds": [
+    "py-guidance"
+   ],
+   "declarationIds": [],
+   "journeyIds": [
+    "dp-guidance"
+   ]
+  },
+  {
+   "id": "sit-confusion",
+   "name": "Confusion",
+   "description": "When nothing is clear",
+   "references": [
+    "ISA 30:21",
+    "PSA 119:105",
+    "JAS 1:5"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "confusion",
+    "seedLine": 1391,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-wis-1",
+    "pr-guid-2"
+   ],
+   "prayerIds": [],
+   "declarationIds": [],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-purpose",
+   "name": "Purpose",
+   "description": "Why you are here",
+   "references": [
+    "EPH 2:10",
+    "PHP 1:6",
+    "ROM 8:28"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "purpose",
+    "seedLine": 1392,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-fut-1"
+   ],
+   "prayerIds": [],
+   "declarationIds": [
+    "dc-identity"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-identity",
+   "name": "Identity",
+   "description": "Who God says you are",
+   "references": [
+    "PSA 139:14",
+    "EPH 2:10",
+    "MAT 5:14"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "identity",
+    "seedLine": 1393,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [],
+   "prayerIds": [],
+   "declarationIds": [
+    "dc-identity"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-temptation",
+   "name": "Temptation",
+   "description": "In the hour of testing",
+   "references": [
+    "1CO 10:13",
+    "HEB 4:16",
+    "2TI 1:7"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "temptation",
+    "seedLine": 1394,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [],
+   "prayerIds": [
+    "py-temptation"
+   ],
+   "declarationIds": [
+    "dc-courage"
+   ],
+   "journeyIds": [
+    "dp-temptation"
+   ]
+  },
+  {
+   "id": "sit-sin",
+   "name": "Sin",
+   "description": "When you have fallen short",
+   "references": [
+    "1JN 1:9",
+    "EZK 36:26",
+    "ROM 6:23"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "sin",
+    "seedLine": 1395,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-salv-2"
+   ],
+   "prayerIds": [],
+   "declarationIds": [],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-forgiveness",
+   "name": "Forgiveness",
+   "description": "Receiving — and giving — mercy",
+   "references": [
+    "1JN 1:9",
+    "ROM 8:1",
+    "PSA 103:3",
+    "MAT 6:14-15"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "forgiveness",
+    "seedLine": 1396,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [],
+   "prayerIds": [
+    "py-forgiveness"
+   ],
+   "declarationIds": [
+    "dc-gratitude"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-healing",
+   "name": "Healing",
+   "description": "For the body and mind",
+   "references": [
+    "EXO 15:26",
+    "JER 30:17",
+    "ISA 53:5"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "healing",
+    "seedLine": 1397,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-rest-1"
+   ],
+   "prayerIds": [
+    "py-healing",
+    "py-sickness"
+   ],
+   "declarationIds": [
+    "dc-healing"
+   ],
+   "journeyIds": [
+    "dp-sickness"
+   ]
+  },
+  {
+   "id": "sit-rest",
+   "name": "Rest",
+   "description": "For the worn-out",
+   "references": [
+    "MAT 11:28",
+    "EXO 33:14",
+    "PSA 23:1"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "rest",
+    "seedLine": 1398,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-pres-1"
+   ],
+   "prayerIds": [
+    "py-rest"
+   ],
+   "declarationIds": [],
+   "journeyIds": [
+    "dp-rest"
+   ]
+  },
+  {
+   "id": "sit-sleep",
+   "name": "Sleep",
+   "description": "Lying down in peace",
+   "references": [
+    "PSA 121:7",
+    "PSA 121:8",
+    "PSA 23:1",
+    "PSA 4:8"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "sleep",
+    "seedLine": 1399,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [],
+   "prayerIds": [],
+   "declarationIds": [
+    "dc-night"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-protection",
+   "name": "Protection",
+   "description": "Under His covering",
+   "references": [
+    "PSA 91:11",
+    "PSA 34:7",
+    "ISA 54:17"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "protection",
+    "seedLine": 1400,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-prot-2"
+   ],
+   "prayerIds": [],
+   "declarationIds": [
+    "dc-protection",
+    "dc-night"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-travel",
+   "name": "Travel",
+   "description": "Going out and coming in",
+   "references": [
+    "PSA 121:8",
+    "GEN 28:15",
+    "NUM 6:24"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "travel",
+    "seedLine": 1401,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [],
+   "prayerIds": [],
+   "declarationIds": [],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-exams",
+   "name": "Exams",
+   "description": "When knowledge is tested",
+   "references": [
+    "JAS 1:5",
+    "2TI 1:7",
+    "PHP 4:7"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "exams",
+    "seedLine": 1402,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-wis-1"
+   ],
+   "prayerIds": [],
+   "declarationIds": [
+    "dc-courage"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-leadership",
+   "name": "Leadership",
+   "description": "Going before others",
+   "references": [
+    "JOS 1:9",
+    "DEU 31:6",
+    "PSA 32:8"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "leadership",
+    "seedLine": 1403,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-guid-1",
+    "pr-cour-1"
+   ],
+   "prayerIds": [],
+   "declarationIds": [
+    "dc-courage"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-ministry",
+   "name": "Ministry",
+   "description": "Serving in His name",
+   "references": [
+    "ACT 1:8",
+    "COL 3:23",
+    "PHP 4:13"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ministry",
+    "seedLine": 1404,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [],
+   "prayerIds": [],
+   "declarationIds": [
+    "dc-strength"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-evangelism",
+   "name": "Evangelism",
+   "description": "Carrying the gospel",
+   "references": [
+    "MRK 16:15",
+    "ACT 1:8",
+    "MAT 28:20"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "evangelism",
+    "seedLine": 1405,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-pres-2"
+   ],
+   "prayerIds": [],
+   "declarationIds": [],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-hope-future",
+   "name": "Hope for the future",
+   "description": "When tomorrow feels uncertain",
+   "references": [
+    "PRO 23:18",
+    "ROM 15:13",
+    "LAM 3:22-23"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "hope_future",
+    "seedLine": 1406,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [
+    "pr-hope-2",
+    "pr-fut-2"
+   ],
+   "prayerIds": [
+    "py-hope"
+   ],
+   "declarationIds": [
+    "dc-hope"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-gratitude",
+   "name": "Gratitude",
+   "description": "Counting benefits",
+   "references": [
+    "JAS 1:17",
+    "PSA 103:3",
+    "1CO 15:57"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "gratitude",
+    "seedLine": 1407,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [],
+   "prayerIds": [],
+   "declarationIds": [
+    "dc-gratitude"
+   ],
+   "journeyIds": []
+  },
+  {
+   "id": "sit-worship",
+   "name": "Worship",
+   "description": "Blessing the LORD at all times",
+   "references": [
+    "PSA 16:11",
+    "LAM 3:22-23",
+    "PSA 103:3"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "worship",
+    "seedLine": 1408,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   },
+   "promiseIds": [],
+   "prayerIds": [],
+   "declarationIds": [
+    "dc-gratitude"
+   ],
+   "journeyIds": []
+  }
+ ]
+}

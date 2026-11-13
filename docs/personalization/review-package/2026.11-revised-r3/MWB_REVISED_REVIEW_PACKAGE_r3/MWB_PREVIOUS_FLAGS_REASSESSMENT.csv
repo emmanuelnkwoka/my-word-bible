@@ -1,0 +1,679 @@
+﻿edition,proposal_id,reference,prior_decision,new_presentation_type,new_disposition,importer_decision,has_reception
+KJV-MWB,kjv-mwb.ISA.41.10.a,Isaiah 41:10,flag,personalReception,approvedPresentation,comment,yes
+KJV-MWB,kjv-mwb.PRO.2.1.a,Proverbs 2:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.PRO.23.18.b,Proverbs 23:18,flag,personalReception,approvedPresentation,comment,yes
+KJV-MWB,kjv-mwb.gen.MAT.5.12,Matthew 5:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.MAT.6.24,Matthew 6:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.MAT.9.13,Matthew 9:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.MAT.9.29,Matthew 9:29,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.MAT.10.13,Matthew 10:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.MAT.10.17,Matthew 10:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.MAT.10.19,Matthew 10:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.MAT.10.27,Matthew 10:27,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.MAT.13.16,Matthew 13:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.MAT.17.5,Matthew 17:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.MAT.23.39,Matthew 23:39,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.MAT.26.27,Matthew 26:27,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.MRK.13.9,Mark 13:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.MRK.13.11,Mark 13:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LUK.6.20,Luke 6:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LUK.6.36,Luke 6:36,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LUK.10.5,Luke 10:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LUK.10.6,Luke 10:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LUK.10.9,Luke 10:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LUK.10.20,Luke 10:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LUK.10.23,Luke 10:23,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LUK.12.3,Luke 12:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LUK.12.37,Luke 12:37,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LUK.15.7,Luke 15:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LUK.15.10,Luke 15:10,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LUK.21.34,Luke 21:34,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LUK.22.17,Luke 22:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LUK.22.19,Luke 22:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.4.22,John 4:22,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.5.35,John 5:35,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.5.39,John 5:39,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.5.40,John 5:40,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.5.42,John 5:42,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.6.27,John 6:27,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.6.47,John 6:47,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.8.12,John 8:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.8.55,John 8:55,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.12.36,John 12:36,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.13.34,John 13:34,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.14.24,John 14:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.15.9,John 15:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.15.12,John 15:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.15.17,John 15:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.16.22,John 16:22,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.16.24,John 16:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.16.27,John 16:27,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.20.21,John 20:21,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.20.26,John 20:26,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JHN.20.31,John 20:31,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.ROM.15.13.b,Romans 15:13,flag,personalReception,approvedPresentation,comment,yes
+KJV-MWB,kjv-mwb.ROM.15.13.founder-a,Romans 15:13,flag,personalReception,approvedPresentation,comment,yes
+KJV-MWB,kjv-mwb.ROM.15.13.founder-b,Romans 15:13,flag,personalReception,approvedPresentation,comment,yes
+KJV-MWB,kjv-mwb.gen.1TI.1.1,1 Timothy 1:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TI.1.14,1 Timothy 1:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TI.2.2,1 Timothy 2:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2TI.1.9,2 Timothy 1:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.TIT.2.13,Titus 2:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.TIT.3.4,Titus 3:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.TIT.3.5,Titus 3:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.TIT.3.7,Titus 3:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PHM.1.1,Philemon 1:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PHM.1.3,Philemon 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PHM.1.25,Philemon 1:25,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2JN.1.3,2 John 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2JN.1.6,2 John 1:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.3JN.1.2.a,3 John 1:2,flag,personalReception,approvedPresentation,comment,yes
+KJV-MWB,kjv-mwb.gen.REV.1.4,Revelation 1:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.REV.18.20,Revelation 18:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.REV.19.5,Revelation 19:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.REV.22.21,Revelation 22:21,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.33.20,Psalms 33:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.33.21,Psalms 33:21,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.46.7,Psalms 46:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.46.11,Psalms 46:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.47.4,Psalms 47:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.50.3,Psalms 50:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.62.8,Psalms 62:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.66.6,Psalms 66:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.66.8,Psalms 66:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.66.9,Psalms 66:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.67.1,Psalms 67:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.68.19,Psalms 68:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.78.4,Psalms 78:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.81.1,Psalms 81:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.85.9,Psalms 85:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.90.10,Psalms 90:10,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.95.1,Psalms 95:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.98.3,Psalms 98:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.103.20,Psalms 103:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.105.45,Psalms 105:45,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.106.1,Psalms 106:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.106.48,Psalms 106:48,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.112.1,Psalms 112:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.115.18,Psalms 115:18,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.116.5,Psalms 116:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.117.1,Psalms 117:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.117.2,Psalms 117:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.118.24,Psalms 118:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.118.26,Psalms 118:26,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.118.27,Psalms 118:27,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.124.6,Psalms 124:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.124.8,Psalms 124:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.129.8,Psalms 129:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.135.21,Psalms 135:21,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.136.23,Psalms 136:23,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.147.1,Psalms 147:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.147.7,Psalms 147:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.147.20,Psalms 147:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.148.1,Psalms 148:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.148.2,Psalms 148:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.148.3,Psalms 148:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.148.14,Psalms 148:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.149.1,Psalms 149:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.149.9,Psalms 149:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.150.1,Psalms 150:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PSA.150.6,Psalms 150:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.PRO.1.8.a,Proverbs 1:8,flag,personalReception,approvedPresentation,comment,yes
+KJV-MWB,kjv-mwb.PRO.6.20.a,Proverbs 6:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.PRO.23.26.a,Proverbs 23:26,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LAM.5.5,Lamentations 5:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.LAM.5.8,Lamentations 5:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.1.5,Romans 1:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.1.7,Romans 1:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.3.28,Romans 3:28,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.4.12,Romans 4:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.4.16,Romans 4:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.5.2,Romans 5:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.5.5,Romans 5:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.5.6,Romans 5:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.5.8,Romans 5:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.5.11,Romans 5:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.8.39,Romans 8:39,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.11.30,Romans 11:30,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.11.31,Romans 11:31,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.12.6,Romans 12:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.13.11,Romans 13:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.14.1,Romans 14:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.14.19,Romans 14:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.15.4,Romans 15:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.15.10,Romans 15:10,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.15.11,Romans 15:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.15.33,Romans 15:33,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.16.20,Romans 16:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.ROM.16.24,Romans 16:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1CO.1.3,1 Corinthians 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1CO.2.5,1 Corinthians 2:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1CO.14.31,1 Corinthians 14:31,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1CO.15.19,1 Corinthians 15:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1CO.16.23,1 Corinthians 16:23,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.1.2,2 Corinthians 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.1.3,2 Corinthians 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.1.5,2 Corinthians 1:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.1.7,2 Corinthians 1:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.1.11,2 Corinthians 1:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.1.12,2 Corinthians 1:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.1.24,2 Corinthians 1:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.2.7,2 Corinthians 2:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.2.14,2 Corinthians 2:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.3.5,2 Corinthians 3:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.3.6,2 Corinthians 3:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.3.12,2 Corinthians 3:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.4.1,2 Corinthians 4:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.4.6,2 Corinthians 4:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.4.10,2 Corinthians 4:10,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.4.15,2 Corinthians 4:15,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.4.18,2 Corinthians 4:18,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.5.1,2 Corinthians 5:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.5.4,2 Corinthians 5:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.5.7,2 Corinthians 5:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.7.13,2 Corinthians 7:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.8.1,2 Corinthians 8:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.8.6,2 Corinthians 8:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.8.7,2 Corinthians 8:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.8.9,2 Corinthians 8:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.8.14,2 Corinthians 8:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.8.16,2 Corinthians 8:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.8.18,2 Corinthians 8:18,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.8.19,2 Corinthians 8:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.8.24,2 Corinthians 8:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.9.14,2 Corinthians 9:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.10.15,2 Corinthians 10:15,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.13.11,2 Corinthians 13:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2CO.13.14,2 Corinthians 13:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.GAL.1.3,Galatians 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.GAL.3.7,Galatians 3:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.GAL.3.14,Galatians 3:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.GAL.3.23,Galatians 3:23,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.GAL.3.24,Galatians 3:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.GAL.3.25,Galatians 3:25,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.GAL.3.26,Galatians 3:26,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.GAL.5.4,Galatians 5:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.GAL.5.5,Galatians 5:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.GAL.6.10,Galatians 6:10,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.GAL.6.18,Galatians 6:18,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.1.2,Ephesians 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.1.3,Ephesians 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.1.4,Ephesians 1:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.1.6,Ephesians 1:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.1.12,Ephesians 1:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.1.13,Ephesians 1:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.1.14,Ephesians 1:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.1.18,Ephesians 1:18,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.2.4,Ephesians 2:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.2.7,Ephesians 2:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.2.12,Ephesians 2:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.2.14,Ephesians 2:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.2.17,Ephesians 2:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.3.11,Ephesians 3:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.3.12,Ephesians 3:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.3.17,Ephesians 3:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.3.19,Ephesians 3:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.4.4,Ephesians 4:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.4.7,Ephesians 4:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.4.13,Ephesians 4:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.4.29,Ephesians 4:29,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.4.32,Ephesians 4:32,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.5.2,Ephesians 5:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.5.8,Ephesians 5:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.5.20,Ephesians 5:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.6.15,Ephesians 6:15,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.EPH.6.24,Ephesians 6:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PHP.1.2,Philippians 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.PHP.4.23,Philippians 4:23,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.1.2,Colossians 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.1.3,Colossians 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.1.4,Colossians 1:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.1.5,Colossians 1:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.1.6,Colossians 1:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.1.8,Colossians 1:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.1.12,Colossians 1:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.1.27,Colossians 1:27,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.2.7,Colossians 2:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.3.4,Colossians 3:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.3.16,Colossians 3:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.3.17,Colossians 3:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.4.6,Colossians 4:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.4.9,Colossians 4:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.COL.4.14,Colossians 4:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.1.1,1 Thessalonians 1:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.1.2,1 Thessalonians 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.1.3,1 Thessalonians 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.1.4,1 Thessalonians 1:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.1.8,1 Thessalonians 1:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.2.11,1 Thessalonians 2:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.2.20,1 Thessalonians 2:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.3.2,1 Thessalonians 3:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.3.6,1 Thessalonians 3:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.3.9,1 Thessalonians 3:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.3.12,1 Thessalonians 3:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.4.1,1 Thessalonians 4:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.5.5,1 Thessalonians 5:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.5.8,1 Thessalonians 5:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.5.11,1 Thessalonians 5:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.5.13,1 Thessalonians 5:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.5.14,1 Thessalonians 5:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1TH.5.28,1 Thessalonians 5:28,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2TH.1.2,2 Thessalonians 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2TH.1.3,2 Thessalonians 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2TH.1.4,2 Thessalonians 1:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2TH.1.7,2 Thessalonians 1:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2TH.1.11,2 Thessalonians 1:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2TH.1.12,2 Thessalonians 1:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2TH.2.13,2 Thessalonians 2:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2TH.2.16,2 Thessalonians 2:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2TH.2.17,2 Thessalonians 2:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2TH.3.5,2 Thessalonians 3:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2TH.3.16,2 Thessalonians 3:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2TH.3.18,2 Thessalonians 3:18,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.4.1,Hebrews 4:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.4.2,Hebrews 4:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.4.11,Hebrews 4:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.6.9,Hebrews 6:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.6.10,Hebrews 6:10,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.6.11,Hebrews 6:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.6.12,Hebrews 6:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.6.19,Hebrews 6:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.7.19,Hebrews 7:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.9.12,Hebrews 9:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.10.24,Hebrews 10:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.11.3,Hebrews 11:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.12.17,Hebrews 12:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.12.28,Hebrews 12:28,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.13.7,Hebrews 13:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.13.15,Hebrews 13:15,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.13.17,Hebrews 13:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.HEB.13.25,Hebrews 13:25,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JAS.1.3,James 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JAS.2.24,James 2:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JAS.5.11,James 5:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1PE.1.2,1 Peter 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1PE.1.7,1 Peter 1:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1PE.1.8,1 Peter 1:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1PE.1.9,1 Peter 1:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1PE.1.10,1 Peter 1:10,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1PE.1.13,1 Peter 1:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1PE.1.22,1 Peter 1:22,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1PE.3.8,1 Peter 3:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1PE.3.15,1 Peter 3:15,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1PE.4.12,1 Peter 4:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1PE.4.13,1 Peter 4:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1PE.5.5,1 Peter 5:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1PE.5.9,1 Peter 5:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1PE.5.14,1 Peter 5:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2PE.1.2,2 Peter 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2PE.1.3,2 Peter 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2PE.1.5,2 Peter 1:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2PE.1.8,2 Peter 1:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2PE.1.11,2 Peter 1:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2PE.1.19,2 Peter 1:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2PE.3.14,2 Peter 3:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2PE.3.15,2 Peter 3:15,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.2PE.3.18,2 Peter 3:18,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.1.1,1 John 1:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.1.2,1 John 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.1.5,1 John 1:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.2.5,1 John 2:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.3.11,1 John 3:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.3.16,1 John 3:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.3.22,1 John 3:22,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.3.23,1 John 3:23,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.3.24,1 John 3:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.4.7,1 John 4:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.4.9,1 John 4:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.4.11,1 John 4:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.4.16,1 John 4:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.4.17,1 John 4:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.4.19,1 John 4:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.4.21,1 John 4:21,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.5.2,1 John 5:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.5.3,1 John 5:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.5.11,1 John 5:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.5.20,1 John 5:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.1JN.5.21,1 John 5:21,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JUD.1.2,Jude 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JUD.1.17,Jude 1:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JUD.1.20,Jude 1:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+KJV-MWB,kjv-mwb.gen.JUD.1.21,Jude 1:21,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.ISA.41.10.a,Isaiah 41:10,flag,personalReception,approvedPresentation,comment,yes
+WEB-MWB,web-mwb.PRO.2.1.a,Proverbs 2:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.PRO.23.18.a,Proverbs 23:18,flag,personalReception,approvedPresentation,comment,yes
+WEB-MWB,web-mwb.gen.MAT.5.12,Matthew 5:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.MAT.6.24,Matthew 6:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.MAT.9.13,Matthew 9:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.MAT.9.29,Matthew 9:29,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.MAT.10.13,Matthew 10:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.MAT.10.17,Matthew 10:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.MAT.10.19,Matthew 10:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.MAT.10.27,Matthew 10:27,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.MAT.13.16,Matthew 13:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.MAT.17.5,Matthew 17:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.MAT.23.39,Matthew 23:39,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.MAT.26.27,Matthew 26:27,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.MRK.13.9,Mark 13:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.MRK.13.11,Mark 13:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LUK.6.20,Luke 6:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LUK.6.36,Luke 6:36,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LUK.10.5,Luke 10:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LUK.10.6,Luke 10:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LUK.10.9,Luke 10:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LUK.10.20,Luke 10:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LUK.10.23,Luke 10:23,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LUK.12.3,Luke 12:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LUK.12.37,Luke 12:37,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LUK.15.7,Luke 15:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LUK.15.10,Luke 15:10,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LUK.21.34,Luke 21:34,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LUK.22.17,Luke 22:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LUK.22.19,Luke 22:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.4.22,John 4:22,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.5.35,John 5:35,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.5.39,John 5:39,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.5.40,John 5:40,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.5.42,John 5:42,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.6.27,John 6:27,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.6.47,John 6:47,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.8.12,John 8:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.8.55,John 8:55,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.12.36,John 12:36,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.13.34,John 13:34,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.14.24,John 14:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.15.9,John 15:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.15.12,John 15:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.15.17,John 15:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.16.22,John 16:22,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.16.24,John 16:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.16.27,John 16:27,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.16.33,John 16:33,flag,personalReception,approvedPresentation,comment,yes
+WEB-MWB,web-mwb.gen.JHN.20.21,John 20:21,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.20.26,John 20:26,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JHN.20.31,John 20:31,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TI.1.1,1 Timothy 1:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TI.1.14,1 Timothy 1:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TI.2.2,1 Timothy 2:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2TI.1.9,2 Timothy 1:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.TIT.2.13,Titus 2:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.TIT.3.4,Titus 3:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.TIT.3.5,Titus 3:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.TIT.3.7,Titus 3:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PHM.1.1,Philemon 1:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PHM.1.3,Philemon 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PHM.1.25,Philemon 1:25,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2JN.1.3,2 John 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2JN.1.6,2 John 1:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.3JN.1.2.a,3 John 1:2,flag,personalReception,approvedPresentation,comment,yes
+WEB-MWB,web-mwb.gen.REV.1.4,Revelation 1:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.REV.18.20,Revelation 18:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.REV.19.5,Revelation 19:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.REV.22.21,Revelation 22:21,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.33.20,Psalms 33:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.33.21,Psalms 33:21,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.46.7,Psalms 46:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.46.11,Psalms 46:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.47.4,Psalms 47:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.50.3,Psalms 50:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.62.8,Psalms 62:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.66.6,Psalms 66:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.66.8,Psalms 66:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.66.9,Psalms 66:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.67.1,Psalms 67:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.68.19,Psalms 68:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.78.4,Psalms 78:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.81.1,Psalms 81:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.85.9,Psalms 85:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.90.10,Psalms 90:10,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.95.1,Psalms 95:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.98.3,Psalms 98:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.103.20,Psalms 103:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.105.45,Psalms 105:45,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.106.1,Psalms 106:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.106.48,Psalms 106:48,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.112.1,Psalms 112:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.115.18,Psalms 115:18,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.116.5,Psalms 116:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.117.1,Psalms 117:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.117.2,Psalms 117:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.118.24,Psalms 118:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.118.26,Psalms 118:26,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.118.27,Psalms 118:27,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.124.6,Psalms 124:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.124.8,Psalms 124:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.129.8,Psalms 129:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.135.21,Psalms 135:21,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.136.23,Psalms 136:23,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.147.1,Psalms 147:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.147.7,Psalms 147:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.147.20,Psalms 147:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.148.1,Psalms 148:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.148.2,Psalms 148:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.148.3,Psalms 148:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.148.14,Psalms 148:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.149.1,Psalms 149:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.149.9,Psalms 149:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.150.1,Psalms 150:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PSA.150.6,Psalms 150:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.PRO.1.8.a,Proverbs 1:8,flag,personalReception,approvedPresentation,comment,yes
+WEB-MWB,web-mwb.PRO.6.20.a,Proverbs 6:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.PRO.23.26.a,Proverbs 23:26,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LAM.5.5,Lamentations 5:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.LAM.5.8,Lamentations 5:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.1.5,Romans 1:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.1.7,Romans 1:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.3.28,Romans 3:28,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.4.12,Romans 4:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.4.16,Romans 4:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.5.2,Romans 5:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.5.5,Romans 5:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.5.6,Romans 5:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.5.8,Romans 5:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.5.11,Romans 5:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.8.39,Romans 8:39,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.11.30,Romans 11:30,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.11.31,Romans 11:31,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.12.6,Romans 12:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.13.11,Romans 13:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.14.1,Romans 14:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.14.19,Romans 14:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.15.4,Romans 15:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.15.10,Romans 15:10,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.15.11,Romans 15:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.15.33,Romans 15:33,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.16.20,Romans 16:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.ROM.16.24,Romans 16:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1CO.1.3,1 Corinthians 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1CO.2.5,1 Corinthians 2:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1CO.14.31,1 Corinthians 14:31,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1CO.15.19,1 Corinthians 15:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1CO.16.23,1 Corinthians 16:23,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.1.2,2 Corinthians 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.1.3,2 Corinthians 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.1.5,2 Corinthians 1:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.1.7,2 Corinthians 1:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.1.11,2 Corinthians 1:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.1.12,2 Corinthians 1:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.1.24,2 Corinthians 1:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.2.7,2 Corinthians 2:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.2.14,2 Corinthians 2:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.3.5,2 Corinthians 3:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.3.6,2 Corinthians 3:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.3.12,2 Corinthians 3:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.4.1,2 Corinthians 4:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.4.6,2 Corinthians 4:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.4.10,2 Corinthians 4:10,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.4.15,2 Corinthians 4:15,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.4.18,2 Corinthians 4:18,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.5.1,2 Corinthians 5:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.5.4,2 Corinthians 5:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.5.7,2 Corinthians 5:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.7.13,2 Corinthians 7:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.8.1,2 Corinthians 8:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.8.6,2 Corinthians 8:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.8.7,2 Corinthians 8:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.8.9,2 Corinthians 8:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.8.14,2 Corinthians 8:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.8.16,2 Corinthians 8:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.8.18,2 Corinthians 8:18,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.8.19,2 Corinthians 8:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.8.24,2 Corinthians 8:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.9.14,2 Corinthians 9:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.10.15,2 Corinthians 10:15,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.13.11,2 Corinthians 13:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2CO.13.14,2 Corinthians 13:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.GAL.1.3,Galatians 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.GAL.3.7,Galatians 3:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.GAL.3.14,Galatians 3:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.GAL.3.23,Galatians 3:23,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.GAL.3.24,Galatians 3:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.GAL.3.25,Galatians 3:25,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.GAL.3.26,Galatians 3:26,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.GAL.5.4,Galatians 5:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.GAL.5.5,Galatians 5:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.GAL.6.10,Galatians 6:10,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.GAL.6.18,Galatians 6:18,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.1.2,Ephesians 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.1.3,Ephesians 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.1.4,Ephesians 1:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.1.6,Ephesians 1:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.1.12,Ephesians 1:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.1.13,Ephesians 1:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.1.14,Ephesians 1:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.1.18,Ephesians 1:18,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.2.4,Ephesians 2:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.2.7,Ephesians 2:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.2.12,Ephesians 2:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.2.14,Ephesians 2:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.2.17,Ephesians 2:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.3.11,Ephesians 3:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.3.12,Ephesians 3:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.3.17,Ephesians 3:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.3.19,Ephesians 3:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.4.4,Ephesians 4:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.4.7,Ephesians 4:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.4.13,Ephesians 4:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.4.29,Ephesians 4:29,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.4.32,Ephesians 4:32,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.5.2,Ephesians 5:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.5.8,Ephesians 5:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.5.20,Ephesians 5:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.6.15,Ephesians 6:15,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.EPH.6.24,Ephesians 6:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PHP.1.2,Philippians 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.PHP.4.23,Philippians 4:23,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.1.2,Colossians 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.1.3,Colossians 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.1.4,Colossians 1:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.1.5,Colossians 1:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.1.6,Colossians 1:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.1.8,Colossians 1:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.1.12,Colossians 1:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.1.27,Colossians 1:27,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.2.7,Colossians 2:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.3.4,Colossians 3:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.3.16,Colossians 3:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.3.17,Colossians 3:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.4.6,Colossians 4:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.4.9,Colossians 4:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.COL.4.14,Colossians 4:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.1.1,1 Thessalonians 1:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.1.2,1 Thessalonians 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.1.3,1 Thessalonians 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.1.4,1 Thessalonians 1:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.1.8,1 Thessalonians 1:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.2.11,1 Thessalonians 2:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.2.20,1 Thessalonians 2:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.3.2,1 Thessalonians 3:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.3.6,1 Thessalonians 3:6,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.3.9,1 Thessalonians 3:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.3.12,1 Thessalonians 3:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.4.1,1 Thessalonians 4:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.5.5,1 Thessalonians 5:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.5.8,1 Thessalonians 5:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.5.11,1 Thessalonians 5:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.5.13,1 Thessalonians 5:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.5.14,1 Thessalonians 5:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1TH.5.28,1 Thessalonians 5:28,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2TH.1.2,2 Thessalonians 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2TH.1.3,2 Thessalonians 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2TH.1.4,2 Thessalonians 1:4,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2TH.1.7,2 Thessalonians 1:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2TH.1.11,2 Thessalonians 1:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2TH.1.12,2 Thessalonians 1:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2TH.2.13,2 Thessalonians 2:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2TH.2.16,2 Thessalonians 2:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2TH.2.17,2 Thessalonians 2:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2TH.3.5,2 Thessalonians 3:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2TH.3.16,2 Thessalonians 3:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2TH.3.18,2 Thessalonians 3:18,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.4.1,Hebrews 4:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.4.2,Hebrews 4:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.4.11,Hebrews 4:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.6.9,Hebrews 6:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.6.10,Hebrews 6:10,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.6.11,Hebrews 6:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.6.12,Hebrews 6:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.6.19,Hebrews 6:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.7.19,Hebrews 7:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.9.12,Hebrews 9:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.10.24,Hebrews 10:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.11.3,Hebrews 11:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.12.17,Hebrews 12:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.12.28,Hebrews 12:28,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.13.7,Hebrews 13:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.13.15,Hebrews 13:15,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.13.17,Hebrews 13:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.HEB.13.25,Hebrews 13:25,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JAS.1.3,James 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JAS.2.24,James 2:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JAS.5.11,James 5:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1PE.1.2,1 Peter 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1PE.1.7,1 Peter 1:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1PE.1.8,1 Peter 1:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1PE.1.9,1 Peter 1:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1PE.1.10,1 Peter 1:10,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1PE.1.13,1 Peter 1:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1PE.1.22,1 Peter 1:22,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1PE.3.8,1 Peter 3:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1PE.3.15,1 Peter 3:15,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1PE.4.12,1 Peter 4:12,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1PE.4.13,1 Peter 4:13,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1PE.5.5,1 Peter 5:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1PE.5.9,1 Peter 5:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1PE.5.14,1 Peter 5:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2PE.1.2,2 Peter 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2PE.1.3,2 Peter 1:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2PE.1.5,2 Peter 1:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2PE.1.8,2 Peter 1:8,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2PE.1.11,2 Peter 1:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2PE.1.19,2 Peter 1:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2PE.3.14,2 Peter 3:14,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2PE.3.15,2 Peter 3:15,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.2PE.3.18,2 Peter 3:18,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.1.1,1 John 1:1,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.1.2,1 John 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.1.5,1 John 1:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.2.5,1 John 2:5,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.3.11,1 John 3:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.3.16,1 John 3:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.3.22,1 John 3:22,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.3.23,1 John 3:23,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.3.24,1 John 3:24,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.4.7,1 John 4:7,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.4.9,1 John 4:9,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.4.11,1 John 4:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.4.16,1 John 4:16,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.4.17,1 John 4:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.4.19,1 John 4:19,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.4.21,1 John 4:21,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.5.2,1 John 5:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.5.3,1 John 5:3,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.5.11,1 John 5:11,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.5.20,1 John 5:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.1JN.5.21,1 John 5:21,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JUD.1.2,Jude 1:2,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JUD.1.17,Jude 1:17,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JUD.1.20,Jude 1:20,flag,originalScriptureOnly,approvedPresentation,comment,no
+WEB-MWB,web-mwb.gen.JUD.1.21,Jude 1:21,flag,originalScriptureOnly,approvedPresentation,comment,no

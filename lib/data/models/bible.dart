@@ -101,6 +101,10 @@ class Verse {
   final String text;
 
   ScriptureReference get reference => ScriptureReference(bookId: bookId, chapter: chapter, verseStart: number);
+
+  /// The translation does not include this verse (e.g. the WEB footnotes
+  /// Luke 17:36). The number is kept so references stay aligned.
+  bool get isOmitted => text.isEmpty;
 }
 
 /// A resolved passage: canonical verses plus their source.

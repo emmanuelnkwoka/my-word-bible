@@ -1,0 +1,299 @@
+{
+ "schemaVersion": 1,
+ "corpusVersion": "1.0.0",
+ "blessings": [
+  {
+   "id": "bl-morning",
+   "title": "A morning made new",
+   "category": "Morning",
+   "themes": [
+    "theme-morning"
+   ],
+   "text": "May the mercies that are new this morning meet you at the door of this day; may every good and perfect gift find you, and may His faithfulness be the first thing you see.",
+   "references": [
+    "LAM 3:22-23",
+    "JAS 1:17"
+   ],
+   "groundingNote": "Grounded in LAM 3:22-23, first given to a people rather than an individual; offered here as a blessing (a prayerful wish), not a guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "bl-morning",
+    "seedLine": 1293,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "bl-family",
+   "title": "Over your household",
+   "category": "Family",
+   "themes": [
+    "theme-family"
+   ],
+   "text": "May your house be a heritage of the LORD — a household that chooses, together, to serve Him, and finds that choice to be its peace.",
+   "references": [
+    "JOS 24:15",
+    "PSA 127:3"
+   ],
+   "groundingNote": "Grounded in JOS 24:15, first given to a people rather than an individual; offered here as a blessing (a prayerful wish), not a guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "bl-family",
+    "seedLine": 1294,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "bl-children",
+   "title": "Over the children",
+   "category": "Children",
+   "themes": [
+    "theme-children"
+   ],
+   "text": "May all your children be taught of the LORD, and may great be their peace; may the wisdom you plant in them outlast every season.",
+   "references": [
+    "ISA 54:13",
+    "PRO 22:6"
+   ],
+   "groundingNote": "Grounded in ISA 54:13, first given to a people rather than an individual; offered here as a blessing (a prayerful wish), not a guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "bl-children",
+    "seedLine": 1295,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "bl-marriage",
+   "title": "Over the covenant of two",
+   "category": "Marriage",
+   "themes": [
+    "theme-marriage"
+   ],
+   "text": "May the LORD keep what He has joined; may your home be kept in His blessing, two made one under His countenance.",
+   "references": [
+    "NUM 6:24",
+    "JOS 24:15",
+    "GEN 2:24",
+    "ECC 4:9-10",
+    "MRK 10:9"
+   ],
+   "groundingNote": "Grounded in NUM 6:24, JOS 24:15, first given to a people rather than an individual; offered here as a blessing (a prayerful wish), not a guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "bl-marriage",
+    "seedLine": 1296,
+    "changes": [
+     "Additional references from the demo's \"also\" list resolved canonically."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "bl-work",
+   "title": "Over the work of your hands",
+   "category": "Work",
+   "themes": [
+    "theme-work"
+   ],
+   "text": "May the works you commit to the LORD be established; may you labour heartily, as unto the Lord and not unto men.",
+   "references": [
+    "PRO 16:3",
+    "COL 3:23"
+   ],
+   "groundingNote": "Grounded in COL 3:23, first given to a people rather than an individual; offered here as a blessing (a prayerful wish), not a guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "bl-work",
+    "seedLine": 1297,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "bl-future",
+   "title": "Over what is ahead",
+   "category": "Future",
+   "themes": [
+    "theme-future"
+   ],
+   "text": "May He who began a good work in you perform it to the very end; and may your expectation not be cut off.",
+   "references": [
+    "PHP 1:6",
+    "PRO 23:18"
+   ],
+   "groundingNote": "Grounded in PHP 1:6, first given to a people rather than an individual; offered here as a blessing (a prayerful wish), not a guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "bl-future",
+    "seedLine": 1298,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "bl-protection",
+   "title": "A covering for the day",
+   "category": "Protection",
+   "themes": [
+    "theme-protection"
+   ],
+   "text": "May the LORD preserve you from all evil and preserve your soul; may the angel of the LORD encamp round about you.",
+   "references": [
+    "PSA 121:7",
+    "PSA 34:7"
+   ],
+   "groundingNote": "",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "bl-protection",
+    "seedLine": 1299,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "bl-travel",
+   "title": "For every going out and coming in",
+   "category": "Travel",
+   "themes": [
+    "theme-travel"
+   ],
+   "text": "May the LORD preserve your going out and your coming in, from this time forth and even for evermore; may He be with you in all places whither you go.",
+   "references": [
+    "PSA 121:8",
+    "GEN 28:15"
+   ],
+   "groundingNote": "",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "bl-travel",
+    "seedLine": 1300,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "bl-strength",
+   "title": "When strength is spent",
+   "category": "Strength",
+   "themes": [
+    "theme-strength"
+   ],
+   "text": "May the LORD uphold you with the right hand of His righteousness, and may His grace be sufficient exactly where you feel weakest.",
+   "references": [
+    "ISA 41:10",
+    "2CO 12:9"
+   ],
+   "groundingNote": "Grounded in ISA 41:10, first given to a people rather than an individual; offered here as a blessing (a prayerful wish), not a guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "bl-strength",
+    "seedLine": 1301,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "bl-wisdom",
+   "title": "For decisions ahead",
+   "category": "Wisdom",
+   "themes": [
+    "theme-wisdom"
+   ],
+   "text": "May the God who gives liberally give you wisdom without reproach, and may His word be a lamp to every step you take.",
+   "references": [
+    "JAS 1:5",
+    "PSA 119:105"
+   ],
+   "groundingNote": "Grounded in JAS 1:5, first given to a people rather than an individual; offered here as a blessing (a prayerful wish), not a guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "bl-wisdom",
+    "seedLine": 1302,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "bl-peace",
+   "title": "The blessing of peace",
+   "category": "Peace",
+   "themes": [
+    "theme-peace"
+   ],
+   "text": "May the LORD lift up His countenance upon you and give you peace — the peace Jesus leaves, not as the world gives.",
+   "references": [
+    "NUM 6:26",
+    "JHN 14:27"
+   ],
+   "groundingNote": "Grounded in NUM 6:26, JHN 14:27, first given to a people rather than an individual; offered here as a blessing (a prayerful wish), not a guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "bl-peace",
+    "seedLine": 1303,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "bl-thanks",
+   "title": "A heart that remembers",
+   "category": "Thanksgiving",
+   "themes": [
+    "theme-thanksgiving"
+   ],
+   "text": "Bless the LORD, O my soul, and forget not all His benefits — may gratitude rise in you today for every good and perfect gift.",
+   "references": [
+    "PSA 103:3",
+    "JAS 1:17"
+   ],
+   "groundingNote": "",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "bl-thanks",
+    "seedLine": 1304,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  }
+ ]
+}

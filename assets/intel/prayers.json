@@ -1,0 +1,321 @@
+{
+ "schemaVersion": 1,
+ "corpusVersion": "1.0.0",
+ "prayers": [
+  {
+   "id": "py-fear",
+   "title": "When fear rises",
+   "situationId": "sit-fear",
+   "text": "Father, I bring You the fear that is pressing on me today. You have said, Fear not, for You are with me — so I ask You to be very near. You have not given me a spirit of fear, but of power and of love and of a sound mind. Uphold me with Your righteous right hand, steady my thoughts, and let courage rise where fear has settled. In Jesus' name, Amen.",
+   "references": [
+    "ISA 41:10",
+    "2TI 1:7"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-fear",
+    "seedLine": 1308,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "py-anxiety",
+   "title": "For an anxious mind",
+   "situationId": "sit-anxiety",
+   "text": "Lord, I refuse to carry alone what You have asked me to cast on You. Here is every care, named before You with thanksgiving. I make my requests known; now let Your peace, which passes understanding, stand guard over my heart and my mind through Christ Jesus. Amen.",
+   "references": [
+    "PHP 4:6",
+    "PHP 4:7",
+    "1PE 5:7"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-anxiety",
+    "seedLine": 1309,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "py-loneliness",
+   "title": "When you feel alone",
+   "situationId": "sit-loneliness",
+   "text": "Lord, loneliness tells me I am unseen; Your word says otherwise. You have promised Your presence goes with me, that You are with me always, even to the end of the world. In this valley, be the Shepherd I can feel. Let Your presence be more real to me than the emptiness. Amen.",
+   "references": [
+    "EXO 33:14",
+    "MAT 28:20",
+    "PSA 23:4"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-loneliness",
+    "seedLine": 1310,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "py-grief",
+   "title": "In the season of grief",
+   "situationId": "sit-grief",
+   "text": "God of all comfort, draw near to my broken heart, for You are nigh to such. Weeping may endure for this night, but joy is coming in the morning. Hold my tears until the day You wipe them all away. Keep me from despair, and let hope breathe again. Amen.",
+   "references": [
+    "PSA 34:18",
+    "PSA 30:5",
+    "REV 21:4"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-grief",
+    "seedLine": 1311,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "py-rest",
+   "title": "For the weary",
+   "situationId": "sit-rest",
+   "text": "Jesus, You said, Come unto Me, all ye that labour and are heavy laden. I come — tired, and I ask for the rest only You can give. Let Your presence go with me, and give me rest for my body, my mind, and my soul. Amen.",
+   "references": [
+    "MAT 11:28",
+    "EXO 33:14"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-rest",
+    "seedLine": 1312,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "py-temptation",
+   "title": "Under temptation",
+   "situationId": "sit-temptation",
+   "text": "Faithful God, this temptation feels stronger than I am — but Your word says it is common to man and never beyond what I can bear. Show me the way of escape You have promised. I come boldly to the throne of grace for mercy and help in this time of need. Amen.",
+   "references": [
+    "1CO 10:13",
+    "HEB 4:16"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-temptation",
+    "seedLine": 1313,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "py-provision",
+   "title": "Under financial pressure",
+   "situationId": "sit-financial-pressure",
+   "text": "Father, You know what I have need of before I ask. As I seek Your kingdom first, make all grace abound toward me. Supply my need according to Your riches in glory by Christ Jesus — and teach my hands diligence and my heart contentment. Amen.",
+   "references": [
+    "PHP 4:19",
+    "MAT 6:33",
+    "2CO 9:8"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-provision",
+    "seedLine": 1314,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "py-healing",
+   "title": "For healing",
+   "situationId": "sit-healing",
+   "text": "LORD who healeth, I bring You this sickness. You are the God who restores health and heals wounds, who forgives iniquity and heals diseases. Touch my body, strengthen my faith, and let me testify that You are the LORD my healer. In Jesus' name, Amen.",
+   "references": [
+    "EXO 15:26",
+    "JER 30:17",
+    "PSA 103:3"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-healing",
+    "seedLine": 1315,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": [
+     "Healing prayer cites covenant (Exodus 15:26) and Zion (Jeremiah 30:17) texts; check that it does not promise a guaranteed cure."
+    ]
+   }
+  },
+  {
+   "id": "py-hope",
+   "title": "When hope is thin",
+   "situationId": "sit-hope-future",
+   "text": "God of hope, Your mercies are new every morning — let me find today's. Fill me with joy and peace in believing until I abound in hope. Surely there is an end, and my expectation shall not be cut off. Hold it steady when my hands are weak. Amen.",
+   "references": [
+    "LAM 3:22-23",
+    "ROM 15:13",
+    "PRO 23:18"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-hope",
+    "seedLine": 1316,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "py-rejection",
+   "title": "After rejection",
+   "situationId": "sit-rejection",
+   "text": "Lord Jesus, rejection stings; but You said whoever comes to You, You will in no wise cast out. You have redeemed me; You have called me by name; I am Yours. Heal the wound, and plant me again in the security of being received by You. Amen.",
+   "references": [
+    "JHN 6:37",
+    "ISA 43:1"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-rejection",
+    "seedLine": 1317,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "py-guidance",
+   "title": "For guidance",
+   "situationId": "sit-decisions",
+   "text": "Father, I need direction, and You have promised to instruct and teach me in the way I should go. Give me wisdom liberally, as You said You would. When the path forks, let me hear the word behind me saying, This is the way — and give me grace to walk in it. Amen.",
+   "references": [
+    "PSA 32:8",
+    "ISA 30:21",
+    "JAS 1:5"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-guidance",
+    "seedLine": 1318,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "py-forgiveness",
+   "title": "Seeking forgiveness",
+   "situationId": "sit-forgiveness",
+   "text": "Merciful God, I confess my sins to You without excuse. You are faithful and just to forgive and to cleanse from all unrighteousness. Wash me; then lift from me the weight of condemnation, for there is now no condemnation to them that are in Christ Jesus. Amen.",
+   "references": [
+    "1JN 1:9",
+    "ROM 8:1",
+    "PSA 103:3"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-forgiveness",
+    "seedLine": 1319,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "py-family",
+   "title": "Over your family",
+   "situationId": "sit-family",
+   "text": "Lord, I lift my household to You. As for me and my house, we will serve the LORD. Let my children be taught of You, and great be their peace. Save and keep every member of this family, and let our home be Yours. Amen.",
+   "references": [
+    "JOS 24:15",
+    "ISA 54:13",
+    "ACT 16:31"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-family",
+    "seedLine": 1320,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "py-waiting",
+   "title": "While you wait",
+   "situationId": "sit-waiting",
+   "text": "Lord, waiting is hard. Teach me to wait on You until strength is renewed. Keep me from weariness in well doing, and hold before me the due season You have promised. Your compassions fail not; let me meet them new tomorrow morning. Amen.",
+   "references": [
+    "ISA 40:31",
+    "GAL 6:9",
+    "LAM 3:22-23"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-waiting",
+    "seedLine": 1321,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "py-sickness",
+   "title": "In the sickbed",
+   "situationId": "sit-healing",
+   "text": "Healer of Your people, by His stripes we are healed. I agree with Your word over this body: restore health, bind up what is broken, and let strength return. Thank You that You forgive iniquity and heal disease — both are Yours to give. Amen.",
+   "references": [
+    "PSA 103:3",
+    "ISA 53:5",
+    "JER 30:17"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "py-sickness",
+    "seedLine": 1322,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": [
+     "Healing prayer cites covenant (Exodus 15:26) and Zion (Jeremiah 30:17) texts; check that it does not promise a guaranteed cure."
+    ]
+   }
+  }
+ ]
+}

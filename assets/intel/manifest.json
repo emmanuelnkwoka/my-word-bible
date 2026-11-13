@@ -1,0 +1,120 @@
+{
+ "schemaVersion": 1,
+ "corpusVersion": "1.0.0",
+ "canonicalVersion": "KJV",
+ "generatedFrom": "MY_WORD_BIBLE_MWB_DEMO (1).html (seed) + Stage C curation",
+ "files": {
+  "contexts.json": {
+   "key": "contexts",
+   "count": 117
+  },
+  "situations.json": {
+   "key": "situations",
+   "count": 35
+  },
+  "promises.json": {
+   "key": "promises",
+   "count": 23
+  },
+  "blessings.json": {
+   "key": "blessings",
+   "count": 12
+  },
+  "prayers.json": {
+   "key": "prayers",
+   "count": 15
+  },
+  "declarations.json": {
+   "key": "declarations",
+   "count": 10
+  },
+  "commands.json": {
+   "key": "commands",
+   "count": 20
+  },
+  "identity_themes.json": {
+   "key": "identityThemes",
+   "count": 8
+  },
+  "worship_themes.json": {
+   "key": "worshipThemes",
+   "count": 8
+  },
+  "relationships.json": {
+   "key": "relationships",
+   "count": 24
+  },
+  "journeys.json": {
+   "key": "journeys",
+   "count": 11
+  },
+  "taxonomy.json": {
+   "key": "terms",
+   "count": 28,
+   "links": 83
+  }
+ },
+ "rejected": [
+  {
+   "kind": "promise",
+   "seedId": "pr-hope-1",
+   "seedLine": 1259,
+   "reason": "Lamentations 3:22-23 is a confession of God's faithfulness, not a promise.",
+   "replacement": "ws-faithfulness"
+  },
+  {
+   "kind": "promise",
+   "seedId": "pr-wis-2",
+   "seedLine": 1268,
+   "reason": "Psalm 119:105 is a statement addressed to God about His word, not a promise.",
+   "replacement": "ws-word-lamp"
+  },
+  {
+   "kind": "promise",
+   "seedId": "pr-fam-2",
+   "seedLine": 1274,
+   "reason": "Joshua 24:15 is Joshua's resolve and a command to choose, not a promise.",
+   "replacement": "cmd-choose-whom-to-serve"
+  },
+  {
+   "kind": "promise",
+   "seedId": "pr-faith-1",
+   "seedLine": 1277,
+   "reason": "Hebrews 11:1 defines faith; it is not a promise."
+  },
+  {
+   "kind": "promise",
+   "seedId": "pr-cour-2",
+   "seedLine": 1280,
+   "reason": "2 Timothy 1:7 states what God has given; it is an identity statement, not a promise.",
+   "replacement": "id-spirit-of-power"
+  },
+  {
+   "kind": "promise",
+   "seedId": "pr-ident-1",
+   "seedLine": 1285,
+   "reason": "Psalm 139:14 is David's praise to God; an identity theme, not a promise.",
+   "replacement": "id-wonderfully-made"
+  },
+  {
+   "kind": "promise",
+   "seedId": "pr-ident-2",
+   "seedLine": 1286,
+   "reason": "Ephesians 2:10 is a corporate identity statement (\"we\"), not a promise.",
+   "replacement": "id-workmanship"
+  },
+  {
+   "kind": "promise",
+   "seedId": "pres-always",
+   "seedLine": 1481,
+   "reason": "Duplicate alias of pr-pres-2 (Matthew 28:20) created only for a demo journey.",
+   "replacement": "pr-pres-2"
+  },
+  {
+   "kind": "relationship",
+   "seedId": "heb13-5|isa41-10",
+   "reason": "Demo marks Hebrews 13:5 as a quotation of Isaiah 41:10. Hebrews 13:5 quotes Deuteronomy 31:6-8 / Joshua 1:5.",
+   "replacement": "rel-heb13-5-deut31-6"
+  }
+ ]
+}

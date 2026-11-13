@@ -1,0 +1,2266 @@
+{
+ "schemaVersion": 1,
+ "scheduleVersion": "2026.1",
+ "corpusVersion": "1.0.0",
+ "categories": [
+  "Hope",
+  "Peace",
+  "Strength",
+  "Courage",
+  "Provision",
+  "Comfort",
+  "Wisdom",
+  "Healing",
+  "Rest",
+  "Gratitude",
+  "Identity",
+  "Protection",
+  "Guidance",
+  "Purpose",
+  "Faith",
+  "Family"
+ ],
+ "excluded": [
+  {
+   "reference": "DEU 8:18",
+   "reason": "Covenant context for Israel; flagged in Stage C as liable to be read as a promise of wealth."
+  },
+  {
+   "reference": "PRO 10:22",
+   "reason": "Liable to be read as a promise of riches without its wisdom context; held back pending editorial review."
+  },
+  {
+   "reference": "MAL 3:10",
+   "reason": "Covenant charge to post-exilic Judah; often misapplied as a prosperity transaction (demo note)."
+  }
+ ],
+ "candidates": [
+  {
+   "id": "dwc-GEN-1-3",
+   "reference": "GEN 1:3",
+   "contextId": "ctx-GEN-1-3",
+   "category": "Purpose",
+   "theme": "God speaks light into darkness at creation.",
+   "title": null,
+   "rationale": "Curated for Purpose: God speaks light into darkness at creation.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-GEN-1-3); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-GEN-1-27",
+   "reference": "GEN 1:27",
+   "contextId": "ctx-GEN-1-27",
+   "category": "Identity",
+   "theme": "Humanity made in the image of God.",
+   "title": "Made by God, wonderfully",
+   "rationale": "Curated for Identity: Humanity made in the image of God.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-GEN-1-27); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-GEN-28-15",
+   "reference": "GEN 28:15",
+   "contextId": "ctx-GEN-28-15",
+   "category": "Protection",
+   "theme": "God's word to Jacob at Bethel: \"I am with thee\".",
+   "title": null,
+   "rationale": "Curated for Protection: God's word to Jacob at Bethel: \"I am with thee\". Cited by life situation(s): Travel.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-GEN-28-15); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-EXO-3-14",
+   "reference": "EXO 3:14",
+   "contextId": "ctx-EXO-3-14",
+   "category": "Faith",
+   "theme": "God reveals His name to Moses.",
+   "title": null,
+   "rationale": "Curated for Faith: God reveals His name to Moses.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-EXO-3-14); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-EXO-14-14",
+   "reference": "EXO 14:14",
+   "contextId": "ctx-EXO-14-14",
+   "category": "Strength",
+   "theme": "He fights",
+   "title": "Hold your peace",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Strength.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw03",
+    "seedLine": 1490,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-EXO-15-26",
+   "reference": "EXO 15:26",
+   "contextId": "ctx-EXO-15-26",
+   "category": "Healing",
+   "theme": "The healer",
+   "title": "The LORD thy healer",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Healing. Cited by life situation(s): Healing.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw08",
+    "seedLine": 1495,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-EXO-20-3",
+   "reference": "EXO 20:3",
+   "contextId": "ctx-EXO-20-3",
+   "category": "Faith",
+   "theme": "The first commandment given at Sinai.",
+   "title": "Thou shalt have no other gods before me",
+   "rationale": "Curated for Faith: The first commandment given at Sinai.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-EXO-20-3); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-EXO-33-14",
+   "reference": "EXO 33:14",
+   "contextId": "ctx-EXO-33-14",
+   "category": "Rest",
+   "theme": "Presence and rest",
+   "title": "My presence shall go",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Rest. Cited by life situation(s): Loneliness, Rest.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw41",
+    "seedLine": 1528,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-NUM-6-24",
+   "reference": "NUM 6:24",
+   "contextId": "ctx-NUM-6-24",
+   "category": "Protection",
+   "theme": "The LORD bless thee, and keep thee.",
+   "title": null,
+   "rationale": "Curated for Protection: The LORD bless thee, and keep thee. Cited by life situation(s): Marriage, Travel.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-NUM-6-24); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-NUM-6-25",
+   "reference": "NUM 6:25",
+   "contextId": "ctx-NUM-6-25",
+   "category": "Peace",
+   "theme": "Part of the priestly blessing given through Aaron.",
+   "title": null,
+   "rationale": "Curated for Peace: Part of the priestly blessing given through Aaron.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-NUM-6-25); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-NUM-6-26",
+   "reference": "NUM 6:26",
+   "contextId": "ctx-NUM-6-26",
+   "category": "Peace",
+   "theme": "The LORD give thee peace.",
+   "title": null,
+   "rationale": "Curated for Peace: The LORD give thee peace.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-NUM-6-26); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-DEU-31-6",
+   "reference": "DEU 31:6",
+   "contextId": "ctx-DEU-31-6",
+   "category": "Courage",
+   "theme": "Go with courage",
+   "title": "He goes with you",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Courage. Cited by life situation(s): Leadership.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw04",
+    "seedLine": 1491,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JOS-1-9",
+   "reference": "JOS 1:9",
+   "contextId": "ctx-JOS-1-9",
+   "category": "Courage",
+   "theme": "Commanded courage",
+   "title": "Be strong",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Courage. Cited by life situation(s): Leadership.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw20",
+    "seedLine": 1507,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JOS-24-15",
+   "reference": "JOS 24:15",
+   "contextId": "ctx-JOS-24-15",
+   "category": "Family",
+   "theme": "Household choice",
+   "title": "Me and my house",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Family. Cited by life situation(s): Marriage, Children, Family.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw32",
+    "seedLine": 1519,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-16-11",
+   "reference": "PSA 16:11",
+   "contextId": "ctx-PSA-16-11",
+   "category": "Gratitude",
+   "theme": "Fullness of joy",
+   "title": "Joy in His presence",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Gratitude. Cited by life situation(s): Worship.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw42",
+    "seedLine": 1529,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-23-1",
+   "reference": "PSA 23:1",
+   "contextId": "ctx-PSA-23-1",
+   "category": "Provision",
+   "theme": "The LORD is my shepherd.",
+   "title": null,
+   "rationale": "Curated for Provision: The LORD is my shepherd. Cited by life situation(s): Rest, Sleep.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PSA-23-1); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-23-4",
+   "reference": "PSA 23:4",
+   "contextId": "ctx-PSA-23-4",
+   "category": "Comfort",
+   "theme": "Thou art with me.",
+   "title": null,
+   "rationale": "Curated for Comfort: Thou art with me. Cited by life situation(s): Loneliness.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PSA-23-4); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-23-6",
+   "reference": "PSA 23:6",
+   "contextId": "ctx-PSA-23-6",
+   "category": "Hope",
+   "theme": "Goodness and mercy for all the days of life.",
+   "title": null,
+   "rationale": "Curated for Hope: Goodness and mercy for all the days of life.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PSA-23-6); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-30-5",
+   "reference": "PSA 30:5",
+   "contextId": "ctx-PSA-30-5",
+   "category": "Comfort",
+   "theme": "Joy cometh in the morning.",
+   "title": null,
+   "rationale": "Curated for Comfort: Joy cometh in the morning. Cited by life situation(s): Grief.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PSA-30-5); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-32-8",
+   "reference": "PSA 32:8",
+   "contextId": "ctx-PSA-32-8",
+   "category": "Guidance",
+   "theme": "Taught of God",
+   "title": "I will instruct thee",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Guidance. Cited by life situation(s): Leadership.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw13",
+    "seedLine": 1500,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": [
+     "Speaker identification is disputed (God or the psalmist)."
+    ]
+   }
+  },
+  {
+   "id": "dwc-PSA-34-7",
+   "reference": "PSA 34:7",
+   "contextId": "ctx-PSA-34-7",
+   "category": "Protection",
+   "theme": "The angel of the LORD encampeth.",
+   "title": null,
+   "rationale": "Curated for Protection: The angel of the LORD encampeth. Cited by life situation(s): Protection.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PSA-34-7); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-34-18",
+   "reference": "PSA 34:18",
+   "contextId": "ctx-PSA-34-18",
+   "category": "Comfort",
+   "theme": "Near to the broken",
+   "title": "Nigh to the brokenhearted",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Comfort. Cited by life situation(s): Rejection.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw06",
+    "seedLine": 1493,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-37-4",
+   "reference": "PSA 37:4",
+   "contextId": "ctx-PSA-37-4",
+   "category": "Gratitude",
+   "theme": "Delight in the LORD.",
+   "title": "Delight yourself in the LORD",
+   "rationale": "Curated for Gratitude: Delight in the LORD.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PSA-37-4); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-42-11",
+   "reference": "PSA 42:11",
+   "contextId": "ctx-PSA-42-11",
+   "category": "Comfort",
+   "theme": "Downcast",
+   "title": "Hope thou in God",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Comfort.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dwa3",
+    "seedLine": 1539,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-46-1",
+   "reference": "PSA 46:1",
+   "contextId": "ctx-PSA-46-1",
+   "category": "Protection",
+   "theme": "Refuge",
+   "title": "A very present help",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Protection.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw44",
+    "seedLine": 1531,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-46-10",
+   "reference": "PSA 46:10",
+   "contextId": "ctx-PSA-46-10",
+   "category": "Peace",
+   "theme": "Be still",
+   "title": "Know that I am God",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Peace.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw34",
+    "seedLine": 1521,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-55-22",
+   "reference": "PSA 55:22",
+   "contextId": "ctx-PSA-55-22",
+   "category": "Peace",
+   "theme": "Casting a burden on the LORD.",
+   "title": "Cast your care and burden on the Lord",
+   "rationale": "Curated for Peace: Casting a burden on the LORD.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PSA-55-22); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-56-3",
+   "reference": "PSA 56:3",
+   "contextId": "ctx-PSA-56-3",
+   "category": "Courage",
+   "theme": "Afraid",
+   "title": "What time I am afraid",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Courage. Cited by life situation(s): Fear.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dwa2",
+    "seedLine": 1538,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-91-1",
+   "reference": "PSA 91:1",
+   "contextId": "ctx-PSA-91-1",
+   "category": "Protection",
+   "theme": "Dwelling in the secret place of the Most High.",
+   "title": null,
+   "rationale": "Curated for Protection: Dwelling in the secret place of the Most High.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PSA-91-1); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-91-11",
+   "reference": "PSA 91:11",
+   "contextId": "ctx-PSA-91-11",
+   "category": "Protection",
+   "theme": "Angels watch",
+   "title": "Charge over thee",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Protection. Cited by life situation(s): Protection.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw12",
+    "seedLine": 1499,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-103-3",
+   "reference": "PSA 103:3",
+   "contextId": "ctx-PSA-103-3",
+   "category": "Healing",
+   "theme": "Who healeth",
+   "title": "He healeth diseases",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Healing. Cited by life situation(s): Forgiveness, Gratitude, Worship.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw40",
+    "seedLine": 1527,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-119-105",
+   "reference": "PSA 119:105",
+   "contextId": "ctx-PSA-119-105",
+   "category": "Wisdom",
+   "theme": "Lamp and light",
+   "title": "Thy word lights the path",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Wisdom. Cited by life situation(s): Confusion.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw39",
+    "seedLine": 1526,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-121-7",
+   "reference": "PSA 121:7",
+   "contextId": "ctx-PSA-121-7",
+   "category": "Protection",
+   "theme": "The LORD shall preserve thee.",
+   "title": null,
+   "rationale": "Curated for Protection: The LORD shall preserve thee. Cited by life situation(s): Sleep.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PSA-121-7); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-121-8",
+   "reference": "PSA 121:8",
+   "contextId": "ctx-PSA-121-8",
+   "category": "Protection",
+   "theme": "Thy going out and coming in.",
+   "title": null,
+   "rationale": "Curated for Protection: Thy going out and coming in. Cited by life situation(s): Sleep, Travel.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PSA-121-8); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-127-3",
+   "reference": "PSA 127:3",
+   "contextId": "ctx-PSA-127-3",
+   "category": "Family",
+   "theme": "Children, an heritage of the LORD.",
+   "title": null,
+   "rationale": "Curated for Family: Children, an heritage of the LORD. Cited by life situation(s): Parenting, Children, Family.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PSA-127-3); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-139-14",
+   "reference": "PSA 139:14",
+   "contextId": "ctx-PSA-139-14",
+   "category": "Identity",
+   "theme": "Made wonderful",
+   "title": "Fearfully made",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Identity. Cited by life situation(s): Identity.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw11",
+    "seedLine": 1498,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PSA-147-3",
+   "reference": "PSA 147:3",
+   "contextId": "ctx-PSA-147-3",
+   "category": "Comfort",
+   "theme": "He binds",
+   "title": "He healeth the broken",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Comfort. Cited by life situation(s): Grief.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw22",
+    "seedLine": 1509,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PRO-3-5-6",
+   "reference": "PRO 3:5-6",
+   "contextId": "ctx-PRO-3-5-6",
+   "category": "Wisdom",
+   "theme": "Trust over sight",
+   "title": "Directed paths",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Wisdom. Cited by life situation(s): Decision making.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw23",
+    "seedLine": 1510,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PRO-16-3",
+   "reference": "PRO 16:3",
+   "contextId": "ctx-PRO-16-3",
+   "category": "Guidance",
+   "theme": "Commit the works",
+   "title": "Established",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Guidance. Cited by life situation(s): Friendship, Career.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw45",
+    "seedLine": 1532,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PRO-18-10",
+   "reference": "PRO 18:10",
+   "contextId": "ctx-PRO-18-10",
+   "category": "Protection",
+   "theme": "The name of the LORD as a strong tower.",
+   "title": null,
+   "rationale": "Curated for Protection: The name of the LORD as a strong tower.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PRO-18-10); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PRO-22-6",
+   "reference": "PRO 22:6",
+   "contextId": "ctx-PRO-22-6",
+   "category": "Family",
+   "theme": "Train up a child.",
+   "title": "Train up a child in the way he should go",
+   "rationale": "Curated for Family: Train up a child. Cited by life situation(s): Parenting.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PRO-22-6); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PRO-23-18",
+   "reference": "PRO 23:18",
+   "contextId": "ctx-PRO-23-18",
+   "category": "Hope",
+   "theme": "Expectation holds",
+   "title": "Not cut off",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Hope. Cited by life situation(s): Hope for the future.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw33",
+    "seedLine": 1520,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ISA-26-3",
+   "reference": "ISA 26:3",
+   "contextId": "ctx-ISA-26-3",
+   "category": "Peace",
+   "theme": "Perfect peace",
+   "title": "A stayed mind",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Peace.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw02",
+    "seedLine": 1489,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ISA-30-21",
+   "reference": "ISA 30:21",
+   "contextId": "ctx-ISA-30-21",
+   "category": "Guidance",
+   "theme": "This is the way",
+   "title": "A word behind thee",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Guidance. Cited by life situation(s): Decision making, Confusion.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw29",
+    "seedLine": 1516,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ISA-40-31",
+   "reference": "ISA 40:31",
+   "contextId": "ctx-ISA-40-31",
+   "category": "Strength",
+   "theme": "They that wait upon the LORD.",
+   "title": null,
+   "rationale": "Curated for Strength: They that wait upon the LORD. Cited by life situation(s): Waiting.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-ISA-40-31); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ISA-41-10",
+   "reference": "ISA 41:10",
+   "contextId": "ctx-ISA-41-10",
+   "category": "Courage",
+   "theme": "Fear thou not; for I am with thee.",
+   "title": null,
+   "rationale": "Curated for Courage: Fear thou not; for I am with thee. Cited by life situation(s): Fear.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-ISA-41-10); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ISA-41-13",
+   "reference": "ISA 41:13",
+   "contextId": "ctx-ISA-41-13",
+   "category": "Strength",
+   "theme": "Held",
+   "title": "Thy right hand held",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Strength.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw35",
+    "seedLine": 1522,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ISA-43-1",
+   "reference": "ISA 43:1",
+   "contextId": "ctx-ISA-43-1",
+   "category": "Identity",
+   "theme": "Called by name",
+   "title": "Thou art mine",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Identity. Cited by life situation(s): Rejection.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw43",
+    "seedLine": 1530,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ISA-43-2",
+   "reference": "ISA 43:2",
+   "contextId": "ctx-ISA-43-2",
+   "category": "Comfort",
+   "theme": "God with His people through waters and fire.",
+   "title": null,
+   "rationale": "Curated for Comfort: God with His people through waters and fire.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-ISA-43-2); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ISA-53-5",
+   "reference": "ISA 53:5",
+   "contextId": "ctx-ISA-53-5",
+   "category": "Healing",
+   "theme": "The suffering Servant wounded for transgressions.",
+   "title": null,
+   "rationale": "Curated for Healing: The suffering Servant wounded for transgressions. Cited by life situation(s): Healing.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-ISA-53-5); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ISA-54-13",
+   "reference": "ISA 54:13",
+   "contextId": "ctx-ISA-54-13",
+   "category": "Family",
+   "theme": "Taught children",
+   "title": "Children taught of the LORD",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Family. Cited by life situation(s): Parenting, Children, Family.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw16",
+    "seedLine": 1503,
+    "changes": [
+     "Demo title \"Peace for your children\" changed: Isaiah 54:13 was spoken to Zion, not to an individual parent."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ISA-54-17",
+   "reference": "ISA 54:17",
+   "contextId": "ctx-ISA-54-17",
+   "category": "Protection",
+   "theme": "No weapon",
+   "title": "Formed but failing",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Protection. Cited by life situation(s): Protection.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw28",
+    "seedLine": 1515,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JER-29-11",
+   "reference": "JER 29:11",
+   "contextId": "ctx-JER-29-11",
+   "category": "Hope",
+   "theme": "Character of God",
+   "title": "Thoughts of peace",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Hope.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dwa6",
+    "seedLine": 1542,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JER-30-17",
+   "reference": "JER 30:17",
+   "contextId": "ctx-JER-30-17",
+   "category": "Healing",
+   "theme": "Restored health",
+   "title": "I will heal thee",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Healing. Cited by life situation(s): Healing.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw24",
+    "seedLine": 1511,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-LAM-3-22-23",
+   "reference": "LAM 3:22-23",
+   "contextId": "ctx-LAM-3-22-23",
+   "category": "Hope",
+   "theme": "New mercies",
+   "title": "New every morning",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Hope. Cited by life situation(s): Failure, Waiting, Hope for the future, Worship.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw01",
+    "seedLine": 1488,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-EZK-36-26",
+   "reference": "EZK 36:26",
+   "contextId": "ctx-EZK-36-26",
+   "category": "Hope",
+   "theme": "The promise of a new heart to Israel.",
+   "title": null,
+   "rationale": "Curated for Hope: The promise of a new heart to Israel. Cited by life situation(s): Sin.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-EZK-36-26); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-MAT-3-17",
+   "reference": "MAT 3:17",
+   "contextId": "ctx-MAT-3-17",
+   "category": "Faith",
+   "theme": "The Father's word at Jesus' baptism.",
+   "title": null,
+   "rationale": "Curated for Faith: The Father's word at Jesus' baptism.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-MAT-3-17); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-MAT-5-14",
+   "reference": "MAT 5:14",
+   "contextId": "ctx-MAT-5-14",
+   "category": "Identity",
+   "theme": "Ye are the light of the world.",
+   "title": "The light of the world",
+   "rationale": "Curated for Identity: Ye are the light of the world. Cited by life situation(s): Identity.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-MAT-5-14); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-MAT-6-33",
+   "reference": "MAT 6:33",
+   "contextId": "ctx-MAT-6-33",
+   "category": "Provision",
+   "theme": "First the kingdom",
+   "title": "Seek first",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Provision. Cited by life situation(s): Financial pressure.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw21",
+    "seedLine": 1508,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-MAT-6-34",
+   "reference": "MAT 6:34",
+   "contextId": "ctx-MAT-6-34",
+   "category": "Rest",
+   "theme": "Today only",
+   "title": "Grace for today",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Rest. Cited by life situation(s): Anxiety.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw25",
+    "seedLine": 1512,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-MAT-7-7",
+   "reference": "MAT 7:7",
+   "contextId": "ctx-MAT-7-7",
+   "category": "Faith",
+   "theme": "Ask, seek, knock.",
+   "title": "Ask, seek, knock",
+   "rationale": "Curated for Faith: Ask, seek, knock.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-MAT-7-7); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-MAT-11-28",
+   "reference": "MAT 11:28",
+   "contextId": "ctx-MAT-11-28",
+   "category": "Rest",
+   "theme": "Come and rest",
+   "title": "Come unto Me",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Rest. Cited by life situation(s): Rest.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw09",
+    "seedLine": 1496,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-MAT-19-26",
+   "reference": "MAT 19:26",
+   "contextId": "ctx-MAT-19-26",
+   "category": "Faith",
+   "theme": "All things possible",
+   "title": "With God",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Faith.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw47",
+    "seedLine": 1534,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-MAT-28-20",
+   "reference": "MAT 28:20",
+   "contextId": "ctx-MAT-28-20",
+   "category": "Comfort",
+   "theme": "I am with you alway.",
+   "title": "With you always",
+   "rationale": "Curated for Comfort: I am with you alway. Cited by life situation(s): Loneliness, Evangelism.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-MAT-28-20); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-MRK-9-23",
+   "reference": "MRK 9:23",
+   "contextId": "ctx-MRK-9-23",
+   "category": "Faith",
+   "theme": "Possible to belief",
+   "title": "If thou canst believe",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Faith.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw31",
+    "seedLine": 1518,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-MRK-16-15",
+   "reference": "MRK 16:15",
+   "contextId": "ctx-MRK-16-15",
+   "category": "Purpose",
+   "theme": "The commission to preach the gospel.",
+   "title": "Go into all the world and preach the gospel",
+   "rationale": "Curated for Purpose: The commission to preach the gospel. Cited by life situation(s): Evangelism.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-MRK-16-15); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-LUK-6-38",
+   "reference": "LUK 6:38",
+   "contextId": "ctx-LUK-6-38",
+   "category": "Gratitude",
+   "theme": "Jesus on giving.",
+   "title": null,
+   "rationale": "Curated for Gratitude: Jesus on giving.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-LUK-6-38); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JHN-3-16",
+   "reference": "JHN 3:16",
+   "contextId": "ctx-JHN-3-16",
+   "category": "Faith",
+   "theme": "God's love in giving His Son.",
+   "title": "Whosoever believeth",
+   "rationale": "Curated for Faith: God's love in giving His Son.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-JHN-3-16); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JHN-6-37",
+   "reference": "JHN 6:37",
+   "contextId": "ctx-JHN-6-37",
+   "category": "Comfort",
+   "theme": "Not cast out",
+   "title": "In no wise cast out",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Comfort. Cited by life situation(s): Rejection.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw38",
+    "seedLine": 1525,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JHN-8-12",
+   "reference": "JHN 8:12",
+   "contextId": "ctx-JHN-8-12",
+   "category": "Guidance",
+   "theme": "Jesus, the light of the world.",
+   "title": null,
+   "rationale": "Curated for Guidance: Jesus, the light of the world.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-JHN-8-12); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JHN-10-10",
+   "reference": "JHN 10:10",
+   "contextId": "ctx-JHN-10-10",
+   "category": "Hope",
+   "theme": "Jesus came that they might have life.",
+   "title": null,
+   "rationale": "Curated for Hope: Jesus came that they might have life.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-JHN-10-10); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JHN-10-28",
+   "reference": "JHN 10:28",
+   "contextId": "ctx-JHN-10-28",
+   "category": "Protection",
+   "theme": "None shall pluck them out of Jesus' hand.",
+   "title": null,
+   "rationale": "Curated for Protection: None shall pluck them out of Jesus' hand.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-JHN-10-28); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JHN-11-25",
+   "reference": "JHN 11:25",
+   "contextId": "ctx-JHN-11-25",
+   "category": "Hope",
+   "theme": "Jesus, the resurrection and the life.",
+   "title": null,
+   "rationale": "Curated for Hope: Jesus, the resurrection and the life. Cited by life situation(s): Grief.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-JHN-11-25); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JHN-14-1",
+   "reference": "JHN 14:1",
+   "contextId": "ctx-JHN-14-1",
+   "category": "Peace",
+   "theme": "Let not your heart be troubled.",
+   "title": "Let not your heart be troubled",
+   "rationale": "Curated for Peace: Let not your heart be troubled.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-JHN-14-1); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JHN-14-6",
+   "reference": "JHN 14:6",
+   "contextId": "ctx-JHN-14-6",
+   "category": "Faith",
+   "theme": "Jesus, the way, the truth and the life.",
+   "title": null,
+   "rationale": "Curated for Faith: Jesus, the way, the truth and the life.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-JHN-14-6); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JHN-14-27",
+   "reference": "JHN 14:27",
+   "contextId": "ctx-JHN-14-27",
+   "category": "Peace",
+   "theme": "His own peace",
+   "title": "My peace I give",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Peace.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw18",
+    "seedLine": 1505,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JHN-15-11",
+   "reference": "JHN 15:11",
+   "contextId": "ctx-JHN-15-11",
+   "category": "Gratitude",
+   "theme": "Jesus' joy remaining in His disciples.",
+   "title": null,
+   "rationale": "Curated for Gratitude: Jesus' joy remaining in His disciples. Cited by life situation(s): Friendship.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-JHN-15-11); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JHN-16-33",
+   "reference": "JHN 16:33",
+   "contextId": "ctx-JHN-16-33",
+   "category": "Courage",
+   "theme": "Good cheer",
+   "title": "I have overcome",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Courage.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dwa4",
+    "seedLine": 1540,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ACT-1-8",
+   "reference": "ACT 1:8",
+   "contextId": "ctx-ACT-1-8",
+   "category": "Purpose",
+   "theme": "Power to be witnesses.",
+   "title": null,
+   "rationale": "Curated for Purpose: Power to be witnesses. Cited by life situation(s): Ministry, Evangelism.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-ACT-1-8); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ACT-16-31",
+   "reference": "ACT 16:31",
+   "contextId": "ctx-ACT-16-31",
+   "category": "Family",
+   "theme": "Believe, and thy house",
+   "title": "Thy house",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Family. Cited by life situation(s): Marriage.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw48",
+    "seedLine": 1535,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ROM-5-1",
+   "reference": "ROM 5:1",
+   "contextId": "ctx-ROM-5-1",
+   "category": "Peace",
+   "theme": "Peace with God through justification by faith.",
+   "title": "Saved by grace through faith",
+   "rationale": "Curated for Peace: Peace with God through justification by faith.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-ROM-5-1); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ROM-6-23",
+   "reference": "ROM 6:23",
+   "contextId": "ctx-ROM-6-23",
+   "category": "Faith",
+   "theme": "The gift of God is eternal life.",
+   "title": "The gift of God",
+   "rationale": "Curated for Faith: The gift of God is eternal life. Cited by life situation(s): Sin.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-ROM-6-23); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ROM-8-1",
+   "reference": "ROM 8:1",
+   "contextId": "ctx-ROM-8-1",
+   "category": "Purpose",
+   "theme": "No condemnation",
+   "title": "Now, no condemnation",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Purpose. Cited by life situation(s): Forgiveness.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dwa5",
+    "seedLine": 1541,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ROM-8-28",
+   "reference": "ROM 8:28",
+   "contextId": "ctx-ROM-8-28",
+   "category": "Purpose",
+   "theme": "Working together",
+   "title": "For good",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Purpose. Cited by life situation(s): Failure, Purpose.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw46",
+    "seedLine": 1533,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ROM-8-31",
+   "reference": "ROM 8:31",
+   "contextId": "ctx-ROM-8-31",
+   "category": "Courage",
+   "theme": "If God be for us.",
+   "title": "More than conquerors",
+   "rationale": "Curated for Courage: If God be for us.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-ROM-8-31); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ROM-8-37",
+   "reference": "ROM 8:37",
+   "contextId": "ctx-ROM-8-37",
+   "category": "Strength",
+   "theme": "More than conquerors.",
+   "title": "More than conquerors",
+   "rationale": "Curated for Strength: More than conquerors.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-ROM-8-37); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ROM-10-9",
+   "reference": "ROM 10:9",
+   "contextId": "ctx-ROM-10-9",
+   "category": "Faith",
+   "theme": "Confessing and believing unto salvation.",
+   "title": null,
+   "rationale": "Curated for Faith: Confessing and believing unto salvation.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-ROM-10-9); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-ROM-15-13",
+   "reference": "ROM 15:13",
+   "contextId": "ctx-ROM-15-13",
+   "category": "Hope",
+   "theme": "The God of hope",
+   "title": "Abound in hope",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Hope. Cited by life situation(s): Hope for the future.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw17",
+    "seedLine": 1504,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-1CO-10-13",
+   "reference": "1CO 10:13",
+   "contextId": "ctx-1CO-10-13",
+   "category": "Strength",
+   "theme": "A way to escape.",
+   "title": null,
+   "rationale": "Curated for Strength: A way to escape. Cited by life situation(s): Temptation.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-1CO-10-13); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-1CO-15-57",
+   "reference": "1CO 15:57",
+   "contextId": "ctx-1CO-15-57",
+   "category": "Gratitude",
+   "theme": "Victory",
+   "title": "Thanks be to God",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Gratitude. Cited by life situation(s): Gratitude.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw26",
+    "seedLine": 1513,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-2CO-9-8",
+   "reference": "2CO 9:8",
+   "contextId": "ctx-2CO-9-8",
+   "category": "Provision",
+   "theme": "All sufficiency",
+   "title": "Grace abounds",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Provision. Cited by life situation(s): Business.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw37",
+    "seedLine": 1524,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-2CO-12-9",
+   "reference": "2CO 12:9",
+   "contextId": "ctx-2CO-12-9",
+   "category": "Strength",
+   "theme": "Grace enough",
+   "title": "Sufficient for thee",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Strength.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw19",
+    "seedLine": 1506,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-GAL-6-9",
+   "reference": "GAL 6:9",
+   "contextId": "ctx-GAL-6-9",
+   "category": "Purpose",
+   "theme": "Due season",
+   "title": "Reap in time",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Purpose. Cited by life situation(s): Waiting.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw30",
+    "seedLine": 1517,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-EPH-2-8",
+   "reference": "EPH 2:8",
+   "contextId": "ctx-EPH-2-8",
+   "category": "Faith",
+   "theme": "Saved by grace through faith.",
+   "title": "Saved by grace through faith",
+   "rationale": "Curated for Faith: Saved by grace through faith.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-EPH-2-8); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-EPH-2-10",
+   "reference": "EPH 2:10",
+   "contextId": "ctx-EPH-2-10",
+   "category": "Identity",
+   "theme": "His workmanship",
+   "title": "Crafted, not accidental",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Identity. Cited by life situation(s): Purpose, Identity.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw27",
+    "seedLine": 1514,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-EPH-3-20",
+   "reference": "EPH 3:20",
+   "contextId": "ctx-EPH-3-20",
+   "category": "Gratitude",
+   "theme": "Doxology to Him who is able.",
+   "title": "Unto Him who is able to do exceeding abundantly",
+   "rationale": "Curated for Gratitude: Doxology to Him who is able.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-EPH-3-20); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PHP-1-6",
+   "reference": "PHP 1:6",
+   "contextId": "ctx-PHP-1-6",
+   "category": "Purpose",
+   "theme": "He finishes",
+   "title": "What He began",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Purpose. Cited by life situation(s): Career, Failure, Purpose.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw14",
+    "seedLine": 1501,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PHP-4-6",
+   "reference": "PHP 4:6",
+   "contextId": "ctx-PHP-4-6",
+   "category": "Peace",
+   "theme": "In every thing by prayer.",
+   "title": "Be careful for nothing; pray about everything",
+   "rationale": "Curated for Peace: In every thing by prayer. Cited by life situation(s): Anxiety.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PHP-4-6); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PHP-4-7",
+   "reference": "PHP 4:7",
+   "contextId": "ctx-PHP-4-7",
+   "category": "Peace",
+   "theme": "Guarded",
+   "title": "Peace that keeps",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Peace. Cited by life situation(s): Exams.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dwa1",
+    "seedLine": 1537,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PHP-4-13",
+   "reference": "PHP 4:13",
+   "contextId": "ctx-PHP-4-13",
+   "category": "Strength",
+   "theme": "I can do all things through Christ.",
+   "title": null,
+   "rationale": "Curated for Strength: I can do all things through Christ. Cited by life situation(s): Ministry.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-PHP-4-13); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-PHP-4-19",
+   "reference": "PHP 4:19",
+   "contextId": "ctx-PHP-4-19",
+   "category": "Provision",
+   "theme": "Every need",
+   "title": "Need, supplied",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Provision. Cited by life situation(s): Financial pressure.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw05",
+    "seedLine": 1492,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-COL-3-23",
+   "reference": "COL 3:23",
+   "contextId": "ctx-COL-3-23",
+   "category": "Purpose",
+   "theme": "Working heartily as to the Lord.",
+   "title": "Work heartily, as to the Lord",
+   "rationale": "Curated for Purpose: Working heartily as to the Lord. Cited by life situation(s): Career, Success, Ministry.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-COL-3-23); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-2TH-3-3",
+   "reference": "2TH 3:3",
+   "contextId": "ctx-2TH-3-3",
+   "category": "Protection",
+   "theme": "The Lord is faithful to stablish and keep.",
+   "title": null,
+   "rationale": "Curated for Protection: The Lord is faithful to stablish and keep.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-2TH-3-3); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-2TI-1-7",
+   "reference": "2TI 1:7",
+   "contextId": "ctx-2TI-1-7",
+   "category": "Courage",
+   "theme": "No fear-spirit",
+   "title": "Power, love, sound mind",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Courage. Cited by life situation(s): Fear, Temptation, Exams.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw36",
+    "seedLine": 1523,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-HEB-4-16",
+   "reference": "HEB 4:16",
+   "contextId": "ctx-HEB-4-16",
+   "category": "Faith",
+   "theme": "Coming boldly to the throne of grace.",
+   "title": "Come boldly unto the throne of grace",
+   "rationale": "Curated for Faith: Coming boldly to the throne of grace. Cited by life situation(s): Temptation.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-HEB-4-16); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-HEB-11-1",
+   "reference": "HEB 11:1",
+   "contextId": "ctx-HEB-11-1",
+   "category": "Faith",
+   "theme": "Defined",
+   "title": "What faith is",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Faith.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw15",
+    "seedLine": 1502,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-HEB-13-5",
+   "reference": "HEB 13:5",
+   "contextId": "ctx-HEB-13-5",
+   "category": "Comfort",
+   "theme": "\"I will never leave thee, nor forsake thee.\"",
+   "title": null,
+   "rationale": "Curated for Comfort: \"I will never leave thee, nor forsake thee.\"",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-HEB-13-5); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JAS-1-5",
+   "reference": "JAS 1:5",
+   "contextId": "ctx-JAS-1-5",
+   "category": "Wisdom",
+   "theme": "Ask for wisdom",
+   "title": "Ask liberally",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Wisdom. Cited by life situation(s): Decision making, Confusion, Exams.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw07",
+    "seedLine": 1494,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-JAS-1-17",
+   "reference": "JAS 1:17",
+   "contextId": "ctx-JAS-1-17",
+   "category": "Gratitude",
+   "theme": "Every good gift",
+   "title": "From above",
+   "rationale": "Listed in the GODSAID demo Daily Word corpus under Gratitude. Cited by life situation(s): Success, Gratitude.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dw10",
+    "seedLine": 1497,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-1PE-5-7",
+   "reference": "1PE 5:7",
+   "contextId": "ctx-1PE-5-7",
+   "category": "Peace",
+   "theme": "Casting all care upon Him.",
+   "title": "Cast your care and burden on the Lord",
+   "rationale": "Curated for Peace: Casting all care upon Him. Cited by life situation(s): Anxiety.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-1PE-5-7); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-1JN-1-9",
+   "reference": "1JN 1:9",
+   "contextId": "ctx-1JN-1-9",
+   "category": "Peace",
+   "theme": "Confession and cleansing.",
+   "title": null,
+   "rationale": "Curated for Peace: Confession and cleansing. Cited by life situation(s): Sin, Forgiveness.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-1JN-1-9); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-1JN-4-18",
+   "reference": "1JN 4:18",
+   "contextId": "ctx-1JN-4-18",
+   "category": "Courage",
+   "theme": "Perfect love casteth out fear.",
+   "title": null,
+   "rationale": "Curated for Courage: Perfect love casteth out fear.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-1JN-4-18); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-REV-21-4",
+   "reference": "REV 21:4",
+   "contextId": "ctx-REV-21-4",
+   "category": "Hope",
+   "theme": "No more death, sorrow or crying.",
+   "title": null,
+   "rationale": "Curated for Hope: No more death, sorrow or crying. Cited by life situation(s): Grief.",
+   "leapReserved": false,
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Stage D: passage with a curated Stage C context (ctx-REV-21-4); category assigned by curation.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dwc-REV-21-5",
+   "reference": "REV 21:5",
+   "contextId": "ctx-REV-21-5",
+   "category": "Hope",
+   "theme": "All things new",
+   "title": "All things new",
+   "rationale": "Reserved leap-day Daily Word in the GODSAID design (February 29).",
+   "leapReserved": true,
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dwleap",
+    "seedLine": 1544,
+    "changes": [
+     "Demo category \"Restoration\" mapped to Hope (Restoration is not one of the 16 Daily Word categories)."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  }
+ ]
+}

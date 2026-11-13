@@ -8,10 +8,11 @@ Generated from `assets/mwb/rulesets/` by the test suite. Do not edit by hand.
 
 | Status | Count |
 | --- | --- |
-| Automated checks passed | 20 |
+| Proposed | 2 |
+| Automated checks passed | 21 |
 | Rejected | 1 |
 
-Awaiting a decision: **20**. "Automated checks passed" is a technical result, not a theological approval.
+Awaiting a decision: **23**. "Automated checks passed" is a technical result, not a theological approval.
 
 Proposed renderings show `[Name]` where the reader’s name would appear.
 
@@ -67,6 +68,57 @@ Proposed renderings show `[Name]` where the reader’s name would appear.
 - **Automated validation:** passed
 - **Question for the reviewer:** Verse 18’s assurance follows verse 17 ("be thou in the fear of the LORD all the day long"). Should the name appear in verse 18 when it is shown on its own (daily verse, share card), or only when verse 17 is shown with it?
 - **Notes:** KJV-faithful candidate replacing the rejected kjv-mwb.PRO.23.18.a.
+- **Review history:** none
+
+---
+
+## Romans 15:13 — High risk — Automated checks passed
+
+- **Rule:** `kjv-mwb.ROM.15.13.b` (rule version 1)
+- **Edition:** KJV-MWB (from KJV)
+- **Operation:** 
+- **Original KJV:** Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.
+- **Proposed KJV-MWB:** Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.
+- **Context:** not recorded
+- **Risk reasons:** Collective benediction: the title frames it for the reader without changing the text. No passage context recorded.
+- **Grammar:** The KJV text is shown exactly as written. Only the editorial title carries the name.
+- **Automated validation:** passed — warning: No passage context is recorded for Romans 15:13
+- **Question for the reviewer:** Compliant alternative to the founder references: the KJV text unchanged, title “[First name], abound in hope”. Is a personal title appropriate over a benediction first given to the church in Rome?
+- **Notes:** Recommended form for Romans 15:13 pending theological review.
+- **Review history:** none
+
+---
+
+## Romans 15:13 — High risk — Proposed
+
+- **Rule:** `kjv-mwb.ROM.15.13.founder-a` (rule version 1)
+- **Edition:** KJV-MWB (from KJV)
+- **Operation:** approvedMinimalGrammaticalAdjustment
+- **Original KJV:** Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.
+- **Proposed KJV-MWB:** Now the God of hope fill [Name] with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.
+- **Context:** not recorded
+- **Risk reasons:** Collective benediction to the church in Rome. Replaces the plural pronoun “you” with one person while “ye may abound” remains. No passage context recorded. Changes source wording (minimal grammatical adjustment).
+- **Grammar:** Founder reference wording from the Stage D.1 brief, recorded exactly so it can be reviewed.
+- **Automated validation:** failed — error: Replaces the pronoun(s) “you”, which changes who is addressed or speaking; error: The verse still uses “ye” for the same person, so it would no longer agree with the replacement; warning: No passage context is recorded for Romans 15:13
+- **Question for the reviewer:** Founder reference (Mode A): “Now the God of hope fill [Name] with all joy… that ye may abound in hope…”. The plural “you” becomes one person while “ye” remains, and a benediction to a church becomes an individual one. Should this verse be personalised in the text at all?
+- **Notes:** Expected to fail automated validation (pronounReplaced, residualPronoun). Kept so reviewers see the founder example and why it is held back.
+- **Review history:** none
+
+---
+
+## Romans 15:13 — High risk — Proposed
+
+- **Rule:** `kjv-mwb.ROM.15.13.founder-b` (rule version 1)
+- **Edition:** KJV-MWB (from KJV)
+- **Operation:** approvedMinimalGrammaticalAdjustment
+- **Original KJV:** Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.
+- **Proposed KJV-MWB:** Now the God of hope fill You with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.
+- **Context:** not recorded
+- **Risk reasons:** Capitalising “you” to “You” reads as a divine pronoun and changes the KJV text. No passage context recorded. Changes source wording (minimal grammatical adjustment).
+- **Grammar:** Founder reference wording from the Stage D.1 brief, recorded exactly so it can be reviewed.
+- **Automated validation:** failed — error: A name-in-title proposal must show the Scripture unchanged; error: Changes capitalisation (“you” → “You”). A capitalised pronoun reads as a divine pronoun; warning: No passage context is recorded for Romans 15:13
+- **Question for the reviewer:** Founder reference (Mode B): title “[Name] Abound in hope” with “fill You” in the text. A name-in-title proposal must leave Scripture unchanged; the compliant alternative is kjv-mwb.ROM.15.13.b.
+- **Notes:** Expected to fail automated validation (titleModeEditsScripture, capitalisationChanged).
 - **Review history:** none
 
 ---
@@ -358,7 +410,7 @@ Proposed renderings show `[Name]` where the reader’s name would appear.
 - **Literary context:** Exhortation (verse 17) followed by assurance (verse 18).
 - **Condition:** Verse 18's assurance follows the exhortation of verse 17: "be thou in the fear of the LORD all the day long".
 - **Risk reasons:** Historical proposal that replaced KJV wording. Conditional promise. Verse 18's assurance follows the exhortation of verse 17: "be thou in the fear of the LORD all the day long". Changes source wording (minimal grammatical adjustment).
-- **Automated validation:** failed — error: Changes 5 source word(s) and adds 7; at most two of each is minimal; error: Introduces words not used by this KJV verse: a, future, you, your, hope, will
+- **Automated validation:** failed — error: Changes 5 source word(s) and adds 7; at most two of each is minimal; error: Introduces words not used by this KJV verse: a, future, you, your, hope, will; error: Replaces the pronoun(s) “thine”, which changes who is addressed or speaking; warning: Removes source word(s) “an”, “end”, “expectation”, “shall” without restoring them
 - **Rejection reason:** Replaces KJV vocabulary ("an end", "thine expectation", "shall") with another translation’s wording ("a future for you", "your hope", "will"). Fails versional integrity for KJV-MWB.
 - **Notes:** Kept for the record so this wording is never silently reused. Superseded by kjv-mwb.PRO.23.18.b.
 - **Review history:**

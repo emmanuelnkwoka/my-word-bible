@@ -23,6 +23,7 @@ void main() {
     test('has the planned original + MWB families, grouped by source', () {
       final families = {for (final f in catalogue.families) f.original.id: f.editions.map((e) => e.id).toList()};
       expect(families['KJV'], ['KJV-MWB']);
+      expect(families['WEB'], ['WEB-MWB']);
       expect(families['NKJV'], ['NKJV-MWB']);
       expect(families['NIV'], ['NIV-MWB']);
       expect(families['NLT'], ['NLT-MWB']);
@@ -43,8 +44,21 @@ void main() {
       }
     });
 
-    test('only KJV is selectable today', () {
-      expect(catalogue.versions.where(catalogue.isSelectable).map((v) => v.id), ['KJV']);
+    test('KJV, KJV-MWB, WEB and WEB-MWB are selectable; restricted versions are not', () {
+      expect(catalogue.versions.where(catalogue.isSelectable).map((v) => v.id), ['KJV', 'KJV-MWB', 'WEB', 'WEB-MWB']);
+    });
+
+    test('the picker order follows the planned families', () {
+      expect(catalogue.versions.map((v) => v.id), [
+        'KJV', 'KJV-MWB', 'WEB', 'WEB-MWB', 'NKJV', 'NKJV-MWB', 'NIV', 'NIV-MWB', 'NLT', 'NLT-MWB', //
+      ]);
+    });
+
+    test('WEB-MWB is never called the World English Bible (eBible.org trademark condition)', () {
+      final edition = catalogue.byId('WEB-MWB')!;
+      expect(edition.name, isNot('World English Bible'));
+      expect(edition.name, contains('derived from'));
+      expect(edition.licence!.attribution, contains('never be presented as the World English Bible'));
     });
 
     test('restricted translations and their MWB editions stay disabled without permission', () {
@@ -104,12 +118,18 @@ void main() {
       expect(forged.isSelectable(forged.byId('X-MWB')!), isFalse);
     });
 
-    test('KJV-MWB derives from KJV and is not yet available for reading', () {
-      final mwb = catalogue.byId('KJV-MWB')!;
-      expect(mwb.sourceVersionId, 'KJV');
-      expect(mwb.status, BibleVersionStatus.inDevelopment);
-      expect(mwb.licence!.derivativeWorks.allows, isTrue);
-      expect(catalogue.isSelectable(mwb), isFalse);
+    test('each MWB edition reads its own original translation', () {
+      for (final (edition, source) in [('KJV-MWB', 'KJV'), ('WEB-MWB', 'WEB')]) {
+        final mwb = catalogue.byId(edition)!;
+        expect(mwb.sourceVersionId, source);
+        expect(catalogue.sourceOf(edition)!.id, source);
+        expect(mwb.personalisation, PersonalisationAvailability.available);
+        expect(mwb.licence!.derivativeWorks.allows, isTrue);
+        expect(catalogue.isSelectable(mwb), isTrue);
+        // Edition availability is explained separately from passage approval.
+        expect(mwb.note, contains('await theological review'));
+        expect(mwb.note, isNot(contains('not yet')));
+      }
     });
   });
 
@@ -119,8 +139,15 @@ void main() {
       expect(testContainer(store).read(activeVersionProvider).id, 'KJV');
     });
 
+    test('saved KJV-MWB, WEB and WEB-MWB preferences are preserved', () {
+      for (final id in ['KJV-MWB', 'WEB', 'WEB-MWB']) {
+        final store = onboardedStore()..writeJson(StorageKeys.readingPreferences, {'versionId': id});
+        expect(testContainer(store).read(activeVersionProvider).id, id);
+      }
+    });
+
     test('an unavailable or unknown saved version falls back to KJV without crashing', () {
-      for (final id in ['KJV-MWB', 'NIV', 'ESV', 'nonsense']) {
+      for (final id in ['NIV', 'NKJV-MWB', 'ESV', 'nonsense']) {
         final store = onboardedStore()..writeJson(StorageKeys.readingPreferences, {'versionId': id});
         expect(testContainer(store).read(activeVersionProvider).id, 'KJV', reason: id);
       }
@@ -151,7 +178,7 @@ void main() {
         tester,
       ) async {
         await pumpPicker(tester, brightness);
-        for (final id in ['KJV', 'KJV-MWB', 'NKJV', 'NKJV-MWB', 'NIV', 'NIV-MWB', 'NLT', 'NLT-MWB']) {
+        for (final id in ['KJV', 'KJV-MWB', 'WEB', 'WEB-MWB', 'NKJV', 'NKJV-MWB', 'NIV', 'NIV-MWB', 'NLT', 'NLT-MWB']) {
           expect(find.byKey(ValueKey('version-$id')), findsOneWidget, reason: id);
         }
         // Each edition sits directly below its source.
@@ -177,11 +204,16 @@ void main() {
           ),
         ),
       );
-      await tester.tap(find.byKey(const ValueKey('version-KJV-MWB')));
-      await tester.tap(find.byKey(const ValueKey('version-NIV')));
-      expect(picked, isNull);
-      await tester.tap(find.byKey(const ValueKey('version-KJV')));
-      expect(picked, 'KJV');
+      for (final id in ['NIV', 'NIV-MWB', 'NKJV', 'NLT-MWB']) {
+        await tester.ensureVisible(find.byKey(ValueKey('version-$id')));
+        await tester.tap(find.byKey(ValueKey('version-$id')));
+        expect(picked, isNull, reason: id);
+      }
+      for (final id in ['KJV', 'KJV-MWB', 'WEB', 'WEB-MWB']) {
+        await tester.ensureVisible(find.byKey(ValueKey('version-$id')));
+        await tester.tap(find.byKey(ValueKey('version-$id')));
+        expect(picked, id);
+      }
     });
   });
 }

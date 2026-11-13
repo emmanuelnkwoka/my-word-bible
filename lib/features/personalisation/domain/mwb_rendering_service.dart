@@ -31,7 +31,9 @@ class MwbRenderingService {
     required String targetVersionId,
     required List<Verse> sourceVerses,
     required UserProfile? profile,
+    MwbRenderer? rendererOverride,
   }) async {
+    final renderer = rendererOverride ?? this.renderer;
     final sourceId = catalogue.byId(targetVersionId)?.sourceVersionId ?? '';
     MwbRuleset? ruleset;
     try {
@@ -40,6 +42,7 @@ class MwbRenderingService {
       ruleset = null; // No rules: every verse shows the source.
     }
     final name = PersonalNameResolver.resolve(profile);
+    final titleName = PersonalNameResolver.resolveTitle(profile);
     final out = <RenderedVerse>[];
     for (final verse in sourceVerses) {
       try {
@@ -51,6 +54,7 @@ class MwbRenderingService {
             targetVersionId: targetVersionId,
             ruleset: ruleset,
             name: name,
+            titleName: titleName,
             context: hasRule ? await contexts.contextFor(verse.reference) : null,
           ),
         );

@@ -82,9 +82,13 @@ class MwbCard extends StatelessWidget {
     this.padding = const EdgeInsets.all(MwbSpace.md),
     this.color,
     this.borderColor,
-    this.radius = MwbRadius.lg,
+    this.radius = MwbRadius.xl,
     this.semanticLabel,
+    this.elevated = true,
   });
+
+  /// Soft warm shadow (reference card treatment). Off for nested cards.
+  final bool elevated;
 
   final Widget child;
   final VoidCallback? onTap;
@@ -102,15 +106,21 @@ class MwbCard extends StatelessWidget {
       side: BorderSide(color: borderColor ?? c.border),
     );
     final content = Padding(padding: padding, child: child);
+    final material = Material(
+      color: color ?? c.surfaceElevated,
+      shape: shape,
+      clipBehavior: Clip.antiAlias,
+      child: onTap == null ? content : InkWell(onTap: onTap, child: content),
+    );
     return Semantics(
       label: semanticLabel,
       button: onTap != null,
-      child: Material(
-        color: color ?? c.surfaceElevated,
-        shape: shape,
-        clipBehavior: Clip.antiAlias,
-        child: onTap == null ? content : InkWell(onTap: onTap, child: content),
-      ),
+      child: elevated
+          ? DecoratedBox(
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(radius), boxShadow: c.softShadow),
+              child: material,
+            )
+          : material,
     );
   }
 }

@@ -9,6 +9,7 @@ import '../../../core/widgets/sheets.dart';
 import '../../../data/models/bible_canon.dart';
 import '../../../data/models/scripture_reference.dart';
 import '../../../data/models/user_profile.dart';
+import '../../personalisation/presentation/mwb_review_widgets.dart';
 import '../../profile/application/profile_controllers.dart';
 
 /// Text size, reading surface and verse number controls. Changes apply
@@ -48,6 +49,7 @@ Future<void> showReadingSettingsSheet(BuildContext context) {
               value: prefs.showVerseNumbers,
               onChanged: (v) => ctrl.update((p) => p.copyWith(showVerseNumbers: v)),
             ),
+            const MwbReviewerModeTile(),
           ],
         );
       },
