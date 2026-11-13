@@ -1,0 +1,173 @@
+{
+ "schemaVersion": 1,
+ "corpusVersion": "1.0.0",
+ "worshipThemes": [
+  {
+   "id": "ws-bless-the-lord",
+   "title": "Bless the LORD, O my soul",
+   "references": [
+    "PSA 103:3",
+    "PSA 103:1-2"
+   ],
+   "worshipKind": "thanksgiving",
+   "themes": [
+    "theme-worship"
+   ],
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Praise and thanksgiving wording of PSA 103:3, PSA 103:1-2.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ws-faithfulness",
+   "title": "Great is thy faithfulness",
+   "references": [
+    "LAM 3:22-23"
+   ],
+   "worshipKind": "praise",
+   "themes": [
+    "theme-worship"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-hope-1",
+    "seedLine": 1259,
+    "changes": [
+     "Reclassified from a demo promise to a worship theme."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ws-joy-in-his-presence",
+   "title": "Fulness of joy in His presence",
+   "references": [
+    "PSA 16:11"
+   ],
+   "worshipKind": "praise",
+   "themes": [
+    "theme-worship"
+   ],
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Praise and thanksgiving wording of PSA 16:11.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ws-every-good-gift",
+   "title": "Every good and perfect gift",
+   "references": [
+    "JAS 1:17"
+   ],
+   "worshipKind": "thanksgiving",
+   "themes": [
+    "theme-worship"
+   ],
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Praise and thanksgiving wording of JAS 1:17.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ws-thanks-for-victory",
+   "title": "Thanks be to God for the victory",
+   "references": [
+    "1CO 15:57"
+   ],
+   "worshipKind": "thanksgiving",
+   "themes": [
+    "theme-worship"
+   ],
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Praise and thanksgiving wording of 1CO 15:57.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ws-refuge-and-strength",
+   "title": "God our refuge and strength",
+   "references": [
+    "PSA 46:1"
+   ],
+   "worshipKind": "trust",
+   "themes": [
+    "theme-worship"
+   ],
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Praise and thanksgiving wording of PSA 46:1.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ws-exceeding-abundantly",
+   "title": "Unto Him who is able to do exceeding abundantly",
+   "references": [
+    "EPH 3:20"
+   ],
+   "worshipKind": "praise",
+   "themes": [
+    "theme-worship"
+   ],
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Praise and thanksgiving wording of EPH 3:20.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ws-word-lamp",
+   "title": "Thy word is a lamp",
+   "references": [
+    "PSA 119:105"
+   ],
+   "worshipKind": "trust",
+   "themes": [
+    "theme-worship"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-wis-2",
+    "seedLine": 1268,
+    "changes": [
+     "Reclassified from a demo promise to a worship theme."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  }
+ ]
+}

@@ -44,6 +44,10 @@ enum RuleStatus {
   automatedValidated('Automated checks passed'),
   underReview('Under theological review'),
   approved('Approved'),
+
+  /// A reviewer supplied corrected wording. The corrected version is a new
+  /// rule version and is publishable only once it is itself approved.
+  corrected('Corrected — awaiting approval'),
   rejected('Rejected'),
   retired('Retired');
 
@@ -120,7 +124,24 @@ class RuleEdit {
 }
 
 /// What a review step did.
-enum ReviewAction { submitted, approved, rejected, retired, comment }
+///
+/// [corrected] carries reviewer wording and creates a new rule version.
+/// [flagged] marks an uncertain case and returns it to review. [reopened]
+/// reopens a closed or approved decision (it needs a named reviewer and a
+/// reason).
+enum ReviewAction { submitted, approved, rejected, retired, comment, corrected, flagged, reopened }
+
+/// How a proposal presents the reader's name.
+enum PresentationMode {
+  /// Mode A: the name is placed inside the Scripture rendering.
+  nameInText('Name inside the Scripture'),
+
+  /// Mode B: the Scripture is unchanged; the name appears only in the title.
+  nameInTitle('Name in the title');
+
+  const PresentationMode(this.label);
+  final String label;
+}
 
 /// One entry in a rule's review history.
 ///
@@ -136,11 +157,22 @@ class ReviewRecord {
     this.reviewerRole,
     this.comments = '',
     this.rejectionReason,
+    this.correctedText,
+    this.correctedTitle,
   });
 
   final ReviewAction action;
   final DateTime at;
+
+  /// The rule version the record applies to. For [ReviewAction.corrected]
+  /// this is the NEW version the correction creates.
   final int ruleVersion;
+
+  /// Reviewer wording for the whole verse, with `{name}` where the name goes.
+  final String? correctedText;
+
+  /// Reviewer wording for a name-in-title proposal's title.
+  final String? correctedTitle;
   final String? reviewer;
   final String? reviewerRole;
   final String comments;
@@ -152,6 +184,8 @@ class ReviewRecord {
     ReviewAction.approved => RuleStatus.approved,
     ReviewAction.rejected => RuleStatus.rejected,
     ReviewAction.retired => RuleStatus.retired,
+    ReviewAction.corrected => RuleStatus.corrected,
+    ReviewAction.flagged || ReviewAction.reopened => RuleStatus.underReview,
     ReviewAction.comment => null,
   };
 
@@ -165,6 +199,8 @@ class ReviewRecord {
     if (reviewerRole != null) 'reviewerRole': reviewerRole,
     if (comments.isNotEmpty) 'comments': comments,
     if (rejectionReason != null) 'rejectionReason': rejectionReason,
+    if (correctedText != null) 'correctedText': correctedText,
+    if (correctedTitle != null) 'correctedTitle': correctedTitle,
   };
 
   factory ReviewRecord.fromJson(Map<String, dynamic> j) => ReviewRecord(
@@ -175,7 +211,73 @@ class ReviewRecord {
     reviewerRole: j['reviewerRole'] as String?,
     comments: j['comments'] as String? ?? '',
     rejectionReason: j['rejectionReason'] as String?,
+    correctedText: j['correctedText'] as String?,
+    correctedTitle: j['correctedTitle'] as String?,
   );
+}
+
+/// Catalogue metadata for a proposal: who speaks, to whom, why it was
+/// proposed and where the information came from. Shown to reviewers only.
+@immutable
+class ProposalMetadata {
+  const ProposalMetadata({
+    this.classification = '',
+    this.reason = '',
+    this.author = '',
+    this.speaker = '',
+    this.audience = '',
+    this.literaryForm = '',
+    this.contextSource = '',
+    this.numberSource = '',
+    this.rationale = '',
+    this.confidence = '',
+    this.uncertainty = '',
+    this.origin = 'handAuthored',
+    this.catalogueVersion,
+    this.generatorRuleVersion,
+    this.titleSource,
+  });
+
+  final String classification;
+  final String reason;
+  final String author;
+  final String speaker;
+  final String audience;
+  final String literaryForm;
+  final String contextSource;
+  final String numberSource;
+  final String rationale;
+  final String confidence;
+  final String uncertainty;
+
+  /// `handAuthored` (Stage B rulesets) or `generated` (catalogue tool).
+  final String origin;
+  final String? catalogueVersion;
+  final int? generatorRuleVersion;
+  final String? titleSource;
+
+  bool get isGenerated => origin == 'generated';
+
+  factory ProposalMetadata.fromJson(Map<String, dynamic> j) {
+    final prov = j['provenance'] as Map<String, dynamic>?;
+    return ProposalMetadata(
+      classification: j['classification'] as String? ?? '',
+      reason: j['reason'] as String? ?? '',
+      author: j['author'] as String? ?? '',
+      speaker: j['speaker'] as String? ?? '',
+      audience: j['audience'] as String? ?? '',
+      literaryForm: j['literaryForm'] as String? ?? '',
+      contextSource: j['contextSource'] as String? ?? '',
+      numberSource: j['numberSource'] as String? ?? '',
+      rationale: j['rationale'] as String? ?? '',
+      confidence: j['confidence'] as String? ?? '',
+      uncertainty: j['uncertainty'] as String? ?? '',
+      origin: prov?['origin'] as String? ?? 'handAuthored',
+      catalogueVersion: prov?['catalogueVersion'] as String?,
+      generatorRuleVersion: j['generatorRuleVersion'] as int?,
+      titleSource: j['titleSource'] as String?,
+    );
+  }
 }
 
 /// A version-specific personalisation rule for a single verse.
@@ -201,9 +303,20 @@ class MwbRule {
     this.rejectionReason,
     this.notes = '',
     this.reviews = const [],
+    this.presentationMode = PresentationMode.nameInText,
+    this.titleTemplate,
+    this.meta = const ProposalMetadata(),
   });
 
   final String id;
+
+  /// Mode A (name in the text) or Mode B (name in the title only).
+  final PresentationMode presentationMode;
+
+  /// Mode B title, with `{name}` for the reader's first (or preferred) name.
+  /// Editorial text, never Scripture.
+  final String? titleTemplate;
+  final ProposalMetadata meta;
 
   /// Incremented whenever the rule's edits change. Approvals apply to one
   /// rule version only.
@@ -273,7 +386,51 @@ class MwbRule {
           rejectionReason: rejectionReason,
           notes: notes,
           reviews: [...reviews, ...extra],
+          presentationMode: presentationMode,
+          titleTemplate: titleTemplate,
+          meta: meta,
         );
+
+  /// The latest reviewer correction, if any.
+  ReviewRecord? get latestCorrection {
+    for (final r in reviews.reversed) {
+      if (r.action == ReviewAction.corrected) return r;
+    }
+    return null;
+  }
+
+  /// This rule with the latest reviewer correction applied: a new rule
+  /// version whose edits are derived from the corrected wording. The
+  /// canonical source text is never changed.
+  MwbRule get effective {
+    final c = latestCorrection;
+    if (c == null || c.ruleVersion <= ruleVersion) return this;
+    final derived = c.correctedText == null ? edits : RuleCorrection.editsFor(sourceText, c.correctedText!);
+    return MwbRule(
+      id: id,
+      ruleVersion: c.ruleVersion,
+      sourceVersionId: sourceVersionId,
+      targetVersionId: targetVersionId,
+      reference: reference,
+      sourceText: sourceText,
+      edits: derived ?? const [],
+      declaredRisk: declaredRisk,
+      status: status,
+      requiredFields: requiredFields,
+      grammaticalConditions: [
+        if (derived == null) 'The corrected wording could not be expressed as anchored edits; it needs rule authoring.',
+        'Edits derived from reviewer wording (rule version ${c.ruleVersion}).',
+      ],
+      riskReasons: riskReasons,
+      reviewQuestion: reviewQuestion,
+      rejectionReason: rejectionReason,
+      notes: notes,
+      reviews: reviews,
+      presentationMode: presentationMode,
+      titleTemplate: c.correctedTitle ?? titleTemplate,
+      meta: meta,
+    );
+  }
 
   factory MwbRule.fromJson(Map<String, dynamic> j, {required String sourceVersionId, required String targetVersionId}) {
     final fields = (j['requiredFields'] as List?)?.cast<String>().map(ProfileField.values.byName).toSet();
@@ -294,7 +451,96 @@ class MwbRule {
       rejectionReason: j['rejectionReason'] as String?,
       notes: j['notes'] as String? ?? '',
       reviews: (j['reviews'] as List?)?.cast<Map<String, dynamic>>().map(ReviewRecord.fromJson).toList() ?? const [],
+      presentationMode: PresentationMode.values.asNameMap()[j['presentationMode']] ?? PresentationMode.nameInText,
+      titleTemplate: j['title'] as String?,
+      meta: ProposalMetadata.fromJson(j),
     );
+  }
+}
+
+/// Turns reviewer wording into anchored edits over the canonical verse.
+///
+/// Only one contiguous change is derived (the common prefix and suffix are
+/// kept). Whether the change is acceptable is decided by the validator.
+abstract final class RuleCorrection {
+  static final _punctuation = RegExp(r'^[\s,;:.!?—–\-]*$');
+
+  static List<RuleEdit>? editsFor(String source, String corrected) {
+    if (corrected == source) return const [];
+    var pre = 0;
+    while (pre < source.length && pre < corrected.length && source[pre] == corrected[pre]) {
+      pre++;
+    }
+    var suf = 0;
+    while (suf < source.length - pre &&
+        suf < corrected.length - pre &&
+        source[source.length - 1 - suf] == corrected[corrected.length - 1 - suf]) {
+      suf++;
+    }
+    final removed = source.substring(pre, source.length - suf);
+    final added = corrected.substring(pre, corrected.length - suf);
+    if (removed.isEmpty) {
+      var start = pre;
+      while (start > 0 && (pre - start < 12 || _count(source, source.substring(start, pre)) > 1)) {
+        start--;
+      }
+      final anchor = source.substring(start, pre);
+      if (anchor.isEmpty) return null;
+      final occurrence = _count(source, anchor) > 1 ? _occurrenceAt(source, anchor, start) : null;
+      if (added.contains(namePlaceholder) && _punctuation.hasMatch(added.replaceAll(namePlaceholder, ''))) {
+        return [
+          RuleEdit(
+            operation: PersonalisationOperation.insertDirectAddress,
+            anchor: anchor,
+            position: EditPosition.after,
+            text: added,
+            occurrence: occurrence,
+          ),
+        ];
+      }
+      return [
+        RuleEdit(
+          operation: PersonalisationOperation.approvedMinimalGrammaticalAdjustment,
+          anchor: anchor,
+          position: EditPosition.replace,
+          text: '$anchor$added',
+          occurrence: occurrence,
+        ),
+      ];
+    }
+    return [
+      RuleEdit(
+        operation: _punctuation.hasMatch(removed) && _punctuation.hasMatch(added)
+            ? PersonalisationOperation.punctuationAdjustment
+            : PersonalisationOperation.approvedMinimalGrammaticalAdjustment,
+        anchor: removed,
+        position: EditPosition.replace,
+        text: added,
+        occurrence: _count(source, removed) > 1 ? _occurrenceAt(source, removed, pre) : null,
+      ),
+    ];
+  }
+
+  static int _count(String s, String p) {
+    if (p.isEmpty) return 0;
+    var n = 0;
+    var i = s.indexOf(p);
+    while (i >= 0) {
+      n++;
+      i = s.indexOf(p, i + 1);
+    }
+    return n;
+  }
+
+  static int _occurrenceAt(String s, String p, int at) {
+    var n = 0;
+    var i = s.indexOf(p);
+    while (i >= 0) {
+      n++;
+      if (i == at) return n;
+      i = s.indexOf(p, i + 1);
+    }
+    return 1;
   }
 }
 

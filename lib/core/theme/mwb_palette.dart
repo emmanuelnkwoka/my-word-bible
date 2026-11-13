@@ -63,6 +63,26 @@ class MwbPalette {
 
   bool get isDark => brightness == Brightness.dark;
 
+  /// The champagne-to-antique brand gradient used for primary actions and
+  /// brand marks. Derived from the palette so every theme has its own.
+  LinearGradient get brandGradient => LinearGradient(
+    begin: Alignment.centerLeft,
+    end: Alignment.centerRight,
+    colors: [Color.lerp(accent, primary, 0.35)!, primaryStrong],
+  );
+
+  /// A very soft, warm elevation shadow for cards and the floating navigation.
+  List<BoxShadow> get softShadow => [
+    BoxShadow(
+      color: (isDark ? Colors.black : const Color(0xFF6B4A1E)).withValues(alpha: isDark ? 0.35 : 0.07),
+      blurRadius: 24,
+      offset: const Offset(0, 8),
+    ),
+  ];
+
+  /// Personalised name colour inside Scripture (gold, readable on surfaces).
+  Color get nameInk => isDark ? accent : Color.lerp(primary, primaryStrong, 0.4)!;
+
   static const lightHighlightTones = [Color(0xFFF3E2B3), Color(0xFFDCEBD5), Color(0xFFD9E4F2), Color(0xFFF1D9DC)];
 
   static const darkHighlightTones = [Color(0xFF5C4A1F), Color(0xFF2F4A39), Color(0xFF2E3F5C), Color(0xFF55303A)];

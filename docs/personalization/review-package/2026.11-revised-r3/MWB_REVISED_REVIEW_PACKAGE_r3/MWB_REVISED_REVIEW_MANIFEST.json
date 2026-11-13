@@ -1,0 +1,77 @@
+{
+  "package": "MWB_REVISED_REVIEW_PACKAGE_r3",
+  "packageVersion": "2026.11-revised-r3",
+  "catalogueVersion": "2026.11-d1",
+  "generated": "2026-11-13",
+  "reviewer": "MY WORD BIBLE — Internal Theological and Linguistic Review",
+  "reviewerRole": "Internal theological & linguistic review (advisory; awaiting designated supervisor ratification)",
+  "supersedes": "2026.11-revised-r2 (preserved, immutable)",
+  "note": "Data-integrity repair. 'approvedPresentation' = internal product acceptance only; no human supervisor approval is recorded or implied. Importer compatibility is UNVERIFIED (Flutter repo not supplied).",
+  "deterministic_key": "verse_key = BOOK_ID.chapter.verse ; join (edition, verse_key)",
+  "totals": {
+    "kjv_verses": 31102,
+    "web_verses": 31103,
+    "total_verses": 62205,
+    "proposals": 974,
+    "receptions_per_edition": 50,
+    "layers_kjv": 200,
+    "layers_web": 195,
+    "web_titles_corrected": 17,
+    "web_titles_nochange": 2,
+    "web_titles_unresolved": 0,
+    "titles_withheld_unverifiable": 15,
+    "empty_web_records": 5
+  },
+  "presentation_distribution": {
+    "KJV": {
+      "originalScriptureOnly": 30923,
+      "personalReception": 35,
+      "personalTitle": 33,
+      "directPersonalisation": 111
+    },
+    "WEB": {
+      "originalScriptureOnly": 30930,
+      "personalReception": 37,
+      "personalTitle": 30,
+      "directPersonalisation": 106
+    }
+  },
+  "source_fingerprints": {
+    "csv/all_verses_kjv.csv": "427f721552e115ac551935c18344cbe578c09b4263fc2b7db0b30241e68c08b5",
+    "csv/all_verses_web.csv": "38e8e0ef868e95d498a228ef7255d344d521224b78e4057616a551f0659ed6ca",
+    "review_records.json": "18588ea0a683182da94d90f515252082b5db9985bd0c1a99ed36e6ae9978363d",
+    "csv/proposals.csv": "53b1b84257f76f42cd13d92b9c2a5c5f92d5a5a23f33989eebb141bf89902314"
+  },
+  "output_fingerprints": {
+    "CLAUDE_CODE_INTEGRATION_GUIDE.md": "1ef941044d5a2a42a7379d0eb4d187749683767bdf299e2ebe534a09cbc860c0",
+    "MWB_CHANGELOG_r2_to_r3.md": "410b1a67db0a5fe08a539162a4e5d2fc921f597c7077d901eaa91b7e759e6ce6",
+    "MWB_COMPLETE_COVERAGE_REPORT.md": "958e3cbf55907db80c2db4fa811d2ead9d77c2a5ecb2539dd0424a95f1011d7d",
+    "MWB_COMPLETE_PERSONAL_RECEPTIONS_KJV.csv": "7ac569997124c747bea844a2902b655aff0939bcf9f0180e40c8cb060073df67",
+    "MWB_COMPLETE_PERSONAL_RECEPTIONS_WEB.csv": "15562360d8ffac6058ca265d9ab3d993fb6137ad1d8d2d9283e8321e165c350f",
+    "MWB_COMPLETE_PRESENTATIONS_KJV.csv": "5ccb9fe54f248d681e997bd17719c375f232a2a1abb303d61a7042511c35a051",
+    "MWB_COMPLETE_PRESENTATIONS_WEB.csv": "eb87fe8e1fd84a691c306c0f294d0f6891d044ad89d51f317809f58b4f371e4d",
+    "MWB_LAYER_MAPPING_KJV.csv": "86404d59f4622d376b8f310c95ecce8132ec613612ef81e3e997c17b70f86d4b",
+    "MWB_LAYER_MAPPING_SPECIFICATION.md": "f8d89f69c5c4f4e9552b5a5731b17de0c37e3a61a0264710fa63c04e26b3222f",
+    "MWB_LAYER_MAPPING_WEB.csv": "c696a15d06152226bd78af8547725f55a705c80e8d9eeaf323eb1447357d6229",
+    "MWB_PRESENTATION_RULEBOOK.md": "8f336f8e644087425676813189831c13094f5e1ef81e7b200a554b4f7b73e0b8",
+    "MWB_PREVIOUS_FLAGS_REASSESSMENT.csv": "63cbe26387b4c1e4afe053f70aaf08f208ae3fb34320dcaecf25076c17d046c6",
+    "MWB_PUBLICATION_POLICY.md": "2ec726f4af9cfb24cde09917a0fc4b81e6804c9b1c62e3d5980b2d56c262e98a",
+    "MWB_RECEPTION_RECONCILIATION.csv": "a41ee3eaed9206777c73924216f07eefe6a62f5e211a44323440ab0d0c20a4b1",
+    "MWB_REVISED_CORRECTIONS.csv": "9e6620d114c2bc56f27926d52a7c7f193bca27e73b8c31fbf5ea414c4cd6c5b0",
+    "MWB_REVISED_FINAL_DECISIONS_KJV.csv": "9ca8a011d29bca8b934c330b2bdbde921ba48766c6becdb2390fd5e985da2661",
+    "MWB_REVISED_FINAL_DECISIONS_WEB.csv": "4c0e7753f1e5a272314c51ca5b2649b0b37f6932e2425f3633c27f66931cd734",
+    "MWB_REVISED_GRAMMATICAL_AUDIT_REPORT.md": "a7ea67dd3fd75c8d39ab95d779cc2eeef0c3b46a0b6819ecde9832b24e783c06",
+    "MWB_REVISED_IMPLEMENTATION_INSTRUCTIONS.md": "9ee06df853fdab5cad7e3f207df56585d57627c67992213401c639f0a9700601",
+    "MWB_REVISED_THEOLOGICAL_REVIEW_REPORT.md": "1d288d7f5a7267ce0659b31a2783e371b340660bc3705573f3d2c6d6b00b6e16",
+    "MWB_TITLE_FAITHFULNESS_AUDIT.csv": "14fd4fa47b2c9493f5265e0aabaab172639df868f6291a6faa7e1b73fa30aa01",
+    "MWB_VALIDATION_RESULTS.md": "d0b528958e5c079746ad1c71da137488d3eac07683b238ec436f8f2141769aee",
+    "MWB_WEB_CORRECTED_TITLE_AUDIT.csv": "6fb544a76b59dd87c5fd9a283fb897a29fcd2a0adc9c07e04ef9f62fcc7f3514",
+    "MWB_WEB_EMPTY_RECORD_AUDIT.csv": "f379712c88afb601edeefeec9b00531114e58200164e811cd40b47bffce9b0f4"
+  },
+  "release_status": "READY_WITH_DOCUMENTED_LIMITATIONS",
+  "limitations": [
+    "Importer compatibility UNVERIFIED (repo not supplied); the layer mapping is the authoritative contract.",
+    "15 pre-existing catalogue titles withheld as unverifiable against their verse (original Scripture shown).",
+    "0 WEB titles unresolved."
+  ]
+}

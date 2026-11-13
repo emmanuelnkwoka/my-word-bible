@@ -16,19 +16,28 @@ final activeVersionProvider = Provider<BibleVersionInfo>((ref) {
   return selectable.firstWhere((v) => v.id == preferred, orElse: () => selectable.first);
 });
 
+/// The original translation whose canonical text is read for the active
+/// version. For an MWB edition (e.g. KJV-MWB) this is its source (KJV): MWB
+/// editions never have stored text of their own. Use this to label text that
+/// is shown unrendered (cards, search results, copied verses).
+final textVersionProvider = Provider<BibleVersionInfo>((ref) {
+  final active = ref.watch(activeVersionProvider);
+  return ref.watch(versionCatalogueProvider).sourceOf(active.id) ?? active;
+});
+
 final bibleBooksProvider = FutureProvider<List<BibleBookInfo>>((ref) {
-  final version = ref.watch(activeVersionProvider);
+  final version = ref.watch(textVersionProvider);
   return ref.watch(bibleRepositoryProvider).books(version.id);
 });
 
 /// Verses for a chapter reference (verse numbers on the key are ignored).
 final chapterVersesProvider = FutureProvider.family<List<Verse>, ScriptureReference>((ref, chapter) {
-  final version = ref.watch(activeVersionProvider);
+  final version = ref.watch(textVersionProvider);
   return ref.watch(bibleRepositoryProvider).chapter(version.id, chapter.bookId, chapter.chapter);
 });
 
 final passageProvider = FutureProvider.family<Passage, ScriptureReference>((ref, reference) {
-  final version = ref.watch(activeVersionProvider);
+  final version = ref.watch(textVersionProvider);
   return ref.watch(bibleRepositoryProvider).passage(version.id, reference);
 });
 

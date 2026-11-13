@@ -41,6 +41,10 @@ class RenderSegment {
 enum RenderOutcome {
   personalised,
 
+  /// Mode B: the verse text is unchanged and an approved title carries the
+  /// reader's name ([RenderedVerse.title]).
+  titled,
+
   /// No rule exists for this verse in this edition.
   noRule,
 
@@ -78,6 +82,7 @@ class RenderedVerse {
     required this.outcome,
     this.ruleId,
     this.isPreview = false,
+    this.title,
   });
 
   /// A verse shown exactly as the source.
@@ -107,7 +112,14 @@ class RenderedVerse {
   /// Must be labelled "Proposed — not approved" wherever it is shown.
   final bool isPreview;
 
+  /// Mode B title with the reader's name; editorial text, not Scripture.
+  final String? title;
+
+  /// Mode A: the text itself carries the reader's name.
   bool get isPersonalised => outcome == RenderOutcome.personalised;
+
+  /// Mode B: unchanged text with a personalised title.
+  bool get isTitled => outcome == RenderOutcome.titled;
 
   /// Display text.
   String get text => segments.map((s) => s.text).join();

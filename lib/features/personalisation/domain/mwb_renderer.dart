@@ -41,6 +41,7 @@ class MwbRenderer {
     required String targetVersionId,
     required MwbRuleset? ruleset,
     required NameResolution name,
+    NameResolution? titleName,
     PassageContext? context,
   }) {
     RenderedVerse original(RenderOutcome outcome, [String? ruleId]) => RenderedVerse.original(
@@ -68,8 +69,18 @@ class MwbRenderer {
           .toList();
       if (candidates.isEmpty) return original(RenderOutcome.noRule);
 
-      final publishable = candidates.where(isPublishable).toList();
+      var publishable = candidates.where(isPublishable).toList();
       if (publishable.isEmpty) return original(RenderOutcome.ruleNotPublishable);
+      // Reviewer preview: several open proposals may exist for one verse
+      // (e.g. founder references beside a compliant alternative). Only those
+      // that pass automated validation compete. Approved-only rendering is
+      // unaffected: a failing rule can never be approved.
+      if (policy == PublicationPolicy.reviewPreview && publishable.length > 1) {
+        final passing = publishable
+            .where((r) => validator.validate(r, canonicalText: source.text, style: ruleset.style, context: context).passed)
+            .toList();
+        if (passing.isNotEmpty) publishable = passing;
+      }
       if (publishable.map((r) => r.id).toSet().length > 1) return original(RenderOutcome.ruleConflict);
       publishable.sort((a, b) => b.ruleVersion.compareTo(a.ruleVersion));
       final rule = publishable.first;
@@ -79,6 +90,22 @@ class MwbRenderer {
 
       final report = validator.validate(rule, canonicalText: source.text, style: ruleset.style, context: context);
       if (!report.passed) return original(RenderOutcome.validationFailed, rule.id);
+
+      // Mode B: the Scripture is untouched; only the title carries the name.
+      if (rule.presentationMode == PresentationMode.nameInTitle) {
+        final t = titleName ?? name;
+        if (!t.canInsert) return original(RenderOutcome.nameUnavailable, rule.id);
+        return RenderedVerse(
+          source: source,
+          sourceVersionId: sourceVersionId,
+          targetVersionId: targetVersionId,
+          segments: [RenderSegment.source(source.text)],
+          outcome: RenderOutcome.titled,
+          ruleId: rule.id,
+          isPreview: rule.validApproval == null,
+          title: rule.titleTemplate!.replaceAll(namePlaceholder, t.name!),
+        );
+      }
 
       final located = EditEngine.locate(rule.edits, source.text);
       if (!located.ok) return original(RenderOutcome.validationFailed, rule.id);

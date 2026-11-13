@@ -25,21 +25,29 @@ class MwbPrimaryButton extends StatelessWidget {
     final c = context.mwb.colors;
     final t = context.mwb.text;
     final enabled = onPressed != null && !loading;
-    final button = FilledButton(
+    // Pill with the brand gradient, as in the reference designs.
+    final button = DecoratedBox(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(MwbRadius.pill),
+        gradient: onPressed != null ? c.brandGradient : null,
+        color: onPressed != null ? null : c.disabled.withValues(alpha: 0.45),
+        boxShadow: onPressed != null
+            ? [BoxShadow(color: c.primaryStrong.withValues(alpha: c.isDark ? 0.25 : 0.22), blurRadius: 18, offset: const Offset(0, 6))]
+            : null,
+      ),
+      child: FilledButton(
       onPressed: enabled ? onPressed : null,
       style: ButtonStyle(
-        minimumSize: const WidgetStatePropertyAll(Size(64, 54)),
+        minimumSize: const WidgetStatePropertyAll(Size(64, 56)),
         padding: const WidgetStatePropertyAll(EdgeInsets.symmetric(horizontal: MwbSpace.xl)),
-        shape: const WidgetStatePropertyAll(RoundedRectangleBorder(borderRadius: MwbRadius.mdAll)),
+        shape: const WidgetStatePropertyAll(StadiumBorder()),
         elevation: const WidgetStatePropertyAll(0),
-        textStyle: WidgetStatePropertyAll(t.button),
-        backgroundColor: WidgetStateProperty.resolveWith(
-          (s) => s.contains(WidgetState.disabled) ? c.disabled.withValues(alpha: 0.45) : c.primaryStrong,
-        ),
+        textStyle: WidgetStatePropertyAll(t.button.copyWith(fontSize: 16)),
+        backgroundColor: const WidgetStatePropertyAll(Colors.transparent),
         foregroundColor: WidgetStateProperty.resolveWith(
-          (s) => s.contains(WidgetState.disabled) ? c.textSecondary : c.onPrimary,
+          (s) => onPressed == null ? c.textSecondary : c.onPrimary,
         ),
-        overlayColor: WidgetStatePropertyAll(c.onPrimary.withValues(alpha: 0.08)),
+        overlayColor: WidgetStatePropertyAll(c.onPrimary.withValues(alpha: 0.10)),
       ),
       child: AnimatedSwitcher(
         duration: MwbMotion.fast,
@@ -58,6 +66,7 @@ class MwbPrimaryButton extends StatelessWidget {
                   if (icon != null) ...[const SizedBox(width: MwbSpace.xs), Icon(icon, size: 18)],
                 ],
               ),
+      ),
       ),
     );
     return expand ? SizedBox(width: double.infinity, child: button) : button;
@@ -79,17 +88,20 @@ class MwbSecondaryButton extends StatelessWidget {
     final button = OutlinedButton(
       onPressed: onPressed,
       style: ButtonStyle(
-        minimumSize: const WidgetStatePropertyAll(Size(64, 54)),
+        minimumSize: const WidgetStatePropertyAll(Size(64, 52)),
         padding: const WidgetStatePropertyAll(EdgeInsets.symmetric(horizontal: MwbSpace.lg)),
-        shape: const WidgetStatePropertyAll(RoundedRectangleBorder(borderRadius: MwbRadius.mdAll)),
+        shape: const WidgetStatePropertyAll(StadiumBorder()),
         textStyle: WidgetStatePropertyAll(context.mwb.text.button),
         foregroundColor: WidgetStateProperty.resolveWith(
-          (s) => s.contains(WidgetState.disabled) ? c.disabled : c.textPrimary,
+          (s) => s.contains(WidgetState.disabled) ? c.disabled : c.primaryStrong,
         ),
         side: WidgetStateProperty.resolveWith(
-          (s) => BorderSide(color: s.contains(WidgetState.disabled) ? c.divider : c.border, width: 1.2),
+          (s) => BorderSide(
+            color: s.contains(WidgetState.disabled) ? c.divider : c.primary.withValues(alpha: 0.30),
+            width: 1,
+          ),
         ),
-        backgroundColor: WidgetStatePropertyAll(c.surfaceElevated),
+        backgroundColor: WidgetStatePropertyAll(c.selected.withValues(alpha: c.isDark ? 0.6 : 0.75)),
         overlayColor: WidgetStatePropertyAll(c.primary.withValues(alpha: 0.06)),
       ),
       child: Row(

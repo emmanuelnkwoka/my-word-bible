@@ -5,12 +5,14 @@ import '../core/theme/mwb_tokens.dart';
 import '../core/widgets/bottom_nav.dart';
 import '../features/audio/presentation/mini_player.dart';
 
+/// One icon family (Material Rounded, filled) for every destination, as in
+/// the reference navigation: solid glyphs, equal optical weight.
 const shellDestinations = [
-  MwbNavItem(label: 'Home', icon: Icons.home_outlined, activeIcon: Icons.home_rounded),
-  MwbNavItem(label: 'Bible', icon: Icons.menu_book_outlined, activeIcon: Icons.menu_book_rounded),
-  MwbNavItem(label: 'Discover', icon: Icons.explore_outlined, activeIcon: Icons.explore_rounded),
-  MwbNavItem(label: 'Library', icon: Icons.bookmarks_outlined, activeIcon: Icons.bookmarks_rounded),
-  MwbNavItem(label: 'Profile', icon: Icons.person_outline_rounded, activeIcon: Icons.person_rounded),
+  MwbNavItem(label: 'Home', icon: Icons.home_rounded, activeIcon: Icons.home_rounded),
+  MwbNavItem(label: 'Bible', icon: Icons.menu_book_rounded, activeIcon: Icons.menu_book_rounded),
+  MwbNavItem(label: 'Discover', icon: Icons.auto_awesome_rounded, activeIcon: Icons.auto_awesome_rounded),
+  MwbNavItem(label: 'Library', icon: Icons.bookmarks_rounded, activeIcon: Icons.bookmarks_rounded),
+  MwbNavItem(label: 'Profile', icon: Icons.person_rounded, activeIcon: Icons.person_rounded),
 ];
 
 /// Hosts the five primary tabs. Each tab keeps its own navigator, so scroll

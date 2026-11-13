@@ -51,8 +51,9 @@ Remote repositories are scaffolds that report "not available yet" until the rede
 - **Audio** plays an original generated tone (`tool/generate_sample_tone.js`) in place of message recordings. The player discloses this. No sermon recordings or unlicensed media are bundled.
 - **Video** has no bundled media. The player runs a simulated playhead over the listed duration and states this clearly.
   A `video_player`-backed `VideoPlaybackController` can be added once hosted, licensed media exists.
-- **Translations**: only KJV is installed. NKJV, NIV and NLT (licence required) and WEB (public domain, not yet bundled) are listed but disabled with explanations. ESV was removed from the catalogue (not planned, not licensed).
-- **MWB editions**: KJV-MWB is listed but not yet selectable (reader integration is Stage D). No personalisation rule has a recorded theological approval, so production rendering would currently show the plain KJV for every verse.
+- **Translations**: KJV and WEB are installed (public domain, offline). NKJV, NIV and NLT require publisher licences and stay disabled.
+- **MWB editions**: KJV-MWB and WEB-MWB are selectable. No personalisation rule has a recorded theological approval yet, so in normal use both read exactly as their source; proposals are visible only in the reviewer preview.
+- **WEB omissions**: the WEB omits Luke 17:36, Acts 8:37, 15:34, 24:7 and Romans 16:25 (it places the Romans doxology at 14:24–26). The reader shows a note for those numbers. Psalm titles are part of verse 1 in the eBible source.
 - **Notifications**: reminder preferences and time are saved; delivery is deferred (`DeferredNotificationService`). Permission is never requested on first launch.
 - **Accounts**: guest session only (`DeviceOnlyAuthRepository`). The sign-in UI validates locally and explains that accounts are not live.
 - **Background audio**: architecture-ready (`AudioPlaybackService` boundary); lock-screen/notification controls need `audio_service` + platform config.
@@ -69,13 +70,21 @@ Remote repositories are scaffolds that report "not available yet" until the rede
 ## MWB editions and the personalisation engine (Phase 2, Stages A–B)
 
 MWB is a selectable personalised Bible edition per source translation (KJV → KJV-MWB, NKJV → NKJV-MWB, NIV → NIV-MWB,
-NLT → NLT-MWB). Each edition is derived from its own source and keeps that version's vocabulary and style.
+NLT → NLT-MWB, WEB → WEB-MWB). Each edition is derived from its own source and keeps that version's vocabulary and style.
+
+- **WEB text**: `assets/bible/web.json`, built from eBible.org's public-domain `engwebp` verse-per-line edition with
+  `node tool/build_web_asset.js <engwebp_vpl.txt> assets/bible/web.json` (wording copied exactly; omitted verses recorded).
+  "World English Bible" is an eBible.org trademark: personalised text is never called the World English Bible.
+- **Reader**: an MWB edition reads its source's canonical text and shows only *approved* renderings (personal words in gold).
+  The app-bar version button and the switch button move between an original and its MWB edition at the same chapter.
+- **Reviewer preview** (debug and `MWB_REVIEW_MODE` builds only; switch in Reading settings): proposals appear *under* their verses
+  labelled "PROPOSED — NOT APPROVED"; tapping one shows the original, proposal, operation, risk, status, context and question.
 
 - **Catalogue** (`lib/data/catalogue/version_catalogue.dart`): originals and MWB editions with source links, availability,
   licence records (holder, offline storage, distribution, **derivative-work permission**, attribution, quotation limits) and
   review policy. A version is selectable only with technical support *and* legal permission. One shared picker
   (`features/bible/widgets/version_picker.dart`) is used by the reader, onboarding and settings.
-- **Rules** (`assets/mwb/rulesets/kjv-mwb.json`): version-specific, one verse each, anchored to the exact source text.
+- **Rules** (`assets/mwb/rulesets/kjv-mwb.json`, `web-mwb.json` — independent, each written against its own source text): version-specific, one verse each, anchored to the exact source text.
   Operations: `insertDirectAddress`, `appendPersonalName`, `insertNameAfterExistingAddress`, `punctuationAdjustment`,
   `approvedMinimalGrammaticalAdjustment`. Statuses: proposed → automatedValidated → underReview → approved / rejected / retired.
 - **Context** (`assets/mwb/passage_context.json`): human-authored author, speaker, audience, addressee type, conditional
@@ -87,7 +96,8 @@ NLT → NLT-MWB). Each edition is derived from its own source and keeps that ver
   Renderings are never persisted. Production publishes only rules with a recorded human approval for the current rule version.
   Reviewer builds can preview candidates: `flutter run --dart-define=MWB_REVIEW_MODE=true`.
 - **Names**: full name (default), first name, preferred name or none. A missing surname falls back to the first name; nothing is invented.
-- **Theological review**: [docs/mwb/kjv-mwb-review-queue.md](docs/mwb/kjv-mwb-review-queue.md) is generated from the rules for the
+- **Theological review**: [docs/mwb/kjv-mwb-review-queue.md](docs/mwb/kjv-mwb-review-queue.md) and
+  [docs/mwb/web-mwb-review-queue.md](docs/mwb/web-mwb-review-queue.md) are generated from the rules for the
   designated supervisor. Regenerate after editing rules: `UPDATE_REVIEW_QUEUE=1 flutter test test/mwb/validation_and_review_test.dart`.
   Decisions are recorded through `ReviewQueueService.recordDecision` (approval requires a named reviewer and passing validation).
 

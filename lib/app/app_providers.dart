@@ -8,10 +8,15 @@ import '../core/storage/token_storage.dart';
 import '../data/repositories/auth_repository.dart';
 import '../data/repositories/bible_repository.dart';
 import '../data/repositories/content_repository.dart';
+import '../data/repositories/daily_word_repository.dart';
+import '../data/repositories/intelligence_repository.dart';
 import '../data/repositories/library_repository.dart';
 import '../data/repositories/preferences_repository.dart';
 import '../data/repositories/search_repository.dart';
+import '../data/repositories/social_repositories.dart';
 import '../features/audio/application/audio_playback_service.dart';
+import '../features/share/export/card_export.dart';
+import '../features/share/share_service.dart';
 
 /// Composition root. Every dependency is a provider so tests and future
 /// remote implementations can override it without touching features.
@@ -43,6 +48,54 @@ final apiClientProvider = Provider<ApiClient>((ref) {
 });
 
 final bibleRepositoryProvider = Provider<BibleRepository>((ref) => AssetBibleRepository());
+
+/// GODSAID Scripture intelligence, bundled and read on first use.
+final intelligenceRepositoryProvider = Provider<IntelligenceRepository>((ref) => AssetIntelligenceRepository());
+
+/// Daily Word candidates and annual schedule, bundled.
+final dailyWordRepositoryProvider = Provider<DailyWordRepository>((ref) => AssetDailyWordRepository());
+
+/// Native share sheet.
+final shareServiceProvider = Provider<ShareService>((ref) => const NativeShareService());
+
+/// Saving cards and handing them to a specific app (Card Studio).
+final cardExportServiceProvider = Provider<CardExportService>((ref) => const PlatformCardExportService());
+
+// Scripture sharing & social connection. On-device implementations until
+// the MWB sharing service exists (docs/sharing/MWB_BACKEND_API_CONTRACT.md).
+
+final socialSettingsRepositoryProvider = Provider<SocialSettingsRepository>(
+  (ref) => LocalSocialSettingsRepository(ref.watch(keyValueStoreProvider)),
+);
+
+final safetyRepositoryProvider = Provider<SafetyRepository>(
+  (ref) => LocalSafetyRepository(ref.watch(keyValueStoreProvider)),
+);
+
+final followRepositoryProvider = Provider<FollowRepository>(
+  (ref) => LocalFollowRepository(ref.watch(keyValueStoreProvider), ref.watch(safetyRepositoryProvider)),
+);
+
+final userDirectoryProvider = Provider<UserDirectoryRepository>(
+  (ref) => DemoUserDirectory(ref.watch(keyValueStoreProvider)),
+);
+
+final notificationRepositoryProvider = Provider<NotificationRepository>(
+  (ref) => LocalNotificationRepository(ref.watch(keyValueStoreProvider), clock: ref.watch(socialClockProvider)),
+);
+
+final scriptureShareRepositoryProvider = Provider<ScriptureShareRepository>(
+  (ref) => LocalScriptureShareRepository(
+    store: ref.watch(keyValueStoreProvider),
+    bible: ref.watch(bibleRepositoryProvider),
+    directory: ref.watch(userDirectoryProvider),
+    safety: ref.watch(safetyRepositoryProvider),
+    clock: ref.watch(socialClockProvider),
+  ),
+);
+
+/// Clock for social records (overridable in tests).
+final socialClockProvider = Provider<DateTime Function()>((ref) => DateTime.now);
 
 /// Original translations and MWB editions, with licensing and source links.
 final versionCatalogueProvider = Provider<VersionCatalogue>(

@@ -1,6 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Required for the future MWB API and streamed media. Mock mode makes no requests. -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Saving Scripture cards to Pictures on Android 9 and older only.
+         Android 10+ uses MediaStore and needs no storage permission. -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
     <application
         android:label="My Word Bible"
         android:name="${applicationName}"
@@ -26,7 +31,36 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+            <!-- Shared Scripture links (https://mywordbible.com/s/{shareId}).
+                 Verification needs /.well-known/assetlinks.json on the domain,
+                 which is not published yet (docs/sharing/MWB_DEEP_LINK_SPEC.md). -->
+            <meta-data android:name="flutter_deeplinking_enabled" android:value="true" />
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" />
+                <data android:host="mywordbible.com" />
+                <data android:host="www.mywordbible.com" />
+                <data android:pathPrefix="/s/" />
+            </intent-filter>
+            <!-- App scheme for testing and in-app links: mywordbible://app/s/{shareId} -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="mywordbible" android:host="app" android:pathPrefix="/s/" />
+            </intent-filter>
         </activity>
+        <provider
+            android:name=".MwbCardFileProvider"
+            android:authorities="${applicationId}.mwbcards"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/mwb_card_paths" />
+        </provider>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data
@@ -43,5 +77,14 @@
             <action android:name="android.intent.action.PROCESS_TEXT"/>
             <data android:mimeType="text/plain"/>
         </intent>
+        <!-- Social apps the Card Studio can open directly (Android 11+ visibility). -->
+        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp.w4b" />
+        <package android:name="com.instagram.android" />
+        <package android:name="com.facebook.katana" />
+        <package android:name="com.facebook.lite" />
+        <package android:name="org.telegram.messenger" />
+        <package android:name="org.telegram.messenger.web" />
+        <package android:name="org.thunderdog.challegram" />
     </queries>
 </manifest>

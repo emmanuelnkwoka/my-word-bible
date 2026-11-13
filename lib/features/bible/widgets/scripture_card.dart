@@ -13,18 +13,22 @@ import '../../../core/widgets/state_views.dart';
 import '../../../data/models/bible.dart';
 import '../../../data/models/scripture_reference.dart';
 import '../../library/application/library_controllers.dart';
+import '../../personalisation/application/personalisation_providers.dart';
+import '../../personalisation/domain/presentation_layer_resolver.dart';
+import '../../personalisation/presentation/presented_scripture.dart';
 import '../application/bible_providers.dart';
 
 /// Text used when sharing Scripture. Always includes reference and version.
-String scriptureShareText(Passage passage, String versionAbbreviation) {
+String scriptureShareText(Passage passage, String versionAbbreviation, {String? reception}) {
   final text = passage.verses.length == 1
       ? passage.verses.first.text
       : passage.verses.map((v) => '${v.number} ${v.text}').join(' ');
-  return '“$text”\n— ${passage.reference.label} ($versionAbbreviation)\n\nShared from My Word Bible';
+  final personal = reception == null ? '' : '\n\nPersonal reception: $reception';
+  return '“$text”\n— ${passage.reference.label} ($versionAbbreviation)$personal\n\nShared from My Word Bible';
 }
 
-Future<void> copyScripture(BuildContext context, Passage passage, String version) async {
-  await Clipboard.setData(ClipboardData(text: scriptureShareText(passage, version)));
+Future<void> copyScripture(BuildContext context, Passage passage, String version, {String? reception}) async {
+  await Clipboard.setData(ClipboardData(text: scriptureShareText(passage, version, reception: reception)));
   if (context.mounted) showMwbSnack(context, '${passage.reference.label} copied — ready to share');
 }
 
@@ -56,7 +60,7 @@ class ScriptureCard extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final c = context.mwb.colors;
     final t = context.mwb.text;
-    final version = ref.watch(activeVersionProvider);
+    final version = ref.watch(textVersionProvider);
     final passage = ref.watch(passageProvider(reference));
     return MwbCard(
       padding: EdgeInsets.all(large ? MwbSpace.xl : MwbSpace.lg),
@@ -75,14 +79,18 @@ class ScriptureCard extends ConsumerWidget {
             value: passage,
             compact: true,
             onRetry: () => ref.invalidate(passageProvider(reference)),
-            data: (p) => Semantics(
-              label: '${p.reference.label}, ${version.abbreviation}. ${p.text}',
-              excludeSemantics: true,
-              child: Text(
-                p.verses.length == 1 ? p.verses.first.text : p.verses.map((v) => '${v.number} ${v.text}').join('  '),
-                style: t.scripture.copyWith(fontSize: large ? 21 : 18, height: large ? 1.6 : 1.65),
-                maxLines: maxLines,
-                overflow: maxLines == null ? null : TextOverflow.ellipsis,
+            data: (p) => EditorialLayersAround(
+              key: ValueKey('card-layers-${reference.key}'),
+              reference: reference,
+              child: Semantics(
+                label: '${p.reference.label}, ${version.abbreviation}. ${p.text}',
+                excludeSemantics: true,
+                child: Text(
+                  p.verses.length == 1 ? p.verses.first.text : p.verses.map((v) => '${v.number} ${v.text}').join('  '),
+                  style: t.scripture.copyWith(fontSize: large ? 21 : 18, height: large ? 1.6 : 1.65),
+                  maxLines: maxLines,
+                  overflow: maxLines == null ? null : TextOverflow.ellipsis,
+                ),
               ),
             ),
           ),
@@ -104,7 +112,12 @@ class ScriptureCard extends ConsumerWidget {
                   icon: Icons.ios_share_rounded,
                   tooltip: 'Copy to share',
                   size: 20,
-                  onPressed: () => copyScripture(context, passage.requireValue, version.abbreviation),
+                  onPressed: () => copyScripture(
+                    context,
+                    passage.requireValue,
+                    version.abbreviation,
+                    reception: _receptionText(ref.read(activeEditorialLayersProvider(reference)).value),
+                  ),
                 ),
                 MwbIconButton(
                   icon: Icons.arrow_outward_rounded,
@@ -161,11 +174,18 @@ class ScriptureSnippetTile extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final t = context.mwb.text;
-    final version = ref.watch(activeVersionProvider);
+    final version = ref.watch(textVersionProvider);
     final loaded = text ?? ref.watch(passageProvider(reference)).value?.text;
+    // Approved personal title and reception in the active MWB edition (the
+    // same shared engine as the reader). Canonical text stays as loaded.
+    final layers = ref.watch(activeEditorialLayersProvider(reference)).value?.values ?? const [];
+    final title = layers.map((l) => l.title).nonNulls.firstOrNull;
+    final reception = layers.map((l) => l.reception).nonNulls.firstOrNull;
     return Semantics(
       button: true,
-      label: '${reference.label}. ${loaded ?? ''}',
+      label:
+          '${reference.label}. ${title == null ? '' : '${title.text}. '}${loaded ?? ''}'
+          '${reception == null ? '' : '. Personal reception: ${reception.text}'}',
       excludeSemantics: true,
       child: InkWell(
         borderRadius: MwbRadius.mdAll,
@@ -176,6 +196,16 @@ class ScriptureSnippetTile extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text('${reference.label.toUpperCase()} · ${version.abbreviation}', style: t.scriptureReference),
+              if (title != null) ...[
+                const SizedBox(height: 4),
+                NamedTitle(
+                  key: ValueKey('snippet-title-${reference.key}'),
+                  text: title.text,
+                  name: title.name,
+                  textAlign: TextAlign.left,
+                  style: t.cardTitle.copyWith(fontSize: 15.5, color: context.mwb.colors.primaryStrong),
+                ),
+              ],
               const SizedBox(height: 4),
               Text(
                 loaded ?? '…',
@@ -183,10 +213,25 @@ class ScriptureSnippetTile extends ConsumerWidget {
                 maxLines: 3,
                 overflow: TextOverflow.ellipsis,
               ),
+              if (reception != null) ...[
+                const SizedBox(height: 6),
+                EditorialReception(
+                  key: ValueKey('snippet-reception-${reference.key}'),
+                  layer: reception,
+                  fontSize: 13.5,
+                  maxLines: 3,
+                ),
+              ],
             ],
           ),
         ),
       ),
     );
   }
+}
+
+/// The approved reception(s) for copied text, in verse order.
+String? _receptionText(Map<int, VerseEditorialLayers>? layers) {
+  final texts = [for (final l in (layers ?? const <int, VerseEditorialLayers>{}).values) ?l.reception?.text];
+  return texts.isEmpty ? null : texts.join('\n\n');
 }

@@ -19,6 +19,7 @@ import '../../../data/models/interest.dart';
 import '../../../data/models/user_profile.dart';
 import '../../../data/repositories/preferences_repository.dart';
 import '../../bible/widgets/version_picker.dart';
+import '../../personalisation/presentation/mwb_review_widgets.dart';
 import '../../library/application/library_controllers.dart';
 import '../../onboarding/application/onboarding_controller.dart';
 import '../../profile/application/profile_controllers.dart';
@@ -296,6 +297,7 @@ class ReadingSettingsScreen extends ConsumerWidget {
           selectedId: prefs.versionId,
           onSelected: (v) => ctrl.update((p) => p.copyWith(versionId: v.id)),
         ),
+        const MwbReviewerModeTile(),
         const _Label('Text size'),
         MwbSegmentedControl<ReadingTextSize>(
           options: ReadingTextSize.values,

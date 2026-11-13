@@ -12,7 +12,11 @@ import '../../../data/models/content.dart';
 import '../../../data/models/library_items.dart';
 import '../../bible/widgets/scripture_card.dart';
 import '../../content/widgets/content_cards.dart';
+import '../../daily_word/application/daily_word_providers.dart';
+import '../../daily_word/presentation/daily_word_history_screen.dart';
 import '../../discovery/application/content_providers.dart';
+import '../../personalisation/application/scripture_presentation.dart';
+import '../../share/scripture_share_sheet.dart';
 import '../application/library_controllers.dart';
 import 'note_editor.dart';
 
@@ -23,6 +27,12 @@ enum LibrarySection {
     'Saved Scripture',
     Icons.favorite_border_rounded,
     'Save verses from Daily Scripture, topics or the reader.',
+  ),
+  dailyWords(
+    'daily-words',
+    'Favourite Daily Words',
+    Icons.star_border_rounded,
+    'Tap Favourite on a Daily Word to keep it here.',
   ),
   bookmarks('bookmarks', 'Bookmarks', Icons.bookmark_border_rounded, 'Bookmark a chapter or verse while reading.'),
   highlights(
@@ -36,6 +46,12 @@ enum LibrarySection {
   videos('videos', 'Saved videos', Icons.play_circle_outline_rounded, 'Save video excerpts to watch again.'),
   messages('messages', 'Saved messages & articles', Icons.article_outlined, 'Save articles and Scripture collections.'),
   history('history', 'Reading history', Icons.history_rounded, 'Chapters you read appear here.'),
+  dailyHistory(
+    'daily-history',
+    'Daily Word history',
+    Icons.wb_twilight_rounded,
+    'Each Daily Word you receive appears here.',
+  ),
   viewed('viewed', 'Recently viewed', Icons.visibility_outlined, 'Messages you open appear here.'),
   drafts('drafts', 'My contributions', Icons.upload_file_outlined, 'Messages you prepare to share appear here.');
 
@@ -50,6 +66,8 @@ enum LibrarySection {
 
 int librarySectionCount(WidgetRef ref, LibrarySection s) => switch (s) {
   LibrarySection.verses => ref.watch(savedScriptureProvider).length,
+  LibrarySection.dailyWords => ref.watch(dailyWordHistoryProvider).where((e) => e.favourite).length,
+  LibrarySection.dailyHistory => ref.watch(dailyWordHistoryProvider).length,
   LibrarySection.bookmarks => ref.watch(bookmarksProvider).length,
   LibrarySection.highlights => ref.watch(highlightsProvider).length,
   LibrarySection.notes => ref.watch(notesProvider).length,
@@ -93,6 +111,14 @@ List<Widget> librarySectionItems(BuildContext context, WidgetRef ref, LibrarySec
           Row(
             children: [
               Expanded(child: ScriptureSnippetTile(reference: v.reference)),
+              MwbIconButton(
+                icon: Icons.ios_share_rounded,
+                tooltip: 'Share ${v.reference.label}',
+                onPressed: () async {
+                  final p = await ref.read(scripturePresentationProvider(PresentationRequest(v.reference)).future);
+                  if (context.mounted) showScriptureShareSheet(context, shareScriptureFromPresentation(p));
+                },
+              ),
               removeButton(
                 'Remove saved verse',
                 () => ref.read(savedScriptureProvider.notifier).remove(v.reference),
@@ -101,6 +127,13 @@ List<Widget> librarySectionItems(BuildContext context, WidgetRef ref, LibrarySec
             ],
           ),
       ];
+    case LibrarySection.dailyWords:
+      return [
+        for (final e in take(ref.watch(dailyWordHistoryProvider).where((e) => e.favourite)))
+          DailyWordHistoryTile(entry: e),
+      ];
+    case LibrarySection.dailyHistory:
+      return [for (final e in take(ref.watch(dailyWordHistoryProvider))) DailyWordHistoryTile(entry: e)];
     case LibrarySection.bookmarks:
       return [
         for (final b in take(ref.watch(bookmarksProvider)))

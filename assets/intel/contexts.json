@@ -1,0 +1,4686 @@
+{
+ "schemaVersion": 1,
+ "corpusVersion": "1.0.0",
+ "contexts": [
+  {
+   "id": "ctx-GEN-1-3",
+   "reference": "GEN 1:3",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Moses (traditional attribution)",
+   "originalAudience": "Creation itself, recorded by Moses for Israel",
+   "addressee": "narrative",
+   "historicalContext": "",
+   "literaryForm": "Narrative (Torah)",
+   "literaryContext": "",
+   "classification": "recordedDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "critical",
+    "note": "Creative fiat addressed to creation itself, not to a person — there is nothing to re-address."
+   },
+   "contextNote": "",
+   "keywords": [
+    "light",
+    "creation",
+    "beginning"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "gen1-3",
+    "seedLine": 1135,
+    "changes": [
+     "Author corrected from \"The LORD God\" to \"Moses (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-GEN-1-27",
+   "reference": "GEN 1:27",
+   "voice": "inspiredHuman",
+   "speaker": "The narrator",
+   "author": "Moses (traditional attribution)",
+   "originalAudience": "Israel, hearing its origins",
+   "addressee": "narrative",
+   "historicalContext": "",
+   "literaryForm": "Narrative (Torah)",
+   "literaryContext": "",
+   "classification": "historicalNarrative",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "Narrative statement about humanity as a whole."
+   },
+   "contextNote": "",
+   "keywords": [
+    "image of god",
+    "created",
+    "identity",
+    "male and female"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "gen1-27",
+    "seedLine": 1136,
+    "changes": [
+     "Author corrected from \"Moses (traditional)\" to \"Moses (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-GEN-28-15",
+   "reference": "GEN 28:15",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Moses (traditional attribution)",
+   "originalAudience": "Jacob alone at Bethel, fleeing to Haran",
+   "addressee": "specificIndividual",
+   "historicalContext": "",
+   "literaryForm": "Narrative (Torah)",
+   "literaryContext": "",
+   "classification": "directDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "with thee",
+    "keep thee",
+    "journey",
+    "promise",
+    "travel"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "gen28-15",
+    "seedLine": 1137,
+    "changes": [
+     "Author corrected from \"The LORD God\" to \"Moses (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-EXO-3-14",
+   "reference": "EXO 3:14",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Moses (traditional attribution)",
+   "originalAudience": "Moses at the burning bush",
+   "addressee": "specificIndividual",
+   "historicalContext": "",
+   "literaryForm": "Narrative and law (Torah)",
+   "literaryContext": "",
+   "classification": "directDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "critical",
+    "note": "God's self-disclosure of His name is addressed to Moses; re-addressing it would corrupt the speaker-audience relationship."
+   },
+   "contextNote": "",
+   "keywords": [
+    "i am",
+    "name of god",
+    "moses",
+    "identity"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "exo3-14",
+    "seedLine": 1138,
+    "changes": [
+     "Author corrected from \"The LORD God\" to \"Moses (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-EXO-14-14",
+   "reference": "EXO 14:14",
+   "voice": "inspiredHuman",
+   "speaker": "Moses",
+   "author": "Moses (traditional attribution)",
+   "originalAudience": "Israel trapped at the Red Sea",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Narrative and law (Torah)",
+   "literaryContext": "",
+   "classification": "historicalNarrative",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "fight",
+    "battle",
+    "fear",
+    "stand still",
+    "deliverance"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "exo14-14",
+    "seedLine": 1139,
+    "changes": [
+     "Author corrected from \"Moses (traditional)\" to \"Moses (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-EXO-15-26",
+   "reference": "EXO 15:26",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Moses (traditional attribution)",
+   "originalAudience": "Israel at Marah, under the Sinai covenant",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Narrative and law (Torah)",
+   "literaryContext": "",
+   "classification": "recordedDivineSpeech",
+   "isConditional": true,
+   "conditionNote": "If thou wilt diligently hearken to the voice of the LORD thy God… and keep all his statutes (covenant obedience at Marah).",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "critical",
+    "note": "A covenant-statute promise to Israel at Marah; receiving it personally requires supervised review."
+   },
+   "contextNote": "",
+   "keywords": [
+    "healer",
+    "healing",
+    "diseases",
+    "statutes"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "exo15-26",
+    "seedLine": 1140,
+    "changes": [
+     "Author corrected from \"The LORD God\" to \"Moses (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-EXO-20-3",
+   "reference": "EXO 20:3",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Moses (traditional attribution)",
+   "originalAudience": "Israel gathered at Sinai",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Narrative and law (Torah)",
+   "literaryContext": "",
+   "classification": "recordedDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "critical",
+    "note": "A command, not a promise — commands are never re-voiced."
+   },
+   "contextNote": "",
+   "keywords": [
+    "commandment",
+    "no other gods",
+    "worship",
+    "first commandment"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "exo20-3",
+    "seedLine": 1141,
+    "changes": [
+     "Author corrected from \"The LORD God\" to \"Moses (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-EXO-33-14",
+   "reference": "EXO 33:14",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Moses (traditional attribution)",
+   "originalAudience": "Moses, interceding for Israel's journey",
+   "addressee": "specificIndividual",
+   "historicalContext": "",
+   "literaryForm": "Narrative and law (Torah)",
+   "literaryContext": "",
+   "classification": "directDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "presence",
+    "rest",
+    "journey",
+    "with thee"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "exo33-14",
+    "seedLine": 1142,
+    "changes": [
+     "Author corrected from \"The LORD God\" to \"Moses (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-NUM-6-24",
+   "reference": "NUM 6:24",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Moses (traditional attribution)",
+   "originalAudience": "Aaron and his sons, blessing Israel",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Narrative and law (Torah)",
+   "literaryContext": "",
+   "classification": "recordedDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "bless",
+    "keep",
+    "aaronic blessing",
+    "priestly"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "num6-24",
+    "seedLine": 1143,
+    "changes": [
+     "Author corrected from \"The LORD God\" to \"Moses (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-NUM-6-25",
+   "reference": "NUM 6:25",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Moses (traditional attribution)",
+   "originalAudience": "Aaron and his sons, blessing Israel",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Narrative and law (Torah)",
+   "literaryContext": "",
+   "classification": "recordedDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "face shine",
+    "gracious",
+    "favour"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "num6-25",
+    "seedLine": 1144,
+    "changes": [
+     "Author corrected from \"The LORD God\" to \"Moses (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-NUM-6-26",
+   "reference": "NUM 6:26",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Moses (traditional attribution)",
+   "originalAudience": "Aaron and his sons, blessing Israel",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Narrative and law (Torah)",
+   "literaryContext": "",
+   "classification": "recordedDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "peace",
+    "countenance",
+    "lift up"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "num6-26",
+    "seedLine": 1145,
+    "changes": [
+     "Author corrected from \"The LORD God\" to \"Moses (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-DEU-8-18",
+   "reference": "DEU 8:18",
+   "voice": "inspiredHuman",
+   "speaker": "Moses",
+   "author": "Moses (traditional attribution)",
+   "originalAudience": "Israel on the edge of the promised land",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Covenant address (Torah)",
+   "literaryContext": "",
+   "classification": "historicalNarrative",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "Covenant-specific charge to Israel; often misapplied — shown with context instead of a name insertion."
+   },
+   "contextNote": "God is the source of the ability to produce wealth; the verse grounds gratitude and faithfulness, not a prosperity formula.",
+   "keywords": [
+    "wealth",
+    "power",
+    "work",
+    "provision"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "deut8-18",
+    "seedLine": 1146,
+    "changes": [
+     "Author corrected from \"Moses (traditional)\" to \"Moses (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-DEU-31-6",
+   "reference": "DEU 31:6",
+   "voice": "inspiredHuman",
+   "speaker": "Moses",
+   "author": "Moses (traditional attribution)",
+   "originalAudience": "Israel, as leadership passes to Joshua",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Covenant address (Torah)",
+   "literaryContext": "",
+   "classification": "historicalNarrative",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "courage",
+    "fear not",
+    "go with thee",
+    "forsake"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "deut31-6",
+    "seedLine": 1147,
+    "changes": [
+     "Author corrected from \"Moses (traditional)\" to \"Moses (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JOS-1-9",
+   "reference": "JOS 1:9",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Unattributed (traditionally Joshua)",
+   "originalAudience": "Joshua, taking leadership of Israel",
+   "addressee": "specificIndividual",
+   "historicalContext": "",
+   "literaryForm": "Historical narrative",
+   "literaryContext": "",
+   "classification": "directDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "courage",
+    "commanded",
+    "with thee",
+    "goest",
+    "leadership"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "josh1-9",
+    "seedLine": 1148,
+    "changes": [
+     "Author corrected from \"The LORD God\" to \"Unattributed (traditionally Joshua)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JOS-24-15",
+   "reference": "JOS 24:15",
+   "voice": "inspiredHuman",
+   "speaker": "Joshua",
+   "author": "Unattributed (traditionally Joshua)",
+   "originalAudience": "The tribes of Israel at Shechem",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Historical narrative",
+   "literaryContext": "",
+   "classification": "historicalNarrative",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "me and my house",
+    "serve the lord",
+    "family",
+    "household"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "josh24-15",
+    "seedLine": 1149,
+    "changes": [
+     "Author corrected from \"Joshua\" to \"Unattributed (traditionally Joshua)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-16-11",
+   "reference": "PSA 16:11",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "David (superscription)",
+   "originalAudience": "God, in David's own prayer of trust",
+   "addressee": "god",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "joy",
+    "presence",
+    "path of life",
+    "pleasures"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps16-11",
+    "seedLine": 1150,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"David (superscription)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-23-1",
+   "reference": "PSA 23:1",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "David (superscription)",
+   "originalAudience": "David's own trust, sung by Israel and the church",
+   "addressee": "testimony",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "shepherd",
+    "want",
+    "provision",
+    "peace"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps23-1",
+    "seedLine": 1151,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"David (superscription)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-23-4",
+   "reference": "PSA 23:4",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "David (superscription)",
+   "originalAudience": "Same as Psalm 23:1",
+   "addressee": "god",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "A first-person confessional prayer; re-addressing it third-person would break its prayerful voice. Receive it by praying it as written."
+   },
+   "contextNote": "",
+   "keywords": [
+    "valley",
+    "shadow of death",
+    "fear no evil",
+    "comfort",
+    "rod and staff"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps23-4",
+    "seedLine": 1152,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"David (superscription)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-23-6",
+   "reference": "PSA 23:6",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "David (superscription)",
+   "originalAudience": "Same as Psalm 23:1",
+   "addressee": "testimony",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "goodness and mercy",
+    "follow me",
+    "house of the lord",
+    "forever"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps23-6",
+    "seedLine": 1153,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"David (superscription)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-30-5",
+   "reference": "PSA 30:5",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "David (superscription)",
+   "originalAudience": "The congregation at the house-dedication",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "weeping",
+    "night",
+    "morning",
+    "joy",
+    "grief"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps30-5",
+    "seedLine": 1154,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"David (superscription)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-32-8",
+   "reference": "PSA 32:8",
+   "voice": "god",
+   "speaker": "God (the LORD) — interpreters differ: some hear the psalmist as speaker",
+   "author": "David (superscription)",
+   "originalAudience": "The forgiven worshipper of Psalm 32",
+   "addressee": "representative",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": true,
+   "conditionNote": "Spoken to the forgiven worshipper who confessed sin (Psalm 32:5-6).",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "instruct",
+    "teach",
+    "guide",
+    "way",
+    "direction"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps32-8",
+    "seedLine": 1155,
+    "changes": [
+     "Author corrected from \"The LORD God\" to \"David (superscription)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": [
+     "Speaker identification is disputed (God or the psalmist)."
+    ]
+   }
+  },
+  {
+   "id": "ctx-PSA-34-7",
+   "reference": "PSA 34:7",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "David (superscription)",
+   "originalAudience": "Those who fear the LORD (Psalm 34)",
+   "addressee": "general",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "medium",
+    "note": "Third-person assurance about 'them that fear him'; personal receival is invited without rewriting the objective text."
+   },
+   "contextNote": "",
+   "keywords": [
+    "angel",
+    "encampeth",
+    "delivereth",
+    "protection",
+    "fear him"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps34-7",
+    "seedLine": 1156,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"David (superscription)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-34-18",
+   "reference": "PSA 34:18",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "David (superscription)",
+   "originalAudience": "The brokenhearted among the congregation",
+   "addressee": "general",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "medium",
+    "note": "Third-person objective statement, kept as written; the reader applies it by situation, not by name substitution."
+   },
+   "contextNote": "",
+   "keywords": [
+    "broken heart",
+    "contrite",
+    "near",
+    "comfort",
+    "sadness"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps34-18",
+    "seedLine": 1157,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"David (superscription)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-37-4",
+   "reference": "PSA 37:4",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "David (superscription)",
+   "originalAudience": "The congregation of the wise",
+   "addressee": "representative",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": true,
+   "conditionNote": "Delight thyself also in the LORD.",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "delight",
+    "desires",
+    "heart"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps37-4",
+    "seedLine": 1158,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"David (superscription)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-42-11",
+   "reference": "PSA 42:11",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "The sons of Korah (superscription)",
+   "originalAudience": "The psalmist's own downcast soul",
+   "addressee": "testimony",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "An internal self-exhortation; the honest way to receive it is to pray it as written."
+   },
+   "contextNote": "",
+   "keywords": [
+    "downcast",
+    "hope",
+    "discouragement",
+    "soul"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps42-11",
+    "seedLine": 1159,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"The sons of Korah (superscription)\"; the demo used the speaker as author.",
+     "Demo attributed this psalm to David; superscription does not."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-46-1",
+   "reference": "PSA 46:1",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "The sons of Korah (superscription)",
+   "originalAudience": "Israel, in corporate trust",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "refuge",
+    "strength",
+    "trouble",
+    "help"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps46-1",
+    "seedLine": 1160,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"The sons of Korah (superscription)\"; the demo used the speaker as author.",
+     "Demo attributed this psalm to David; superscription does not.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-46-10",
+   "reference": "PSA 46:10",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "The sons of Korah (superscription)",
+   "originalAudience": "The striving nations and the trembling soul",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "be still",
+    "know that i am god",
+    "exalted",
+    "peace",
+    "anxiety"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps46-10",
+    "seedLine": 1161,
+    "changes": [
+     "Author corrected from \"The LORD God\" to \"The sons of Korah (superscription)\"; the demo used the speaker as author.",
+     "Demo attributed this psalm to David; superscription does not.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-55-22",
+   "reference": "PSA 55:22",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "David (superscription)",
+   "originalAudience": "The assembly under burden",
+   "addressee": "representative",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": true,
+   "conditionNote": "Cast thy burden upon the LORD.",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "burden",
+    "cast",
+    "sustain",
+    "worry"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps55-22",
+    "seedLine": 1162,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"David (superscription)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-56-3",
+   "reference": "PSA 56:3",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "David (superscription)",
+   "originalAudience": "David, pursued at Gath",
+   "addressee": "testimony",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "afraid",
+    "trust",
+    "fear"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps56-3",
+    "seedLine": 1163,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"David (superscription)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-91-1",
+   "reference": "PSA 91:1",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "Unattributed (no superscription)",
+   "originalAudience": "All who take refuge in the Most High",
+   "addressee": "general",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": true,
+   "conditionNote": "He that dwelleth in the secret place of the most High.",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "Third-person objective; personal reception is by dwelling, not by renaming. Kept untouched."
+   },
+   "contextNote": "",
+   "keywords": [
+    "dwell",
+    "secret place",
+    "shadow",
+    "shelter",
+    "protection"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps91-1",
+    "seedLine": 1164,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"Unattributed (no superscription)\"; the demo used the speaker as author.",
+     "Demo attributed this psalm to David; superscription does not."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-91-11",
+   "reference": "PSA 91:11",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "Unattributed (no superscription)",
+   "originalAudience": "The one who makes the LORD his refuge (v.9)",
+   "addressee": "representative",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": true,
+   "conditionNote": "Because thou hast made the LORD… thy habitation (Psalm 91:9).",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "angels",
+    "charge",
+    "keep thee",
+    "protection"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps91-11",
+    "seedLine": 1165,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"Unattributed (no superscription)\"; the demo used the speaker as author.",
+     "Demo attributed this psalm to David; superscription does not.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-103-3",
+   "reference": "PSA 103:3",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "David (superscription)",
+   "originalAudience": "The worshipper's own soul (v.1-2)",
+   "addressee": "testimony",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "forgiveth",
+    "healeth",
+    "diseases",
+    "benefits"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps103-3",
+    "seedLine": 1166,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"David (superscription)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-119-105",
+   "reference": "PSA 119:105",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "Unattributed (no superscription)",
+   "originalAudience": "God, in the acrostic of the Word",
+   "addressee": "god",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "word",
+    "lamp",
+    "light",
+    "path",
+    "guidance",
+    "bible"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps119-105",
+    "seedLine": 1167,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"Unattributed (no superscription)\"; the demo used the speaker as author.",
+     "Demo attributed this psalm to David; superscription does not.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-121-7",
+   "reference": "PSA 121:7",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "Unattributed (a Song of degrees)",
+   "originalAudience": "Pilgrims ascending to Jerusalem",
+   "addressee": "representative",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "low",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "preserve",
+    "evil",
+    "soul",
+    "protection"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps121-7",
+    "seedLine": 1168,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"Unattributed (a Song of degrees)\"; the demo used the speaker as author.",
+     "Demo attributed this psalm to David; superscription does not.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-121-8",
+   "reference": "PSA 121:8",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "Unattributed (a Song of degrees)",
+   "originalAudience": "Pilgrims ascending to Jerusalem",
+   "addressee": "representative",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "low",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "going out",
+    "coming in",
+    "travel",
+    "journey",
+    "protection"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps121-8",
+    "seedLine": 1169,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"Unattributed (a Song of degrees)\"; the demo used the speaker as author.",
+     "Demo attributed this psalm to David; superscription does not.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-127-3",
+   "reference": "PSA 127:3",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "Solomon (superscription: \"for Solomon\")",
+   "originalAudience": "The builders and watchmen of Psalm 127",
+   "addressee": "general",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "medium",
+    "note": "Wisdom maxim about children generally; received by parents as wisdom, not re-voiced."
+   },
+   "contextNote": "",
+   "keywords": [
+    "children",
+    "heritage",
+    "reward",
+    "family"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps127-3",
+    "seedLine": 1170,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"Solomon (superscription: \"for Solomon\")\"; the demo used the speaker as author.",
+     "Demo attributed this psalm to David; superscription does not."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-139-14",
+   "reference": "PSA 139:14",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "David (superscription)",
+   "originalAudience": "God, in David's wonder at being known",
+   "addressee": "god",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "fearfully",
+    "wonderfully made",
+    "identity",
+    "self worth"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps139-14",
+    "seedLine": 1171,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"David (superscription)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PSA-147-3",
+   "reference": "PSA 147:3",
+   "voice": "inspiredHuman",
+   "speaker": "The psalmist",
+   "author": "Unattributed (no superscription)",
+   "originalAudience": "Post-exile worshippers",
+   "addressee": "general",
+   "historicalContext": "",
+   "literaryForm": "Psalm (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "medium",
+    "note": "Third-person assurance; received personally in grief without rewriting the verse."
+   },
+   "contextNote": "",
+   "keywords": [
+    "broken heart",
+    "healeth",
+    "wounds",
+    "comfort",
+    "grief"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps147-3",
+    "seedLine": 1172,
+    "changes": [
+     "Author corrected from \"The psalmist (David)\" to \"Unattributed (no superscription)\"; the demo used the speaker as author.",
+     "Demo attributed this psalm to David; superscription does not."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PRO-3-5-6",
+   "reference": "PRO 3:5-6",
+   "voice": "inspiredHuman",
+   "speaker": "The wisdom teacher",
+   "author": "Solomon (traditional attribution)",
+   "originalAudience": "The wise father's son — the seeker of wisdom",
+   "addressee": "representative",
+   "historicalContext": "",
+   "literaryForm": "Wisdom literature",
+   "literaryContext": "",
+   "classification": "wisdom",
+   "isConditional": true,
+   "conditionNote": "Trust in the LORD with all thine heart… In all thy ways acknowledge him.",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "trust",
+    "lean",
+    "understanding",
+    "paths",
+    "guidance",
+    "direction"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "prov3-56",
+    "seedLine": 1173,
+    "changes": [
+     "Author corrected from \"Solomon (traditional)\" to \"Solomon (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PRO-10-22",
+   "reference": "PRO 10:22",
+   "voice": "inspiredHuman",
+   "speaker": "The wisdom teacher",
+   "author": "Solomon (traditional attribution)",
+   "originalAudience": "The young disciple of wisdom",
+   "addressee": "general",
+   "historicalContext": "",
+   "literaryForm": "Wisdom literature",
+   "literaryContext": "",
+   "classification": "wisdom",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "medium",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "blessing",
+    "rich",
+    "sorrow",
+    "provision"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "prov10-22",
+    "seedLine": 1174,
+    "changes": [
+     "Author corrected from \"Solomon (traditional)\" to \"Solomon (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PRO-16-3",
+   "reference": "PRO 16:3",
+   "voice": "inspiredHuman",
+   "speaker": "The wisdom teacher",
+   "author": "Solomon (traditional attribution)",
+   "originalAudience": "The young disciple of wisdom",
+   "addressee": "representative",
+   "historicalContext": "",
+   "literaryForm": "Wisdom literature",
+   "literaryContext": "",
+   "classification": "wisdom",
+   "isConditional": true,
+   "conditionNote": "Commit thy works unto the LORD.",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "commit",
+    "works",
+    "established",
+    "career",
+    "plans"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "prov16-3",
+    "seedLine": 1175,
+    "changes": [
+     "Author corrected from \"Solomon (traditional)\" to \"Solomon (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PRO-18-10",
+   "reference": "PRO 18:10",
+   "voice": "inspiredHuman",
+   "speaker": "The wisdom teacher",
+   "author": "Solomon (traditional attribution)",
+   "originalAudience": "The young disciple of wisdom",
+   "addressee": "general",
+   "historicalContext": "",
+   "literaryForm": "Wisdom literature",
+   "literaryContext": "",
+   "classification": "wisdom",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "medium",
+    "note": "Wisdom maxim in the third person; the tower is entered by running, not by renaming."
+   },
+   "contextNote": "",
+   "keywords": [
+    "name of the lord",
+    "strong tower",
+    "safe",
+    "protection"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "prov18-10",
+    "seedLine": 1176,
+    "changes": [
+     "Author corrected from \"Solomon (traditional)\" to \"Solomon (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PRO-22-6",
+   "reference": "PRO 22:6",
+   "voice": "inspiredHuman",
+   "speaker": "The wisdom teacher",
+   "author": "Solomon (traditional attribution)",
+   "originalAudience": "Parents and teachers of the young",
+   "addressee": "general",
+   "historicalContext": "",
+   "literaryForm": "Wisdom literature",
+   "literaryContext": "",
+   "classification": "wisdom",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "medium",
+    "note": "A proverb of general wisdom, not a guarantee; kept as wisdom so as not to mis-promise."
+   },
+   "contextNote": "Wisdom, not a mechanical guarantee — parents take it as direction and hope, not as a verdict on any one child.",
+   "keywords": [
+    "train up",
+    "child",
+    "parenting",
+    "depart"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "prov22-6",
+    "seedLine": 1177,
+    "changes": [
+     "Author corrected from \"Solomon (traditional)\" to \"Solomon (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PRO-23-18",
+   "reference": "PRO 23:18",
+   "voice": "inspiredHuman",
+   "speaker": "The wisdom teacher",
+   "author": "Solomon (traditional attribution)",
+   "originalAudience": "'My son' — the instructed disciple (23:15-19)",
+   "addressee": "representative",
+   "historicalContext": "",
+   "literaryForm": "Wisdom literature",
+   "literaryContext": "",
+   "classification": "wisdom",
+   "isConditional": true,
+   "conditionNote": "Be thou in the fear of the LORD all the day long (Proverbs 23:17).",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "expectation",
+    "hope",
+    "future",
+    "end"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "prov23-18",
+    "seedLine": 1178,
+    "changes": [
+     "Author corrected from \"Solomon (traditional)\" to \"Solomon (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ISA-26-3",
+   "reference": "ISA 26:3",
+   "voice": "inspiredHuman",
+   "speaker": "The prophet",
+   "author": "Isaiah",
+   "originalAudience": "Judah, in the song of the strong city",
+   "addressee": "god",
+   "historicalContext": "",
+   "literaryForm": "Prophetic oracle (poetry)",
+   "literaryContext": "",
+   "classification": "propheticOracle",
+   "isConditional": true,
+   "conditionNote": "Whose mind is stayed on thee: because he trusteth in thee.",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "perfect peace",
+    "mind",
+    "trust"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "isa26-3",
+    "seedLine": 1179,
+    "changes": [
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ISA-30-21",
+   "reference": "ISA 30:21",
+   "voice": "inspiredHuman",
+   "speaker": "The prophet",
+   "author": "Isaiah",
+   "originalAudience": "Judah, called back from rebellion",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Prophetic oracle (poetry)",
+   "literaryContext": "",
+   "classification": "propheticOracle",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "this is the way",
+    "walk",
+    "guidance",
+    "direction"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "isa30-21",
+    "seedLine": 1180,
+    "changes": [
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ISA-40-31",
+   "reference": "ISA 40:31",
+   "voice": "inspiredHuman",
+   "speaker": "The prophet",
+   "author": "Isaiah",
+   "originalAudience": "Weary exile Israel",
+   "addressee": "general",
+   "historicalContext": "",
+   "literaryForm": "Prophetic oracle (poetry)",
+   "literaryContext": "",
+   "classification": "propheticOracle",
+   "isConditional": true,
+   "conditionNote": "They that wait upon the LORD.",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "Plural corporate assurance ('they that wait'); singular re-voicing would misread the oracle's collective voice. Kept untouched — received by waiting."
+   },
+   "contextNote": "",
+   "keywords": [
+    "wait upon the lord",
+    "renew",
+    "strength",
+    "eagles",
+    "weary"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "isa40-31",
+    "seedLine": 1181,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ISA-41-10",
+   "reference": "ISA 41:10",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Isaiah",
+   "originalAudience": "Israel, God's chosen servant (41:8-9)",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Prophetic oracle (poetry)",
+   "literaryContext": "",
+   "classification": "directDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "fear thou not",
+    "with thee",
+    "strengthen",
+    "help",
+    "uphold"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "isa41-10",
+    "seedLine": 1182,
+    "changes": [
+     "Author corrected from \"The LORD, through Isaiah\" to \"Isaiah\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ISA-41-13",
+   "reference": "ISA 41:13",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Isaiah",
+   "originalAudience": "Israel, God's chosen servant (41:8-9)",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Prophetic oracle (poetry)",
+   "literaryContext": "",
+   "classification": "directDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "hold thy right hand",
+    "fear not",
+    "help"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "isa41-13",
+    "seedLine": 1183,
+    "changes": [
+     "Author corrected from \"The LORD, through Isaiah\" to \"Isaiah\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ISA-43-1",
+   "reference": "ISA 43:1",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Isaiah",
+   "originalAudience": "Jacob-Israel, redeemed and named",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Prophetic oracle (poetry)",
+   "literaryContext": "",
+   "classification": "directDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "redeemed",
+    "called by name",
+    "mine",
+    "fear not"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "isa43-1",
+    "seedLine": 1184,
+    "changes": [
+     "Author corrected from \"The LORD, through Isaiah\" to \"Isaiah\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ISA-43-2",
+   "reference": "ISA 43:2",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Isaiah",
+   "originalAudience": "Jacob-Israel, passing through trials",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Prophetic oracle (poetry)",
+   "literaryContext": "",
+   "classification": "directDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "waters",
+    "fire",
+    "with thee",
+    "trials",
+    "protection"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "isa43-2",
+    "seedLine": 1185,
+    "changes": [
+     "Author corrected from \"The LORD, through Isaiah\" to \"Isaiah\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ISA-53-5",
+   "reference": "ISA 53:5",
+   "voice": "inspiredHuman",
+   "speaker": "The prophet",
+   "author": "Isaiah",
+   "originalAudience": "All who behold the suffering Servant",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Prophetic oracle (poetry)",
+   "literaryContext": "",
+   "classification": "propheticOracle",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "Confessional 'we/our' of the redeemed community; received by faith, never trimmed to one name."
+   },
+   "contextNote": "",
+   "keywords": [
+    "stripes",
+    "healed",
+    "wounded",
+    "transgressions",
+    "cross"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "isa53-5",
+    "seedLine": 1186,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ISA-54-13",
+   "reference": "ISA 54:13",
+   "voice": "inspiredHuman",
+   "speaker": "The prophet",
+   "author": "Isaiah",
+   "originalAudience": "Zion, the barren one comforted (54:1)",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Prophetic oracle (poetry)",
+   "literaryContext": "",
+   "classification": "propheticOracle",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "children",
+    "taught of the lord",
+    "peace of thy children",
+    "family"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "isa54-13",
+    "seedLine": 1187,
+    "changes": [
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ISA-54-17",
+   "reference": "ISA 54:17",
+   "voice": "inspiredHuman",
+   "speaker": "The prophet",
+   "author": "Isaiah",
+   "originalAudience": "The servants of the LORD (see close of the verse)",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Prophetic oracle (poetry)",
+   "literaryContext": "",
+   "classification": "propheticOracle",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "no weapon",
+    "prosper",
+    "heritage",
+    "tongue",
+    "judgment"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "isa54-17",
+    "seedLine": 1188,
+    "changes": [
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JER-29-11",
+   "reference": "JER 29:11",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Jeremiah",
+   "originalAudience": "The Judean exiles in Babylon (the letter of 29:1)",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Prophetic book",
+   "literaryContext": "",
+   "classification": "directDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "critical",
+    "note": "Addressed corporately to the exiles in Babylon within the seventy-years context; MWB refuses to rename the audience. The original audience stays — and Emmanuel may still receive the character of God revealed here."
+   },
+   "contextNote": "Spoken to the exiles as a people within a specific seventy-year promise; it reveals God's heart toward His own, without being a private guarantee about any individual circumstance.",
+   "keywords": [
+    "plans",
+    "thoughts",
+    "peace",
+    "future",
+    "hope",
+    "expected end"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "jer29-11",
+    "seedLine": 1189,
+    "changes": [
+     "Author corrected from \"The LORD, through Jeremiah\" to \"Jeremiah\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JER-30-17",
+   "reference": "JER 30:17",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Jeremiah",
+   "originalAudience": "Wounded, outcast Zion",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Prophetic book",
+   "literaryContext": "",
+   "classification": "directDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "restore health",
+    "heal",
+    "wounds",
+    "outcast"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "jer30-17",
+    "seedLine": 1190,
+    "changes": [
+     "Author corrected from \"The LORD, through Jeremiah\" to \"Jeremiah\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-LAM-3-22-23",
+   "reference": "LAM 3:22-23",
+   "voice": "inspiredHuman",
+   "speaker": "The poet of Lamentations",
+   "author": "Unattributed (traditionally Jeremiah)",
+   "originalAudience": "Jerusalem, after the fall — grief finding faith",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Lament (Hebrew poetry)",
+   "literaryContext": "",
+   "classification": "poetic",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "mercies",
+    "new every morning",
+    "faithfulness",
+    "morning",
+    "hope"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "lam3-2223",
+    "seedLine": 1191,
+    "changes": [
+     "Author corrected from \"Jeremiah (traditional)\" to \"Unattributed (traditionally Jeremiah)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-EZK-36-26",
+   "reference": "EZK 36:26",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Ezekiel",
+   "originalAudience": "The house of Israel, gathered from exile",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Prophetic oracle",
+   "literaryContext": "",
+   "classification": "directDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "new heart",
+    "new spirit",
+    "heart of flesh",
+    "forgiveness"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ezek36-26",
+    "seedLine": 1192,
+    "changes": [
+     "Author corrected from \"The LORD, through Ezekiel\" to \"Ezekiel\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-MAL-3-10",
+   "reference": "MAL 3:10",
+   "voice": "god",
+   "speaker": "God (the LORD)",
+   "author": "Malachi",
+   "originalAudience": "Post-exilic Judah, charged with robbing God",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Prophetic disputation",
+   "literaryContext": "",
+   "classification": "directDivineSpeech",
+   "isConditional": true,
+   "conditionNote": "Bring ye all the tithes into the storehouse (covenant obligation of post-exilic Judah).",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "critical",
+    "note": "A covenant challenge to post-exilic Judah, often misapplied as a prosperity transaction; shown with context rather than a name insertion."
+   },
+   "contextNote": "A covenant challenge about temple provision and faithfulness; it is not a personal get-rich transaction.",
+   "keywords": [
+    "tithe",
+    "storehouse",
+    "windows of heaven",
+    "blessing"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "mal3-10",
+    "seedLine": 1193,
+    "changes": [
+     "Author corrected from \"The LORD, through Malachi\" to \"Malachi\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-MAT-3-17",
+   "reference": "MAT 3:17",
+   "voice": "god",
+   "speaker": "God the Father (a voice from heaven)",
+   "author": "Matthew (traditional attribution)",
+   "originalAudience": "Jesus at His baptism — and those standing by",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "recordedDivineSpeech",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "critical",
+    "note": "The Father's declaration concerns the Son; substituting any other name would falsify the passage."
+   },
+   "contextNote": "",
+   "keywords": [
+    "beloved son",
+    "well pleased",
+    "baptism",
+    "identity"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "matt3-17",
+    "seedLine": 1196,
+    "changes": [
+     "Author corrected from \"The voice from heaven, recorded by Matthew\" to \"Matthew (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-MAT-5-14",
+   "reference": "MAT 5:14",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "Matthew (traditional attribution)",
+   "originalAudience": "His disciples, on the mount (5:1-2)",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "light of the world",
+    "city on a hill",
+    "identity",
+    "witness"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "matt5-14",
+    "seedLine": 1197,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"Matthew (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-MAT-6-33",
+   "reference": "MAT 6:33",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "Matthew (traditional attribution)",
+   "originalAudience": "The disciples and the crowd on the mount",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": true,
+   "conditionNote": "Seek ye first the kingdom of God, and his righteousness.",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "A communal exhortation ('ye'); received by obedience — kept as spoken."
+   },
+   "contextNote": "",
+   "keywords": [
+    "seek first",
+    "kingdom",
+    "provision",
+    "added"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "matt6-33",
+    "seedLine": 1198,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"Matthew (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-MAT-6-34",
+   "reference": "MAT 6:34",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "Matthew (traditional attribution)",
+   "originalAudience": "The disciples and the crowd on the mount",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "tomorrow",
+    "worry",
+    "anxiety",
+    "sufficient"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "matt6-34",
+    "seedLine": 1199,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"Matthew (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-MAT-7-7",
+   "reference": "MAT 7:7",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "Matthew (traditional attribution)",
+   "originalAudience": "The disciples and the crowd on the mount",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": true,
+   "conditionNote": "Ask… seek… knock.",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "ask",
+    "seek",
+    "knock",
+    "prayer"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "matt7-7",
+    "seedLine": 1200,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"Matthew (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-MAT-11-28",
+   "reference": "MAT 11:28",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "Matthew (traditional attribution)",
+   "originalAudience": "All who labour and are heavy laden",
+   "addressee": "representative",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": true,
+   "conditionNote": "Come unto me.",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "come unto me",
+    "rest",
+    "weary",
+    "burden",
+    "heavy laden"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "matt11-28",
+    "seedLine": 1201,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"Matthew (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-MAT-19-26",
+   "reference": "MAT 19:26",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "Matthew (traditional attribution)",
+   "originalAudience": "The disciples, astonished about salvation's difficulty",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "impossible",
+    "with god all things",
+    "faith"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "matt19-26",
+    "seedLine": 1202,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"Matthew (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-MAT-28-20",
+   "reference": "MAT 28:20",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "Matthew (traditional attribution)",
+   "originalAudience": "The eleven disciples, commissioned on the mountain",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "lo i am with you",
+    "alway",
+    "end of the world",
+    "presence",
+    "commission"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "matt28-20",
+    "seedLine": 1203,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"Matthew (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-MRK-9-23",
+   "reference": "MRK 9:23",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "Mark (traditional attribution)",
+   "originalAudience": "The father of the afflicted boy",
+   "addressee": "specificIndividual",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": true,
+   "conditionNote": "If thou canst believe.",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "Jesus probing one father's faith; its demand ('if thou canst believe') is kept intact."
+   },
+   "contextNote": "",
+   "keywords": [
+    "believe",
+    "possible",
+    "faith"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "mark9-23",
+    "seedLine": 1204,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"Mark (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-MRK-16-15",
+   "reference": "MRK 16:15",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "Mark (traditional attribution)",
+   "originalAudience": "The eleven, after the resurrection",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "A commission, not a promise — commissions are kept as commands."
+   },
+   "contextNote": "",
+   "keywords": [
+    "go ye",
+    "preach",
+    "gospel",
+    "evangelism",
+    "world"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "mark16-15",
+    "seedLine": 1205,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"Mark (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-LUK-6-38",
+   "reference": "LUK 6:38",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "Luke (traditional attribution)",
+   "originalAudience": "The disciples in the plain (6:17,20)",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": true,
+   "conditionNote": "Give.",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "A kingdom principle about generosity toward people; often misread as a money formula — kept in context."
+   },
+   "contextNote": "The context is mercy toward people (6:36-37); it teaches generosity, not a transactional prosperity.",
+   "keywords": [
+    "give",
+    "measure",
+    "generosity",
+    "running over"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "luke6-38",
+    "seedLine": 1206,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"Luke (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JHN-3-16",
+   "reference": "JHN 3:16",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "John (traditional attribution)",
+   "originalAudience": "Nicodemus, by night",
+   "addressee": "specificIndividual",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": true,
+   "conditionNote": "Whosoever believeth in him.",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "The offer is 'whosoever'; narrowing 'the world' to a single name would diminish the gospel's scope."
+   },
+   "contextNote": "",
+   "keywords": [
+    "god so loved",
+    "world",
+    "only begotten",
+    "everlasting life",
+    "salvation"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "john3-16",
+    "seedLine": 1207,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"John (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JHN-6-37",
+   "reference": "JHN 6:37",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "John (traditional attribution)",
+   "originalAudience": "The crowd at Capernaum",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": true,
+   "conditionNote": "Him that cometh to me.",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "cometh to me",
+    "in no wise cast out",
+    "rejection",
+    "security"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "john6-37",
+    "seedLine": 1208,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"John (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JHN-8-12",
+   "reference": "JHN 8:12",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "John (traditional attribution)",
+   "originalAudience": "The temple crowd at the feast of tabernacles",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": true,
+   "conditionNote": "He that followeth me.",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "light of the world",
+    "follow",
+    "darkness",
+    "light of life"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "john8-12",
+    "seedLine": 1209,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"John (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JHN-10-10",
+   "reference": "JHN 10:10",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "John (traditional attribution)",
+   "originalAudience": "The Pharisees, in the shepherd discourse",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "life",
+    "more abundantly",
+    "thief"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "john10-10",
+    "seedLine": 1210,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"John (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JHN-10-28",
+   "reference": "JHN 10:28",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "John (traditional attribution)",
+   "originalAudience": "The questioners at Solomon's porch",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": true,
+   "conditionNote": "My sheep hear my voice… and they follow me (John 10:27).",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "Spoken about 'my sheep' as a flock; the security belongs to the whole flock — received corporately."
+   },
+   "contextNote": "",
+   "keywords": [
+    "eternal life",
+    "never perish",
+    "my hand",
+    "security"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "john10-28",
+    "seedLine": 1211,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"John (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JHN-11-25",
+   "reference": "JHN 11:25",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "John (traditional attribution)",
+   "originalAudience": "Martha, grieving at Bethany",
+   "addressee": "specificIndividual",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": true,
+   "conditionNote": "He that believeth in me.",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "resurrection",
+    "life",
+    "believeth",
+    "grief",
+    "death"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "john11-25",
+    "seedLine": 1212,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"John (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JHN-14-1",
+   "reference": "JHN 14:1",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "John (traditional attribution)",
+   "originalAudience": "The eleven, in the upper room discourse",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "let not your heart be troubled",
+    "believe",
+    "troubled"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "john14-1",
+    "seedLine": 1213,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"John (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JHN-14-6",
+   "reference": "JHN 14:6",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "John (traditional attribution)",
+   "originalAudience": "Thomas and the eleven",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "An exclusive doctrinal claim about Christ Himself — there is nothing to personalize."
+   },
+   "contextNote": "",
+   "keywords": [
+    "the way",
+    "the truth",
+    "the life",
+    "father"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "john14-6",
+    "seedLine": 1214,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"John (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JHN-14-27",
+   "reference": "JHN 14:27",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "John (traditional attribution)",
+   "originalAudience": "The eleven, on the night He was betrayed",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "peace i leave",
+    "my peace",
+    "troubled",
+    "afraid"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "john14-27",
+    "seedLine": 1215,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"John (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JHN-15-11",
+   "reference": "JHN 15:11",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "John (traditional attribution)",
+   "originalAudience": "The eleven, in the vine discourse",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "my joy",
+    "full joy",
+    "remain"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "john15-11",
+    "seedLine": 1216,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"John (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JHN-16-33",
+   "reference": "JHN 16:33",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "John (traditional attribution)",
+   "originalAudience": "The eleven, before Gethsemane",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Gospel narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "tribulation",
+    "good cheer",
+    "overcome",
+    "peace"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "john16-33",
+    "seedLine": 1217,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"John (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ACT-1-8",
+   "reference": "ACT 1:8",
+   "voice": "jesus",
+   "speaker": "Jesus",
+   "author": "Luke (traditional attribution)",
+   "originalAudience": "The apostles, just before the ascension",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Historical narrative",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "A commission with geographic scope for the apostolic witness — received as commission."
+   },
+   "contextNote": "",
+   "keywords": [
+    "power",
+    "holy ghost",
+    "witnesses",
+    "uttermost",
+    "evangelism",
+    "ministry"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "acts1-8",
+    "seedLine": 1218,
+    "changes": [
+     "Author corrected from \"Jesus\" to \"Luke (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ACT-16-31",
+   "reference": "ACT 16:31",
+   "voice": "inspiredHuman",
+   "speaker": "Paul and Silas",
+   "author": "Luke (traditional attribution)",
+   "originalAudience": "The Philippian jailer and his household",
+   "addressee": "specificIndividual",
+   "historicalContext": "",
+   "literaryForm": "Historical narrative",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": true,
+   "conditionNote": "Believe on the Lord Jesus Christ.",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "A gospel answer to a specific hearer; becoming a hearer happens by believing, not by renaming."
+   },
+   "contextNote": "",
+   "keywords": [
+    "believe",
+    "saved",
+    "thy house",
+    "salvation",
+    "family"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "acts16-31",
+    "seedLine": 1219,
+    "changes": [
+     "Author corrected from \"Paul and Silas (recorded by Luke)\" to \"Luke (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ROM-5-1",
+   "reference": "ROM 5:1",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The believers in Rome",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "justified",
+    "peace with god",
+    "faith"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "rom5-1",
+    "seedLine": 1220,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ROM-6-23",
+   "reference": "ROM 6:23",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The believers in Rome",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "A universal doctrinal statement; received by faith, as written."
+   },
+   "contextNote": "",
+   "keywords": [
+    "wages of sin",
+    "gift of god",
+    "eternal life",
+    "salvation"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "rom6-23",
+    "seedLine": 1221,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ROM-8-1",
+   "reference": "ROM 8:1",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "Those who are in Christ Jesus",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": true,
+   "conditionNote": "Them which are in Christ Jesus, who walk not after the flesh, but after the Spirit.",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "no condemnation",
+    "in christ",
+    "condemnation",
+    "forgiveness"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "rom8-1",
+    "seedLine": 1222,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ROM-8-28",
+   "reference": "ROM 8:28",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "Them that love God — the called",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": true,
+   "conditionNote": "Them that love God, to them who are the called according to his purpose.",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "The condition and the scope ('them that love God') must never be silently narrowed to one person."
+   },
+   "contextNote": "A promise qualified by loving God and calling; it is corporate — 'them' — and descriptive of God's purpose, not a guarantee that every event is pleasant.",
+   "keywords": [
+    "all things",
+    "work together",
+    "good",
+    "called",
+    "purpose"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "rom8-28",
+    "seedLine": 1223,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ROM-8-31",
+   "reference": "ROM 8:31",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The believers in Rome",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "if god be for us",
+    "who against",
+    "victory"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "rom8-31",
+    "seedLine": 1224,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ROM-8-37",
+   "reference": "ROM 8:37",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The afflicted among the Roman believers (8:35-36)",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "more than conquerors",
+    "loved",
+    "victory"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "rom8-37",
+    "seedLine": 1225,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ROM-10-9",
+   "reference": "ROM 10:9",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "Any who would be saved (10:1)",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": true,
+   "conditionNote": "If thou shalt confess with thy mouth… and shalt believe in thine heart.",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "A conditional gospel offer; entered by confession, not by substitution."
+   },
+   "contextNote": "",
+   "keywords": [
+    "confess",
+    "believe",
+    "saved",
+    "salvation"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "rom10-9",
+    "seedLine": 1226,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-ROM-15-13",
+   "reference": "ROM 15:13",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The believers in Rome, in benediction",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "god of hope",
+    "joy",
+    "peace",
+    "believe",
+    "abound"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "rom15-13",
+    "seedLine": 1227,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-1CO-10-13",
+   "reference": "1CO 10:13",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The church at Corinth, amid idols and trials",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "temptation",
+    "faithful",
+    "way to escape",
+    "common"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "1cor10-13",
+    "seedLine": 1228,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-1CO-15-57",
+   "reference": "1CO 15:57",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The church at Corinth, in the resurrection hope",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "victory",
+    "thanks",
+    "resurrection"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "1cor15-57",
+    "seedLine": 1229,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-2CO-9-8",
+   "reference": "2CO 9:8",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The generous church at Corinth (giving for Judea)",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": true,
+   "conditionNote": "Spoken to the Corinthians about cheerful, generous giving (2 Corinthians 9:6-7).",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "grace",
+    "abound",
+    "sufficiency",
+    "provision",
+    "good work"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "2cor9-8",
+    "seedLine": 1230,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-2CO-12-9",
+   "reference": "2CO 12:9",
+   "voice": "jesus",
+   "speaker": "The Lord Jesus, as reported by Paul",
+   "author": "Paul",
+   "originalAudience": "Paul, bearing his thorn",
+   "addressee": "specificIndividual",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "wordsOfJesus",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "grace sufficient",
+    "strength",
+    "weakness",
+    "thorn"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "2cor12-9",
+    "seedLine": 1231,
+    "changes": [
+     "Author corrected from \"The Lord's word to Paul, reported by Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-GAL-6-9",
+   "reference": "GAL 6:9",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The Galatian churches, in their doing good",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": true,
+   "conditionNote": "If we faint not.",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "weary",
+    "well doing",
+    "reap",
+    "faint not"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "gal6-9",
+    "seedLine": 1232,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-EPH-2-8",
+   "reference": "EPH 2:8",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The believers at Ephesus",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "Universal outreach of grace ('ye'); kept universal."
+   },
+   "contextNote": "",
+   "keywords": [
+    "by grace",
+    "saved",
+    "faith",
+    "gift of god",
+    "salvation"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "eph2-8",
+    "seedLine": 1233,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-EPH-2-10",
+   "reference": "EPH 2:10",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The believers at Ephesus",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "workmanship",
+    "created",
+    "good works",
+    "identity"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "eph2-10",
+    "seedLine": 1234,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-EPH-3-20",
+   "reference": "EPH 3:20",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The believers at Ephesus, in doxology",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "A doxology to the church; doxologies belong to the whole assembly."
+   },
+   "contextNote": "",
+   "keywords": [
+    "exceeding abundantly",
+    "able",
+    "ask or think",
+    "power"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "eph3-20",
+    "seedLine": 1235,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PHP-1-6",
+   "reference": "PHP 1:6",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The church at Philippi",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "confident",
+    "good work",
+    "perform it",
+    "finish",
+    "future"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "phil1-6",
+    "seedLine": 1236,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PHP-4-6",
+   "reference": "PHP 4:6",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The church at Philippi",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "careful for nothing",
+    "prayer",
+    "supplication",
+    "thanksgiving",
+    "requests",
+    "worry"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "phil4-6",
+    "seedLine": 1237,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PHP-4-7",
+   "reference": "PHP 4:7",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The church at Philippi",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": true,
+   "conditionNote": "In every thing by prayer and supplication with thanksgiving let your requests be made known unto God (Philippians 4:6).",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "peace of god",
+    "passeth understanding",
+    "keep",
+    "hearts",
+    "minds"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "phil4-7",
+    "seedLine": 1238,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PHP-4-13",
+   "reference": "PHP 4:13",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The church at Philippi",
+   "addressee": "testimony",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "Paul speaks of contentment in every circumstance (4:11-12), not of limitless self-achievement.",
+   "keywords": [
+    "all things",
+    "through christ",
+    "strengtheneth",
+    "strength"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "phil4-13",
+    "seedLine": 1239,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-PHP-4-19",
+   "reference": "PHP 4:19",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The giving church at Philippi",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": true,
+   "conditionNote": "Spoken to the Philippians in thanks for their sacrificial gift (Philippians 4:14-18).",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "Spoken to a church that had sacrificially given (4:14-18); it comforts givers, and is not a blanket wealth guarantee.",
+   "keywords": [
+    "supply",
+    "need",
+    "riches in glory",
+    "provision"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "phil4-19",
+    "seedLine": 1240,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-COL-3-23",
+   "reference": "COL 3:23",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "Bondservants — and all who work",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "whatsoever ye do",
+    "heartily",
+    "work",
+    "career",
+    "service"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "col3-23",
+    "seedLine": 1241,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-2TH-3-3",
+   "reference": "2TH 3:3",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "The church at Thessalonica",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "lord is faithful",
+    "stablish",
+    "keep from evil",
+    "protection"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "2thess3-3",
+    "seedLine": 1242,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-2TI-1-7",
+   "reference": "2TI 1:7",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Paul",
+   "author": "Paul",
+   "originalAudience": "Timothy, Paul's son in the faith",
+   "addressee": "specificIndividual",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "spirit of fear",
+    "power",
+    "love",
+    "sound mind",
+    "fear"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "2tim1-7",
+    "seedLine": 1243,
+    "changes": [
+     "Author corrected from \"The apostle Paul\" to \"Paul\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-HEB-4-16",
+   "reference": "HEB 4:16",
+   "voice": "inspiredHuman",
+   "speaker": "The writer to the Hebrews",
+   "author": "Unknown (the writer to the Hebrews)",
+   "originalAudience": "Weary Jewish believers",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter (sermon-like exhortation)",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "throne of grace",
+    "boldly",
+    "mercy",
+    "help",
+    "prayer"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "heb4-16",
+    "seedLine": 1244,
+    "changes": [
+     "Author corrected from \"The writer to the Hebrews\" to \"Unknown (the writer to the Hebrews)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-HEB-11-1",
+   "reference": "HEB 11:1",
+   "voice": "inspiredHuman",
+   "speaker": "The writer to the Hebrews",
+   "author": "Unknown (the writer to the Hebrews)",
+   "originalAudience": "Believers needing endurance (10:36)",
+   "addressee": "general",
+   "historicalContext": "",
+   "literaryForm": "Letter (sermon-like exhortation)",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "medium",
+    "note": "A definition of faith itself — definitions are received, not re-voiced."
+   },
+   "contextNote": "",
+   "keywords": [
+    "faith",
+    "substance",
+    "evidence",
+    "not seen"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "heb11-1",
+    "seedLine": 1245,
+    "changes": [
+     "Author corrected from \"The writer to the Hebrews\" to \"Unknown (the writer to the Hebrews)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-HEB-13-5",
+   "reference": "HEB 13:5",
+   "voice": "god",
+   "speaker": "God, quoted by the writer to the Hebrews (from Deuteronomy 31:6-8 / Joshua 1:5)",
+   "author": "Unknown (the writer to the Hebrews)",
+   "originalAudience": "Believers tempted by covetousness",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter (sermon-like exhortation)",
+   "literaryContext": "",
+   "classification": "recordedDivineSpeech",
+   "isConditional": true,
+   "conditionNote": "Let your conversation be without covetousness; and be content with such things as ye have.",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "critical",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "never leave thee",
+    "forsake",
+    "content",
+    "covetousness"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "heb13-5",
+    "seedLine": 1246,
+    "changes": [
+     "Author corrected from \"The LORD, quoted from Deuteronomy/Joshua\" to \"Unknown (the writer to the Hebrews)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported.",
+     "Speaker clarified: God quoted from Deuteronomy/Joshua."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JAS-1-5",
+   "reference": "JAS 1:5",
+   "voice": "inspiredHuman",
+   "speaker": "James",
+   "author": "James",
+   "originalAudience": "The twelve tribes scattered abroad",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": true,
+   "conditionNote": "Let him ask of God… But let him ask in faith, nothing wavering (James 1:6).",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "lack wisdom",
+    "ask",
+    "giveth liberally",
+    "wisdom",
+    "decision"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "jas1-5",
+    "seedLine": 1247,
+    "changes": [
+     "Author corrected from \"James, the Lord's brother\" to \"James\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-JAS-1-17",
+   "reference": "JAS 1:17",
+   "voice": "inspiredHuman",
+   "speaker": "James",
+   "author": "James",
+   "originalAudience": "The twelve tribes scattered abroad",
+   "addressee": "general",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "medium",
+    "note": "A doctrinal statement about God's constancy — universal by nature."
+   },
+   "contextNote": "",
+   "keywords": [
+    "good gift",
+    "perfect gift",
+    "father of lights",
+    "gratitude"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "jas1-17",
+    "seedLine": 1248,
+    "changes": [
+     "Author corrected from \"James, the Lord's brother\" to \"James\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-1PE-5-7",
+   "reference": "1PE 5:7",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle Peter",
+   "author": "Peter",
+   "originalAudience": "Exiles of the dispersion, under suffering",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "casting",
+    "care",
+    "careth for you",
+    "anxiety",
+    "worry"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "1pet5-7",
+    "seedLine": 1249,
+    "changes": [
+     "Author corrected from \"The apostle Peter\" to \"Peter\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"subs\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-1JN-1-9",
+   "reference": "1JN 1:9",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle John",
+   "author": "John (traditional attribution)",
+   "originalAudience": "Believers walking in the light",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": true,
+   "conditionNote": "If we confess our sins.",
+   "personalisation": {
+    "eligibility": "reviewRequired",
+    "risk": "high",
+    "note": ""
+   },
+   "contextNote": "",
+   "keywords": [
+    "confess",
+    "sins",
+    "faithful",
+    "forgive",
+    "cleanse"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "1john1-9",
+    "seedLine": 1250,
+    "changes": [
+     "Author corrected from \"The apostle John\" to \"John (traditional attribution)\"; the demo used the speaker as author.",
+     "Demo personalisation strategy \"pre\" recorded only as a candidate; its rendering was not imported."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-1JN-4-18",
+   "reference": "1JN 4:18",
+   "voice": "inspiredHuman",
+   "speaker": "The apostle John",
+   "author": "John (traditional attribution)",
+   "originalAudience": "The beloved, learning love",
+   "addressee": "general",
+   "historicalContext": "",
+   "literaryForm": "Letter",
+   "literaryContext": "",
+   "classification": "apostolicInstruction",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "medium",
+    "note": "A theological statement about love's power; third-person 'he that feareth' is preserved."
+   },
+   "contextNote": "",
+   "keywords": [
+    "perfect love",
+    "casteth out fear",
+    "torment",
+    "fear"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "1john4-18",
+    "seedLine": 1251,
+    "changes": [
+     "Author corrected from \"The apostle John\" to \"John (traditional attribution)\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-REV-21-4",
+   "reference": "REV 21:4",
+   "voice": "inspiredHuman",
+   "speaker": "A great voice from heaven, recorded by John",
+   "author": "John",
+   "originalAudience": "The churches, in the final vision",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Apocalyptic vision",
+   "literaryContext": "",
+   "classification": "apocalypticVision",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "Eschatological promise for the redeemed of all ages — narrowing it would mislocate its scope."
+   },
+   "contextNote": "",
+   "keywords": [
+    "wipe away tears",
+    "no more death",
+    "sorrow",
+    "pain",
+    "former things",
+    "grief"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "rev21-4",
+    "seedLine": 1252,
+    "changes": [
+     "Author corrected from \"John of Patmos\" to \"John\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "ctx-REV-21-5",
+   "reference": "REV 21:5",
+   "voice": "inspiredHuman",
+   "speaker": "He that sat upon the throne, recorded by John",
+   "author": "John",
+   "originalAudience": "The churches, in the final vision",
+   "addressee": "collective",
+   "historicalContext": "",
+   "literaryForm": "Apocalyptic vision",
+   "literaryContext": "",
+   "classification": "apocalypticVision",
+   "isConditional": false,
+   "conditionNote": "",
+   "personalisation": {
+    "eligibility": "notEligible",
+    "risk": "high",
+    "note": "The throne speaks to the whole redeemed order; received as the Church's hope."
+   },
+   "contextNote": "The one on the throne speaks to the whole of creation's renewal — a hope to long for, not a private timetable.",
+   "keywords": [
+    "make all things new",
+    "behold",
+    "throne",
+    "restoration",
+    "leap"
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "rev21-5",
+    "seedLine": 1253,
+    "changes": [
+     "Author corrected from \"John of Patmos, hearing the throne\" to \"John\"; the demo used the speaker as author."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  }
+ ]
+}

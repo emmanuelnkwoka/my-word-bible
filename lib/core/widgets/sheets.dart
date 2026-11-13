@@ -16,6 +16,8 @@ Future<T?> showMwbSheet<T>(
   return showModalBottomSheet<T>(
     context: context,
     isScrollControlled: true,
+    // Above the floating navigation, never behind or beside it.
+    useRootNavigator: true,
     useSafeArea: true,
     showDragHandle: true,
     constraints: const BoxConstraints(maxWidth: 640),

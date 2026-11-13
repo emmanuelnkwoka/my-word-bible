@@ -32,13 +32,13 @@ void main() {
 
     test('Classic Gold uses the brand tokens', () {
       final p = MwbThemes.classicGold.light;
-      expect(p.background, const Color(0xFFF8F2E8));
-      expect(p.surface, const Color(0xFFFBF7F0));
-      expect(p.primary, const Color(0xFFB88A35));
-      expect(p.primaryStrong, const Color(0xFF98702C));
-      expect(p.textPrimary, const Color(0xFF2D1A13));
-      expect(p.textSecondary, const Color(0xFF82766D));
-      expect(p.border, const Color(0xFFE9E0D4));
+      expect(p.background, const Color(0xFFF9F2E7));
+      expect(p.surface, const Color(0xFFFCF7EF));
+      expect(p.primary, const Color(0xFFB98330));
+      expect(p.primaryStrong, const Color(0xFFA3681F));
+      expect(p.textPrimary, const Color(0xFF28170D));
+      expect(p.textSecondary, const Color(0xFF7E7065));
+      expect(p.border, const Color(0xFFEDE2CF));
     });
 
     for (final def in MwbThemes.all) {

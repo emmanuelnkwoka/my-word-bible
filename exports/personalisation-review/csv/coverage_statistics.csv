@@ -1,0 +1,59 @@
+﻿Edition,Translation,Measure,Count
+KJV-MWB,KJV,Total canonical verses processed,31102
+KJV-MWB,KJV,Verses — Eligible for name insertion,111
+KJV-MWB,KJV,Verses — Eligible for name-in-title,369
+KJV-MWB,KJV,Verses — Other defined transformation,0
+KJV-MWB,KJV,Verses — Original text only,20566
+KJV-MWB,KJV,Verses — Requires contextual review,1900
+KJV-MWB,KJV,Verses — Excluded,8148
+KJV-MWB,KJV,Verses — Pending editorial or theological decision,8
+KJV-MWB,KJV,Proposed personalised renderings (all proposals),491
+KJV-MWB,KJV,Name-in-text proposals (Mode A),120
+KJV-MWB,KJV,Name-in-title proposals (Mode B),371
+KJV-MWB,KJV,Name-in-title proposals still needing an editorial title,350
+KJV-MWB,KJV,Original-only verses,20566
+KJV-MWB,KJV,Excluded verses,8148
+KJV-MWB,KJV,Flagged verses (requires contextual review),1900
+KJV-MWB,KJV,"Flagged proposals (failed checks, critical risk or open question)",361
+KJV-MWB,KJV,Proposals passing automated validation,138
+KJV-MWB,KJV,Proposals failing automated validation,353
+KJV-MWB,KJV,Proposals with status proposed,352
+KJV-MWB,KJV,Proposals with status automatedValidated,138
+KJV-MWB,KJV,Proposals with status underReview,0
+KJV-MWB,KJV,Proposals with status corrected,0
+KJV-MWB,KJV,Proposals with status approved,0
+KJV-MWB,KJV,Proposals with status rejected,1
+KJV-MWB,KJV,Proposals with status retired,0
+KJV-MWB,KJV,Pending proposals (awaiting a human decision),490
+KJV-MWB,KJV,Approved proposals,0
+KJV-MWB,KJV,Rejected proposals,1
+KJV-MWB,KJV,Corrected proposals,0
+WEB-MWB,WEB,Total canonical verses processed,31103
+WEB-MWB,WEB,Verses — Eligible for name insertion,106
+WEB-MWB,WEB,Verses — Eligible for name-in-title,370
+WEB-MWB,WEB,Verses — Other defined transformation,0
+WEB-MWB,WEB,Verses — Original text only,20568
+WEB-MWB,WEB,Verses — Requires contextual review,1905
+WEB-MWB,WEB,Verses — Excluded,8147
+WEB-MWB,WEB,Verses — Pending editorial or theological decision,7
+WEB-MWB,WEB,Proposed personalised renderings (all proposals),483
+WEB-MWB,WEB,Name-in-text proposals (Mode A),113
+WEB-MWB,WEB,Name-in-title proposals (Mode B),370
+WEB-MWB,WEB,Name-in-title proposals still needing an editorial title,350
+WEB-MWB,WEB,Original-only verses,20568
+WEB-MWB,WEB,Excluded verses,8147
+WEB-MWB,WEB,Flagged verses (requires contextual review),1905
+WEB-MWB,WEB,"Flagged proposals (failed checks, critical risk or open question)",357
+WEB-MWB,WEB,Proposals passing automated validation,133
+WEB-MWB,WEB,Proposals failing automated validation,350
+WEB-MWB,WEB,Proposals with status proposed,350
+WEB-MWB,WEB,Proposals with status automatedValidated,133
+WEB-MWB,WEB,Proposals with status underReview,0
+WEB-MWB,WEB,Proposals with status corrected,0
+WEB-MWB,WEB,Proposals with status approved,0
+WEB-MWB,WEB,Proposals with status rejected,0
+WEB-MWB,WEB,Proposals with status retired,0
+WEB-MWB,WEB,Pending proposals (awaiting a human decision),483
+WEB-MWB,WEB,Approved proposals,0
+WEB-MWB,WEB,Rejected proposals,0
+WEB-MWB,WEB,Corrected proposals,0

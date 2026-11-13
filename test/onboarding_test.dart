@@ -154,13 +154,15 @@ void main() {
 
       expect(store.getBool(StorageKeys.onboardingComplete), isTrue);
       expect(find.textContaining('Grace'), findsWidgets);
-      expect(find.text('DAILY SCRIPTURE'), findsOneWidget);
+      expect(find.byKey(const Key('home.dailyWord')), findsOneWidget);
+      expect(find.byKey(const Key('home.dailyWord')), findsOneWidget);
     });
 
     testWidgets('onboarding is not shown again once completed', (tester) async {
       await pumpMwbApp(tester, onboardedStore());
       expect(find.text('Let’s start with you'), findsNothing);
-      expect(find.text('DAILY SCRIPTURE'), findsOneWidget);
+      expect(find.byKey(const Key('home.dailyWord')), findsOneWidget);
+      expect(find.byKey(const Key('home.dailyWord')), findsOneWidget);
     });
   });
 }

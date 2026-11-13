@@ -1,0 +1,299 @@
+{
+ "schemaVersion": 1,
+ "corpusVersion": "1.0.0",
+ "declarations": [
+  {
+   "id": "dc-identity",
+   "title": "Who I am",
+   "category": "Identity",
+   "themes": [
+    "theme-identity"
+   ],
+   "text": "{name} is fearfully and wonderfully made. {name} is God's workmanship, created in Christ Jesus unto good works, together with all God's people. The LORD who redeemed Israel calls His own by name.",
+   "firstPersonText": "I am fearfully and wonderfully made. With all God's people, I am His workmanship, created in Christ Jesus unto good works. The LORD who redeemed Israel calls His own by name.",
+   "references": [
+    "PSA 139:14",
+    "EPH 2:10",
+    "ISA 43:1"
+   ],
+   "groundingNote": "EPH 2:10, ISA 43:1 were first spoken to God's people corporately. This declaration receives what the passage reveals about God; it is not a private guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dc-identity",
+    "seedLine": 1327,
+    "changes": [
+     "Rewritten without gendered pronouns (demo used he/him/his for every reader).",
+     "Demo first-name token ⟦F⟧ replaced by {name}; a first-person form was added for readers without a usable name.",
+     "Wording keeps corporate passages corporate (\"His people\")."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dc-strength",
+   "title": "Strength for today",
+   "category": "Strength",
+   "themes": [
+    "theme-strength"
+   ],
+   "text": "Through Christ who strengthens, {name} can be content and faithful in every circumstance. {name} need not be dismayed, for the LORD is with His people and upholds them.",
+   "firstPersonText": "I can do all things through Christ which strengtheneth me, in plenty and in want. I will not be dismayed, for the LORD is with His people and upholds them.",
+   "references": [
+    "PHP 4:13",
+    "ISA 41:10"
+   ],
+   "groundingNote": "ISA 41:10 was first spoken to God's people corporately. This declaration receives what the passage reveals about God; it is not a private guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dc-strength",
+    "seedLine": 1328,
+    "changes": [
+     "Rewritten without gendered pronouns (demo used he/him/his for every reader).",
+     "Demo first-name token ⟦F⟧ replaced by {name}; a first-person form was added for readers without a usable name.",
+     "Wording keeps corporate passages corporate (\"His people\")."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dc-healing",
+   "title": "Over the body",
+   "category": "Healing",
+   "themes": [
+    "theme-healing"
+   ],
+   "text": "{name} looks to the Servant by whose stripes we are healed, and to the LORD who restores health. {name} places this body in God's care.",
+   "firstPersonText": "With His stripes we are healed. I look to the LORD who restores health and heals wounds, and I place my body in His care.",
+   "references": [
+    "ISA 53:5",
+    "JER 30:17"
+   ],
+   "groundingNote": "ISA 53:5, JER 30:17 were first spoken to God's people corporately. This declaration receives what the passage reveals about God; it is not a private guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dc-healing",
+    "seedLine": 1329,
+    "changes": [
+     "Rewritten without gendered pronouns (demo used he/him/his for every reader).",
+     "Demo first-name token ⟦F⟧ replaced by {name}; a first-person form was added for readers without a usable name.",
+     "Wording keeps corporate passages corporate (\"His people\")."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": [
+     "Healing declaration: confirm it does not promise a guaranteed cure."
+    ]
+   }
+  },
+  {
+   "id": "dc-protection",
+   "title": "A covering",
+   "category": "Protection",
+   "themes": [
+    "theme-protection"
+   ],
+   "text": "The Lord is faithful; He will stablish {name} and keep {name} from evil. {name} makes the Most High a habitation and rests under His care.",
+   "firstPersonText": "The Lord is faithful; He will stablish me and keep me from evil. I make the Most High my habitation and rest under His care.",
+   "references": [
+    "PSA 91:11",
+    "2TH 3:3"
+   ],
+   "groundingNote": "2TH 3:3 was first spoken to God's people corporately. This declaration receives what the passage reveals about God; it is not a private guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dc-protection",
+    "seedLine": 1330,
+    "changes": [
+     "Rewritten without gendered pronouns (demo used he/him/his for every reader).",
+     "Demo first-name token ⟦F⟧ replaced by {name}; a first-person form was added for readers without a usable name.",
+     "Wording keeps corporate passages corporate (\"His people\")."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dc-hope",
+   "title": "The end is sure",
+   "category": "Hope",
+   "themes": [
+    "theme-hope"
+   ],
+   "text": "{name} will be in the fear of the LORD all the day long, for surely there is an end, and that expectation shall not be cut off. The God of hope fills {name} with joy and peace in believing.",
+   "firstPersonText": "I will be in the fear of the LORD all the day long, for surely there is an end, and my expectation shall not be cut off. The God of hope fills me with joy and peace in believing.",
+   "references": [
+    "PRO 23:18",
+    "ROM 15:13"
+   ],
+   "groundingNote": "ROM 15:13 was first spoken to God's people corporately. This declaration receives what the passage reveals about God; it is not a private guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dc-hope",
+    "seedLine": 1331,
+    "changes": [
+     "Rewritten without gendered pronouns (demo used he/him/his for every reader).",
+     "Demo first-name token ⟦F⟧ replaced by {name}; a first-person form was added for readers without a usable name.",
+     "Wording keeps corporate passages corporate (\"His people\")."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dc-gratitude",
+   "title": "A thankful heart",
+   "category": "Gratitude",
+   "themes": [
+    "theme-gratitude"
+   ],
+   "text": "Every good gift in {name}'s life comes down from the Father of lights. {name} will bless the LORD and forget not all His benefits.",
+   "firstPersonText": "Every good gift and every perfect gift in my life comes down from the Father of lights. I will bless the LORD and forget not all His benefits.",
+   "references": [
+    "JAS 1:17",
+    "PSA 103:3"
+   ],
+   "groundingNote": "",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dc-gratitude",
+    "seedLine": 1332,
+    "changes": [
+     "Rewritten without gendered pronouns (demo used he/him/his for every reader).",
+     "Demo first-name token ⟦F⟧ replaced by {name}; a first-person form was added for readers without a usable name."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dc-family",
+   "title": "Over the household",
+   "category": "Family",
+   "themes": [
+    "theme-family"
+   ],
+   "text": "As for {name}'s household, it will serve the LORD. {name} entrusts every child of the household to the LORD, who promised that the children of His people would be taught of Him.",
+   "firstPersonText": "As for me and my house, we will serve the LORD. I entrust my children to the LORD, who promised that the children of His people would be taught of Him.",
+   "references": [
+    "ISA 54:13",
+    "JOS 24:15"
+   ],
+   "groundingNote": "ISA 54:13, JOS 24:15 were first spoken to God's people corporately. This declaration receives what the passage reveals about God; it is not a private guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dc-family",
+    "seedLine": 1333,
+    "changes": [
+     "Rewritten without gendered pronouns (demo used he/him/his for every reader).",
+     "Demo first-name token ⟦F⟧ replaced by {name}; a first-person form was added for readers without a usable name.",
+     "Wording keeps corporate passages corporate (\"His people\")."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dc-night",
+   "title": "Before sleep",
+   "category": "Night",
+   "themes": [
+    "theme-night"
+   ],
+   "text": "The LORD preserves {name} from all evil; He preserves {name}'s soul. The angel of the LORD encamps round about them that fear Him, so {name} will lie down in peace tonight.",
+   "firstPersonText": "The LORD shall preserve me from all evil; He shall preserve my soul. The angel of the LORD encampeth round about them that fear Him; I will both lay me down in peace, and sleep.",
+   "references": [
+    "PSA 121:7",
+    "PSA 34:7",
+    "PSA 4:8"
+   ],
+   "groundingNote": "",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dc-night",
+    "seedLine": 1334,
+    "changes": [
+     "Rewritten without gendered pronouns (demo used he/him/his for every reader).",
+     "Demo first-name token ⟦F⟧ replaced by {name}; a first-person form was added for readers without a usable name.",
+     "Added PSA 4:8, the source of \"lie down in peace\"."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dc-faith",
+   "title": "Standing in faith",
+   "category": "Faith",
+   "themes": [
+    "theme-faith"
+   ],
+   "text": "Faith is the substance of things hoped for, the evidence of things not seen; {name} stands in that faith. With God all things are possible.",
+   "firstPersonText": "Faith is the substance of things hoped for, the evidence of things not seen, and I stand in that faith. With God all things are possible.",
+   "references": [
+    "HEB 11:1",
+    "MAT 19:26"
+   ],
+   "groundingNote": "MAT 19:26 was first spoken to God's people corporately. This declaration receives what the passage reveals about God; it is not a private guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dc-faith",
+    "seedLine": 1335,
+    "changes": [
+     "Rewritten without gendered pronouns (demo used he/him/his for every reader).",
+     "Demo first-name token ⟦F⟧ replaced by {name}; a first-person form was added for readers without a usable name.",
+     "Wording keeps corporate passages corporate (\"His people\")."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dc-courage",
+   "title": "No spirit of fear",
+   "category": "Courage",
+   "themes": [
+    "theme-courage"
+   ],
+   "text": "God has not given {name} the spirit of fear, but of power, and of love, and of a sound mind. {name} will be strong and of a good courage, for the LORD goes with His people.",
+   "firstPersonText": "God hath not given me the spirit of fear, but of power, and of love, and of a sound mind. I will be strong and of a good courage, for the LORD goes with His people.",
+   "references": [
+    "DEU 31:6",
+    "2TI 1:7"
+   ],
+   "groundingNote": "DEU 31:6 was first spoken to God's people corporately. This declaration receives what the passage reveals about God; it is not a private guarantee.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dc-courage",
+    "seedLine": 1336,
+    "changes": [
+     "Rewritten without gendered pronouns (demo used he/him/his for every reader).",
+     "Demo first-name token ⟦F⟧ replaced by {name}; a first-person form was added for readers without a usable name.",
+     "Wording keeps corporate passages corporate (\"His people\")."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  }
+ ]
+}

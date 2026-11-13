@@ -14,14 +14,28 @@ import 'package:my_word_bible/core/storage/token_storage.dart';
 import 'package:my_word_bible/data/models/user_profile.dart';
 import 'package:my_word_bible/data/repositories/bible_repository.dart';
 import 'package:my_word_bible/data/repositories/content_repository.dart';
+import 'package:my_word_bible/data/repositories/daily_word_repository.dart';
+import 'package:my_word_bible/data/repositories/intelligence_repository.dart';
+import 'package:my_word_bible/data/repositories/mwb_presentation_repository.dart';
+import 'package:my_word_bible/data/repositories/mwb_ruleset_repository.dart';
+import 'package:my_word_bible/data/repositories/passage_context_repository.dart';
 import 'package:my_word_bible/features/audio/application/audio_playback_service.dart';
 import 'package:my_word_bible/features/bible/application/bible_providers.dart';
+import 'package:my_word_bible/features/personalisation/application/personalisation_providers.dart';
 
 /// Raw KJV text, read once. Widget tests each get their own repository so
 /// futures are created inside that test's fake-async zone.
 final _kjvRaw = File('assets/bible/kjv.json').readAsStringSync();
+final _webRaw = File('assets/bible/web.json').readAsStringSync();
 
-AssetBibleRepository newTestBible() => AssetBibleRepository(loader: (_) async => _kjvRaw, parseInBackground: false);
+/// Reads bundled assets from disk by path, as the app's asset bundle would.
+Future<String> readTestAsset(String path) async => switch (path) {
+  'assets/bible/kjv.json' => _kjvRaw,
+  'assets/bible/web.json' => _webRaw,
+  _ => File(path).readAsStringSync(),
+};
+
+AssetBibleRepository newTestBible() => AssetBibleRepository(loader: readTestAsset, parseInBackground: false);
 
 /// Shared instance for plain (non-widget) unit tests.
 final sharedTestBible = newTestBible();
@@ -43,20 +57,32 @@ List<Override> testOverrides(KeyValueStore store) => [
   contentRepositoryProvider.overrideWithValue(MockContentRepository(latency: Duration.zero)),
   audioPlaybackServiceProvider.overrideWithValue(SimulatedAudioPlaybackService()),
   clockProvider.overrideWithValue(() => fixedNow),
+  mwbRulesetRepositoryProvider.overrideWithValue(AssetMwbRulesetRepository(loader: readTestAsset)),
+  passageContextRepositoryProvider.overrideWithValue(AssetPassageContextRepository(loader: readTestAsset)),
+  intelligenceRepositoryProvider.overrideWithValue(
+    AssetIntelligenceRepository(loader: readTestAsset, parseInBackground: false),
+  ),
+  dailyWordRepositoryProvider.overrideWithValue(AssetDailyWordRepository(loader: readTestAsset)),
+  mwbPresentationRepositoryProvider.overrideWithValue(AssetMwbPresentationRepository(loader: readTestAsset)),
 ];
 
-ProviderContainer testContainer(KeyValueStore store) {
-  final c = ProviderContainer(overrides: testOverrides(store));
+ProviderContainer testContainer(KeyValueStore store, {List<Override> extra = const []}) {
+  final c = ProviderContainer(overrides: [...testOverrides(store), ...extra]);
   addTearDown(c.dispose);
   return c;
 }
 
 /// Pumps the full application with test dependencies.
-Future<void> pumpMwbApp(WidgetTester tester, KeyValueStore store, {Size size = const Size(400, 860)}) async {
+Future<void> pumpMwbApp(
+  WidgetTester tester,
+  KeyValueStore store, {
+  Size size = const Size(400, 860),
+  List<Override> extra = const [],
+}) async {
   tester.view.physicalSize = size * 3;
   tester.view.devicePixelRatio = 3;
   addTearDown(tester.view.reset);
-  await tester.pumpWidget(ProviderScope(overrides: testOverrides(store), child: const MwbApp()));
+  await tester.pumpWidget(ProviderScope(overrides: [...testOverrides(store), ...extra], child: const MwbApp()));
   await settle(tester);
 }
 
@@ -93,3 +119,11 @@ ApiClient throwingApiClient() => ApiClient(
 );
 
 Widget wrapForTest(Widget child, KeyValueStore store) => ProviderScope(overrides: testOverrides(store), child: child);
+
+/// A dedicated reviewer build (`--dart-define=MWB_REVIEW_MODE=true`). Only
+/// such builds offer the editorial review tools.
+final reviewerBuild = <Override>[
+  appConfigProvider.overrideWithValue(
+    const AppConfig(dataSource: DataSourceMode.mock, apiBaseUrl: '', mwbReviewMode: true),
+  ),
+];

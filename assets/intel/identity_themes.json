@@ -1,0 +1,186 @@
+{
+ "schemaVersion": 1,
+ "corpusVersion": "1.0.0",
+ "identityThemes": [
+  {
+   "id": "id-wonderfully-made",
+   "title": "Made by God, wonderfully",
+   "references": [
+    "GEN 1:27",
+    "PSA 139:14"
+   ],
+   "holder": "Every person, made in the image of God",
+   "themes": [
+    "theme-identity"
+   ],
+   "note": "An identity statement describes who God's people are in Him. It is received in its setting; it is not an unconditional promise about circumstances.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-ident-1",
+    "seedLine": 1285,
+    "changes": [
+     "Reclassified from a demo promise to an identity theme."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "id-workmanship",
+   "title": "God's workmanship",
+   "references": [
+    "EPH 2:10"
+   ],
+   "holder": "Believers together in Christ (\"we are his workmanship\")",
+   "themes": [
+    "theme-identity"
+   ],
+   "note": "An identity statement describes who God's people are in Him. It is received in its setting; it is not an unconditional promise about circumstances.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-ident-2",
+    "seedLine": 1286,
+    "changes": [
+     "Reclassified from a demo promise to an identity theme."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "id-called-by-name",
+   "title": "Redeemed and called by name",
+   "references": [
+    "ISA 43:1"
+   ],
+   "holder": "Jacob-Israel, God's redeemed people",
+   "themes": [
+    "theme-identity"
+   ],
+   "note": "An identity statement describes who God's people are in Him. It is received in its setting; it is not an unconditional promise about circumstances.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Identity wording of ISA 43:1 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "id-saved-by-grace",
+   "title": "Saved by grace through faith",
+   "references": [
+    "EPH 2:8",
+    "ROM 5:1"
+   ],
+   "holder": "Believers, justified by faith",
+   "themes": [
+    "theme-identity"
+   ],
+   "note": "An identity statement describes who God's people are in Him. It is received in its setting; it is not an unconditional promise about circumstances.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Identity wording of EPH 2:8, ROM 5:1 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "id-no-condemnation",
+   "title": "No condemnation in Christ",
+   "references": [
+    "ROM 8:1"
+   ],
+   "holder": "Those who are in Christ Jesus",
+   "themes": [
+    "theme-identity"
+   ],
+   "note": "An identity statement describes who God's people are in Him. It is received in its setting; it is not an unconditional promise about circumstances.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Identity wording of ROM 8:1 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "id-more-than-conquerors",
+   "title": "More than conquerors",
+   "references": [
+    "ROM 8:37",
+    "ROM 8:31"
+   ],
+   "holder": "Believers facing affliction (Romans 8:35-36)",
+   "themes": [
+    "theme-identity"
+   ],
+   "note": "An identity statement describes who God's people are in Him. It is received in its setting; it is not an unconditional promise about circumstances.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Identity wording of ROM 8:37, ROM 8:31 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "id-light-of-the-world",
+   "title": "The light of the world",
+   "references": [
+    "MAT 5:14"
+   ],
+   "holder": "Jesus' disciples together (\"Ye are\")",
+   "themes": [
+    "theme-identity"
+   ],
+   "note": "An identity statement describes who God's people are in Him. It is received in its setting; it is not an unconditional promise about circumstances.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Identity wording of MAT 5:14 in the demo context corpus.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "id-spirit-of-power",
+   "title": "A spirit of power, love and a sound mind",
+   "references": [
+    "2TI 1:7"
+   ],
+   "holder": "Timothy and Paul (\"given us\")",
+   "themes": [
+    "theme-identity"
+   ],
+   "note": "An identity statement describes who God's people are in Him. It is received in its setting; it is not an unconditional promise about circumstances.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-cour-2",
+    "seedLine": 1280,
+    "changes": [
+     "Reclassified from a demo promise to an identity theme."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  }
+ ]
+}

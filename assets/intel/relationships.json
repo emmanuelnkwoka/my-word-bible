@@ -1,0 +1,476 @@
+{
+ "schemaVersion": 1,
+ "corpusVersion": "1.0.0",
+ "relationships": [
+  {
+   "id": "rel-john14-27-isa26-3",
+   "from": "JHN 14:27",
+   "to": "ISA 26:3",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both speak of God-given peace kept for those who trust Him.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "john14-27|isa26-3",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-phil4-7-john14-27",
+   "from": "PHP 4:7",
+   "to": "JHN 14:27",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "The peace of God that keeps hearts (Philippians) is the peace Jesus said He leaves with His disciples.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "phil4-7|john14-27",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-phil4-6-1pet5-7",
+   "from": "PHP 4:6",
+   "to": "1PE 5:7",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both answer anxiety by bringing every care to God in prayer.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "phil4-6|1pet5-7",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-isa41-10-deut31-6",
+   "from": "ISA 41:10",
+   "to": "DEU 31:6",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both say \"fear not\" because God Himself is with His people and will not fail them.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "isa41-10|deut31-6",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-isa41-13-isa41-10",
+   "from": "ISA 41:13",
+   "to": "ISA 41:10",
+   "type": "contextual",
+   "bidirectional": true,
+   "explanation": "The same oracle to Israel: verse 13 restates the help and right hand of verse 10.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "isa41-13|isa41-10",
+    "seedLine": 1557,
+    "changes": [
+     "Type changed from theme to contextual: both verses belong to one oracle.",
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-ps91-11-ps34-7",
+   "from": "PSA 91:11",
+   "to": "PSA 34:7",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both describe God's angels guarding those who fear and trust Him.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps91-11|ps34-7",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-ps46-10-isa41-10",
+   "from": "PSA 46:10",
+   "to": "ISA 41:10",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both are God's first-person assurance (\"I am God\", \"I am thy God\") to a people under threat.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps46-10|isa41-10",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-phil4-19-2cor9-8",
+   "from": "PHP 4:19",
+   "to": "2CO 9:8",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both are Paul's assurances to generous churches that God supplies what is needed.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "phil4-19|2cor9-8",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-ps23-1-phil4-19",
+   "from": "PSA 23:1",
+   "to": "PHP 4:19",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both confess God's provision: \"I shall not want\" and \"my God shall supply all your need\".",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps23-1|phil4-19",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-jas1-5-prov3-56",
+   "from": "JAS 1:5",
+   "to": "PRO 3:5-6",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both direct the seeker of guidance to God rather than to their own understanding.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "jas1-5|prov3-56",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-ps32-8-isa30-21",
+   "from": "PSA 32:8",
+   "to": "ISA 30:21",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both promise God's own instruction about the way to walk.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps32-8|isa30-21",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-jer30-17-ps147-3",
+   "from": "JER 30:17",
+   "to": "PSA 147:3",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both present God as the one who heals wounds.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "jer30-17|ps147-3",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-isa53-5-ps103-3",
+   "from": "ISA 53:5",
+   "to": "PSA 103:3",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both speak of God's healing together with the forgiveness of sin.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "isa53-5|ps103-3",
+    "seedLine": 1557,
+    "changes": [
+     "Type changed from explanation to theme: Isaiah 53:5 does not explain Psalm 103:3.",
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-rev21-4-john11-25",
+   "from": "REV 21:4",
+   "to": "JHN 11:25",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both look to the end of death: Jesus as the resurrection, and the day with no more death.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "rev21-4|john11-25",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-john6-37-matt11-28",
+   "from": "JHN 6:37",
+   "to": "MAT 11:28",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both are Jesus' welcome to those who come to Him.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "john6-37|matt11-28",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-1john1-9-rom8-1",
+   "from": "1JN 1:9",
+   "to": "ROM 8:1",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Confession and cleansing (1 John) and no condemnation in Christ (Romans) speak of the same forgiveness.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "1john1-9|rom8-1",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-rom8-28-phil1-6",
+   "from": "ROM 8:28",
+   "to": "PHP 1:6",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both assure believers that God is working His good purpose to completion.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "rom8-28|phil1-6",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-matt6-34-phil4-6",
+   "from": "MAT 6:34",
+   "to": "PHP 4:6",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both teach believers not to be anxious about tomorrow or about anything.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "matt6-34|phil4-6",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-ps147-3-ps30-5",
+   "from": "PSA 147:3",
+   "to": "PSA 30:5",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both speak of God turning sorrow toward healing and joy.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "ps147-3|ps30-5",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-eph2-10-ps139-14",
+   "from": "EPH 2:10",
+   "to": "PSA 139:14",
+   "type": "theme",
+   "bidirectional": true,
+   "explanation": "Both speak of people as God's deliberate work.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "eph2-10|ps139-14",
+    "seedLine": 1557,
+    "changes": [
+     "Explanation written during curation; the demo had none."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-heb13-5-deut31-6",
+   "from": "HEB 13:5",
+   "to": "DEU 31:6",
+   "type": "quotation",
+   "bidirectional": true,
+   "explanation": "Hebrews 13:5 (\"I will never leave thee, nor forsake thee\") quotes the promise of Deuteronomy 31:6 (\"he will not fail thee, nor forsake thee\").",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Correction of the demo's Hebrews 13:5 quotation link.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-prov23-18-condition",
+   "from": "PRO 23:18",
+   "to": "PRO 23:17",
+   "type": "promise",
+   "bidirectional": true,
+   "explanation": "The assurance of Proverbs 23:18 (\"thine expectation shall not be cut off\") follows the call of 23:17 to be in the fear of the LORD.",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Condition recorded in the demo context for Proverbs 23:18.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-ps91-11-condition",
+   "from": "PSA 91:11",
+   "to": "PSA 91:9",
+   "type": "promise",
+   "bidirectional": true,
+   "explanation": "The angels' charge of Psalm 91:11 is given \"because thou hast made the LORD… thy habitation\" (91:9).",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Condition stated in the demo promise note for Psalm 91:11.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "rel-phil4-7-supporting",
+   "from": "PHP 4:7",
+   "to": "PHP 4:6",
+   "type": "supporting",
+   "bidirectional": true,
+   "explanation": "The peace that keeps hearts and minds (4:7) is the outcome of bringing requests to God with thanksgiving (4:6).",
+   "provenance": {
+    "origin": "newlyCurated",
+    "basis": "Demo journey \"Peace Over Anxiety\" presents 4:6 and 4:7 as exchange and result.",
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  }
+ ]
+}

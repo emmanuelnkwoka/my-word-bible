@@ -1,0 +1,630 @@
+{
+ "schemaVersion": 1,
+ "corpusVersion": "1.0.0",
+ "promises": [
+  {
+   "id": "pr-hope-2",
+   "title": "The God of hope fills you",
+   "references": [
+    "ROM 15:13"
+   ],
+   "category": "Hope",
+   "themes": [
+    "theme-hope"
+   ],
+   "originalAudience": "The believers in Rome, in benediction",
+   "scope": "corporate",
+   "conditions": [],
+   "contextNote": "",
+   "receptionGuidance": "Hope here is not optimism; it is the Spirit's own work in a believer.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-hope-2",
+    "seedLine": 1260,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-prot-1",
+   "title": "A refuge that is very present",
+   "references": [
+    "PSA 46:1"
+   ],
+   "category": "Protection",
+   "themes": [
+    "theme-protection"
+   ],
+   "originalAudience": "Israel, in corporate trust",
+   "scope": "corporate",
+   "conditions": [],
+   "contextNote": "",
+   "receptionGuidance": "The psalm's 'our' includes every believer who runs to Him — including you.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-prot-1",
+    "seedLine": 1261,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-prot-2",
+   "title": "Angels charged over you",
+   "references": [
+    "PSA 91:11"
+   ],
+   "category": "Protection",
+   "themes": [
+    "theme-protection"
+   ],
+   "originalAudience": "The one who makes the LORD his refuge (v.9)",
+   "scope": "general",
+   "conditions": [
+    "Because thou hast made the LORD… thy habitation (Psalm 91:9)."
+   ],
+   "contextNote": "",
+   "receptionGuidance": "Spoken to the one who makes the LORD their habitation (91:9). Receive it as God's care for those who shelter in Him.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-prot-2",
+    "seedLine": 1262,
+    "changes": [
+     "Reception guidance rewritten to keep the original audience and avoid an individual guarantee."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-prov-1",
+   "title": "Every need supplied",
+   "references": [
+    "PHP 4:19"
+   ],
+   "category": "Provision",
+   "themes": [
+    "theme-provision"
+   ],
+   "originalAudience": "The giving church at Philippi",
+   "scope": "corporate",
+   "conditions": [
+    "Spoken to the Philippians in thanks for their sacrificial gift (Philippians 4:14-18)."
+   ],
+   "contextNote": "Spoken to a church that had sacrificially given (4:14-18); it comforts givers, and is not a blanket wealth guarantee.",
+   "receptionGuidance": "Spoken to the Philippians who had given sacrificially (4:14-18). It comforts generous trust; it is not a formula for wealth.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-prov-1",
+    "seedLine": 1263,
+    "changes": [
+     "Reception guidance rewritten to keep the original audience and avoid an individual guarantee."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-prov-2",
+   "title": "All grace abounding",
+   "references": [
+    "2CO 9:8"
+   ],
+   "category": "Provision",
+   "themes": [
+    "theme-provision"
+   ],
+   "originalAudience": "The generous church at Corinth (giving for Judea)",
+   "scope": "corporate",
+   "conditions": [
+    "Spoken to the Corinthians about cheerful, generous giving (2 Corinthians 9:6-7)."
+   ],
+   "contextNote": "",
+   "receptionGuidance": "Grace for sufficiency in everything, for every good work.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-prov-2",
+    "seedLine": 1264,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-str-1",
+   "title": "Grace sufficient in weakness",
+   "references": [
+    "2CO 12:9"
+   ],
+   "category": "Strength",
+   "themes": [
+    "theme-strength"
+   ],
+   "originalAudience": "Paul, bearing his thorn",
+   "scope": "individualHistorical",
+   "conditions": [],
+   "contextNote": "",
+   "receptionGuidance": "The Lord's answer to Paul's thorn stands for every believer who brings theirs.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-str-1",
+    "seedLine": 1265,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-str-2",
+   "title": "The LORD fights for you",
+   "references": [
+    "EXO 14:14"
+   ],
+   "category": "Strength",
+   "themes": [
+    "theme-strength"
+   ],
+   "originalAudience": "Israel trapped at the Red Sea",
+   "scope": "corporate",
+   "conditions": [],
+   "contextNote": "",
+   "receptionGuidance": "Moses' word to Israel trapped at the Red Sea. It reveals the God who fights for His people; it does not promise a particular outcome in every conflict.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-str-2",
+    "seedLine": 1266,
+    "changes": [
+     "Reception guidance rewritten to keep the original audience and avoid an individual guarantee."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-wis-1",
+   "title": "Wisdom given liberally",
+   "references": [
+    "JAS 1:5"
+   ],
+   "category": "Wisdom",
+   "themes": [
+    "theme-wisdom"
+   ],
+   "originalAudience": "The twelve tribes scattered abroad",
+   "scope": "corporate",
+   "conditions": [
+    "Let him ask of God… But let him ask in faith, nothing wavering (James 1:6)."
+   ],
+   "contextNote": "",
+   "receptionGuidance": "An open invitation — ask, without fear of reproach.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-wis-1",
+    "seedLine": 1267,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-peace-1",
+   "title": "Kept in perfect peace",
+   "references": [
+    "ISA 26:3"
+   ],
+   "category": "Peace",
+   "themes": [
+    "theme-peace"
+   ],
+   "originalAudience": "Judah, in the song of the strong city",
+   "scope": "general",
+   "conditions": [
+    "Whose mind is stayed on thee: because he trusteth in thee."
+   ],
+   "contextNote": "",
+   "receptionGuidance": "The condition is a stayed mind; the keeping is His.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-peace-1",
+    "seedLine": 1269,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-peace-2",
+   "title": "His peace, not the world's",
+   "references": [
+    "JHN 14:27"
+   ],
+   "category": "Peace",
+   "themes": [
+    "theme-peace"
+   ],
+   "originalAudience": "The eleven, on the night He was betrayed",
+   "scope": "corporate",
+   "conditions": [],
+   "contextNote": "",
+   "receptionGuidance": "Given by Jesus to troubled men the night before the cross.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-peace-2",
+    "seedLine": 1270,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-fut-1",
+   "title": "He finishes what He begins",
+   "references": [
+    "PHP 1:6"
+   ],
+   "category": "Future",
+   "themes": [
+    "theme-future"
+   ],
+   "originalAudience": "The church at Philippi",
+   "scope": "corporate",
+   "conditions": [],
+   "contextNote": "",
+   "receptionGuidance": "The good work in you is a work God started — and God completes.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-fut-1",
+    "seedLine": 1271,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-fut-2",
+   "title": "Your expectation holds",
+   "references": [
+    "PRO 23:18"
+   ],
+   "category": "Future",
+   "themes": [
+    "theme-future"
+   ],
+   "originalAudience": "'My son' — the instructed disciple (23:15-19)",
+   "scope": "general",
+   "conditions": [
+    "Be thou in the fear of the LORD all the day long (Proverbs 23:17)."
+   ],
+   "contextNote": "",
+   "receptionGuidance": "Wisdom's word to the disciple: the end is sure, the expectation will stand.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-fut-2",
+    "seedLine": 1272,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-fam-1",
+   "title": "Children taught of the LORD",
+   "references": [
+    "ISA 54:13"
+   ],
+   "category": "Family",
+   "themes": [
+    "theme-family"
+   ],
+   "originalAudience": "Zion, the barren one comforted (54:1)",
+   "scope": "corporate",
+   "conditions": [],
+   "contextNote": "",
+   "receptionGuidance": "Spoken to Zion after exile. It reveals God's intention for the children of His people; it is not a guarantee about any particular child.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-fam-1",
+    "seedLine": 1273,
+    "changes": [
+     "Reception guidance rewritten to keep the original audience and avoid an individual guarantee."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-guid-1",
+   "title": "I will instruct thee",
+   "references": [
+    "PSA 32:8"
+   ],
+   "category": "Guidance",
+   "themes": [
+    "theme-guidance"
+   ],
+   "originalAudience": "The forgiven worshipper of Psalm 32",
+   "scope": "general",
+   "conditions": [
+    "Spoken to the forgiven worshipper who confessed sin (Psalm 32:5-6)."
+   ],
+   "contextNote": "",
+   "receptionGuidance": "God's own word to the forgiven — instruction with a watchful eye.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-guid-1",
+    "seedLine": 1275,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-guid-2",
+   "title": "This is the way",
+   "references": [
+    "ISA 30:21"
+   ],
+   "category": "Guidance",
+   "themes": [
+    "theme-guidance"
+   ],
+   "originalAudience": "Judah, called back from rebellion",
+   "scope": "corporate",
+   "conditions": [],
+   "contextNote": "",
+   "receptionGuidance": "A word behind you when paths fork.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-guid-2",
+    "seedLine": 1276,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-faith-2",
+   "title": "Possible to him that believeth",
+   "references": [
+    "MRK 9:23"
+   ],
+   "category": "Faith",
+   "themes": [
+    "theme-faith"
+   ],
+   "originalAudience": "The father of the afflicted boy",
+   "scope": "individualHistorical",
+   "conditions": [
+    "If thou canst believe."
+   ],
+   "contextNote": "",
+   "receptionGuidance": "Jesus honours even trembling faith, honestly brought.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-faith-2",
+    "seedLine": 1278,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-cour-1",
+   "title": "Be strong and of a good courage",
+   "references": [
+    "DEU 31:6"
+   ],
+   "category": "Courage",
+   "themes": [
+    "theme-courage"
+   ],
+   "originalAudience": "Israel, as leadership passes to Joshua",
+   "scope": "corporate",
+   "conditions": [],
+   "contextNote": "",
+   "receptionGuidance": "Courage grounded in companionship: He will not fail or forsake.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-cour-1",
+    "seedLine": 1279,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-rest-1",
+   "title": "Health restored, wounds healed",
+   "references": [
+    "JER 30:17"
+   ],
+   "category": "Restoration",
+   "themes": [
+    "theme-restoration"
+   ],
+   "originalAudience": "Wounded, outcast Zion",
+   "scope": "corporate",
+   "conditions": [],
+   "contextNote": "",
+   "receptionGuidance": "Spoken to outcast Zion; reveals the God who restores.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-rest-1",
+    "seedLine": 1281,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-rest-2",
+   "title": "He healeth the broken in heart",
+   "references": [
+    "PSA 147:3"
+   ],
+   "category": "Restoration",
+   "themes": [
+    "theme-restoration"
+   ],
+   "originalAudience": "Post-exile worshippers",
+   "scope": "general",
+   "conditions": [],
+   "contextNote": "",
+   "receptionGuidance": "The God of galaxies binds up wounds — both are true of Him.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-rest-2",
+    "seedLine": 1282,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-pres-1",
+   "title": "My presence shall go with thee",
+   "references": [
+    "EXO 33:14"
+   ],
+   "category": "God's presence",
+   "themes": [
+    "theme-gods-presence"
+   ],
+   "originalAudience": "Moses, interceding for Israel's journey",
+   "scope": "individualHistorical",
+   "conditions": [],
+   "contextNote": "",
+   "receptionGuidance": "God's personal word to Moses — presence as provision for the road.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-pres-1",
+    "seedLine": 1283,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-pres-2",
+   "title": "With you always",
+   "references": [
+    "MAT 28:20"
+   ],
+   "category": "God's presence",
+   "themes": [
+    "theme-gods-presence"
+   ],
+   "originalAudience": "The eleven disciples, commissioned on the mountain",
+   "scope": "corporate",
+   "conditions": [],
+   "contextNote": "",
+   "receptionGuidance": "The last word of the Gospel of Matthew is presence, to the end.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-pres-2",
+    "seedLine": 1284,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-salv-1",
+   "title": "Whosoever believeth",
+   "references": [
+    "JHN 3:16"
+   ],
+   "category": "Salvation",
+   "themes": [
+    "theme-salvation"
+   ],
+   "originalAudience": "Nicodemus, by night",
+   "scope": "individualHistorical",
+   "conditions": [
+    "Whosoever believeth in him."
+   ],
+   "contextNote": "",
+   "receptionGuidance": "The offer of the gospel, spoken to one seeking man at night.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-salv-1",
+    "seedLine": 1287,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "pr-salv-2",
+   "title": "The gift of God",
+   "references": [
+    "ROM 6:23"
+   ],
+   "category": "Salvation",
+   "themes": [
+    "theme-salvation"
+   ],
+   "originalAudience": "The believers in Rome",
+   "scope": "corporate",
+   "conditions": [],
+   "contextNote": "",
+   "receptionGuidance": "Wages versus gift: eternal life is given, never earned.",
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "pr-salv-2",
+    "seedLine": 1288,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  }
+ ]
+}

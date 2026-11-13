@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../app/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/mwb_palette.dart';
 import '../../../core/theme/mwb_tokens.dart';
@@ -14,11 +15,26 @@ import '../../../data/models/bible_canon.dart';
 import '../../../data/models/library_items.dart';
 import '../../../data/models/scripture_reference.dart';
 import '../../../data/models/user_profile.dart';
+import '../../../data/catalogue/version_catalogue.dart';
 import '../../library/application/library_controllers.dart';
 import '../../library/presentation/note_editor.dart';
+import '../../personalisation/application/mwb_reader_providers.dart';
+import '../../personalisation/domain/presentation_layer_resolver.dart';
+import '../../personalisation/domain/rendered_verse.dart';
+import '../../personalisation/presentation/mwb_review_widgets.dart';
+import '../../personalisation/presentation/presented_scripture.dart';
 import '../../profile/application/profile_controllers.dart';
 import '../application/bible_providers.dart';
+import '../../share/scripture_share_sheet.dart';
 import 'reader_sheets.dart';
+import 'version_sheet.dart';
+
+/// The other half of a version family: an original's selectable MWB edition,
+/// or an MWB edition's original. Used for one-tap switching at the same place.
+BibleVersionInfo? familyPartner(BibleVersionInfo version, VersionCatalogue catalogue) {
+  if (version.isPersonalised) return catalogue.sourceOf(version.id);
+  return catalogue.editionsOf(version.id).where(catalogue.isSelectable).firstOrNull;
+}
 
 /// Colours for the reader, which can differ from the app theme.
 ({Color background, Color text, Color secondary}) readerColors(ReadingSurface s, MwbPalette p) => switch (s) {
@@ -167,6 +183,13 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
     final colors = readerColors(prefs.surface, palette);
     final verses = ref.watch(chapterVersesProvider(_chapter));
     final version = ref.watch(activeVersionProvider);
+    final textVersion = ref.watch(textVersionProvider);
+    final mwb = version.isPersonalised
+        ? ref.watch(mwbChapterProvider(_chapter))
+        : const AsyncValue<MwbChapterView?>.data(null);
+    final mwbView = mwb.value;
+    final rendered = {for (final r in mwbView?.verses ?? const <RenderedVerse>[]) r.source.number: r};
+    final partner = familyPartner(version, ref.watch(versionCatalogueProvider));
     final book = BibleCanon.bookOrThrow(_chapter.bookId);
     final bookmarked = ref.watch(bookmarksProvider).any((b) => b.reference == _chapter);
     final darkSurface =
@@ -209,28 +232,103 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
               ),
             ),
             actions: [
+              Semantics(
+                button: true,
+                label: 'Bible version: ${version.abbreviation}. Change version',
+                excludeSemantics: true,
+                child: TextButton(
+                  key: const ValueKey('reader-version'),
+                  onPressed: () => showVersionSheet(context),
+                  style: TextButton.styleFrom(
+                    foregroundColor: colors.text,
+                    minimumSize: const Size(48, 48),
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                  ),
+                  child: Text(
+                    version.abbreviation,
+                    style: t.label.copyWith(color: colors.text, fontWeight: FontWeight.w600),
+                  ),
+                ),
+              ),
+              if (partner != null)
+                MwbIconButton(
+                  key: const ValueKey('reader-switch-edition'),
+                  icon: version.isPersonalised ? Icons.menu_book_outlined : Icons.auto_awesome_rounded,
+                  tooltip: version.isPersonalised
+                      ? 'Read the original ${partner.abbreviation}'
+                      : 'Read the personalised ${partner.abbreviation}',
+                  onPressed: () =>
+                      ref.read(readingPreferencesProvider.notifier).update((p) => p.copyWith(versionId: partner.id)),
+                ),
               MwbIconButton(
-                icon: Icons.bookmark_border_rounded,
-                selectedIcon: Icons.bookmark_rounded,
-                selected: bookmarked,
-                tooltip: bookmarked ? 'Remove chapter bookmark' : 'Bookmark this chapter',
-                onPressed: () async {
+                key: const ValueKey('reader-share-chapter'),
+                icon: Icons.ios_share_rounded,
+                tooltip: 'Share ${_chapter.label}',
+                onPressed: () {
+                  final list = verses.value ?? const <Verse>[];
+                  if (list.isEmpty) return;
+                  final personal = rendered.values.any((r) => r.isPersonalised);
+                  showScriptureShareSheet(
+                    context,
+                    mwbView != null
+                        ? shareScriptureFrom(
+                            verses: mwbView.verses,
+                            reference: _chapter.label,
+                            translation: personal ? version.abbreviation : textVersion.abbreviation,
+                            numbered: true,
+                            sources: [_chapter],
+                            sourceVersionId: textVersion.id,
+                          )
+                        : shareScriptureFromVerses(
+                            verses: list,
+                            reference: _chapter.label,
+                            translation: textVersion.abbreviation,
+                            sourceVersionId: textVersion.id,
+                          ),
+                  );
+                },
+              ),
+              PopupMenuButton<String>(
+                key: const ValueKey('reader-more'),
+                tooltip: 'More',
+                icon: Icon(Icons.more_horiz_rounded, color: colors.text),
+                shape: const RoundedRectangleBorder(borderRadius: MwbRadius.lgAll),
+                onSelected: (v) async {
+                  if (v == 'settings') return showReadingSettingsSheet(context);
                   final now = await ref.read(bookmarksProvider.notifier).toggle(_chapter, versionId: version.id);
                   if (context.mounted) showMwbSnack(context, now ? '${_chapter.label} bookmarked' : 'Bookmark removed');
                 },
+                itemBuilder: (_) => [
+                  PopupMenuItem(
+                    value: 'bookmark',
+                    child: ListTile(
+                      contentPadding: EdgeInsets.zero,
+                      leading: Icon(bookmarked ? Icons.bookmark_rounded : Icons.bookmark_border_rounded),
+                      title: Text(bookmarked ? 'Remove chapter bookmark' : 'Bookmark this chapter'),
+                    ),
+                  ),
+                  const PopupMenuItem(
+                    value: 'settings',
+                    child: ListTile(
+                      contentPadding: EdgeInsets.zero,
+                      leading: Icon(Icons.text_fields_rounded),
+                      title: Text('Reading settings'),
+                    ),
+                  ),
+                ],
               ),
-              MwbIconButton(
-                icon: Icons.text_fields_rounded,
-                tooltip: 'Reading settings',
-                onPressed: () => showReadingSettingsSheet(context),
-              ),
-              const SizedBox(width: 4),
+              const SizedBox(width: 2),
             ],
           ),
           body: AsyncValueView<List<Verse>>(
-            value: verses,
+            value: version.isPersonalised
+                ? mwb.whenData((v) => [for (final r in v?.verses ?? const <RenderedVerse>[]) r.source])
+                : verses,
             loadingMessage: 'Opening ${_chapter.label}…',
-            onRetry: () => ref.invalidate(chapterVersesProvider(_chapter)),
+            onRetry: () {
+              ref.invalidate(chapterVersesProvider(_chapter));
+              if (version.isPersonalised) ref.invalidate(mwbChapterProvider(_chapter));
+            },
             data: (list) {
               _maybeScrollToFocus();
               return _ChapterBody(
@@ -245,7 +343,12 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                 focus: _focus,
                 keyFor: (n) => _verseKeys.putIfAbsent(n, GlobalKey.new),
                 onVerseTap: _toggleVerse,
-                versionName: version.name,
+                mwb: mwbView,
+                textAbbreviation: textVersion.abbreviation,
+                footer: version.isPersonalised
+                    ? '${version.abbreviation} · personal edition of the ${textVersion.name}. The Scripture reads '
+                          'exactly as the ${textVersion.abbreviation}; personal titles and receptions are shown beside it.'
+                    : '${version.name} · ${version.licence?.type.label ?? 'Public domain'}',
                 previous: _previous,
                 next: _next,
                 onNavigate: (r) => _goTo(r.bookId, r.chapter),
@@ -262,7 +365,15 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                     key: const ValueKey('bar'),
                     references: _selectionRefs,
                     versionId: version.id,
-                    versionAbbreviation: version.abbreviation,
+                    textOf: (v) => rendered[v.number]?.text ?? v.text,
+                    renderedOf: (v) => rendered[v.number],
+                    layersOf: (n) => mwbView?.layers[n],
+                    editionLabel: version.abbreviation,
+                    sourceLabel: textVersion.abbreviation,
+                    sourceVersionId: textVersion.id,
+                    attributionFor: (chosen) => chosen.any((v) => rendered[v.number]?.isPersonalised ?? false)
+                        ? '${version.abbreviation}, a personalised rendering of the ${textVersion.abbreviation}'
+                        : textVersion.abbreviation,
                     verses: verses.value ?? const [],
                     selected: _selected,
                     onDone: () => setState(_selected.clear),
@@ -287,7 +398,9 @@ class _ChapterBody extends ConsumerWidget {
     required this.focus,
     required this.keyFor,
     required this.onVerseTap,
-    required this.versionName,
+    required this.mwb,
+    required this.textAbbreviation,
+    required this.footer,
     required this.previous,
     required this.next,
     required this.onNavigate,
@@ -303,7 +416,11 @@ class _ChapterBody extends ConsumerWidget {
   final int? focus;
   final GlobalKey Function(int) keyFor;
   final ValueChanged<int> onVerseTap;
-  final String versionName;
+
+  /// Non-null when reading an MWB edition.
+  final MwbChapterView? mwb;
+  final String textAbbreviation;
+  final String footer;
   final ScriptureReference? previous;
   final ScriptureReference? next;
   final ValueChanged<ScriptureReference> onNavigate;
@@ -324,20 +441,36 @@ class _ChapterBody extends ConsumerWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: MwbSpace.lg),
-            Text(book.name.toUpperCase(), style: t.overline.copyWith(color: p.primary)),
-            const SizedBox(height: 4),
-            Semantics(
-              header: true,
-              child: Text('Chapter ${chapter.chapter}', style: t.display.copyWith(color: colors.text)),
-            ),
-            const SizedBox(height: MwbSpace.xs),
-            const MwbRule(),
             const SizedBox(height: MwbSpace.xl),
-            for (final v in verses)
+            Center(
+              child: Text(book.name.toUpperCase(), style: t.overline.copyWith(color: p.primary, letterSpacing: 2.4)),
+            ),
+            const SizedBox(height: 6),
+            Center(
+              child: Semantics(
+                header: true,
+                child: Text('Chapter ${chapter.chapter}', style: t.display.copyWith(color: colors.text, fontSize: 34)),
+              ),
+            ),
+            const SizedBox(height: MwbSpace.sm),
+            Center(child: Container(width: 44, height: 2, color: p.primary.withValues(alpha: 0.6))),
+            const SizedBox(height: MwbSpace.xl),
+            if (mwb != null) ...[
+              MwbEditionBanner(view: mwb!, textColor: colors.text),
+              const SizedBox(height: MwbSpace.lg),
+            ],
+            for (final (i, v) in verses.indexed) ...[
               _VerseView(
                 key: keyFor(v.number),
                 verse: v,
+                segments: mwb != null && i < mwb!.verses.length && mwb!.verses[i].isPersonalised
+                    ? mwb!.verses[i].segments
+                    : null,
+                personalTitle: mwb != null && i < mwb!.verses.length && mwb!.verses[i].isTitled
+                    ? mwb!.verses[i].title
+                    : null,
+                layers: mwb?.layers[v.number],
+                omittedNote: 'This verse is not included in the $textAbbreviation text.',
                 fontSize: fontSize,
                 showNumber: prefs.showVerseNumbers,
                 textColor: colors.text,
@@ -350,8 +483,10 @@ class _ChapterBody extends ConsumerWidget {
                 onTap: () => onVerseTap(v.number),
                 onNoteTap: () => _openNotes(context, ref, v),
               ),
+              if (mwb?.proposals[v.number] case final proposal?) MwbProposalCard(proposal: proposal, view: mwb!),
+            ],
             const SizedBox(height: MwbSpace.xl),
-            Text('$versionName · Public domain', style: t.caption.copyWith(color: colors.secondary)),
+            Text(footer, style: t.caption.copyWith(color: colors.secondary)),
             const SizedBox(height: MwbSpace.xl),
             Row(
               children: [
@@ -403,6 +538,8 @@ class _VerseView extends StatelessWidget {
   const _VerseView({
     super.key,
     required this.verse,
+    required this.segments,
+    required this.omittedNote,
     required this.fontSize,
     required this.showNumber,
     required this.textColor,
@@ -414,9 +551,22 @@ class _VerseView extends StatelessWidget {
     required this.selectionColor,
     required this.onTap,
     required this.onNoteTap,
+    this.personalTitle,
+    this.layers,
   });
 
   final Verse verse;
+
+  /// Approved personal title (above) and reception (below) for this verse.
+  /// Editorial content beside the unchanged verse, never Scripture.
+  final VerseEditorialLayers? layers;
+
+  /// Mode B: an approved personal title for this verse (text unchanged).
+  final String? personalTitle;
+
+  /// Approved MWB rendering segments, or null to show the canonical verse.
+  final List<RenderSegment>? segments;
+  final String omittedNote;
   final double fontSize;
   final bool showNumber;
   final Color textColor;
@@ -432,56 +582,133 @@ class _VerseView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final t = context.mwb.text;
-    final bg = highlight ?? (focused ? selectionColor.withValues(alpha: 0.10) : Colors.transparent);
+    final personal = segments != null || personalTitle != null;
+    final bg =
+        highlight ??
+        (focused
+            ? selectionColor.withValues(alpha: 0.10)
+            : personal
+            ? selectionColor.withValues(alpha: 0.07)
+            : Colors.transparent);
+    final base = t.scripture.copyWith(
+      color: textColor,
+      fontSize: fontSize,
+      decoration: selected ? TextDecoration.underline : null,
+      decorationStyle: TextDecorationStyle.dotted,
+      decorationColor: selectionColor,
+      decorationThickness: 2,
+    );
+    final parts = segments;
+    final display = parts == null ? verse.text : parts.map((s) => s.text).join();
     return Semantics(
       button: true,
       selected: selected,
-      label: 'Verse ${verse.number}. ${verse.text}${hasNote ? '. Has a note' : ''}',
+      label:
+          'Verse ${verse.number}. ${verse.isOmitted ? omittedNote : display}'
+          '${parts == null ? '' : '. Personalised'}${hasNote ? '. Has a note' : ''}'
+          '${layers?.title == null ? '' : '. Personal title: ${layers!.title!.text}'}'
+          '${layers?.reception == null ? '' : '. Personal reception: ${layers!.reception!.text}'}',
       excludeSemantics: true,
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,
         onTap: onTap,
         child: AnimatedContainer(
           duration: MwbMotion.fast,
-          margin: const EdgeInsets.only(bottom: 6),
-          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
-          decoration: BoxDecoration(color: bg, borderRadius: BorderRadius.circular(4)),
-          child: Text.rich(
-            TextSpan(
-              children: [
-                if (showNumber)
-                  TextSpan(
-                    text: '${verse.number}  ',
-                    style: t.caption.copyWith(
-                      color: numberColor,
+          margin: EdgeInsets.only(bottom: personal ? 10 : 6, top: personal ? 4 : 0),
+          padding: EdgeInsets.fromLTRB(personal ? 12 : 6, personal ? 8 : 3, 6, personal ? 8 : 3),
+          decoration: BoxDecoration(
+            color: bg,
+            borderRadius: BorderRadius.circular(personal ? 10 : 4),
+            border: personal ? Border(left: BorderSide(color: numberColor, width: 3)) : null,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              if (layers?.title case final title?)
+                Padding(
+                  key: ValueKey('verse-title-${verse.number}'),
+                  padding: const EdgeInsets.only(top: 6, bottom: 4),
+                  child: NamedTitle(
+                    text: title.text,
+                    name: title.name,
+                    textAlign: TextAlign.left,
+                    style: t.cardTitle.copyWith(
+                      fontFamily: t.display.fontFamily,
+                      fontSize: fontSize * 0.98,
                       fontWeight: FontWeight.w600,
-                      fontSize: fontSize * 0.62,
+                      height: 1.3,
+                      color: numberColor,
                     ),
-                  ),
-                TextSpan(
-                  text: verse.text,
-                  style: t.scripture.copyWith(
-                    color: textColor,
-                    fontSize: fontSize,
-                    decoration: selected ? TextDecoration.underline : null,
-                    decorationStyle: TextDecorationStyle.dotted,
-                    decorationColor: selectionColor,
-                    decorationThickness: 2,
                   ),
                 ),
-                if (hasNote)
-                  WidgetSpan(
-                    alignment: PlaceholderAlignment.middle,
-                    child: GestureDetector(
-                      onTap: onNoteTap,
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 6),
-                        child: Icon(Icons.sticky_note_2_outlined, size: fontSize * 0.85, color: numberColor),
+              Text.rich(
+                TextSpan(
+                  children: [
+                    if (showNumber)
+                      TextSpan(
+                        text: '${verse.number}  ',
+                        style: t.caption.copyWith(
+                          color: numberColor,
+                          fontWeight: FontWeight.w600,
+                          fontSize: fontSize * 0.62,
+                        ),
+                      ),
+                    if (verse.isOmitted)
+                      TextSpan(
+                        text: omittedNote,
+                        style: t.caption.copyWith(color: textColor.withValues(alpha: 0.6), fontStyle: FontStyle.italic),
+                      )
+                    else if (parts == null)
+                      TextSpan(text: verse.text, style: base)
+                    else
+                      for (final seg in parts)
+                        TextSpan(
+                          text: seg.text,
+                          style: seg.kind == SegmentKind.source
+                              ? base
+                              : base.copyWith(color: numberColor, fontWeight: FontWeight.w700),
+                        ),
+                    if (hasNote)
+                      WidgetSpan(
+                        alignment: PlaceholderAlignment.middle,
+                        child: GestureDetector(
+                          onTap: onNoteTap,
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 6),
+                            child: Icon(Icons.sticky_note_2_outlined, size: fontSize * 0.85, color: numberColor),
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+              if (personal) ...[
+                const SizedBox(height: 4),
+                Row(
+                  children: [
+                    Icon(Icons.auto_awesome_rounded, size: 13, color: numberColor),
+                    const SizedBox(width: 5),
+                    Flexible(
+                      child: Text(
+                        personalTitle ?? 'Speaks to you by name',
+                        style: t.caption.copyWith(color: numberColor, fontWeight: FontWeight.w600),
                       ),
                     ),
-                  ),
+                  ],
+                ),
               ],
-            ),
+              if (layers?.reception case final reception?)
+                Padding(
+                  key: ValueKey('verse-reception-${verse.number}'),
+                  padding: const EdgeInsets.only(top: 8, bottom: 6),
+                  child: EditorialReception(
+                    layer: reception,
+                    fontSize: fontSize * 0.8,
+                    textColor: textColor,
+                    accent: numberColor,
+                  ),
+                ),
+            ],
           ),
         ),
       ),
@@ -551,7 +778,13 @@ class _SelectionBar extends ConsumerWidget {
     super.key,
     required this.references,
     required this.versionId,
-    required this.versionAbbreviation,
+    required this.textOf,
+    required this.renderedOf,
+    required this.layersOf,
+    required this.editionLabel,
+    required this.sourceLabel,
+    required this.sourceVersionId,
+    required this.attributionFor,
     required this.verses,
     required this.selected,
     required this.onDone,
@@ -559,7 +792,23 @@ class _SelectionBar extends ConsumerWidget {
 
   final List<ScriptureReference> references;
   final String versionId;
-  final String versionAbbreviation;
+
+  /// The text shown for a verse (the approved MWB rendering or the source).
+  final String Function(Verse) textOf;
+
+  /// The approved rendering of a verse in an MWB edition, if any.
+  final RenderedVerse? Function(Verse) renderedOf;
+
+  /// Approved personal title and reception for a verse number (MWB editions).
+  final VerseEditorialLayers? Function(int) layersOf;
+  final String editionLabel;
+  final String sourceLabel;
+
+  /// Source translation id (e.g. "KJV"), used to resolve canonical text.
+  final String sourceVersionId;
+
+  /// Attribution for copied verses; names a personalised rendering as such.
+  final String Function(List<Verse>) attributionFor;
   final List<Verse> verses;
   final Set<int> selected;
   final VoidCallback onDone;
@@ -582,6 +831,36 @@ class _SelectionBar extends ConsumerWidget {
     }
 
     final actions = <(IconData, String, VoidCallback)>[
+      (
+        Icons.ios_share_rounded,
+        'Share',
+        () {
+          final chosen = verses.where((v) => selected.contains(v.number) && !v.isOmitted).toList();
+          if (chosen.isEmpty) return onDone();
+          final renderings = [for (final v in chosen) renderedOf(v)];
+          final personal = renderings.any((r) => r?.isPersonalised ?? false);
+          final scripture = renderings.every((r) => r != null)
+              ? shareScriptureFrom(
+                  verses: renderings.cast<RenderedVerse>(),
+                  reference: label,
+                  translation: personal ? editionLabel : sourceLabel,
+                  numbered: chosen.length > 1,
+                  sources: references,
+                  sourceVersionId: sourceVersionId,
+                )
+              : shareScriptureFromVerses(
+                  verses: chosen,
+                  reference: label,
+                  translation: sourceLabel,
+                  sourceVersionId: sourceVersionId,
+                );
+          onDone();
+          showScriptureShareSheet(
+            context,
+            withEditorialLayers(scripture, [for (final v in chosen) ?layersOf(v.number)]),
+          );
+        },
+      ),
       (
         Icons.border_color_outlined,
         'Highlight',
@@ -638,10 +917,13 @@ class _SelectionBar extends ConsumerWidget {
         Icons.copy_rounded,
         'Copy',
         () async {
-          final chosen = verses.where((v) => selected.contains(v.number)).toList();
-          final text = chosen.length == 1 ? chosen.first.text : chosen.map((v) => '${v.number} ${v.text}').join(' ');
+          final chosen = verses.where((v) => selected.contains(v.number) && !v.isOmitted).toList();
+          if (chosen.isEmpty) return onDone();
+          final text = chosen.length == 1
+              ? textOf(chosen.first)
+              : chosen.map((v) => '${v.number} ${textOf(v)}').join(' ');
           await Clipboard.setData(
-            ClipboardData(text: '“$text”\n— $label ($versionAbbreviation)\n\nShared from My Word Bible'),
+            ClipboardData(text: '“$text”\n— $label (${attributionFor(chosen)})\n\nShared from My Word Bible'),
           );
           if (context.mounted) showMwbSnack(context, 'Copied — ready to share');
           onDone();

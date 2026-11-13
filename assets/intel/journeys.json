@@ -1,0 +1,545 @@
+{
+ "schemaVersion": 1,
+ "corpusVersion": "1.0.0",
+ "journeys": [
+  {
+   "id": "dp-fear",
+   "title": "Facing Fear with God",
+   "description": "From the first tremor of fear to Jesus' own peace.",
+   "situationId": "sit-fear",
+   "steps": [
+    {
+     "order": 1,
+     "type": "situation",
+     "note": "Fear tells you that you face this alone.",
+     "targetId": "sit-fear"
+    },
+    {
+     "order": 2,
+     "type": "verse",
+     "note": "The honest starting point: admit the fear, turn it into trust.",
+     "reference": "PSA 56:3"
+    },
+    {
+     "order": 3,
+     "type": "verse",
+     "note": "God answers fear with five of His own words: with you, your God, strengthen, help, uphold.",
+     "reference": "ISA 41:10"
+    },
+    {
+     "order": 4,
+     "type": "identity",
+     "note": "The spirit you were given is named: power, love, and a sound mind.",
+     "targetId": "id-spirit-of-power"
+    },
+    {
+     "order": 5,
+     "type": "verse",
+     "note": "The journey ends at the peace Jesus Himself leaves behind.",
+     "reference": "JHN 14:27"
+    }
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dp-fear",
+    "seedLine": 1413,
+    "changes": [
+     "Step 4: pr-cour-2 retargeted to identity id-spirit-of-power."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dp-anxiety",
+   "title": "Peace Over Anxiety",
+   "description": "From a racing mind to a guarded heart.",
+   "situationId": "sit-anxiety",
+   "steps": [
+    {
+     "order": 1,
+     "type": "situation",
+     "note": "Anxiety treats tomorrow as if you must carry it alone today.",
+     "targetId": "sit-anxiety"
+    },
+    {
+     "order": 2,
+     "type": "verse",
+     "note": "Jesus confines your strength to today — grace arrives daily.",
+     "reference": "MAT 6:34"
+    },
+    {
+     "order": 3,
+     "type": "verse",
+     "note": "The exchange: anxiety out, requests in — with thanksgiving.",
+     "reference": "PHP 4:6"
+    },
+    {
+     "order": 4,
+     "type": "promise",
+     "note": "The peace that guards is the peace Jesus gives.",
+     "targetId": "pr-peace-2"
+    },
+    {
+     "order": 5,
+     "type": "verse",
+     "note": "The result: hearts and minds kept through Christ Jesus.",
+     "reference": "PHP 4:7"
+    }
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dp-anxiety",
+    "seedLine": 1419,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dp-grief",
+   "title": "Comfort in Grief",
+   "description": "From the night of weeping to the morning of joy.",
+   "situationId": "sit-grief",
+   "steps": [
+    {
+     "order": 1,
+     "type": "situation",
+     "note": "Grief is love with nowhere to go; Scripture does not rush it.",
+     "targetId": "sit-grief"
+    },
+    {
+     "order": 2,
+     "type": "verse",
+     "note": "The LORD draws nearest exactly at the broken point.",
+     "reference": "PSA 34:18"
+    },
+    {
+     "order": 3,
+     "type": "verse",
+     "note": "Weeping has a term limit: night. Joy has an appointment: morning.",
+     "reference": "PSA 30:5"
+    },
+    {
+     "order": 4,
+     "type": "promise",
+     "note": "He binds up wounds — not wounds generally, yours.",
+     "targetId": "pr-rest-2"
+    },
+    {
+     "order": 5,
+     "type": "verse",
+     "note": "The last page of the Bible promises a day with no tears left.",
+     "reference": "REV 21:4"
+    }
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dp-grief",
+    "seedLine": 1425,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dp-alone",
+   "title": "You Are Not Alone",
+   "description": "From the ache of aloneness to the promise of presence.",
+   "situationId": "sit-loneliness",
+   "steps": [
+    {
+     "order": 1,
+     "type": "situation",
+     "note": "Feeling alone and being alone are different things in Scripture.",
+     "targetId": "sit-loneliness"
+    },
+    {
+     "order": 2,
+     "type": "verse",
+     "note": "Even in the valley, the second line of the song is 'thou art with me'.",
+     "reference": "PSA 23:4"
+    },
+    {
+     "order": 3,
+     "type": "verse",
+     "note": "God's presence is not an idea; it is the provision for the journey.",
+     "reference": "EXO 33:14"
+    },
+    {
+     "order": 4,
+     "type": "promise",
+     "note": "He said it after giving the hardest assignment: lo, I am with you alway.",
+     "targetId": "pr-pres-2"
+    },
+    {
+     "order": 5,
+     "type": "verse",
+     "note": "Five small words that will not break: never leave, never forsake.",
+     "reference": "HEB 13:5"
+    }
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dp-alone",
+    "seedLine": 1431,
+    "changes": [
+     "Step 4: pres-always retargeted to promise pr-pres-2."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dp-received",
+   "title": "Received in Christ",
+   "description": "From the sting of rejection to the security of welcome.",
+   "situationId": "sit-rejection",
+   "steps": [
+    {
+     "order": 1,
+     "type": "situation",
+     "note": "Rejection writes a name over you that God never wrote.",
+     "targetId": "sit-rejection"
+    },
+    {
+     "order": 2,
+     "type": "verse",
+     "note": "Whoever comes to Him, He will in no wise cast out — KJV never stutters here.",
+     "reference": "JHN 6:37"
+    },
+    {
+     "order": 3,
+     "type": "verse",
+     "note": "In Christ Jesus: no condemnation is the first fact about you.",
+     "reference": "ROM 8:1"
+    },
+    {
+     "order": 4,
+     "type": "identity",
+     "note": "You are His workmanship — received, then crafted.",
+     "targetId": "id-workmanship"
+    },
+    {
+     "order": 5,
+     "type": "verse",
+     "note": "Rejection called you unwanted; redemption calls you 'mine'.",
+     "reference": "ISA 43:1"
+    }
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dp-received",
+    "seedLine": 1437,
+    "changes": [
+     "Step 2: typo \"ΚJV\" (Greek kappa) corrected.",
+     "Step 4: pr-ident-2 retargeted to identity id-workmanship."
+    ]
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dp-guidance",
+   "title": "Guidance in Uncertainty",
+   "description": "From fog at the fork to a word behind you.",
+   "situationId": "sit-decisions",
+   "steps": [
+    {
+     "order": 1,
+     "type": "situation",
+     "note": "Decisions paralyze when we trust our understanding instead of His.",
+     "targetId": "sit-decisions"
+    },
+    {
+     "order": 2,
+     "type": "verse",
+     "note": "The condition is trust over self-insight; the result is directed paths.",
+     "reference": "PRO 3:5-6"
+    },
+    {
+     "order": 3,
+     "type": "verse",
+     "note": "God instructs personally: I will guide thee with mine eye.",
+     "reference": "PSA 32:8"
+    },
+    {
+     "order": 4,
+     "type": "promise",
+     "note": "A word behind you at the exact fork: this is the way.",
+     "targetId": "pr-guid-2"
+    },
+    {
+     "order": 5,
+     "type": "verse",
+     "note": "When wisdom runs out, asking is the plan — asked liberally, answered liberally.",
+     "reference": "JAS 1:5"
+    }
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dp-guidance",
+    "seedLine": 1443,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dp-waiting",
+   "title": "Strength While Waiting",
+   "description": "From the long middle to renewed strength.",
+   "situationId": "sit-waiting",
+   "steps": [
+    {
+     "order": 1,
+     "type": "situation",
+     "note": "Waiting is not wasted time in God's economy.",
+     "targetId": "sit-waiting"
+    },
+    {
+     "order": 2,
+     "type": "verse",
+     "note": "Waiting on the LORD is itself an exchange: weariness for strength.",
+     "reference": "ISA 40:31"
+    },
+    {
+     "order": 3,
+     "type": "verse",
+     "note": "Mercies are rationed daily — great is His faithfulness.",
+     "reference": "LAM 3:22-23"
+    },
+    {
+     "order": 4,
+     "type": "promise",
+     "note": "The delay has not cancelled the completion.",
+     "targetId": "pr-fut-1"
+    },
+    {
+     "order": 5,
+     "type": "verse",
+     "note": "Due season is a harvest appointment, not a vague hope.",
+     "reference": "GAL 6:9"
+    }
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dp-waiting",
+    "seedLine": 1449,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dp-rest",
+   "title": "Rest for the Weary",
+   "description": "From heavy-laden to yoked and rested.",
+   "situationId": "sit-rest",
+   "steps": [
+    {
+     "order": 1,
+     "type": "situation",
+     "note": "Weariness is an invitation in disguise.",
+     "targetId": "sit-rest"
+    },
+    {
+     "order": 2,
+     "type": "verse",
+     "note": "Jesus' invitation is addressed to the labouring, not the accomplished.",
+     "reference": "MAT 11:28"
+    },
+    {
+     "order": 3,
+     "type": "verse",
+     "note": "A Shepherd's care ends in 'I shall not want'.",
+     "reference": "PSA 23:1"
+    },
+    {
+     "order": 4,
+     "type": "promise",
+     "note": "Presence and rest travel together.",
+     "targetId": "pr-pres-1"
+    },
+    {
+     "order": 5,
+     "type": "verse",
+     "note": "Goodness and mercy pursue — even into the house of the LORD for ever.",
+     "reference": "PSA 23:6"
+    }
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dp-rest",
+    "seedLine": 1455,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dp-temptation",
+   "title": "From Temptation to Forgiveness",
+   "description": "From the test, through grace, to cleansing.",
+   "situationId": "sit-temptation",
+   "steps": [
+    {
+     "order": 1,
+     "type": "situation",
+     "note": "Temptation overstates its power and understates God's.",
+     "targetId": "sit-temptation"
+    },
+    {
+     "order": 2,
+     "type": "verse",
+     "note": "God measures what reaches you — and always leaves a way out.",
+     "reference": "1CO 10:13"
+    },
+    {
+     "order": 3,
+     "type": "verse",
+     "note": "The throne you run to is a throne of grace.",
+     "reference": "HEB 4:16"
+    },
+    {
+     "order": 4,
+     "type": "verse",
+     "note": "Confession meets faithfulness: forgiven, cleansed.",
+     "reference": "1JN 1:9"
+    },
+    {
+     "order": 5,
+     "type": "verse",
+     "note": "The verdict after grace: no condemnation.",
+     "reference": "ROM 8:1"
+    }
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dp-temptation",
+    "seedLine": 1461,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": []
+   }
+  },
+  {
+   "id": "dp-provision",
+   "title": "Trusting God for Provision",
+   "description": "From the pressure of need to the peace of supply.",
+   "situationId": "sit-financial-pressure",
+   "steps": [
+    {
+     "order": 1,
+     "type": "situation",
+     "note": "Need narrows vision; the kingdom widens it again.",
+     "targetId": "sit-financial-pressure"
+    },
+    {
+     "order": 2,
+     "type": "verse",
+     "note": "First things first — and the Father adds what is needed.",
+     "reference": "MAT 6:33"
+    },
+    {
+     "order": 3,
+     "type": "verse",
+     "note": "Shepherds feed; 'I shall not want' is arithmetic under His care.",
+     "reference": "PSA 23:1"
+    },
+    {
+     "order": 4,
+     "type": "promise",
+     "note": "Paul told givers that God supplies givers — keep sowing, keep trusting.",
+     "targetId": "pr-prov-1"
+    },
+    {
+     "order": 5,
+     "type": "verse",
+     "note": "Sufficiency is the target: enough, always, for every good work.",
+     "reference": "2CO 9:8"
+    }
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dp-provision",
+    "seedLine": 1467,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": [
+     "Step note \"'I shall not want' is arithmetic under His care\" may overstate; editorial check."
+    ]
+   }
+  },
+  {
+   "id": "dp-sickness",
+   "title": "Trust in Sickness",
+   "description": "From the sickbed to the God who healeth.",
+   "situationId": "sit-healing",
+   "steps": [
+    {
+     "order": 1,
+     "type": "situation",
+     "note": "Illness isolates; Scripture gathers.",
+     "targetId": "sit-healing"
+    },
+    {
+     "order": 2,
+     "type": "verse",
+     "note": "He reveals Himself by name here: the LORD that healeth thee.",
+     "reference": "EXO 15:26"
+    },
+    {
+     "order": 3,
+     "type": "verse",
+     "note": "The stripes were carried before the sickness was.",
+     "reference": "ISA 53:5"
+    },
+    {
+     "order": 4,
+     "type": "promise",
+     "note": "He restores health to outcasts no one seeks after.",
+     "targetId": "pr-rest-1"
+    },
+    {
+     "order": 5,
+     "type": "verse",
+     "note": "The same God forgives all and heals all — bless Him while you wait.",
+     "reference": "PSA 103:3"
+    }
+   ],
+   "provenance": {
+    "origin": "demoSeed",
+    "seedId": "dp-sickness",
+    "seedLine": 1473,
+    "changes": []
+   },
+   "review": {
+    "status": "pendingEditorialReview",
+    "flags": [
+     "Steps cite Exodus 15:26 (covenant with Israel) and Isaiah 53:5; check notes do not promise a guaranteed cure."
+    ]
+   }
+  }
+ ]
+}

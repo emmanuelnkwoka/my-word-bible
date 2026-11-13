@@ -4,8 +4,9 @@ import 'mwb_palette.dart';
 
 /// Bundled font families (see pubspec.yaml). No fonts are fetched at runtime.
 abstract final class MwbFonts {
-  /// Editorial serif for display and headings.
-  static const display = 'CormorantGaramond';
+  /// Editorial serif for display and headings. Lora's semibold matches the
+  /// sturdy transitional serif of the reference designs.
+  static const display = 'Lora';
 
   /// Highly readable serif for Scripture.
   static const scripture = 'Lora';
@@ -38,25 +39,26 @@ class MwbTypography {
     return MwbTypography._(
       display: TextStyle(
         fontFamily: MwbFonts.display,
-        fontSize: 40,
-        height: 1.08,
+        fontSize: 32,
+        height: 1.15,
         fontWeight: FontWeight.w600,
-        letterSpacing: -0.4,
+        letterSpacing: -0.6,
         color: p.textPrimary,
       ),
       pageHeading: TextStyle(
         fontFamily: MwbFonts.display,
-        fontSize: 32,
-        height: 1.12,
+        fontSize: 26,
+        height: 1.18,
         fontWeight: FontWeight.w600,
-        letterSpacing: -0.2,
+        letterSpacing: -0.4,
         color: p.textPrimary,
       ),
       sectionHeading: TextStyle(
         fontFamily: MwbFonts.display,
-        fontSize: 23,
-        height: 1.2,
+        fontSize: 19,
+        height: 1.25,
         fontWeight: FontWeight.w600,
+        letterSpacing: -0.2,
         color: p.textPrimary,
       ),
       cardTitle: TextStyle(
@@ -90,8 +92,8 @@ class MwbTypography {
       ),
       scripture: TextStyle(
         fontFamily: MwbFonts.scripture,
-        fontSize: 18,
-        height: 1.7,
+        fontSize: 19,
+        height: 1.6,
         fontWeight: FontWeight.w400,
         color: p.textPrimary,
       ),

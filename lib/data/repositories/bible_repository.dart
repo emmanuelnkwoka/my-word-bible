@@ -68,7 +68,7 @@ class AssetBibleRepository implements BibleRepository {
   final bool parseInBackground;
   final Map<String, Future<_LoadedBible>> _cache = {};
 
-  static const _assets = {'KJV': 'assets/bible/kjv.json'};
+  static const _assets = {'KJV': 'assets/bible/kjv.json', 'WEB': 'assets/bible/web.json'};
 
   @override
   List<BibleVersionInfo> get versions => bibleVersionCatalogue;
@@ -120,7 +120,7 @@ class AssetBibleRepository implements BibleRepository {
     final bible = await _load(versionId);
     final hits = <VerseSearchHit>[];
     for (final e in bible.index) {
-      if (words.every(e.lower.contains)) {
+      if (e.lower.isNotEmpty && words.every(e.lower.contains)) {
         hits.add(
           VerseSearchHit(
             versionId: versionId,

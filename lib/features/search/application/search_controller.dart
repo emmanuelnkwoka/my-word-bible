@@ -27,7 +27,7 @@ class SearchCategoryController extends Notifier<SearchCategory> {
 final searchResultsProvider = FutureProvider.autoDispose<SearchResults>((ref) {
   final query = ref.watch(searchQueryProvider);
   if (query.isEmpty) return SearchResults(query: query);
-  final version = ref.watch(activeVersionProvider);
+  final version = ref.watch(textVersionProvider);
   final saved = ref.watch(savedContentIdsProvider);
   return ref.watch(searchRepositoryProvider).search(query, versionId: version.id, savedContentIds: saved);
 });

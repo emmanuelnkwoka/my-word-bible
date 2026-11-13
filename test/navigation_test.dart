@@ -10,7 +10,8 @@ import 'helpers/test_app.dart';
 void main() {
   testWidgets('five tabs are reachable', (tester) async {
     await pumpMwbApp(tester, onboardedStore());
-    expect(find.text('DAILY SCRIPTURE'), findsOneWidget);
+    expect(find.byKey(const Key('home.dailyWord')), findsOneWidget);
+    expect(find.byKey(const Key('home.dailyWord')), findsOneWidget);
 
     await tester.tap(find.bySemanticsLabel('Bible tab'));
     await settle(tester);
@@ -30,7 +31,8 @@ void main() {
 
     await tester.tap(find.bySemanticsLabel('Home tab'));
     await settle(tester);
-    expect(find.text('DAILY SCRIPTURE'), findsOneWidget);
+    expect(find.byKey(const Key('home.dailyWord')), findsOneWidget);
+    expect(find.byKey(const Key('home.dailyWord')), findsOneWidget);
   });
 
   testWidgets('tabs preserve their navigation stack and state', (tester) async {

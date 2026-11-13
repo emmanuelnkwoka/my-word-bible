@@ -5,6 +5,7 @@ import '../../../data/models/content.dart';
 import '../../../data/models/library_items.dart';
 import '../../../data/models/scripture_reference.dart';
 import '../../../data/repositories/library_repository.dart';
+import '../../daily_word/application/relevance_signals.dart';
 
 /// Base for library lists: synchronous load, persist on every change.
 abstract class _PersistedList<T> extends Notifier<List<T>> {
@@ -265,6 +266,8 @@ class RecentSearchesController extends _PersistedList<String> {
     if (q.length < 2) return Future.value();
     if (state.isNotEmpty && state.first == q) return Future.value();
     final next = [q, ...state.where((s) => s.toLowerCase() != q.toLowerCase())];
+    // A local Daily Word relevance signal (never leaves the device).
+    ref.read(relevanceSignalsProvider.notifier).recordSearch(q);
     return commit(next.take(maxEntries).toList());
   }
 

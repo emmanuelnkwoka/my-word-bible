@@ -31,6 +31,35 @@ const _kjvMwbLicence = VersionLicence(
   notes: 'Subject to the same United Kingdom Crown-rights caveat as the KJV.',
 );
 
+const _webLicence = VersionLicence(
+  copyrightHolder: 'Public domain. "World English Bible" is a trademark of eBible.org.',
+  type: LicenceType.publicDomain,
+  status: LicensingStatus.notRequired,
+  offlineStorage: PermissionState.notRequired,
+  distribution: PermissionState.notRequired,
+  derivativeWorks: PermissionState.notRequired,
+  attribution: 'Identify the text as the World English Bible (WEB).',
+  quotationRestrictions: 'None.',
+  notes:
+      'Source: eBible.org engwebp (66-book edition, verse-per-line text). eBible.org asks that changed text not be '
+      'called the World English Bible.',
+);
+
+const _webMwbLicence = VersionLicence(
+  copyrightHolder: 'Source text: World English Bible (public domain). Personalisation rules: MY WORD BIBLE.',
+  type: LicenceType.derivedEdition,
+  status: LicensingStatus.notRequired,
+  offlineStorage: PermissionState.notRequired,
+  distribution: PermissionState.notRequired,
+  derivativeWorks: PermissionState.notRequired,
+  attribution:
+      'Label as "WEB-MWB — a personalised rendering derived from the World English Bible". Personalised text '
+      'must never be presented as the World English Bible itself.',
+  quotationRestrictions:
+      'Shared text must say it is a personalised rendering, and the unchanged WEB must remain available.',
+  notes: 'Respects the eBible.org trademark condition: changed text is not called the World English Bible.',
+);
+
 VersionLicence _publisherLicence(String holder) => VersionLicence(
   copyrightHolder: holder,
   type: LicenceType.publisherLicence,
@@ -77,12 +106,36 @@ final List<BibleVersionInfo> bibleVersionCatalogue = List.unmodifiable([
     id: 'KJV-MWB',
     abbreviation: 'KJV-MWB',
     name: 'King James Version — My Word Bible edition',
-    status: BibleVersionStatus.inDevelopment,
-    note: 'Personalised rendering of the KJV. Arriving with reader integration; passages show only after theological review.',
+    status: BibleVersionStatus.installed,
+    note:
+        'Personalised edition of the KJV. Approved personal passages appear in it; every other verse reads '
+        'exactly as the KJV while passages await theological review.',
     kind: BibleVersionKind.personalised,
     sourceVersionId: 'KJV',
     licence: _kjvMwbLicence,
-    personalisation: PersonalisationAvailability.inDevelopment,
+    personalisation: PersonalisationAvailability.available,
+    reviewPolicy: ReviewPolicy.approvedRulesOnly,
+  ),
+  const BibleVersionInfo(
+    id: 'WEB',
+    abbreviation: 'WEB',
+    name: 'World English Bible',
+    status: BibleVersionStatus.installed,
+    note: 'Complete text installed on this device. Public domain.',
+    licence: _webLicence,
+  ),
+  const BibleVersionInfo(
+    id: 'WEB-MWB',
+    abbreviation: 'WEB-MWB',
+    name: 'My Word Bible edition — derived from the World English Bible',
+    status: BibleVersionStatus.installed,
+    note:
+        'Personalised edition derived from the WEB. Approved personal passages appear in it; every other verse '
+        'reads exactly as the WEB while passages await theological review.',
+    kind: BibleVersionKind.personalised,
+    sourceVersionId: 'WEB',
+    licence: _webMwbLicence,
+    personalisation: PersonalisationAvailability.available,
     reviewPolicy: ReviewPolicy.approvedRulesOnly,
   ),
   BibleVersionInfo(
@@ -144,24 +197,6 @@ final List<BibleVersionInfo> bibleVersionCatalogue = List.unmodifiable([
     licence: _derivedFromPublisher(_nltHolder),
     personalisation: PersonalisationAvailability.blockedByLicence,
     reviewPolicy: ReviewPolicy.approvedRulesOnly,
-  ),
-  const BibleVersionInfo(
-    id: 'WEB',
-    abbreviation: 'WEB',
-    name: 'World English Bible',
-    status: BibleVersionStatus.notInstalled,
-    note: 'Public domain. Not yet included in this build.',
-    licence: VersionLicence(
-      copyrightHolder: 'Public domain.',
-      type: LicenceType.publicDomain,
-      status: LicensingStatus.notRequired,
-      offlineStorage: PermissionState.notRequired,
-      distribution: PermissionState.notRequired,
-      derivativeWorks: PermissionState.notRequired,
-      attribution: 'Identify the text as the World English Bible (WEB).',
-      quotationRestrictions: 'None.',
-      notes: 'No MWB edition is planned yet.',
-    ),
   ),
 ]);
 

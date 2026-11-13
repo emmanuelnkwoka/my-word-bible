@@ -10,7 +10,11 @@ import '../../../core/widgets/layout.dart';
 import '../../../core/widgets/notices.dart';
 import '../../../core/widgets/section_heading.dart';
 import '../../bible/application/bible_providers.dart';
+import '../../daily_word/application/daily_word_providers.dart';
 import '../../settings/application/appearance_controller.dart';
+import '../../personalisation/application/mwb_reader_providers.dart';
+import '../../personalisation/presentation/mwb_review_widgets.dart';
+import '../../social/application/social_providers.dart';
 import '../application/profile_controllers.dart';
 import 'sign_in_sheet.dart';
 
@@ -23,8 +27,13 @@ class ProfileScreen extends ConsumerWidget {
     final appearance = ref.watch(appearanceProvider);
     final reading = ref.watch(readingPreferencesProvider);
     final daily = ref.watch(dailyExperienceProvider);
+    final dailyWordAdaptive = ref.watch(dailyWordSettingsProvider.select((s) => s.adaptiveEnabled));
     final version = ref.watch(activeVersionProvider);
     final session = ref.watch(sessionProvider).value;
+    final unread = ref.watch(unreadNotificationsProvider);
+    final following = ref.watch(followingProvider);
+    final followers = ref.watch(followersProvider);
+    final identity = ref.watch(socialIdentityProvider);
     final t = context.mwb.text;
     final c = context.mwb.colors;
     final storedName = profile?.firstName.trim() ?? '';
@@ -97,6 +106,12 @@ class ProfileScreen extends ConsumerWidget {
                   AppRoutes.readingSettings,
                 ),
                 _Tile(
+                  Icons.wb_twilight_rounded,
+                  'Daily Word & privacy',
+                  dailyWordAdaptive ? 'Local personalisation on' : 'Annual schedule only',
+                  AppRoutes.dailyWordSettings,
+                ),
+                _Tile(
                   Icons.notifications_none_rounded,
                   'Notifications',
                   daily.reminderEnabled ? 'Daily reminder on' : 'Daily reminder off',
@@ -108,6 +123,40 @@ class ProfileScreen extends ConsumerWidget {
                   'Interests and discovery',
                   AppRoutes.contentPreferences,
                 ),
+              ],
+            ),
+            if (ref.watch(reviewerToolsAvailableProvider)) ...[
+              _Group(
+                title: 'Theological review',
+                tiles: [
+                  _Tile(
+                    Icons.rate_review_outlined,
+                    'Personalisation review',
+                    'Every proposal, its context, checks and decisions',
+                    AppRoutes.review,
+                  ),
+                ],
+              ),
+              const MwbReviewerModeTile(),
+              const SizedBox(height: MwbSpace.lg),
+            ],
+            _Group(
+              title: 'Sharing & fellowship',
+              tiles: [
+                _Tile(
+                  Icons.notifications_none_rounded,
+                  'Inbox',
+                  unread == 0 ? 'Scripture and encouragement shared with you' : '$unread unread',
+                  AppRoutes.inbox,
+                ),
+                _Tile(Icons.history_rounded, 'Share history', 'Sent, received and saved Scripture', AppRoutes.shareHistory),
+                _Tile(
+                  Icons.people_outline_rounded,
+                  'People',
+                  '${following.length} following · ${followers.length} followers',
+                  AppRoutes.people,
+                ),
+                _Tile(Icons.lock_person_outlined, 'Sharing & privacy', identity.handle, AppRoutes.sharingPrivacy),
               ],
             ),
             _Group(
