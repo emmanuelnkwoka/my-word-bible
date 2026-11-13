@@ -1,9 +1,6 @@
-# Keep LF line endings (Dart formatter output; byte-exact generated docs such as docs/mwb/*.md).
-* text=auto eol=lf
-
-*.png binary
-*.jpg binary
-*.ttf binary
-*.wav binary
-*.jar binary
-*.ico binary
+# The approved editorial package is immutable and verified by SHA-256
+# (MWB_REVISED_REVIEW_MANIFEST.json): store it byte-for-byte, never
+# normalise line endings.
+docs/personalization/review-package/** -text
+# Review exports are delivered files; keep them exactly as generated.
+exports/** -text
