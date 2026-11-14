@@ -21,6 +21,7 @@ import '../../content/widgets/content_cards.dart';
 import '../../daily_word/application/daily_word_providers.dart';
 import '../../daily_word/presentation/daily_word_home_card.dart';
 import '../../discovery/application/content_providers.dart';
+import '../../fellowship/presentation/personal_widgets.dart';
 import '../../library/application/library_controllers.dart';
 import '../../personalisation/presentation/presented_scripture.dart';
 import '../../profile/application/profile_controllers.dart';
@@ -67,6 +68,11 @@ class HomeScreen extends ConsumerWidget {
               const MwbSliverPadding(
                 top: MwbSpace.md,
                 sliver: SliverToBoxAdapter(child: _DailyPromiseCard()),
+              ),
+              // F1: private Word rhythm (hidden if the encrypted store is unavailable).
+              const MwbSliverPadding(
+                top: MwbSpace.md,
+                sliver: SliverToBoxAdapter(child: RhythmHomeCard()),
               ),
               const MwbSliverPadding(
                 top: MwbSpace.xl,

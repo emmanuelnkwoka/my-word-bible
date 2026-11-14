@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../app/app_providers.dart';
 import '../../../core/theme/app_theme.dart';
@@ -16,6 +17,10 @@ import '../../../data/models/library_items.dart';
 import '../../../data/models/scripture_reference.dart';
 import '../../../data/models/user_profile.dart';
 import '../../../data/catalogue/version_catalogue.dart';
+import '../../../app/routes.dart';
+import '../../../data/models/personal_rhythm.dart';
+import '../../fellowship/application/personal_providers.dart';
+import '../../fellowship/presentation/chapter_completion_panel.dart';
 import '../../library/application/library_controllers.dart';
 import '../../library/presentation/note_editor.dart';
 import '../../personalisation/application/mwb_reader_providers.dart';
@@ -100,6 +105,10 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   final _scroll = ScrollController();
   bool _pendingScroll = false;
 
+  /// When the current chapter was opened (used only as the start time of a
+  /// reading the user explicitly completes; opening records nothing).
+  late DateTime _openedAt;
+
   @override
   void initState() {
     super.initState();
@@ -108,6 +117,7 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
     _chapter = ScriptureReference(bookId: book?.id ?? 'JHN', chapter: ch);
     _focus = widget.focusVerse;
     _pendingScroll = _focus != null;
+    _openedAt = ref.read(clockProvider)();
     _recordHistory();
   }
 
@@ -131,6 +141,7 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
       _verseKeys.clear();
       _focus = verse;
       _pendingScroll = verse != null;
+      _openedAt = ref.read(clockProvider)();
     });
     if (_scroll.hasClients) _scroll.jumpTo(0);
     _recordHistory();
@@ -295,6 +306,12 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                 shape: const RoundedRectangleBorder(borderRadius: MwbRadius.lgAll),
                 onSelected: (v) async {
                   if (v == 'settings') return showReadingSettingsSheet(context);
+                  if (v == 'session') {
+                    ref
+                        .read(personalActionsProvider)
+                        .startSession(_chapter, versionId: textVersion.id, origin: PersonalOrigin.reader);
+                    return showMwbSnack(context, 'Reading session started. Choose Complete reading at the end.');
+                  }
                   final now = await ref.read(bookmarksProvider.notifier).toggle(_chapter, versionId: version.id);
                   if (context.mounted) showMwbSnack(context, now ? '${_chapter.label} bookmarked' : 'Bookmark removed');
                 },
@@ -307,6 +324,15 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                       title: Text(bookmarked ? 'Remove chapter bookmark' : 'Bookmark this chapter'),
                     ),
                   ),
+                  if (ref.read(rhythmRepositoryProvider) != null)
+                    const PopupMenuItem(
+                      value: 'session',
+                      child: ListTile(
+                        contentPadding: EdgeInsets.zero,
+                        leading: Icon(Icons.play_circle_outline_rounded),
+                        title: Text('Start reading session'),
+                      ),
+                    ),
                   const PopupMenuItem(
                     value: 'settings',
                     child: ListTile(
@@ -352,6 +378,12 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                 previous: _previous,
                 next: _next,
                 onNavigate: (r) => _goTo(r.bookId, r.chapter),
+                completion: ChapterCompletionPanel(
+                  chapter: _chapter,
+                  versionId: textVersion.id,
+                  openedAt: _openedAt,
+                  textColor: colors.text,
+                ),
               );
             },
           ),
@@ -404,6 +436,7 @@ class _ChapterBody extends ConsumerWidget {
     required this.previous,
     required this.next,
     required this.onNavigate,
+    this.completion,
   });
 
   final ScrollController scroll;
@@ -424,6 +457,9 @@ class _ChapterBody extends ConsumerWidget {
   final ScriptureReference? previous;
   final ScriptureReference? next;
   final ValueChanged<ScriptureReference> onNavigate;
+
+  /// F1 end-of-chapter "Complete reading" panel.
+  final Widget? completion;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -487,6 +523,7 @@ class _ChapterBody extends ConsumerWidget {
             ],
             const SizedBox(height: MwbSpace.xl),
             Text(footer, style: t.caption.copyWith(color: colors.secondary)),
+            if (completion != null) ...[const SizedBox(height: MwbSpace.lg), completion!],
             const SizedBox(height: MwbSpace.xl),
             Row(
               children: [
@@ -903,6 +940,27 @@ class _SelectionBar extends ConsumerWidget {
           onDone();
         },
       ),
+      if (ref.watch(journalRepositoryProvider) != null)
+        (
+          Icons.auto_stories_outlined,
+          'Reflect',
+          () {
+            final first = references.first;
+            final last = references.last;
+            final end = last.verseEnd ?? last.verseStart;
+            final range = ScriptureReference(
+              bookId: first.bookId,
+              chapter: first.chapter,
+              verseStart: first.verseStart,
+              verseEnd: end == first.verseStart ? null : end,
+            );
+            onDone();
+            ScaffoldMessenger.of(context).hideCurrentSnackBar();
+            context.push(
+              AppRoutes.newReflection(reference: range, versionId: sourceVersionId, source: PersonalOrigin.reader),
+            );
+          },
+        ),
       (
         Icons.favorite_border_rounded,
         'Save',

@@ -12,6 +12,7 @@ import '../../../core/widgets/sheets.dart';
 import '../../../core/widgets/state_views.dart';
 import '../../../data/models/daily_word.dart';
 import '../../../data/models/intelligence.dart';
+import '../../../data/models/personal_rhythm.dart';
 import '../../../data/models/scripture_reference.dart';
 import '../../bible/application/bible_providers.dart';
 import '../../library/application/library_controllers.dart';
@@ -191,6 +192,19 @@ class _Actions extends ConsumerWidget {
               showMwbSnack(context, now ? 'Added to favourite Daily Words' : 'Removed from favourites');
             }
           },
+        ),
+        _ActionChip(
+          key: const Key('dailyWord.reflect'),
+          icon: Icons.edit_note_rounded,
+          label: 'Reflect',
+          onTap: () => context.push(
+            AppRoutes.newReflection(
+              reference: e.reference,
+              versionId: detail.version.id,
+              source: PersonalOrigin.dailyWord,
+              dailyWordDate: e.dateKey,
+            ),
+          ),
         ),
         _ActionChip(
           key: const Key('dailyWord.read'),

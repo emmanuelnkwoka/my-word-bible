@@ -12,6 +12,11 @@ import '../features/daily_word/presentation/daily_word_screen.dart';
 import '../features/daily_word/presentation/daily_word_settings_screen.dart';
 import '../features/discovery/presentation/discover_screen.dart';
 import '../features/discovery/presentation/topic_screen.dart';
+import '../data/models/personal_rhythm.dart';
+import '../features/fellowship/presentation/journal_privacy_screen.dart';
+import '../features/fellowship/presentation/journal_screen.dart';
+import '../features/fellowship/presentation/reflection_editor_screen.dart';
+import '../features/fellowship/presentation/rhythm_screen.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../features/library/presentation/collection_screen.dart';
 import '../features/library/presentation/library_screen.dart';
@@ -121,6 +126,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                   GoRoute(path: 'notifications', builder: (_, _) => const NotificationSettingsScreen()),
                   GoRoute(path: 'content', builder: (_, _) => const ContentPreferencesScreen()),
                   GoRoute(path: 'privacy', builder: (_, _) => const PrivacyScreen()),
+                  GoRoute(path: 'journal', builder: (_, _) => const JournalPrivacyScreen()),
                   GoRoute(path: 'account', builder: (_, _) => const AccountScreen()),
                   GoRoute(path: 'about', builder: (_, _) => const AboutScreen()),
                   GoRoute(path: 'help', builder: (_, _) => const HelpScreen()),
@@ -177,6 +183,30 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         ),
       ),
       GoRoute(parentNavigatorKey: rootNavigatorKey, path: AppRoutes.upload, builder: (_, _) => const UploadScreen()),
+      // Personal Word Rhythm and private reflections (F1).
+      GoRoute(parentNavigatorKey: rootNavigatorKey, path: AppRoutes.rhythm, builder: (_, _) => const RhythmScreen()),
+      GoRoute(
+        parentNavigatorKey: rootNavigatorKey,
+        path: AppRoutes.journal,
+        builder: (_, _) => const JournalScreen(),
+        routes: [
+          GoRoute(
+            parentNavigatorKey: rootNavigatorKey,
+            path: 'new',
+            builder: (_, s) => ReflectionEditorScreen(
+              reference: decodeReference(s.uri.queryParameters['r']),
+              versionId: s.uri.queryParameters['v'],
+              source: PersonalOrigin.parse(s.uri.queryParameters['src']),
+              dailyWordDate: s.uri.queryParameters['dw'],
+            ),
+          ),
+          GoRoute(
+            parentNavigatorKey: rootNavigatorKey,
+            path: 'e/:id',
+            builder: (_, s) => ReflectionEditorScreen(key: ValueKey(s.pathParameters['id']), entryId: s.pathParameters['id']),
+          ),
+        ],
+      ),
       // Scripture sharing & fellowship.
       GoRoute(parentNavigatorKey: rootNavigatorKey, path: AppRoutes.inbox, builder: (_, _) => const InboxScreen()),
       GoRoute(

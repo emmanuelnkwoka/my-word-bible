@@ -48,4 +48,8 @@ abstract final class StorageKeys {
   /// Secure storage (Keychain / Android Keystore) keys.
   static const secureAccessToken = 'mwb.secure.access_token';
   static const secureRefreshToken = 'mwb.secure.refresh_token';
+
+  /// F1: 256-bit key of the encrypted personal database (reflections and
+  /// reading rhythm). Secure storage only; never SharedPreferences.
+  static const securePersonalDbKey = 'mwb.secure.personal_db_key';
 }
