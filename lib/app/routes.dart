@@ -1,5 +1,29 @@
+import '../data/models/personal_rhythm.dart';
+import '../data/models/scripture_reference.dart';
+
 /// Route paths. Centralised so features never hardcode locations.
 abstract final class AppRoutes {
+  // Personal Word Rhythm and private reflections (F1, root navigator).
+  static const rhythm = '/rhythm';
+  static const journal = '/journal';
+  static String journalEntry(String id) => '/journal/e/$id';
+  static String newReflection({
+    ScriptureReference? reference,
+    String? versionId,
+    PersonalOrigin source = PersonalOrigin.independent,
+    String? dailyWordDate,
+  }) {
+    final q = <String, String>{
+      if (reference != null) 'r': encodeReference(reference),
+      'v': ?versionId,
+      'src': source.name,
+      'dw': ?dailyWordDate,
+    };
+    return Uri(path: '/journal/new', queryParameters: q).toString();
+  }
+
+  static const journalPrivacy = '/profile/journal';
+
   static const onboarding = '/onboarding';
 
   // Primary tabs.

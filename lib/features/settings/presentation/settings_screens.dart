@@ -539,6 +539,7 @@ class PrivacyScreen extends ConsumerWidget {
           'Bookmarks, highlights, notes and saved Scripture',
           'Saved content, collections and history',
           'Recent searches, drafts and reports',
+          'Reflections and Word rhythm, in an encrypted database (managed under Profile → Journal privacy)',
         ])
           Padding(
             padding: const EdgeInsets.only(bottom: 6),

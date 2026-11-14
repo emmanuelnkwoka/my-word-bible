@@ -11,6 +11,7 @@ import 'package:my_word_bible/core/constants/storage_keys.dart';
 import 'package:my_word_bible/core/network/api_client.dart';
 import 'package:my_word_bible/core/storage/key_value_store.dart';
 import 'package:my_word_bible/core/storage/token_storage.dart';
+import 'package:my_word_bible/data/local/personal_database.dart';
 import 'package:my_word_bible/data/models/user_profile.dart';
 import 'package:my_word_bible/data/repositories/bible_repository.dart';
 import 'package:my_word_bible/data/repositories/content_repository.dart';
@@ -21,6 +22,7 @@ import 'package:my_word_bible/data/repositories/mwb_ruleset_repository.dart';
 import 'package:my_word_bible/data/repositories/passage_context_repository.dart';
 import 'package:my_word_bible/features/audio/application/audio_playback_service.dart';
 import 'package:my_word_bible/features/bible/application/bible_providers.dart';
+import 'package:my_word_bible/features/fellowship/application/personal_providers.dart';
 import 'package:my_word_bible/features/personalisation/application/personalisation_providers.dart';
 
 /// Raw KJV text, read once. Widget tests each get their own repository so
@@ -50,7 +52,8 @@ InMemoryKeyValueStore onboardedStore({String name = 'Grace'}) {
   return store;
 }
 
-List<Override> testOverrides(KeyValueStore store) => [
+/// [personalStore] replaces the default in-memory F1 personal store.
+List<Override> testOverrides(KeyValueStore store, {Future<PersonalStoreStatus> Function()? personalStore}) => [
   keyValueStoreProvider.overrideWithValue(store),
   tokenStorageProvider.overrideWithValue(InMemoryTokenStorage()),
   bibleRepositoryProvider.overrideWithValue(newTestBible()),
@@ -64,6 +67,13 @@ List<Override> testOverrides(KeyValueStore store) => [
   ),
   dailyWordRepositoryProvider.overrideWithValue(AssetDailyWordRepository(loader: readTestAsset)),
   mwbPresentationRepositoryProvider.overrideWithValue(AssetMwbPresentationRepository(loader: readTestAsset)),
+  // F1: an in-memory personal store (encryption is tested separately against real SQLCipher files).
+  personalStoreProvider.overrideWith((ref) async {
+    if (personalStore != null) return personalStore();
+    final db = PersonalDatabase.inMemory();
+    ref.onDispose(db.close);
+    return PersonalStoreReady(db);
+  }),
 ];
 
 ProviderContainer testContainer(KeyValueStore store, {List<Override> extra = const []}) {
@@ -78,11 +88,20 @@ Future<void> pumpMwbApp(
   KeyValueStore store, {
   Size size = const Size(400, 860),
   List<Override> extra = const [],
+  Future<PersonalStoreStatus> Function()? personalStore,
 }) async {
   tester.view.physicalSize = size * 3;
   tester.view.devicePixelRatio = 3;
   addTearDown(tester.view.reset);
-  await tester.pumpWidget(ProviderScope(overrides: [...testOverrides(store), ...extra], child: const MwbApp()));
+  await tester.pumpWidget(
+    ProviderScope(
+      overrides: [
+        ...testOverrides(store, personalStore: personalStore),
+        ...extra,
+      ],
+      child: const MwbApp(),
+    ),
+  );
   await settle(tester);
 }
 

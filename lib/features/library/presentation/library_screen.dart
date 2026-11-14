@@ -12,6 +12,7 @@ import '../../../core/widgets/section_heading.dart';
 import '../../../core/widgets/sheets.dart';
 import '../../../core/widgets/state_views.dart';
 import '../../content/presentation/content_actions.dart';
+import '../../fellowship/presentation/personal_library_cards.dart';
 import '../../social/application/social_providers.dart';
 import '../application/library_controllers.dart';
 import 'library_sections.dart';
@@ -106,6 +107,12 @@ class _SectionsTab extends ConsumerWidget {
       padding: MwbLayout.pagePadding(context, top: MwbSpace.lg, bottom: MwbSpace.xxxl),
       children: [
         for (final s in sections) ...[_SectionPreview(section: s), const SizedBox(height: MwbSpace.xl)],
+        // F1: private reflections (Scripture tab) and completed readings (History tab).
+        if (sections.contains(LibrarySection.verses)) ...[
+          const ReflectionsLibrarySection(),
+          const SizedBox(height: MwbSpace.xl),
+        ],
+        if (sections.contains(LibrarySection.history)) ...[const RhythmLibraryCard(), const SizedBox(height: MwbSpace.xl)],
         if (sections.contains(LibrarySection.verses)) ...[
           MwbCard(
             key: const Key('library.shared'),

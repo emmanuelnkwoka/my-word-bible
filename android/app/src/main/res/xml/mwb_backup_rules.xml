@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 11 and older (android:fullBackupContent).
+     The encrypted personal database and the secure-storage preferences that
+     hold its key wrapper are excluded: the Keystore key never leaves the
+     device, so a restored copy could not be decrypted. Everything else keeps
+     the default Auto Backup behaviour. -->
+<full-backup-content>
+    <exclude domain="file" path="mwb_personal/" />
+    <exclude domain="sharedpref" path="FlutterSecureStorage.xml" />
+    <exclude domain="sharedpref" path="FlutterSecureKeyStorage.xml" />
+    <exclude domain="sharedpref" path="FlutterSecureStorageConfiguration:FlutterSecureStorage.xml" />
+</full-backup-content>

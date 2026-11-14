@@ -9,7 +9,9 @@
     <application
         android:label="My Word Bible"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:fullBackupContent="@xml/mwb_backup_rules"
+        android:dataExtractionRules="@xml/mwb_data_extraction_rules">
         <activity
             android:name=".MainActivity"
             android:exported="true"

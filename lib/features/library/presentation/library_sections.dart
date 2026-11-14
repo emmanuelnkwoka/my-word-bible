@@ -15,6 +15,7 @@ import '../../content/widgets/content_cards.dart';
 import '../../daily_word/application/daily_word_providers.dart';
 import '../../daily_word/presentation/daily_word_history_screen.dart';
 import '../../discovery/application/content_providers.dart';
+import '../../fellowship/presentation/personal_library_cards.dart';
 import '../../personalisation/application/scripture_presentation.dart';
 import '../../share/scripture_share_sheet.dart';
 import '../application/library_controllers.dart';
@@ -107,7 +108,7 @@ List<Widget> librarySectionItems(BuildContext context, WidgetRef ref, LibrarySec
   switch (s) {
     case LibrarySection.verses:
       return [
-        for (final v in take(ref.watch(savedScriptureProvider)))
+        for (final v in take(ref.watch(savedScriptureProvider))) ...[
           Row(
             children: [
               Expanded(child: ScriptureSnippetTile(reference: v.reference)),
@@ -126,6 +127,9 @@ List<Widget> librarySectionItems(BuildContext context, WidgetRef ref, LibrarySec
               ),
             ],
           ),
+          // F1: reflect on this verse (on its own line so the row keeps its width).
+          ReflectOnSavedButton(reference: v.reference, versionId: v.versionId),
+        ],
       ];
     case LibrarySection.dailyWords:
       return [

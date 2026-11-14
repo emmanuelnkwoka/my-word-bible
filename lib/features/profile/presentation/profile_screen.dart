@@ -141,6 +141,19 @@ class ProfileScreen extends ConsumerWidget {
               const SizedBox(height: MwbSpace.lg),
             ],
             _Group(
+              title: 'Word rhythm & reflections',
+              tiles: [
+                _Tile(Icons.event_available_outlined, 'Word rhythm', 'Readings you completed, privately', AppRoutes.rhythm),
+                _Tile(Icons.edit_note_rounded, 'Reflections', 'Your private journal', AppRoutes.journal),
+                _Tile(
+                  Icons.enhanced_encryption_outlined,
+                  'Journal privacy',
+                  'Encryption, export and deletion',
+                  AppRoutes.journalPrivacy,
+                ),
+              ],
+            ),
+            _Group(
               title: 'Sharing & fellowship',
               tiles: [
                 _Tile(
